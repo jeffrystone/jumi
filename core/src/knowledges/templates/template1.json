@@ -1,0 +1,55 @@
+{
+  "hero-split-4x4": {
+    "name": "Hero с сеткой 4×4 (две части)",
+    "description": "Текст в левой половине, картинка в правой",
+    "version": "1.0.0",
+    "type": "section.hero",
+    "layout": "grid-4x4",
+    "atoms": [
+      {
+        "ref": "title",
+        "type": "atom.heading",
+        "semantics": "Главный заголовок",
+        "value": "Главный заголовок",
+        "required": true,
+        "col": 1,
+        "row": 1,
+        "colSpan": 2,
+        "rowSpan": 1
+      },
+      {
+        "ref": "subtitle",
+        "type": "atom.subheading",
+        "semantics": "Подзаголовок",
+        "value": "Подзаголовок",
+        "required": true,
+        "col": 1,
+        "row": 2,
+        "colSpan": 2,
+        "rowSpan": 1
+      },
+      {
+        "ref": "cta",
+        "type": "atom.button",
+        "semantics": "Кнопка действия",
+        "value": "Кнопка действия",
+        "required": true,
+        "col": 1,
+        "row": 3,
+        "colSpan": 2,
+        "rowSpan": 1
+      },
+      {
+        "ref": "image",
+        "type": "atom.image",
+        "semantics": "Изображение продукта",
+        "value": "Изображение продукта",
+        "required": true,
+        "col": 3,
+        "row": 1,
+        "colSpan": 2,
+        "rowSpan": 3
+      }
+    ]
+  }
+}

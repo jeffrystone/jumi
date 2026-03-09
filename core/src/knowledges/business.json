@@ -1,0 +1,79 @@
+[
+    {
+      "category": "Бизнес и продукт",
+      "questions": [
+        { "text": "Как называется ваша компания/проект?", "type": "string", "required": true },
+        { "text": "Как называется продукт/услуга?", "type": "string", "required": true },
+        { "text": "Опишите продукт одним предложением.", "type": "string", "required": true },
+        { "text": "Какая основная проблема клиента, которую решает продукт?", "type": "string", "required": true },
+        { "text": "Какое главное преимущество перед конкурентами?", "type": "string", "required": true },
+        { "text": "Есть ли у продукта уникальные особенности? (список)", "type": "list", "required": false },
+        { "text": "Какая цена/тарифы? (если уместно)", "type": "string", "required": false }
+      ]
+    },
+    {
+      "category": "Целевая аудитория",
+      "questions": [
+        { "text": "Кто ваша целевая аудитория? (возраст, пол, интересы)", "type": "string", "required": true },
+        { "text": "Какие боли или желания есть у аудитории?", "type": "string", "required": true },
+        {
+          "text": "На какую аудиторию рассчитан тон коммуникации?",
+          "type": "choice",
+          "options": ["B2B", "B2C", "массмаркет"],
+          "required": true
+        },
+        { "text": "Какие возражения могут быть у клиентов? (список)", "type": "list", "required": false }
+      ]
+    },
+    {
+      "category": "Маркетинг и цели",
+      "questions": [
+        {
+          "text": "Какова главная цель лендинга?",
+          "type": "choice",
+          "options": ["продажа", "подписка", "лиды", "имидж"],
+          "required": true
+        },
+        { "text": "Какое целевое действие (CTA) должно быть главным?", "type": "string", "required": true },
+        { "text": "Есть ли вторичные цели?", "type": "string", "required": false },
+        { "text": "Какие каналы привлечения будут использоваться?", "type": "string", "required": false },
+        { "text": "Есть ли акции или спецпредложения сейчас?", "type": "string", "required": false }
+      ]
+    },
+    {
+      "category": "Визуальный стиль и тон",
+      "questions": [
+        {
+          "text": "Какой тон общения предпочитаете?",
+          "type": "choice",
+          "options": ["экспертный", "дружеский", "дерзкий", "официальный", "заботливый"],
+          "required": true
+        },
+        { "text": "Есть ли брендбук или фирменные цвета? (hex или описание)", "type": "string", "required": false },
+        {
+          "text": "Какое настроение должны передавать изображения?",
+          "type": "choice",
+          "options": ["яркое", "спокойное", "динамичное", "минималистичное"],
+          "required": true
+        },
+        { "text": "Есть ли примеры сайтов/дизайнов, которые нравятся? (список ссылок)", "type": "list", "required": false },
+        { "text": "Нужны ли фотографии людей? Если да, то какие?", "type": "string", "required": false }
+      ]
+    },
+    {
+      "category": "Конкуренты и позиционирование",
+      "questions": [
+        { "text": "Кто основные конкуренты? (список)", "type": "list", "required": false },
+        { "text": "Чем вы лучше них?", "type": "string", "required": false },
+        { "text": "Что клиенты говорят о вас в отзывах? (список цитат)", "type": "list", "required": false }
+      ]
+    },
+    {
+      "category": "Технические требования",
+      "questions": [
+        { "text": "Нужна ли мобильная версия?", "type": "boolean", "required": true },
+        { "text": "Нужна ли мультиязычность?", "type": "boolean", "required": true },
+        { "text": "Есть ли интеграции с CRM/платёжками? (какие)", "type": "string", "required": false }
+      ]
+    }
+  ]
