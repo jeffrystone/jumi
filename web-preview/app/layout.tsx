@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/ui/theme";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -6,11 +7,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const theme = {
-    colors: {
-      primary: "#111111",
-      "primary-foreground": "#ffffff",
-      "muted-foreground": "#6b7280",
-    },
+    primary: "221.2 83.2% 53.3%",
+    "primary-foreground": "210 40% 98%",
+    "muted-foreground": "215.4 16.3% 46.9%",
     "section-padding": "64px",
     "container-width": "1200px",
     gap: "16px",

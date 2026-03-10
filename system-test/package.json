@@ -1,0 +1,21 @@
+{
+  "name": "@jumi/system-test",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/systemScenario.ts",
+    "test": "tsx src/systemScenario.ts"
+  },
+  "dependencies": {
+    "@jumi/agents": "0.0.0",
+    "@jumi/core": "0.0.0",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "~5.9.3"
+  }
+}

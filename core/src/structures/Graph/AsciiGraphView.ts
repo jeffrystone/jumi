@@ -1,6 +1,6 @@
 import type { Graph, Vertex } from "./Graph.js";
 
-import drawTree from "./loadAsciitree.cjs";
+import drawTree from "asciitree";
 
 /**
  * Визуальное представление графа в виде ASCII-дерева (пакет asciitree).

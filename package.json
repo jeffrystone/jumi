@@ -1,0 +1,20 @@
+{
+  "name": "jumi-monorepo",
+  "private": true,
+  "workspaces": [
+    "core",
+    "agents",
+    "web-preview",
+    "system-test"
+  ],
+  "scripts": {
+    "build:core": "yarn workspace @jumi/core build",
+    "build:agents": "yarn workspace @jumi/agents build",
+    "build:system-test": "yarn workspace @jumi/system-test build",
+    "system-test": "yarn workspace @jumi/system-test test",
+    "test:core": "yarn workspace @jumi/core test",
+    "test:agents": "yarn workspace @jumi/agents test",
+    "test:system-test": "yarn workspace @jumi/system-test test",
+    "test:all": "yarn test:core && yarn test:agents && yarn test:system-test"
+  }
+}
