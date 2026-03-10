@@ -2,8 +2,9 @@ import "dotenv/config";
 import fs from "node:fs";
 import path from "node:path";
 import {
+  createImageAgent,
   createHrAssistant,
-  createImageHeroAssistant,
+  createHeroPromptAssistant,
   createThemaAssistant,
   createWriterAssistant,
 } from "./presets.js";
@@ -46,12 +47,29 @@ describe("ConfiguredAgent (integration)", () => {
     console.log(`[TEST] ${expect.getState().currentTestName} -> ${answer}`);
   });
 
-  it("uses Image_Hero prompt template and gets real image response", async () => {
+  it("uses Hero_Prompt template and gets real text response", async () => {
+    const provider = YandexProvider.fromEnv();
+    const agent = createHeroPromptAssistant(provider);
+
+    const answer = await agent.reply(
+      "Сформируй описание hero-секции для AI-продукта в минималистичном стиле."
+    );
+
+    expect(typeof answer).toBe("string");
+    expect(answer.trim().length).toBeGreaterThan(0);
+    console.log(`[TEST] ${expect.getState().currentTestName} -> ${answer}`);
+  });
+
+  it("uses dynamic systemPrompt in ImageAgent and gets real image", async () => {
     const provider = YandexImageProvider.fromEnv();
-    const agent = createImageHeroAssistant(provider);
+    const agent = createImageAgent(provider, {
+      name: "image-dynamic",
+      systemPrompt:
+        "Ты генератор hero-изображений. Делай минималистичные композиции с современным стилем.",
+    });
 
     const image = await agent.generate(
-      "Сгенерируй hero-баннер для лендинга AI-продукта в минималистичном стиле"
+      "Сгенерируй hero-баннер для лендинга платформы автоматизации маркетинга"
     );
 
     expect(Boolean(image.url || image.base64)).toBe(true);
@@ -66,7 +84,7 @@ describe("ConfiguredAgent (integration)", () => {
       if (!fs.existsSync(outDir)) {
         fs.mkdirSync(outDir, { recursive: true });
       }
-      const filePath = path.join(outDir, "test-landing-image.png");
+      const filePath = path.join(outDir, "test-image-agent-dynamic.png");
       fs.writeFileSync(filePath, Buffer.from(image.base64, "base64"));
       console.log(`[TEST] ${expect.getState().currentTestName} -> ${filePath}`);
     }

@@ -3,8 +3,6 @@ import type {
   ImageProvider,
 } from "../llm/types.js";
 
-const MAX_IMAGE_PROMPT_LENGTH = 480;
-
 export interface ImageAgentSettings {
   name: string;
   systemPrompt?: string;
@@ -22,13 +20,9 @@ export class ImageAgent {
   }
 
   async generate(userPrompt: string): Promise<ImageGenerationResult> {
-    const rawPrompt = this.settings.systemPrompt
+    const prompt = this.settings.systemPrompt
       ? `${this.settings.systemPrompt}\n\n${userPrompt}`
       : userPrompt;
-    const prompt =
-      rawPrompt.length > MAX_IMAGE_PROMPT_LENGTH
-        ? rawPrompt.slice(0, MAX_IMAGE_PROMPT_LENGTH)
-        : rawPrompt;
 
     return this.provider.generate(prompt, {
       model: this.settings.model,

@@ -5,8 +5,9 @@ import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 import type { ChatMessage } from "../llm/types.js";
 import {
+  createImageAgent,
+  createHeroPromptAssistant,
   createHrAssistant,
-  createImageHeroAssistant,
   createThemaAssistant,
   createWriterAssistant,
 } from "../agents/presets.js";
@@ -16,8 +17,11 @@ import { YandexProvider } from "../providers/yandex/YandexProvider.js";
 function resolveAgentPreset() {
   const preset = (process.env.AGENT_PRESET ?? "hr").toLowerCase();
 
-  if (preset === "image-hero" || preset === "landing-image" || preset === "image") {
-    return "image-hero" as const;
+  if (preset === "hero-prompt" || preset === "image-hero" || preset === "landing-image") {
+    return "hero-prompt" as const;
+  }
+  if (preset === "image") {
+    return "image" as const;
   }
   if (preset === "writer") {
     return "writer" as const;
@@ -35,14 +39,19 @@ async function main(): Promise<void> {
   const hrAgent = createHrAssistant(textProvider);
   const writerAgent = createWriterAssistant(textProvider);
   const themaAgent = createThemaAssistant(textProvider);
-  const imageAgent = createImageHeroAssistant(imageProvider);
+  const heroPromptAgent = createHeroPromptAssistant(textProvider);
+  const imageAgent = createImageAgent(imageProvider, {
+    systemPrompt: process.env.IMAGE_AGENT_SYSTEM_PROMPT,
+  });
 
   const rl = createInterface({ input, output });
   const history: ChatMessage[] = [];
 
   const activeAgentName =
-    preset === "image-hero"
-      ? imageAgent.name
+    preset === "hero-prompt"
+      ? heroPromptAgent.name
+      : preset === "image"
+        ? imageAgent.name
       : preset === "writer"
         ? writerAgent.name
         : preset === "thema"
@@ -62,7 +71,7 @@ async function main(): Promise<void> {
     history.push({ role: "user", text: userText });
 
     try {
-      if (preset === "image-hero") {
+      if (preset === "image") {
         const image = await imageAgent.generate(userText);
         if (image.url) {
           console.log(`image(url)> ${image.url}`);
@@ -83,7 +92,9 @@ async function main(): Promise<void> {
             ? writerAgent
             : preset === "thema"
               ? themaAgent
-              : hrAgent;
+              : preset === "hero-prompt"
+                ? heroPromptAgent
+                : hrAgent;
         const answer = await activeTextAgent.reply(userText, history.slice(0, -1));
         history.push({ role: "assistant", text: answer });
         console.log(`bot> ${answer}`);

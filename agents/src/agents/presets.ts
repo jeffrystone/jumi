@@ -26,7 +26,7 @@ function loadPromptFile(fileName: string): string {
 const HR_PROMPT = loadPromptFile("HR.txt");
 const WRITER_PROMPT = loadPromptFile("Writer.txt");
 const THEMA_PROMPT = loadPromptFile("Thema.txt");
-const IMAGE_HERO_PROMPT = loadPromptFile("Image_Hero.txt");
+const HERO_PROMPT = loadPromptFile("Hero_Prompt.txt");
 
 export function createHrAssistant(provider: LlmProvider): ConfiguredAgent {
   return new ConfiguredAgent(provider, {
@@ -56,14 +56,35 @@ export function createPrManagerAssistant(provider: LlmProvider): ConfiguredAgent
   return createHrAssistant(provider);
 }
 
-export function createImageHeroAssistant(provider: ImageProvider): ImageAgent {
-  return new ImageAgent(provider, {
-    name: "image-hero",
-    model: BEST_IMAGE_MODEL,
-    systemPrompt: IMAGE_HERO_PROMPT,
+export function createHeroPromptAssistant(provider: LlmProvider): ConfiguredAgent {
+  return new ConfiguredAgent(provider, {
+    name: "hero-prompt",
+    model: BEST_TEXT_MODEL,
+    systemPrompt: HERO_PROMPT,
   });
 }
 
-export function createLandingImageAssistant(provider: ImageProvider): ImageAgent {
-  return createImageHeroAssistant(provider);
+export function createImageHeroAssistant(provider: LlmProvider): ConfiguredAgent {
+  return createHeroPromptAssistant(provider);
+}
+
+export function createLandingImageAssistant(provider: LlmProvider): ConfiguredAgent {
+  return createHeroPromptAssistant(provider);
+}
+
+export interface CreateImageAgentOptions {
+  name?: string;
+  systemPrompt?: string;
+  model?: string;
+}
+
+export function createImageAgent(
+  provider: ImageProvider,
+  options: CreateImageAgentOptions = {}
+): ImageAgent {
+  return new ImageAgent(provider, {
+    name: options.name ?? "image",
+    systemPrompt: options.systemPrompt,
+    model: options.model ?? BEST_IMAGE_MODEL,
+  });
 }
