@@ -1,0 +1,93 @@
+{
+  "layout": "grid-9x9",
+  "atoms": [
+    {
+      "ref": "section_slogan",
+      "type": "atom.heading",
+      "semantics": "Слоган секции",
+      "value": "Почему выбирают нас",
+      "required": true,
+      "col": 1,
+      "row": 1,
+      "colSpan": 4,
+      "rowSpan": 3
+    },
+    {
+      "ref": "section_description",
+      "type": "atom.subheading",
+      "semantics": "Описание секции",
+      "value": "Краткое описание ценности и ключевых преимуществ продукта для пользователя.",
+      "required": true,
+      "col": 5,
+      "row": 1,
+      "colSpan": 5,
+      "rowSpan": 3
+    },
+    {
+      "ref": "option_1_logo",
+      "type": "atom.image",
+      "semantics": "Лого первой опции",
+      "value": "Лого опции 1",
+      "required": true,
+      "col": 1,
+      "row": 5,
+      "colSpan": 3,
+      "rowSpan": 2
+    },
+    {
+      "ref": "option_1_text",
+      "type": "atom.subheading",
+      "semantics": "Текст первой опции",
+      "value": "Первая опция: краткое преимущество",
+      "required": true,
+      "col": 1,
+      "row": 7,
+      "colSpan": 3,
+      "rowSpan": 2
+    },
+    {
+      "ref": "option_2_logo",
+      "type": "atom.image",
+      "semantics": "Лого второй опции",
+      "value": "Лого опции 2",
+      "required": true,
+      "col": 4,
+      "row": 5,
+      "colSpan": 3,
+      "rowSpan": 2
+    },
+    {
+      "ref": "option_2_text",
+      "type": "atom.subheading",
+      "semantics": "Текст второй опции",
+      "value": "Вторая опция: краткое преимущество",
+      "required": true,
+      "col": 4,
+      "row": 7,
+      "colSpan": 3,
+      "rowSpan": 2
+    },
+    {
+      "ref": "option_3_logo",
+      "type": "atom.image",
+      "semantics": "Лого третьей опции",
+      "value": "Лого опции 3",
+      "required": true,
+      "col": 7,
+      "row": 5,
+      "colSpan": 3,
+      "rowSpan": 2
+    },
+    {
+      "ref": "option_3_text",
+      "type": "atom.subheading",
+      "semantics": "Текст третьей опции",
+      "value": "Третья опция: краткое преимущество",
+      "required": true,
+      "col": 7,
+      "row": 7,
+      "colSpan": 3,
+      "rowSpan": 2
+    }
+  ]
+}

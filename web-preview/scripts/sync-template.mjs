@@ -33,6 +33,19 @@ const syncTargets = [
     targetPath: path.resolve(projectRoot, "test-navbar.json"),
     name: "navbar",
   },
+  {
+    sourcePath: path.resolve(
+      projectRoot,
+      "..",
+      "core",
+      "src",
+      "knowledges",
+      "templates",
+      "template3.json"
+    ),
+    targetPath: path.resolve(projectRoot, "test-features.json"),
+    name: "features",
+  },
 ];
 
 const onceMode = process.argv.includes("--once");
