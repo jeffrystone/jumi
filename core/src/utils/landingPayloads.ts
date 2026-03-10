@@ -71,3 +71,28 @@ export function buildWriterPayload(
     ...(theme ? { theme } : {}),
   };
 }
+
+export function buildHrPayload(input: LandingInputData): Record<string, unknown> {
+  return input as unknown as Record<string, unknown>;
+}
+
+export function buildHeroPromptPayload(
+  input: LandingInputData,
+  hr: Record<string, unknown> | null,
+  theme: Record<string, unknown> | null
+): Record<string, unknown> {
+  const hrContext = (hr?.context ?? {}) as Record<string, unknown>;
+  const themeBlock = theme ?? {};
+
+  return {
+    context: {
+      product_name: hrContext.product_name ?? input.business.product_name,
+      product_description:
+        hrContext.product_description ?? input.business.product_description,
+      target_audience: hrContext.target_audience ?? input.audience.target,
+      tone: hrContext.tone ?? input.visual.tone,
+      people_photos: hrContext.people_photos ?? input.visual.people_photos,
+    },
+    theme: themeBlock,
+  };
+}

@@ -1,7 +1,12 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { ensureDir, findFirstExistingPath, readFirstExistingFile } from "./fs.js";
+import {
+  ensureDir,
+  findFirstExistingPath,
+  readFirstExistingFile,
+  writeTextFile,
+} from "./fs.js";
 
 describe("fs utils", () => {
   it("ensureDir creates missing directory", () => {
@@ -38,5 +43,15 @@ describe("fs utils", () => {
     ]);
 
     expect(content).toBe("hello");
+  });
+
+  it("writeTextFile creates parent folders and writes content", () => {
+    const base = fs.mkdtempSync(path.join(os.tmpdir(), "jumi-core-write-"));
+    const target = path.join(base, "outputs", "agent.txt");
+
+    writeTextFile(target, "agent answer");
+
+    expect(fs.existsSync(target)).toBe(true);
+    expect(fs.readFileSync(target, "utf-8")).toBe("agent answer");
   });
 });

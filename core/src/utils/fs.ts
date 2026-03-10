@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import path from "node:path";
 
 export function ensureDir(dirPath: string): void {
   if (!fs.existsSync(dirPath)) {
@@ -21,4 +22,9 @@ export function readFirstExistingFile(paths: string[]): string {
     throw new Error(`File not found. Checked paths: ${paths.join(", ")}`);
   }
   return fs.readFileSync(filePath, "utf-8");
+}
+
+export function writeTextFile(filePath: string, content: string): void {
+  ensureDir(path.dirname(filePath));
+  fs.writeFileSync(filePath, content, "utf-8");
 }

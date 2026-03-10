@@ -1,4 +1,6 @@
 import {
+  buildHeroPromptPayload,
+  buildHrPayload,
   buildThemaPayload,
   buildWriterPayload,
   type LandingInputData,
@@ -56,5 +58,48 @@ describe("landing payload builders", () => {
   it("buildWriterPayload omits theme when not provided", () => {
     const payload = buildWriterPayload(input, null);
     expect(payload).not.toHaveProperty("theme");
+  });
+
+  it("buildHrPayload forwards source input object", () => {
+    const payload = buildHrPayload(input);
+    expect(payload).toMatchObject({
+      business: {
+        product_name: "Jumi English",
+      },
+      visual: {
+        people_photos: "реальные студенты",
+      },
+    });
+  });
+
+  it("buildHeroPromptPayload combines hr and theme answers", () => {
+    const payload = buildHeroPromptPayload(
+      input,
+      {
+        context: {
+          product_name: "HR Product",
+          product_description: "HR Description",
+          target_audience: "HR Audience",
+          tone: "HR Tone",
+          people_photos: "HR People",
+        },
+      },
+      {
+        imageStyle: "minimal",
+      }
+    );
+
+    expect(payload).toEqual({
+      context: {
+        product_name: "HR Product",
+        product_description: "HR Description",
+        target_audience: "HR Audience",
+        tone: "HR Tone",
+        people_photos: "HR People",
+      },
+      theme: {
+        imageStyle: "minimal",
+      },
+    });
   });
 });
