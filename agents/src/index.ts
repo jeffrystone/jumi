@@ -10,6 +10,10 @@ export type {
 export { ConfiguredAgent, type AgentPromptSettings } from "./agents/ConfiguredAgent.js";
 export { ImageAgent, type ImageAgentSettings } from "./agents/ImageAgent.js";
 export {
+  createHrAssistant,
+  createWriterAssistant,
+  createThemaAssistant,
+  createImageHeroAssistant,
   createLandingImageAssistant,
   createPrManagerAssistant,
 } from "./agents/presets.js";

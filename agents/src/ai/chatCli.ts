@@ -5,32 +5,49 @@ import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 import type { ChatMessage } from "../llm/types.js";
 import {
-  createLandingImageAssistant,
-  createPrManagerAssistant,
+  createHrAssistant,
+  createImageHeroAssistant,
+  createThemaAssistant,
+  createWriterAssistant,
 } from "../agents/presets.js";
 import { YandexImageProvider } from "../providers/yandex/YandexImageProvider.js";
 import { YandexProvider } from "../providers/yandex/YandexProvider.js";
 
 function resolveAgentPreset() {
-  const preset = (process.env.AGENT_PRESET ?? "pr-manager").toLowerCase();
+  const preset = (process.env.AGENT_PRESET ?? "hr").toLowerCase();
 
-  if (preset === "landing-image" || preset === "image") {
-    return "landing-image" as const;
+  if (preset === "image-hero" || preset === "landing-image" || preset === "image") {
+    return "image-hero" as const;
   }
-  return "pr-manager" as const;
+  if (preset === "writer") {
+    return "writer" as const;
+  }
+  if (preset === "thema" || preset === "theme") {
+    return "thema" as const;
+  }
+  return "hr" as const;
 }
 
 async function main(): Promise<void> {
   const preset = resolveAgentPreset();
   const textProvider = YandexProvider.fromEnv();
   const imageProvider = YandexImageProvider.fromEnv();
-  const textAgent = createPrManagerAssistant(textProvider);
-  const imageAgent = createLandingImageAssistant(imageProvider);
+  const hrAgent = createHrAssistant(textProvider);
+  const writerAgent = createWriterAssistant(textProvider);
+  const themaAgent = createThemaAssistant(textProvider);
+  const imageAgent = createImageHeroAssistant(imageProvider);
 
   const rl = createInterface({ input, output });
   const history: ChatMessage[] = [];
 
-  const activeAgentName = preset === "landing-image" ? imageAgent.name : textAgent.name;
+  const activeAgentName =
+    preset === "image-hero"
+      ? imageAgent.name
+      : preset === "writer"
+        ? writerAgent.name
+        : preset === "thema"
+          ? themaAgent.name
+          : hrAgent.name;
   console.log(`Chat started with agent '${activeAgentName}'. Type 'exit' to quit.`);
 
   while (true) {
@@ -45,7 +62,7 @@ async function main(): Promise<void> {
     history.push({ role: "user", text: userText });
 
     try {
-      if (preset === "landing-image") {
+      if (preset === "image-hero") {
         const image = await imageAgent.generate(userText);
         if (image.url) {
           console.log(`image(url)> ${image.url}`);
@@ -61,7 +78,13 @@ async function main(): Promise<void> {
           console.log("image> empty image response");
         }
       } else {
-        const answer = await textAgent.reply(userText, history.slice(0, -1));
+        const activeTextAgent =
+          preset === "writer"
+            ? writerAgent
+            : preset === "thema"
+              ? themaAgent
+              : hrAgent;
+        const answer = await activeTextAgent.reply(userText, history.slice(0, -1));
         history.push({ role: "assistant", text: answer });
         console.log(`bot> ${answer}`);
       }
