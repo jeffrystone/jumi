@@ -1,4 +1,5 @@
 {
+  "layout": "grid-4x4",
   "atoms": [
     {
       "ref": "title",

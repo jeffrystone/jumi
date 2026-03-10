@@ -1,0 +1,71 @@
+{
+  "layout": "grid-6x1",
+  "atoms": [
+    {
+      "ref": "logo",
+      "type": "atom.image",
+      "semantics": "Логотип бренда",
+      "value": "Логотип",
+      "required": true,
+      "col": 1,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "nav_link_1",
+      "type": "atom.link",
+      "semantics": "Первая навигационная ссылка",
+      "value": "О нас",
+      "required": true,
+      "col": 2,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "nav_link_2",
+      "type": "atom.link",
+      "semantics": "Вторая навигационная ссылка",
+      "value": "Услуги",
+      "required": true,
+      "col": 3,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "nav_link_3",
+      "type": "atom.link",
+      "semantics": "Третья навигационная ссылка",
+      "value": "Контакты",
+      "required": true,
+      "col": 4,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "button_secondary",
+      "type": "atom.button",
+      "semantics": "Второстепенная кнопка",
+      "value": "Войти",
+      "required": true,
+      "col": 5,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "button_primary",
+      "type": "atom.button",
+      "semantics": "Основная кнопка",
+      "value": "Начать",
+      "required": true,
+      "col": 6,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    }
+  ]
+}

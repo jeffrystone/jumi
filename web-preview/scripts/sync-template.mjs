@@ -6,68 +6,105 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..");
 
-const sourcePath = path.resolve(
-  projectRoot,
-  "..",
-  "core",
-  "src",
-  "knowledges",
-  "templates",
-  "template1.json"
-);
-const targetPath = path.resolve(projectRoot, "test.json");
+const syncTargets = [
+  {
+    sourcePath: path.resolve(
+      projectRoot,
+      "..",
+      "core",
+      "src",
+      "knowledges",
+      "templates",
+      "template1.json"
+    ),
+    targetPath: path.resolve(projectRoot, "test.json"),
+    name: "hero",
+  },
+  {
+    sourcePath: path.resolve(
+      projectRoot,
+      "..",
+      "core",
+      "src",
+      "knowledges",
+      "templates",
+      "template2.json"
+    ),
+    targetPath: path.resolve(projectRoot, "test-navbar.json"),
+    name: "navbar",
+  },
+];
 
 const onceMode = process.argv.includes("--once");
 
-function syncTemplate() {
+function extractTemplateData(parsed) {
+  let atoms = [];
+  let layout = "grid-6x6";
+
+  if (Array.isArray(parsed?.atoms)) {
+    atoms = parsed.atoms;
+    if (typeof parsed.layout === "string") {
+      layout = parsed.layout;
+    }
+    return { layout, atoms };
+  }
+
+  if (parsed && typeof parsed === "object") {
+    const firstSection = Object.values(parsed)[0];
+    if (
+      firstSection &&
+      typeof firstSection === "object" &&
+      Array.isArray(firstSection.atoms)
+    ) {
+      atoms = firstSection.atoms;
+      if (typeof firstSection.layout === "string") {
+        layout = firstSection.layout;
+      }
+    }
+  }
+
+  return { layout, atoms };
+}
+
+function syncTemplate(sourcePath, targetPath, name) {
   try {
     const raw = fs.readFileSync(sourcePath, "utf-8");
     const parsed = JSON.parse(raw);
-
-    let atoms = [];
-    if (Array.isArray(parsed?.atoms)) {
-      atoms = parsed.atoms;
-    } else if (parsed && typeof parsed === "object") {
-      const firstSection = Object.values(parsed)[0];
-      if (
-        firstSection &&
-        typeof firstSection === "object" &&
-        Array.isArray(firstSection.atoms)
-      ) {
-        atoms = firstSection.atoms;
-      }
-    }
-
-    const output = JSON.stringify({ atoms }, null, 2);
+    const { layout, atoms } = extractTemplateData(parsed);
+    const output = JSON.stringify({ layout, atoms }, null, 2);
     fs.writeFileSync(targetPath, output, "utf-8");
     const stamp = new Date().toLocaleTimeString("ru-RU");
-    console.log(`[${stamp}] atoms synced -> test.json`);
+    console.log(`[${stamp}] ${name} template synced -> ${path.basename(targetPath)}`);
   } catch (error) {
-    console.error("Failed to sync template:", error);
+    console.error(`Failed to sync ${name} template:`, error);
   }
 }
 
-syncTemplate();
+for (const target of syncTargets) {
+  syncTemplate(target.sourcePath, target.targetPath, target.name);
+}
 
 if (onceMode) {
   process.exit(0);
 }
 
-console.log(`Watching: ${sourcePath}`);
+for (const target of syncTargets) {
+  console.log(`Watching ${target.name}: ${target.sourcePath}`);
 
-let timer = null;
-const debouncedSync = () => {
-  if (timer) {
-    clearTimeout(timer);
-  }
-  timer = setTimeout(() => {
-    syncTemplate();
-    timer = null;
-  }, 100);
-};
+  let timer = null;
+  const debouncedSync = () => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      syncTemplate(target.sourcePath, target.targetPath, target.name);
+      timer = null;
+    }, 100);
+  };
 
-fs.watch(sourcePath, (eventType) => {
-  if (eventType === "change" || eventType === "rename") {
-    debouncedSync();
-  }
-});
+  fs.watch(target.sourcePath, (eventType) => {
+    if (eventType === "change" || eventType === "rename") {
+      debouncedSync();
+    }
+  });
+}

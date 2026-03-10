@@ -1,7 +1,7 @@
 import { Button, Heading, Image, Link, Text } from "@/ui/atoms";
-import type { HeroAtom } from "../HeroRenderer";
+import type { TemplateAtom } from "../TemplateRenderer";
 
-export function renderHeroAtom(atom: HeroAtom) {
+export function renderHeroAtom(atom: TemplateAtom) {
   const content = atom.value ?? "";
 
   switch (atom.type) {

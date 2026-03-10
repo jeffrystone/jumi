@@ -1,53 +1,13 @@
-import { Box, Container, Grid, Section } from "@/ui/layout";
-import { renderHeroAtom } from "./utils/renderHeroAtom";
-
-type HeroAtomType =
-  | "atom.heading"
-  | "atom.subheading"
-  | "atom.button"
-  | "atom.image"
-  | "atom.link";
-
-export interface HeroAtom {
-  ref: string;
-  type: HeroAtomType | string;
-  value?: string;
-  href?: string;
-  src?: string;
-  alt?: string;
-  col: number;
-  row: number;
-  colSpan?: number;
-  rowSpan?: number;
-}
-
-export interface HeroTemplate {
-  atoms: HeroAtom[];
-}
+import { TemplateRenderer, type TemplateAtom, type TemplateData } from "./TemplateRenderer";
 
 interface HeroRendererProps {
-  template: HeroTemplate;
+  template: TemplateData;
   className?: string;
 }
 
+export type HeroAtom = TemplateAtom;
+export type HeroTemplate = TemplateData;
+
 export function HeroRenderer({ template, className }: HeroRendererProps) {
-  return (
-    <Section className={className}>
-      <Container>
-        <Grid cols={6} rows={6}>
-          {template.atoms.map((atom) => (
-            <Box
-              key={atom.ref}
-              style={{
-                gridColumn: `${atom.col} / span ${atom.colSpan ?? 1}`,
-                gridRow: `${atom.row} / span ${atom.rowSpan ?? 1}`,
-              }}
-            >
-              {renderHeroAtom(atom)}
-            </Box>
-          ))}
-        </Grid>
-      </Container>
-    </Section>
-  );
+  return <TemplateRenderer template={template} className={className} fallbackGrid={{ cols: 6, rows: 6 }} />;
 }
