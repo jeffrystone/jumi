@@ -2,63 +2,57 @@ import dotenv from "dotenv";
 import fs from "node:fs";
 import path from "node:path";
 import {
-  AsciiGraphView,
-  Graph,
-  Vertex,
-  parseTemplateToGraph,
+  assert,
+  buildThemaPayload,
+  buildWriterPayload,
+  findFirstExistingPath,
+  parseJsonFromText,
+  type LandingInputData,
 } from "@jumi/core";
-import { YandexProvider, createPrManagerAssistant } from "@jumi/agents";
+import {
+  YandexProvider,
+  createThemaAssistant,
+  createWriterAssistant,
+} from "@jumi/agents";
 
 const localEnvPath = path.resolve(process.cwd(), ".env");
 const agentsEnvPath = path.resolve(process.cwd(), "..", "agents", ".env");
-if (fs.existsSync(localEnvPath)) {
-  dotenv.config({ path: localEnvPath });
-} else if (fs.existsSync(agentsEnvPath)) {
-  dotenv.config({ path: agentsEnvPath });
+const envPath = findFirstExistingPath([localEnvPath, agentsEnvPath]);
+if (envPath) {
+  dotenv.config({ path: envPath });
 }
 
-function assert(condition: unknown, message: string): asserts condition {
-  if (!condition) {
-    throw new Error(message);
-  }
+function isRealConnectionEnabled(): boolean {
+  const value = (process.env.IS_REAL_CONNECTION ?? "").trim().toLowerCase();
+  return value === "true" || value === "1" || value === "yes";
 }
 
 async function run(): Promise<void> {
   console.log("[SCENARIO] start");
 
-  const graph = new Graph(
-    new Vertex("root", [new Vertex("child-1"), new Vertex("child-2")])
-  );
-  const graphView = new AsciiGraphView(graph);
-  const graphAscii = graphView.render();
-  assert(graphAscii.includes("root"), "Graph should contain root node");
-  console.log("[SCENARIO] graph built:\n" + graphAscii);
+  if (!isRealConnectionEnabled()) {
+    console.log("[SCENARIO] skipped: set IS_REAL_CONNECTION=true to run real agent calls");
+    return;
+  }
 
-  const templatePath = path.resolve(
-    process.cwd(),
-    "..",
-    "core",
-    "src",
-    "knowledges",
-    "templates",
-    "template1.json"
-  );
-  const templateRaw = fs.readFileSync(templatePath, "utf-8");
-  const templateJson = JSON.parse(templateRaw) as unknown;
-  const templateGraph = parseTemplateToGraph(templateJson);
-  assert(
-    templateGraph.root.children.length > 0,
-    "Template graph should contain atoms"
-  );
-  console.log(
-    `[SCENARIO] template graph parsed: ${templateGraph.root.children.length} atoms`
-  );
+  const inputPath = path.resolve(process.cwd(), "input.json");
+  const inputRaw = fs.readFileSync(inputPath, "utf-8");
+  const input = JSON.parse(inputRaw) as LandingInputData;
 
   const provider = YandexProvider.fromEnv();
-  const agent = createPrManagerAssistant(provider);
-  const answer = await agent.reply("Привет, это системный тест. Кто ты?");
-  assert(answer.trim().length > 0, "Agent answer should not be empty");
-  console.log(`[SCENARIO] agent answer: ${answer}`);
+  const themaAgent = createThemaAssistant(provider);
+  const writerAgent = createWriterAssistant(provider);
+
+  const themaPayload = buildThemaPayload(input);
+  const themaAnswer = await themaAgent.reply(JSON.stringify(themaPayload, null, 2));
+  assert(themaAnswer.trim().length > 0, "Thema answer should not be empty");
+  console.log(`[SCENARIO] thema answer: ${themaAnswer}`);
+
+  const themeJson = parseJsonFromText(themaAnswer);
+  const writerPayload = buildWriterPayload(input, themeJson);
+  const writerAnswer = await writerAgent.reply(JSON.stringify(writerPayload, null, 2));
+  assert(writerAnswer.trim().length > 0, "Writer answer should not be empty");
+  console.log(`[SCENARIO] writer answer: ${writerAnswer}`);
 
   console.log("[SCENARIO] success");
 }

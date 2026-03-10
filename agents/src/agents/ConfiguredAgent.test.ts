@@ -11,7 +11,9 @@ import {
 import { YandexImageProvider } from "../providers/yandex/YandexImageProvider.js";
 import { YandexProvider } from "../providers/yandex/YandexProvider.js";
 
-describe("ConfiguredAgent (integration)", () => {
+// Реальные интеграционные тесты отключены, чтобы не тратить бюджет на API-вызовы.
+// Для ручной проверки используйте system-test с IS_REAL_CONNECTION=true.
+describe.skip("ConfiguredAgent (integration)", () => {
   jest.setTimeout(90_000);
 
   it("uses HR prompt template and gets real response", async () => {

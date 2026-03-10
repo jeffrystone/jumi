@@ -1,6 +1,6 @@
 import type { ImageProvider, LlmProvider } from "../llm/types.js";
-import fs from "node:fs";
 import path from "node:path";
+import { readFirstExistingFile } from "@jumi/core";
 import { ConfiguredAgent } from "./ConfiguredAgent.js";
 import { ImageAgent } from "./ImageAgent.js";
 
@@ -13,14 +13,7 @@ function loadPromptFile(fileName: string): string {
     path.resolve(process.cwd(), "agents", "src", "agents", "promts_base", fileName),
     path.resolve(process.cwd(), "..", "agents", "src", "agents", "promts_base", fileName),
   ];
-
-  for (const p of candidates) {
-    if (fs.existsSync(p)) {
-      return fs.readFileSync(p, "utf-8");
-    }
-  }
-
-  throw new Error(`Prompt file not found: ${fileName}`);
+  return readFirstExistingFile(candidates);
 }
 
 const HR_PROMPT = loadPromptFile("HR.txt");

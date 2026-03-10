@@ -1,0 +1,41 @@
+{
+    "business": {
+      "company_name": "SpeakEasy",
+      "product_name": "Курс разговорного английского",
+      "product_description": "Интенсивный онлайн-курс для уверенного общения",
+      "problem": "Страх говорить на английском, недостаток практики",
+      "advantage": "Живые занятия с носителями языка в мини-группах",
+      "unique_features": ["разговорные клубы", "проверка домашек 24/7", "бесплатный пробный урок"],
+      "price": "от 3000 руб/мес"
+    },
+    "audience": {
+      "target": "Взрослые 25–40 лет, менеджеры, IT-специалисты",
+      "pains": "Хотят продвижения по работе, но стесняются говорить",
+      "tone_type": "B2C",
+      "objections": ["дорого", "нет времени", "боюсь, что не пойму"]
+    },
+    "marketing": {
+      "main_goal": "продажа",
+      "primary_cta": "Записаться на пробный урок",
+      "secondary_goals": "подписка на рассылку",
+      "channels": "Instagram, контекстная реклама",
+      "promotions": "Скидка 20% на первый месяц"
+    },
+    "visual": {
+      "tone": "дружеский",
+      "brand_colors": "синий, белый",
+      "image_mood": "спокойное",
+      "examples": ["https://example.com/site1", "https://example.com/site2"],
+      "people_photos": "улыбающиеся студенты в классе или онлайн"
+    },
+    "competitors": {
+      "main_competitors": ["Skyeng", "EnglishDom"],
+      "differentiation": "Живые носители, мини-группы, акцент на разговор",
+      "testimonials": ["\"Заговорил через месяц\"", "\"Очень дружелюбные преподаватели\""]
+    },
+    "technical": {
+      "mobile": true,
+      "multilang": false,
+      "integrations": "нужна интеграция с Telegram для уведомлений"
+    }
+}

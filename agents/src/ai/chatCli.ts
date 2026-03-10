@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
+import { ensureDir } from "@jumi/core";
 import type { ChatMessage } from "../llm/types.js";
 import {
   createImageAgent,
@@ -77,9 +78,7 @@ async function main(): Promise<void> {
           console.log(`image(url)> ${image.url}`);
         } else if (image.base64) {
           const outDir = path.resolve(process.cwd(), "generated");
-          if (!fs.existsSync(outDir)) {
-            fs.mkdirSync(outDir, { recursive: true });
-          }
+          ensureDir(outDir);
           const filePath = path.join(outDir, `image-${Date.now()}.png`);
           fs.writeFileSync(filePath, Buffer.from(image.base64, "base64"));
           console.log(`image(file)> ${filePath}`);

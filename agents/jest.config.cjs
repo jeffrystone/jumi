@@ -15,5 +15,6 @@ module.exports = {
   },
   transformIgnorePatterns: ["/node_modules/"],
   testMatch: ["**/*.test.ts"],
+  testPathIgnorePatterns: ["/src/agents/ConfiguredAgent.test.ts$"],
   collectCoverageFrom: ["src/**/*.ts", "!src/**/*.test.ts"],
 };
