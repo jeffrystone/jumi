@@ -5,6 +5,10 @@ interface FlatThemeEntry {
   value: ThemePrimitive;
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+
 function toKebabCase(value: string): string {
   return value
     .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
@@ -29,8 +33,19 @@ function flattenTheme(
 }
 
 function buildAliases(path: string[]): string[] {
-  if (path.length === 2 && path[0] === "colors") {
-    return [path[1]];
+  if (path.length === 2 && path[0] === "colorPalette") {
+    const [, key] = path;
+    if (key === "background") return ["background"];
+    if (key === "primary") return ["primary", "ring", "accent"];
+    if (key === "secondary") return ["secondary", "muted", "border", "input"];
+  }
+
+  if (path.length === 3 && path[0] === "colorPalette" && path[1] === "textColors") {
+    const [, , key] = path;
+    if (key === "base") return ["foreground"];
+    if (key === "muted") return ["muted-foreground"];
+    if (key === "faint") return ["faint-foreground", "secondary-foreground"];
+    if (key === "accent") return ["accent", "accent-foreground", "link"];
   }
 
   if (path.length === 2 && path[0] === "spacing") {
@@ -83,6 +98,25 @@ export function buildThemeVarEntries(theme: Theme): Array<{ key: string; value: 
 }
 
 export function adaptThemaTheme(rawTheme: unknown): Theme {
+  if (isRecord(rawTheme) && !("colorPalette" in rawTheme) && isRecord(rawTheme.colors)) {
+    const legacyColors = rawTheme.colors;
+    const normalized = {
+      ...rawTheme,
+      colorPalette: {
+        background: String(legacyColors.background ?? ""),
+        textColors: {
+          base: String(legacyColors.foreground ?? ""),
+          muted: String(legacyColors["secondary-foreground"] ?? legacyColors.foreground ?? ""),
+          faint: String(legacyColors.muted ?? legacyColors["secondary"] ?? ""),
+          accent: String(legacyColors.accent ?? legacyColors.primary ?? ""),
+        },
+        primary: String(legacyColors.primary ?? ""),
+        secondary: String(legacyColors.secondary ?? ""),
+      },
+    };
+    return ensureThemaTheme(normalized) as unknown as Theme;
+  }
+
   return ensureThemaTheme(rawTheme) as unknown as Theme;
 }
 

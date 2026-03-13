@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/systemScenario.ts",
+    "pretest": "yarn workspace @jumi/core build",
     "test": "tsx src/systemScenario.ts"
   },
   "dependencies": {

@@ -1,4 +1,10 @@
-import { ThemeProvider, defaultThemaTheme, safeAdaptThemaTheme } from "@/ui/theme";
+import {
+  ThemeProvider,
+  defaultThemaTheme,
+  getGoogleFontHref,
+  safeAdaptThemaTheme,
+} from "@/ui/theme";
+import { readGeneratedJson } from "@/utils/generatedPreview";
 import "./globals.css";
 
 export default function RootLayout({
@@ -6,11 +12,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const rawTheme: unknown = defaultThemaTheme;
+  const rawTheme: unknown = readGeneratedJson<unknown>("thema-answer.json") ?? defaultThemaTheme;
   const { theme, error } = safeAdaptThemaTheme(rawTheme);
+  const googleFontHref = getGoogleFontHref(rawTheme);
 
   return (
     <html lang="ru">
+      <head>
+        {googleFontHref ? (
+          <>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+            <link rel="stylesheet" href={googleFontHref} />
+          </>
+        ) : null}
+      </head>
       <body>
         {error ? (
           <main

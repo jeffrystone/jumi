@@ -8,19 +8,16 @@ export interface ThemeObject {
 export type Theme = ThemeObject;
 
 export interface ThemaTheme {
-  colors: {
+  colorPalette: {
     background: string;
-    foreground: string;
+    textColors: {
+      base: string;
+      muted: string;
+      faint: string;
+      accent: string;
+    };
     primary: string;
-    "primary-foreground": string;
     secondary: string;
-    "secondary-foreground": string;
-    accent: string;
-    muted: string;
-    border: string;
-    ring: string;
-    destructive: string;
-    success: string;
   };
   typography: {
     fontFamily: string;
@@ -42,18 +39,13 @@ export interface ThemaTheme {
 }
 
 const REQUIRED_STRING_PATHS = [
-  "colors.background",
-  "colors.foreground",
-  "colors.primary",
-  "colors.primary-foreground",
-  "colors.secondary",
-  "colors.secondary-foreground",
-  "colors.accent",
-  "colors.muted",
-  "colors.border",
-  "colors.ring",
-  "colors.destructive",
-  "colors.success",
+  "colorPalette.background",
+  "colorPalette.textColors.base",
+  "colorPalette.textColors.muted",
+  "colorPalette.textColors.faint",
+  "colorPalette.textColors.accent",
+  "colorPalette.primary",
+  "colorPalette.secondary",
   "typography.fontFamily",
   "typography.heading.h1.fontSize",
   "typography.heading.h1.fontWeight",

@@ -9,8 +9,10 @@ const sizeStyles = {
 } as const;
 
 const colorStyles = {
-  default: "text-primary",
+  default: "text-foreground",
   muted: "text-muted-foreground",
+  faint: "text-faint-foreground",
+  accent: "text-accent",
 } as const;
 
 export interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {

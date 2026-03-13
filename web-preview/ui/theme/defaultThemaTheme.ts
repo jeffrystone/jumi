@@ -1,19 +1,16 @@
 import type { ThemaTheme } from "./themeSchema";
 
 export const defaultThemaTheme: ThemaTheme = {
-  colors: {
+  colorPalette: {
     background: "0 0% 100%",
-    foreground: "222.2 84% 4.9%",
+    textColors: {
+      base: "222.2 84% 4.9%",
+      muted: "215.4 16.3% 46.9%",
+      faint: "215 20.2% 65.1%",
+      accent: "221.2 83.2% 53.3%",
+    },
     primary: "221.2 83.2% 53.3%",
-    "primary-foreground": "210 40% 98%",
     secondary: "210 40% 96.1%",
-    "secondary-foreground": "222.2 47.4% 11.2%",
-    accent: "210 40% 96.1%",
-    muted: "210 40% 96.1%",
-    border: "214.3 31.8% 91.4%",
-    ring: "221.2 83.2% 53.3%",
-    destructive: "0 84.2% 60.2%",
-    success: "142.1 70.6% 45.3%",
   },
   typography: {
     fontFamily: "Inter, system-ui, sans-serif",

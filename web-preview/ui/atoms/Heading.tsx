@@ -3,12 +3,12 @@ import { cn } from "@utils";
 import { THEME_VARS, cssVar } from "@/ui/theme/themeVars";
 
 const headingStyles: Record<1 | 2 | 3 | 4 | 5 | 6, string> = {
-  1: "text-4xl font-bold leading-tight tracking-tight text-primary",
-  2: "text-3xl font-semibold leading-tight text-primary",
-  3: "text-2xl font-semibold leading-snug text-primary",
-  4: "text-xl font-medium leading-snug text-primary",
-  5: "text-lg font-medium leading-normal text-primary",
-  6: "text-base font-medium leading-normal text-primary",
+  1: "text-4xl font-bold leading-tight tracking-tight text-foreground",
+  2: "text-3xl font-semibold leading-tight text-foreground",
+  3: "text-2xl font-semibold leading-snug text-foreground",
+  4: "text-xl font-medium leading-snug text-foreground",
+  5: "text-lg font-medium leading-normal text-foreground",
+  6: "text-base font-medium leading-normal text-foreground",
 };
 
 export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
