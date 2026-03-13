@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@utils";
+import { THEME_VARS, cssVar } from "@/ui/theme/themeVars";
 
 export interface GridProps extends React.HTMLAttributes<HTMLDivElement> {
   cols: number;
@@ -23,7 +24,7 @@ export function Grid({
         display: "grid",
         gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))`,
         gridTemplateRows: rows ? `repeat(${rows}, minmax(0, 1fr))` : undefined,
-        gap: gap ?? "var(--gap)",
+        gap: gap ?? cssVar(THEME_VARS.gap),
         ...style,
       }}
       {...props}

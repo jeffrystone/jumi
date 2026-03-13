@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@utils";
+import { THEME_VARS, cssVar } from "@/ui/theme/themeVars";
 
 const sizeStyles = {
   sm: "text-sm",
@@ -25,6 +26,7 @@ const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
       color = "default",
       as: Tag = "p",
       className,
+      style,
       children,
       ...props
     },
@@ -33,6 +35,11 @@ const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
     <Tag
       ref={ref as React.Ref<HTMLParagraphElement>}
       className={cn(sizeStyles[size], colorStyles[color], className)}
+      style={{
+        fontSize: cssVar(THEME_VARS.bodyFontSize),
+        fontWeight: cssVar(THEME_VARS.bodyFontWeight),
+        ...style,
+      }}
       {...props}
     >
       {children}

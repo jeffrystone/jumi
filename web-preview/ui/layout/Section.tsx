@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@utils";
+import { THEME_VARS, cssVar } from "@/ui/theme/themeVars";
 
 export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
   as?: "section" | "div";
@@ -15,7 +16,7 @@ export function Section({
   return (
     <Tag
       className={cn(className)}
-      style={{ paddingBlock: "var(--section-padding)", ...style }}
+      style={{ paddingBlock: cssVar(THEME_VARS.sectionPadding), ...style }}
       {...props}
     >
       {children}

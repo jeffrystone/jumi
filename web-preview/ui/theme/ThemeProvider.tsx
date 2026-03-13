@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-
-type ThemePrimitive = string | number;
-type ThemeCategory = Record<string, ThemePrimitive>;
-export type Theme = Record<string, ThemePrimitive | ThemeCategory>;
+import { buildThemeVarEntries } from "./themeAdapter";
+import type { Theme } from "./themeSchema";
+export type { Theme } from "./themeSchema";
 
 export interface ThemeProviderProps {
   theme: Theme;
@@ -13,29 +12,15 @@ export interface ThemeProviderProps {
 
 function setThemeVars(theme: Theme): void {
   const root = document.documentElement;
-
-  Object.entries(theme).forEach(([category, values]) => {
-    if (values !== null && typeof values === "object") {
-      Object.entries(values).forEach(([key, value]) => {
-        root.style.setProperty(`--${category}-${key}`, String(value));
-      });
-      return;
-    }
-    root.style.setProperty(`--${category}`, String(values));
+  buildThemeVarEntries(theme).forEach(({ key, value }) => {
+    root.style.setProperty(`--${key}`, String(value));
   });
 }
 
 function removeThemeVars(theme: Theme): void {
   const root = document.documentElement;
-
-  Object.entries(theme).forEach(([category, values]) => {
-    if (values !== null && typeof values === "object") {
-      Object.keys(values).forEach((key) => {
-        root.style.removeProperty(`--${category}-${key}`);
-      });
-      return;
-    }
-    root.style.removeProperty(`--${category}`);
+  buildThemeVarEntries(theme).forEach(({ key }) => {
+    root.style.removeProperty(`--${key}`);
   });
 }
 

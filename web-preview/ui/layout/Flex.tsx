@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@utils";
+import { THEME_VARS, cssVar } from "@/ui/theme/themeVars";
 
 export interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
   direction?: "row" | "column";
@@ -28,7 +29,7 @@ export function Flex({
         alignItems: align,
         justifyContent: justify,
         flexWrap: wrap ? "wrap" : "nowrap",
-        gap: gap ?? "var(--gap)",
+        gap: gap ?? cssVar(THEME_VARS.gap),
         ...style,
       }}
       {...props}

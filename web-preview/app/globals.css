@@ -18,10 +18,26 @@
     --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+    --success: 142.1 70.6% 45.3%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.5rem;
+    --gap: 1rem;
+    --section-padding: 4rem;
+    --container-width: 1200px;
+    --font-family: Inter, system-ui, sans-serif;
+    --h1-font-size: 3rem;
+    --h1-font-weight: 700;
+    --h2-font-size: 2.25rem;
+    --h2-font-weight: 600;
+    --h3-font-size: 1.5rem;
+    --h3-font-weight: 600;
+    --body-font-size: 1rem;
+    --body-font-weight: 400;
+    --button-font-size: 1rem;
+    --button-font-weight: 500;
+    --image-style: default;
   }
 
   .dark {
@@ -50,4 +66,5 @@
 body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: var(--font-family);
 }

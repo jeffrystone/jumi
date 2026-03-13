@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@utils";
+import { THEME_VARS, cssVar } from "@/ui/theme/themeVars";
 
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   maxWidth?: string;
@@ -15,7 +16,7 @@ export function Container({
   return (
     <div
       className={cn("mx-auto w-full", className)}
-      style={{ maxWidth: maxWidth ?? "var(--container-width)", ...style }}
+      style={{ maxWidth: maxWidth ?? cssVar(THEME_VARS.containerWidth), ...style }}
       {...props}
     >
       {children}

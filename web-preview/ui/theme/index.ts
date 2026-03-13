@@ -1,2 +1,7 @@
 export { ThemeProvider } from "./ThemeProvider";
+export { adaptThemaTheme, buildThemeVarEntries } from "./themeAdapter";
+export { ensureThemaTheme, validateThemaTheme } from "./themeSchema";
+export { defaultThemaTheme } from "./defaultThemaTheme";
+export { THEME_VARS, cssVar } from "./themeVars";
 export type { Theme, ThemeProviderProps } from "./ThemeProvider";
+export type { ThemaTheme } from "./themeSchema";
