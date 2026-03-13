@@ -1,5 +1,5 @@
 export { ThemeProvider } from "./ThemeProvider";
-export { adaptThemaTheme, buildThemeVarEntries } from "./themeAdapter";
+export { adaptThemaTheme, buildThemeVarEntries, safeAdaptThemaTheme } from "./themeAdapter";
 export { ensureThemaTheme, validateThemaTheme } from "./themeSchema";
 export { defaultThemaTheme } from "./defaultThemaTheme";
 export { THEME_VARS, cssVar } from "./themeVars";

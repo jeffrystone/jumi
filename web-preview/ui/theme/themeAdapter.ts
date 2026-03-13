@@ -85,3 +85,17 @@ export function buildThemeVarEntries(theme: Theme): Array<{ key: string; value: 
 export function adaptThemaTheme(rawTheme: unknown): Theme {
   return ensureThemaTheme(rawTheme) as unknown as Theme;
 }
+
+export interface ThemeParseResult {
+  theme: Theme | null;
+  error: string | null;
+}
+
+export function safeAdaptThemaTheme(rawTheme: unknown): ThemeParseResult {
+  try {
+    return { theme: adaptThemaTheme(rawTheme), error: null };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    return { theme: null, error: message };
+  }
+}
