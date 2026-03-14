@@ -11,7 +11,8 @@ export default function TemplateAtomPreviewPage() {
         <p style={{ margin: "8px 0 0", fontSize: "14px", color: "var(--color-text-muted)" }}>
           Темы как в themekit-slider: из <code>theme_settings.json</code> → переключатель сверху.
           В каждой ячейке — инжект через <code>buildScopedThemeVars</code> (цвета, градиент фона, шрифты).
-          Пары navbar↔hero — <code>templatePairMapper</code>.
+          Сверху сетки — образцы <code>templateA</code> и <code>templateB</code> (<code>templates/samples/</code>).
+          Ниже — пары navbar↔hero (<code>templatePairMapper</code>).
         </p>
       </header>
       <TemplateAtomPreviewGrid models={models} />

@@ -40,6 +40,728 @@
   },
   "data": [
       {
+        "pairType": "Dvor Community",
+        "fontHeading": "Golos Text",
+        "fontBody": "PT Sans",
+        "sectors": ["Дворовые сообщества", "ТСЖ", "Инициативные группы", "Городские активисты"],
+        "tone": ["дружелюбный", "открытый", "доверительный", "народный"],
+        "audienceType": ["B2C", "B2G"],
+        "colorPalette": {
+          "background": "86 18% 70%",
+          "textColors": {
+            "base": "0 0% 20%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "158 32% 87%"
+          },
+          "primary": "86 18% 70%",
+          "secondary": "158 32% 87%",
+          "primaryHover": "86 20% 62%",
+          "primaryDisabled": "86 10% 80%",
+          "secondaryHover": "158 34% 79%",
+          "secondaryDisabled": "158 15% 92%"
+        },
+        "rationale": "Golos Text — современный отечественный шрифт, изначально разработанный для госсайтов и ставший стандартом «доброго» веба. Он вызывает доверие и выглядит открыто [citation:4]. PT Sans — ещё одна классика российской типографики, обеспечивающая отличную читаемость. Цветовая палитра вдохновлена природными спокойными тонами [citation:5], что создаёт атмосферу уюта и безопасности во дворе.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(86 18% 70%), hsl(86 20% 62%))",
+          "secondary": "linear-gradient(135deg, hsl(158 32% 87%), hsl(158 34% 79%))",
+          "text": "linear-gradient(90deg, hsl(86 18% 70%), hsl(158 32% 87%))",
+          "background": "linear-gradient(180deg, hsl(86 18% 70%), hsl(86 18% 60%))"
+        },
+        "link": {
+          "color": "158 32% 87%",
+          "hover": "158 34% 79%",
+          "visited": "158 30% 70%"
+        },
+        "accentWeight": "500",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Clean Yard",
+        "fontHeading": "Oswald",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Уборка территории", "Эко-активизм", "Субботники", "Раздельный сбор"],
+        "tone": ["активный", "чистый", "организованный", "современный"],
+        "audienceType": ["B2C", "NGO"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "90 80% 45%"
+          },
+          "primary": "90 80% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "90 82% 37%",
+          "primaryDisabled": "90 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Oswald с его конденсированными формами идеально подходит для коротких, сильных призывов к действию (например, «Убери двор!»). Для видео на природные темы он также хорошо подходит [citation:9]. Source Sans Pro остаётся чистым и функциональным для описания проектов. Яркий зелёный акцент (Wasabi) символизирует экологическую активность и привлекает внимание [citation:10].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(90 80% 45%), hsl(90 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(90 80% 45%), hsl(0 0% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "90 80% 45%",
+          "hover": "90 82% 37%",
+          "visited": "90 60% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Children Playground",
+        "fontHeading": "Quicksand",
+        "fontBody": "Nunito",
+        "sectors": ["Детские площадки", "Дворовый досуг", "Семейные проекты", "Развивающие центры"],
+        "tone": ["игривый", "дружеский", "безопасный", "уютный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 30% 95%",
+          "textColors": {
+            "base": "30 10% 20%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "25 80% 60%"
+          },
+          "primary": "25 80% 60%",
+          "secondary": "30 40% 80%",
+          "primaryHover": "25 82% 52%",
+          "primaryDisabled": "25 25% 80%",
+          "secondaryHover": "30 42% 72%",
+          "secondaryDisabled": "30 22% 96%"
+        },
+        "rationale": "Для детских сайтов важны крупные, простые и читаемые шрифты, а также яркие, но не кричащие цвета [citation:7]. Quicksand с его округлыми формами идеально подходит для заголовков, создавая ощущение мягкости и безопасности. Nunito — дружелюбный скруглённый гротеск, обеспечивающий отличную читаемость основного текста. Тёплая палитра с оранжевым акцентом создаёт радостное настроение [citation:7].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+          "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(30 42% 72%))",
+          "text": "linear-gradient(90deg, hsl(25 80% 60%), hsl(30 40% 80%))",
+          "background": "linear-gradient(180deg, hsl(40 30% 95%), hsl(30 40% 80%))"
+        },
+        "link": {
+          "color": "25 80% 60%",
+          "hover": "25 82% 52%",
+          "visited": "25 60% 45%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Coastal Eco",
+        "fontHeading": "Open Sans Light Italic",
+        "fontBody": "Open Sans Regular",
+        "sectors": ["Прибрежные территории", "Эко-тропы", "Водоёмы", "Заповедники"],
+        "tone": ["спокойный", "природный", "свежий", "медитативный"],
+        "audienceType": ["B2C", "NGO"],
+        "colorPalette": {
+          "background": "200 30% 95%",
+          "textColors": {
+            "base": "200 10% 15%",
+            "muted": "200 10% 40%",
+            "faint": "200 10% 60%",
+            "accent": "180 50% 45%"
+          },
+          "primary": "200 30% 95%",
+          "secondary": "180 50% 45%",
+          "primaryHover": "200 32% 87%",
+          "primaryDisabled": "200 15% 98%",
+          "secondaryHover": "180 52% 37%",
+          "secondaryDisabled": "180 25% 70%"
+        },
+        "rationale": "Open Sans Light Italic — идеальный выбор для видео и текстов на темы озёр и рек, он передаёт лёгкость и движение воды [citation:9]. В паре с обычным Open Sans создаёт чистую, единую типографическую систему. Цветовая гамма, напоминающая об океане и воде, идеально подходит для проектов, связанных с водоёмами и экологией [citation:10].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 30% 95%), hsl(200 32% 87%))",
+          "secondary": "linear-gradient(135deg, hsl(180 50% 45%), hsl(180 52% 37%))",
+          "text": "linear-gradient(90deg, hsl(200 30% 95%), hsl(180 50% 45%))",
+          "background": "linear-gradient(180deg, hsl(200 30% 95%), hsl(200 30% 85%))"
+        },
+        "link": {
+          "color": "180 50% 45%",
+          "hover": "180 52% 37%",
+          "visited": "180 40% 35%"
+        },
+        "accentWeight": "400",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Forest & Sea",
+        "fontHeading": "Oswald Bold",
+        "fontBody": "Oswald Light",
+        "sectors": ["Природные парки", "Эко-тропы", "Морские побережья", "Туризм"],
+        "tone": ["контрастный", "природный", "динамичный", "современный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 100% 45%"
+          },
+          "primary": "210 100% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "210 100% 35%",
+          "primaryDisabled": "210 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Oswald Bold и Oswald Light — идеальная пара для видео на темы природы (горы, лес, водоёмы) [citation:9]. Жирное начертание создаёт мощные заголовки, а светлое — элегантный, читаемый текст. Синий акцент символизирует чистоту воды и неба, создавая освежающий образ [citation:10].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 100% 45%), hsl(210 100% 35%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(210 100% 45%), hsl(0 0% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "210 100% 45%",
+          "hover": "210 100% 35%",
+          "visited": "210 70% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Wave Motion",
+        "fontHeading": "Unbounded",
+        "fontBody": "Montserrat",
+        "sectors": ["Морские инициативы", "Дворовые фонтаны", "Водные проекты", "Креативные пространства"],
+        "tone": ["динамичный", "современный", "волнообразный", "креативный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "200 80% 45%"
+          },
+          "primary": "200 80% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "200 82% 37%",
+          "primaryDisabled": "200 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Вдохновлено айдентикой WeSail, где концепция «Искажения» и волны стали ключевым визуальным кодом [citation:3]. Unbounded — широкий и «громкий» вариативный шрифт, который может имитировать динамику волн в заголовках. Montserrat создаёт чистый, современный фон. Синий акцент символизирует воду и движение.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 80% 45%), hsl(200 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(200 80% 45%), hsl(0 0% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "200 80% 45%",
+          "hover": "200 82% 37%",
+          "visited": "200 60% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Abyssal Depths",
+        "fontHeading": "Space Grotesk",
+        "fontBody": "Inter",
+        "sectors": ["Глубоководные исследования", "Морские игры", "Океанологические стартапы", "Крипто-проекты"],
+        "tone": ["загадочный", "технологичный", "глубинный", "инновационный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "210 80% 20%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "180 80% 45%"
+          },
+          "primary": "180 80% 45%",
+          "secondary": "210 30% 30%",
+          "primaryHover": "180 82% 37%",
+          "primaryDisabled": "180 30% 60%",
+          "secondaryHover": "210 32% 37%",
+          "secondaryDisabled": "210 16.5% 45%"
+        },
+        "rationale": "Вдохновлено глубоководными гидротермальными источниками — Pressureized Depth (#0A2F5C) [citation:1]. Space Grotesk с его моноширинным оттенком передаёт технологичность исследований, а Inter остаётся функциональным фоном. Бирюзовый акцент имитирует свечение глубоководных организмов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(180 80% 45%), hsl(180 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 30%), hsl(210 32% 37%))",
+          "text": "linear-gradient(90deg, hsl(180 80% 45%), hsl(180 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(210 80% 20%), hsl(210 80% 15%))"
+        },
+        "link": {
+          "color": "180 80% 45%",
+          "hover": "180 82% 37%",
+          "visited": "180 60% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Transformative Teal",
+        "fontHeading": "Montserrat",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Морские технологии", "Устойчивое развитие", "Океанские стартапы", "Эко-бренды"],
+        "tone": ["инновационный", "чистый", "трансформационный", "спокойный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "195 70% 35%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 80%",
+            "faint": "0 0% 60%",
+            "accent": "30 80% 50%"
+          },
+          "primary": "195 70% 35%",
+          "secondary": "30 80% 50%",
+          "primaryHover": "195 72% 27%",
+          "primaryDisabled": "195 30% 60%",
+          "secondaryHover": "30 82% 42%",
+          "secondaryDisabled": "30 30% 70%"
+        },
+        "rationale": "Ключевой цвет 2026 года — Transformative Teal (#1C6E8C), вызывающий в памяти таинственное свечение глубоководных экосистем [citation:1]. Montserrat придаёт заголовкам современную геометричность, а Source Sans Pro обеспечивает чистую читаемость. Тёплый оранжевый акцент создаёт контраст, символизирующий жизнь в океане.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(195 70% 35%), hsl(195 72% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(30 80% 50%), hsl(30 82% 42%))",
+          "text": "linear-gradient(90deg, hsl(195 70% 35%), hsl(30 80% 50%))",
+          "background": "linear-gradient(180deg, hsl(195 70% 35%), hsl(195 70% 25%))"
+        },
+        "link": {
+          "color": "30 80% 50%",
+          "hover": "30 82% 42%",
+          "visited": "30 60% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Coastal Minimal",
+        "fontHeading": "Josefin Sans",
+        "fontBody": "Quicksand",
+        "sectors": ["Прибрежные курорты", "Спа-салоны", "Эко-отели", "Морской лайфстайл"],
+        "tone": ["спокойный", "минималистичный", "чистый", "воздушный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "86 18% 70%",
+          "textColors": {
+            "base": "0 0% 20%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "158 32% 87%"
+          },
+          "primary": "86 18% 70%",
+          "secondary": "158 32% 87%",
+          "primaryHover": "86 20% 62%",
+          "primaryDisabled": "86 10% 80%",
+          "secondaryHover": "158 34% 79%",
+          "secondaryDisabled": "158 15% 92%"
+        },
+        "rationale": "Вдохновлено прибрежным минимализмом — Fossil Sand (Pantone 13-0807) и Pelagic Gray (RAL 7038) [citation:1]. Josefin Sans с винтажным оттенком идеально подходит для заголовков, напоминая о классических морских картах [citation:3]. Quicksand добавляет мягкости и уюта основному тексту, создавая атмосферу спокойного побережья.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(86 18% 70%), hsl(86 20% 62%))",
+          "secondary": "linear-gradient(135deg, hsl(158 32% 87%), hsl(158 34% 79%))",
+          "text": "linear-gradient(90deg, hsl(86 18% 70%), hsl(158 32% 87%))",
+          "background": "linear-gradient(180deg, hsl(86 18% 70%), hsl(86 18% 60%))"
+        },
+        "link": {
+          "color": "158 32% 87%",
+          "hover": "158 34% 79%",
+          "visited": "158 30% 70%"
+        },
+        "accentWeight": "500",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Pirate Adventure",
+        "fontHeading": "Pirata One",
+        "fontBody": "Roboto Slab",
+        "sectors": ["Пиратские игры", "Крипто-игры", "Приключенческие проекты", "Фестивали"],
+        "tone": ["авантюрный", "смелый", "исторический", "дерзкий"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "10 70% 25%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "45 80% 50%"
+          },
+          "primary": "10 70% 25%",
+          "secondary": "45 80% 50%",
+          "primaryHover": "10 72% 20%",
+          "primaryDisabled": "10 30% 50%",
+          "secondaryHover": "45 82% 42%",
+          "secondaryDisabled": "45 30% 70%"
+        },
+        "rationale": "Pirata One — смелый шрифт, вдохновлённый пиратской эстетикой, идеально подходит для заголовков приключенческих игр [citation:3]. Roboto Slab добавляет прочности и читаемости основному тексту. Цветовая гамма вдохновлена Lava Red (#9A2E22) из гидротермальных источников [citation:1] и золотом сокровищ.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(10 70% 25%), hsl(10 72% 20%))",
+          "secondary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 82% 42%))",
+          "text": "linear-gradient(90deg, hsl(10 70% 25%), hsl(45 80% 50%))",
+          "background": "linear-gradient(180deg, hsl(10 70% 25%), hsl(10 70% 15%))"
+        },
+        "link": {
+          "color": "45 80% 50%",
+          "hover": "45 82% 42%",
+          "visited": "45 60% 40%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Coral Reef",
+        "fontHeading": "DM Serif Display",
+        "fontBody": "Work Sans",
+        "sectors": ["Морские заповедники", "Эко-проекты", "Образовательные платформы", "Beauty"],
+        "tone": ["живой", "органичный", "защищающий", "яркий"],
+        "audienceType": ["B2C", "NGO"],
+        "colorPalette": {
+          "background": "200 50% 95%",
+          "textColors": {
+            "base": "200 10% 15%",
+            "muted": "200 10% 40%",
+            "faint": "200 10% 60%",
+            "accent": "350 70% 50%"
+          },
+          "primary": "350 70% 50%",
+          "secondary": "180 50% 50%",
+          "primaryHover": "350 72% 42%",
+          "primaryDisabled": "350 30% 70%",
+          "secondaryHover": "180 52% 42%",
+          "secondaryDisabled": "180 25% 70%"
+        },
+        "rationale": "Вдохновлено коралловыми рифами и технологией ReefBrick [citation:1]. DM Serif Display привносит элегантность заголовкам, а Work Sans остаётся чистым фоном. Яркий коралловый акцент символизирует жизнь рифа, а бирюзовый добавляет глубины океана.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(350 70% 50%), hsl(180 50% 50%))",
+          "secondary": "linear-gradient(135deg, hsl(180 50% 50%), hsl(350 70% 50%))",
+          "text": "linear-gradient(90deg, hsl(350 70% 50%), hsl(180 50% 50%))",
+          "background": "linear-gradient(180deg, hsl(200 50% 95%), hsl(180 50% 50%))"
+        },
+        "link": {
+          "color": "350 70% 50%",
+          "hover": "350 72% 42%",
+          "visited": "350 50% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Nautical Vintage",
+        "fontHeading": "Playfair Display",
+        "fontBody": "Lato",
+        "sectors": ["Яхт-клубы", "Премиальные курорты", "Морские музеи", "Исторические проекты"],
+        "tone": ["классический", "элегантный", "премиальный", "вневременной"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "210 10% 20%",
+            "muted": "210 10% 40%",
+            "faint": "210 10% 60%",
+            "accent": "45 70% 45%"
+          },
+          "primary": "45 70% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "45 72% 37%",
+          "primaryDisabled": "45 30% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Playfair Display — элегантная антиква, вызывающая ассоциации с классическими морскими путешествиями и роскошными яхтами [citation:3]. Lato добавляет современной чистоты. Золотой акцент символизирует латунь корабельных приборов и закаты над морем.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 70% 45%), hsl(45 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(45 70% 45%), hsl(210 30% 60%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "45 70% 45%",
+          "hover": "45 72% 37%",
+          "visited": "45 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Ghost Nets",
+        "fontHeading": "Special Elite",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Эко-активизм", "Переработка пластика", "Социальные проекты", "Арт-инсталляции"],
+        "tone": ["экологичный", "текстурный", "аутентичный", "осознанный"],
+        "audienceType": ["B2C", "NGO"],
+        "colorPalette": {
+          "background": "158 9% 91%",
+          "textColors": {
+            "base": "200 10% 20%",
+            "muted": "200 10% 40%",
+            "faint": "200 10% 60%",
+            "accent": "180 80% 40%"
+          },
+          "primary": "158 9% 91%",
+          "secondary": "180 80% 40%",
+          "primaryHover": "158 11% 83%",
+          "primaryDisabled": "158 5% 95%",
+          "secondaryHover": "180 82% 32%",
+          "secondaryDisabled": "180 30% 70%"
+        },
+        "rationale": "Вдохновлено коллекцией Phantom от Karu, где переработанные рыболовные сети переплетаются с фосфоресцирующими нитями [citation:1]. Special Elite имитирует винтажную печатную машинку [citation:3], создавая ощущение подлинности и документальности. Бирюзовый акцент символизирует свечение Noctiluca scintillans.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(158 9% 91%), hsl(158 11% 83%))",
+          "secondary": "linear-gradient(135deg, hsl(180 80% 40%), hsl(180 82% 32%))",
+          "text": "linear-gradient(90deg, hsl(158 9% 91%), hsl(180 80% 40%))",
+          "background": "linear-gradient(180deg, hsl(158 9% 91%), hsl(158 9% 81%))"
+        },
+        "link": {
+          "color": "180 80% 40%",
+          "hover": "180 82% 32%",
+          "visited": "180 60% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Stormy Seas",
+        "fontHeading": "Merriweather",
+        "fontBody": "Fjalla One",
+        "sectors": ["Морские приключения", "Экстремальный спорт", "Сёрф-бренды", "Игры о выживании"],
+        "tone": ["мощный", "драматичный", "энергичный", "брутальный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "210 30% 20%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "30 90% 50%"
+          },
+          "primary": "210 30% 20%",
+          "secondary": "30 90% 50%",
+          "primaryHover": "210 32% 15%",
+          "primaryDisabled": "210 15% 50%",
+          "secondaryHover": "30 92% 42%",
+          "secondaryDisabled": "30 30% 70%"
+        },
+        "rationale": "Merriweather — крепкая и читаемая антиква, идеальная для рассказов о морских приключениях [citation:3]. Fjalla One с его конденсированными формами создаёт мощные заголовки, как команды капитана в шторм. Оранжевый акцент — цвет спасательных жилетов и маяков в бушующем море.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 30% 20%), hsl(210 32% 15%))",
+          "secondary": "linear-gradient(135deg, hsl(30 90% 50%), hsl(30 92% 42%))",
+          "text": "linear-gradient(90deg, hsl(210 30% 20%), hsl(30 90% 50%))",
+          "background": "linear-gradient(180deg, hsl(210 30% 20%), hsl(210 30% 10%))"
+        },
+        "link": {
+          "color": "30 90% 50%",
+          "hover": "30 92% 42%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Black Gold Luxury",
+        "fontHeading": "Playfair Display",
+        "fontBody": "Montserrat",
+        "sectors": ["Ювелирные бренды", "Люксовые бутики", "Премиальные мероприятия", "Часовые дома"],
+        "tone": ["роскошный", "драматичный", "элегантный", "вневременной"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 5%",
+          "textColors": {
+            "base": "0 0% 95%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "45 100% 50%"
+          },
+          "primary": "45 100% 50%",
+          "secondary": "0 0% 15%",
+          "primaryHover": "45 100% 40%",
+          "primaryDisabled": "45 30% 30%",
+          "secondaryHover": "0 0% 25%",
+          "secondaryDisabled": "0 0% 20%"
+        },
+        "rationale": "Классическое сочетание глубокого чёрного фона и насыщенного золотого акцента из тренда Clubroom Contrast [citation:1]. Playfair Display добавляет заголовкам благородную элегантность классических антикв, а Montserrat создаёт современный, чистый контраст в основном тексте. Золото используется для кнопок CTA и ключевых акцентов, создавая ощущение премиальности и исключительности.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 100% 50%), hsl(45 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 15%))",
+          "text": "linear-gradient(90deg, hsl(45 100% 50%), hsl(45 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 5%), hsl(0 0% 15%))"
+        },
+        "link": {
+          "color": "45 100% 50%",
+          "hover": "45 100% 40%",
+          "visited": "45 70% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Diamond Light",
+        "fontHeading": "Cormorant SC",
+        "fontBody": "Raleway",
+        "sectors": ["Ювелирные салоны", "Бриллианты", "Свадебные украшения", "Премиум-подарки"],
+        "tone": ["сияющий", "чистый", "элегантный", "воздушный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "45 70% 55%"
+          },
+          "primary": "45 70% 55%",
+          "secondary": "0 0% 95%",
+          "primaryHover": "45 72% 45%",
+          "primaryDisabled": "45 30% 70%",
+          "secondaryHover": "0 0% 90%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Вдохновлено трендом Cloud Dancer — чистым, воздушным белым цветом, символизирующим бриллианты, жемчуг и опалы [citation:2][citation:8]. Cormorant SC с его плотными формами добавляет заголовкам изысканность и премиальность, а тонкий Raleway создаёт ощущение лёгкости и сияния в основном тексте. Золотой акцент добавляет тепла и роскоши.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 70% 55%), hsl(45 72% 45%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 95%))",
+          "text": "linear-gradient(90deg, hsl(45 70% 55%), hsl(45 72% 45%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 95%))"
+        },
+        "link": {
+          "color": "45 70% 55%",
+          "hover": "45 72% 45%",
+          "visited": "45 50% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Mermaidcore Iridescent",
+        "fontHeading": "Quicksand",
+        "fontBody": "Literata",
+        "sectors": ["Жемчужные украшения", "Морская тематика", "Фантазийные коллекции", "Beauty"],
+        "tone": ["мерцающий", "волшебный", "переливчатый", "загадочный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "200 30% 95%",
+          "textColors": {
+            "base": "200 10% 15%",
+            "muted": "200 10% 40%",
+            "faint": "200 10% 60%",
+            "accent": "280 40% 60%"
+          },
+          "primary": "280 40% 60%",
+          "secondary": "180 30% 70%",
+          "primaryHover": "280 42% 50%",
+          "primaryDisabled": "280 20% 70%",
+          "secondaryHover": "180 32% 60%",
+          "secondaryDisabled": "180 15% 85%"
+        },
+        "rationale": "Mermaidcore — тренд 2026 с переливчатыми аквамариновыми, жемчужными пурпурными и мерцающими оттенками, имитирующими игру света на воде [citation:1]. Quicksand с мягкими округлыми формами идеально подходит для заголовков, а Literata добавляет тексту академическую глубину. Градиенты создают ощущение движения и переливов, как у жемчуга или опалов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(280 40% 60%), hsl(180 30% 70%))",
+          "secondary": "linear-gradient(135deg, hsl(180 30% 70%), hsl(280 40% 60%))",
+          "text": "linear-gradient(90deg, hsl(280 40% 60%), hsl(180 30% 70%))",
+          "background": "linear-gradient(180deg, hsl(200 30% 95%), hsl(180 30% 70%))"
+        },
+        "link": {
+          "color": "280 40% 60%",
+          "hover": "280 42% 50%",
+          "visited": "280 30% 45%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Transformative Teal",
+        "fontHeading": "Unbounded",
+        "fontBody": "Inter",
+        "sectors": ["Современные украшения", "Дизайнерские коллекции", "Технологичный люкс", "Футуристичные бренды"],
+        "tone": ["трансформационный", "глубокий", "инновационный", "загадочный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "190 50% 30%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 80%",
+            "faint": "0 0% 60%",
+            "accent": "45 100% 55%"
+          },
+          "primary": "190 50% 30%",
+          "secondary": "45 100% 55%",
+          "primaryHover": "190 52% 25%",
+          "primaryDisabled": "190 20% 60%",
+          "secondaryHover": "45 100% 45%",
+          "secondaryDisabled": "45 30% 70%"
+        },
+        "rationale": "Transformative Teal — ключевой тренд 2026 по версии WGSN, символизирующий перемены и инновации, идеально подходит для бирюзы, александрита и лагунных турмалинов [citation:2][citation:6]. Unbounded с его широкими формами добавляет смелости заголовкам, а Inter обеспечивает функциональность. Золотой акцент создаёт драматичный контраст, подчёркивая глубину сине-зелёного фона.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(190 50% 30%), hsl(45 100% 55%))",
+          "secondary": "linear-gradient(135deg, hsl(45 100% 55%), hsl(190 50% 30%))",
+          "text": "linear-gradient(90deg, hsl(190 50% 30%), hsl(45 100% 55%))",
+          "background": "linear-gradient(180deg, hsl(190 50% 30%), hsl(190 52% 25%))"
+        },
+        "link": {
+          "color": "45 100% 55%",
+          "hover": "45 100% 45%",
+          "visited": "45 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Platinum Ice",
+        "fontHeading": "Space Grotesk",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Платиновые украшения", "Современный минимализм", "Технологичные аксессуары", "Премиум-гаджеты"],
+        "tone": ["холодный", "технологичный", "чистый", "прецизионный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "180 10% 70%"
+          },
+          "primary": "180 10% 70%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "180 10% 60%",
+          "primaryDisabled": "180 5% 80%",
+          "secondaryHover": "0 0% 85%",
+          "secondaryDisabled": "0 0% 95%"
+        },
+        "rationale": "Платиновый металлик с холодным отливом, вдохновлённый белыми металлами — платиной, белым золотом и серебром [citation:2][citation:3]. Space Grotesk с его моноширинным оттенком добавляет технологичности и точности, а Source Sans Pro остаётся чистым и читаемым фоном. Минималистичная палитра подчёркивает прецизионность и современную элегантность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(180 10% 70%), hsl(180 10% 60%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 0% 85%))",
+          "text": "linear-gradient(90deg, hsl(180 10% 70%), hsl(180 10% 60%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "180 10% 70%",
+          "hover": "180 10% 60%",
+          "visited": "180 10% 50%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
         "pairType": "Soviet Modernism",
         "fontHeading": "Soyuz Grotesk",
         "fontBody": "PT Serif",

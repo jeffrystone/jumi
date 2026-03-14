@@ -1,0 +1,41 @@
+{
+  "layout": "grid-2x4",
+  "atoms": [
+    {
+      "ref": "templateA_title",
+      "type": "atom.heading",
+      "value": "templateA",
+      "col": 1,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "templateA_sub",
+      "type": "atom.subheading",
+      "value": "Готовый образец: текст слева, визуал справа.",
+      "col": 1,
+      "row": 2,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "templateA_cta",
+      "type": "atom.button",
+      "value": "Основное действие",
+      "col": 1,
+      "row": 3,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "templateA_visual",
+      "type": "atom.image",
+      "value": "Блок A",
+      "col": 2,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 3
+    }
+  ]
+}

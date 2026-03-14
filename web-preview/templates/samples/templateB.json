@@ -1,0 +1,41 @@
+{
+  "layout": "grid-2x4",
+  "atoms": [
+    {
+      "ref": "templateB_visual",
+      "type": "atom.image",
+      "value": "Блок B",
+      "col": 1,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 3
+    },
+    {
+      "ref": "templateB_title",
+      "type": "atom.heading",
+      "value": "templateB",
+      "col": 2,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "templateB_sub",
+      "type": "atom.subheading",
+      "value": "Готовый образец: визуал слева, контент справа.",
+      "col": 2,
+      "row": 2,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "templateB_cta",
+      "type": "atom.button",
+      "value": "Вторичное действие",
+      "col": 2,
+      "row": 3,
+      "colSpan": 1,
+      "rowSpan": 1
+    }
+  ]
+}

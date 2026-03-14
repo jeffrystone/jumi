@@ -7,6 +7,7 @@ import {
   buildScopedThemeVars,
   type ThemePreviewModel,
 } from "@/render-kit/models/themePreviewModel";
+import { SAMPLE_TEMPLATES } from "@/render-kit/models/sampleTemplates";
 import { getTemplatePairs, type TemplatePair } from "@/render-kit/models/templatePairMapper";
 
 function PairCell({
@@ -54,7 +55,7 @@ function PairCell({
       style={{
         display: "flex",
         flexDirection: "column",
-        minHeight: isGrid ? "260px" : "min(88vh, 900px)",
+        minHeight: isGrid ? "200px" : "min(88vh, 900px)",
         overflow: "hidden",
         ...scoped,
       }}
@@ -62,36 +63,51 @@ function PairCell({
       <div
         className={
           isGrid
-            ? "border-b border-secondary px-3 py-2 text-xs text-muted-foreground"
+            ? "border-b border-secondary px-2 py-1 text-[10px] leading-tight text-muted-foreground"
             : "border-b border-white/10 px-4 py-3 text-sm text-muted-foreground"
         }
         style={{ fontFamily: model.bodyFamily }}
       >
-        {title} · <span className="text-faint-foreground">{model.pairType}</span>
+        {title} · <span className="text-faint-foreground line-clamp-2">{model.pairType}</span>
         {isGrid ? (
-          <span className="ml-2 text-faint-foreground">· клик — на весь экран</span>
+          <span className="ml-1 text-faint-foreground">· клик — полный экран</span>
         ) : null}
       </div>
       <div
-        className="flex min-h-0 flex-1 flex-col"
+        className={isGrid ? "min-h-0 flex-1 overflow-hidden" : "flex min-h-0 flex-1 flex-col"}
         style={{ fontFamily: model.bodyFamily }}
       >
-        <NavbarRenderer
-          template={pair.navbar}
-          className={
-            isGrid
-              ? "!py-3 [&_[class*='grid']]:!min-h-[100px] [&_[class*='grid']]:place-items-center [&_[class*='grid']]:justify-items-center"
-              : "!py-6 [&_[class*='grid']]:!min-h-[140px] [&_[class*='grid']]:place-items-center [&_[class*='grid']]:justify-items-center"
-          }
-        />
-        <HeroRenderer
-          template={pair.hero}
-          className={
-            isGrid
-              ? "!py-4 flex-1 [&_[class*='grid']]:!min-h-[100px] [&_[class*='grid']]:place-items-center"
-              : "!flex-1 !py-8 [&_[class*='grid']]:!min-h-[200px] [&_[class*='grid']]:place-items-center"
-          }
-        />
+        {isGrid ? (
+          <div
+            className="origin-top"
+            style={{
+              transform: "scale(0.68)",
+              width: "147%",
+              marginLeft: "-23.5%",
+              minHeight: "220px",
+            }}
+          >
+            <NavbarRenderer
+              template={pair.navbar}
+              className="!py-2 [&_[class*='grid']]:!min-h-[88px] [&_[class*='grid']]:place-items-center [&_[class*='grid']]:justify-items-center"
+            />
+            <HeroRenderer
+              template={pair.hero}
+              className="!py-3 [&_[class*='grid']]:!min-h-[88px] [&_[class*='grid']]:place-items-center"
+            />
+          </div>
+        ) : (
+          <>
+            <NavbarRenderer
+              template={pair.navbar}
+              className="!py-6 [&_[class*='grid']]:!min-h-[140px] [&_[class*='grid']]:place-items-center [&_[class*='grid']]:justify-items-center"
+            />
+            <HeroRenderer
+              template={pair.hero}
+              className="!flex-1 !py-8 [&_[class*='grid']]:!min-h-[200px] [&_[class*='grid']]:place-items-center"
+            />
+          </>
+        )}
       </div>
     </div>
   );
@@ -172,8 +188,60 @@ export function TemplateAtomPreviewGrid({ models }: { models: ThemePreviewModel[
         </p>
       </div>
 
+      <div className="mx-auto w-full max-w-[min(100%,1680px)] px-1">
+        <p className="mb-2 text-center text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          Образцы готовых шаблонов
+        </p>
+        <div
+          className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3 xl:grid-cols-4"
+          key={`samples-${index}`}
+        >
+          {SAMPLE_TEMPLATES.map((sample) => {
+            const scoped = {
+              ...buildScopedThemeVars(current),
+              backgroundImage: "var(--gradient-background)",
+            };
+            return (
+              <div
+                key={sample.id}
+                className="overflow-hidden rounded-lg border border-secondary shadow-sm xl:col-span-2"
+                style={{
+                  ...scoped,
+                  minHeight: "200px",
+                  fontFamily: current.bodyFamily,
+                }}
+              >
+                <div
+                  className="border-b border-secondary px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wide text-muted-foreground"
+                  style={{ fontFamily: current.bodyFamily }}
+                >
+                  {sample.label}
+                </div>
+                <div
+                  className="origin-top overflow-hidden"
+                  style={{
+                    transform: "scale(0.62)",
+                    width: "161%",
+                    marginLeft: "-30.5%",
+                    minHeight: "260px",
+                  }}
+                >
+                  <HeroRenderer
+                    template={sample.template}
+                    className="!py-3 [&_[class*='grid']]:min-h-[180px] [&_[class*='grid']]:items-start"
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <p className="mx-auto mb-2 mt-6 w-full max-w-[min(100%,1680px)] text-center text-xs font-medium uppercase tracking-wider text-muted-foreground">
+        Пары navbar + hero
+      </p>
       <div
-        className="mx-auto grid max-w-[1200px] grid-cols-1 gap-5 md:grid-cols-2"
+        className="mx-auto grid w-full max-w-[min(100%,1680px)] grid-cols-1 gap-2 px-1 sm:grid-cols-2 sm:gap-3 xl:grid-cols-4"
         key={index}
       >
         {pairs.map((pair) => (
