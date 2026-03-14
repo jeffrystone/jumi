@@ -13,6 +13,15 @@ describe("themeAdapter", () => {
 
     expect(vars.get("color-palette-primary")).toBe(defaultThemaTheme.colorPalette.primary);
     expect(vars.get("primary")).toBe(defaultThemaTheme.colorPalette.primary);
+    expect(vars.get("primary-hover")).toBe(defaultThemaTheme.colorPalette.primaryHover);
+    expect(vars.get("primary-disabled")).toBe(defaultThemaTheme.colorPalette.primaryDisabled);
+    expect(vars.get("secondary-hover")).toBe(defaultThemaTheme.colorPalette.secondaryHover);
+    expect(vars.get("secondary-disabled")).toBe(defaultThemaTheme.colorPalette.secondaryDisabled);
+    expect(vars.get("gradient-primary")).toBe(defaultThemaTheme.gradients.primary);
+    expect(vars.get("gradient-secondary")).toBe(defaultThemaTheme.gradients.secondary);
+    expect(vars.get("link-color")).toBe(defaultThemaTheme.link.color);
+    expect(vars.get("link-hover")).toBe(defaultThemaTheme.link.hover);
+    expect(vars.get("link-visited")).toBe(defaultThemaTheme.link.visited);
 
     expect(vars.get("spacing-section-padding")).toBe(defaultThemaTheme.spacing.sectionPadding);
     expect(vars.get("section-padding")).toBe(defaultThemaTheme.spacing.sectionPadding);
@@ -69,5 +78,35 @@ describe("themeAdapter", () => {
     };
     expect(normalized.colorPalette.textColors.base).toBe("222.2 84% 4.9%");
     expect(normalized.colorPalette.textColors.accent).toBe("210 40% 90%");
+  });
+
+  it("fills new fields when old colorPalette shape is passed", () => {
+    const oldShapeTheme = {
+      colorPalette: {
+        background: "0 0% 100%",
+        textColors: {
+          base: "222.2 84% 4.9%",
+          muted: "215.4 16.3% 46.9%",
+          faint: "215 20.2% 65.1%",
+          accent: "221.2 83.2% 53.3%",
+        },
+        primary: "221.2 83.2% 53.3%",
+        secondary: "210 40% 96.1%",
+      },
+      typography: defaultThemaTheme.typography,
+      spacing: defaultThemaTheme.spacing,
+      imageStyle: defaultThemaTheme.imageStyle,
+    };
+
+    const result = adaptThemaTheme(oldShapeTheme) as unknown as {
+      colorPalette: { primaryHover: string; secondaryDisabled: string };
+      gradients: { primary: string };
+      link: { color: string };
+    };
+
+    expect(result.colorPalette.primaryHover).toBe("221.2 83.2% 53.3%");
+    expect(result.colorPalette.secondaryDisabled).toBe("210 40% 96.1%");
+    expect(result.gradients.primary).toContain("linear-gradient");
+    expect(result.link.color).toBe("221.2 83.2% 53.3%");
   });
 });

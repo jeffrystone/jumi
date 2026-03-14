@@ -13,6 +13,15 @@ export const THEME_VARS = {
   bodyFontWeight: "--body-font-weight",
   buttonFontSize: "--button-font-size",
   buttonFontWeight: "--button-font-weight",
+  primaryHover: "--primary-hover",
+  primaryDisabled: "--primary-disabled",
+  secondaryHover: "--secondary-hover",
+  secondaryDisabled: "--secondary-disabled",
+  gradientPrimary: "--gradient-primary",
+  gradientSecondary: "--gradient-secondary",
+  linkColor: "--link-color",
+  linkHover: "--link-hover",
+  linkVisited: "--link-visited",
 } as const;
 
 export function cssVar(name: string): string {

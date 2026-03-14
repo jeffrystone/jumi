@@ -16,7 +16,11 @@
         "accent": "Акцентный цвет текста (ссылки, выделения, короткие акцентные фрагменты)"
       },
       "primary": "Цвет акцента (кнопки CTA, ссылки)",
-      "secondary": "Цвет второстепенных элементов (фоны карточек, рамки)"
+      "secondary": "Цвет второстепенных элементов (фоны карточек, рамки)",
+      "primaryHover": "Состояние hover для primary (обычно темнее или контрастнее)",
+      "primaryDisabled": "Состояние disabled для primary (менее насыщенный, более светлый)",
+      "secondaryHover": "Состояние hover для secondary",
+      "secondaryDisabled": "Состояние disabled для secondary"
     },
     "colorVariations": {
       "background": {
@@ -55,6 +59,43 @@
         "hue": "Диапазон для второстепенного цвета",
         "saturation": "Диапазон",
         "lightness": "Диапазон"
+      },
+      "primaryHover": {
+        "hue": "Диапазон для primary hover",
+        "saturation": "Диапазон для primary hover",
+        "lightness": "Диапазон для primary hover"
+      },
+      "primaryDisabled": {
+        "hue": "Диапазон для primary disabled",
+        "saturation": "Диапазон для primary disabled",
+        "lightness": "Диапазон для primary disabled"
+      },
+      "secondaryHover": {
+        "hue": "Диапазон для secondary hover",
+        "saturation": "Диапазон для secondary hover",
+        "lightness": "Диапазон для secondary hover"
+      },
+      "secondaryDisabled": {
+        "hue": "Диапазон для secondary disabled",
+        "saturation": "Диапазон для secondary disabled",
+        "lightness": "Диапазон для secondary disabled"
+      },
+      "link": {
+        "color": {
+          "hue": "Диапазон изменения оттенка (в градусах)",
+          "saturation": "Диапазон изменения насыщенности (в процентных пунктах)",
+          "lightness": "Диапазон изменения светлоты (в процентных пунктах)"
+        },
+        "hover": {
+          "hue": "Диапазон изменения оттенка (в градусах)",
+          "saturation": "Диапазон изменения насыщенности (в процентных пунктах)",
+          "lightness": "Диапазон изменения светлоты (в процентных пунктах)"
+        },
+        "visited": {
+          "hue": "Диапазон изменения оттенка (в градусах)",
+          "saturation": "Диапазон изменения насыщенности (в процентных пунктах)",
+          "lightness": "Диапазон изменения светлоты (в процентных пунктах)"
+        }
       }
     },
     "rationale": "Пояснение, почему эта цветовая схема работает для данной пары шрифтов и сферы",
@@ -62,16 +103,37 @@
       "heading": "Рекомендуемый размер заголовка (в px)",
       "subheading": "Рекомендуемый размер подзаголовка (в px)"
     },
-    "iconLibrary": "Рекомендуемая библиотека иконок (lucide или phosphor) для всей темы"
+    "iconLibrary": "Рекомендуемая библиотека иконок (lucide или phosphor) для всей темы",
+    "gradients": {
+      "primary": "Основной градиент темы в формате CSS (linear-gradient(...))",
+      "secondary": "Вторичный градиент темы в формате CSS (linear-gradient(...))"
+    },
+    "link": {
+      "color": "Базовый цвет ссылок (должен совпадать с colorPalette.primary)",
+      "hover": "Цвет ссылок в состоянии hover",
+      "visited": "Цвет посещённых ссылок"
+    }
   },
   "data": [
     {
       "pairType": "Классическая элегантность",
       "fontHeading": "Playfair Display",
       "fontBody": "Lato",
-      "sectors": ["Люксовые бренды", "Бутики", "Fashion-лендинги", "Дизайн-студии"],
-      "tone": ["элегантный", "премиальный", "утонченный"],
-      "audienceType": ["B2C", "массмаркет"],
+      "sectors": [
+        "Люксовые бренды",
+        "Бутики",
+        "Fashion-лендинги",
+        "Дизайн-студии"
+      ],
+      "tone": [
+        "элегантный",
+        "премиальный",
+        "утонченный"
+      ],
+      "audienceType": [
+        "B2C",
+        "массмаркет"
+      ],
       "colorPalette": {
         "background": "0 0% 98%",
         "textColors": {
@@ -81,33 +143,249 @@
           "accent": "45 80% 50%"
         },
         "primary": "45 80% 50%",
-        "secondary": "45 50% 70%"
+        "secondary": "45 50% 70%",
+        "primaryHover": "45 80% 50%",
+        "primaryDisabled": "45 50% 70%",
+        "secondaryHover": "45 50% 70%",
+        "secondaryDisabled": "45 50% 70%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 20], "saturation": [40, 60], "lightness": [95, 98] },
-        "textColors": {
-          "base": { "hue": [0, 20], "saturation": [5, 15], "lightness": [15, 25] },
-          "muted": { "hue": [0, 20], "saturation": [5, 15], "lightness": [35, 45] },
-          "faint": { "hue": [0, 20], "saturation": [5, 15], "lightness": [55, 65] },
-          "accent": { "hue": [35, 55], "saturation": [70, 90], "lightness": [45, 55] }
+        "background": {
+          "hue": [
+            0,
+            20
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            95,
+            98
+          ]
         },
-        "primary": { "hue": [35, 55], "saturation": [70, 90], "lightness": [45, 55] },
-        "secondary": { "hue": [35, 55], "saturation": [40, 60], "lightness": [65, 75] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              20
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              15,
+              25
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              20
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              20
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "accent": {
+            "hue": [
+              35,
+              55
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            35,
+            55
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "secondary": {
+          "hue": [
+            35,
+            55
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            35,
+            55
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            35,
+            55
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            35,
+            55
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            35,
+            55
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              35,
+              55
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "hover": {
+            "hue": [
+              35,
+              55
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "visited": {
+            "hue": [
+              35,
+              55
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        }
       },
       "rationale": "Светлый фон создаёт ощущение чистоты и простора. Текст имеет три уровня иерархии: основной (тёмный), muted (средний) и faint (светлый). Золотой primary привлекает внимание к CTA и ассоциируется с премиальностью.",
       "sizeRecommendations": {
         "heading": "56-72px",
         "subheading": "20-24px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 50% 70%))",
+        "secondary": "linear-gradient(135deg, hsl(45 50% 70%), hsl(45 80% 50%))"
+      },
+      "link": {
+        "color": "45 80% 50%",
+        "hover": "45 80% 50%",
+        "visited": "45 80% 50%"
+      }
     },
     {
       "pairType": "Современный корпоративный",
       "fontHeading": "Montserrat",
       "fontBody": "Merriweather",
-      "sectors": ["Корпоративные сайты", "SaaS", "Digital-агентства", "B2B"],
-      "tone": ["экспертный", "профессиональный", "уверенный"],
-      "audienceType": ["B2B", "B2C"],
+      "sectors": [
+        "Корпоративные сайты",
+        "SaaS",
+        "Digital-агентства",
+        "B2B"
+      ],
+      "tone": [
+        "экспертный",
+        "профессиональный",
+        "уверенный"
+      ],
+      "audienceType": [
+        "B2B",
+        "B2C"
+      ],
       "colorPalette": {
         "background": "0 0% 100%",
         "textColors": {
@@ -117,33 +395,248 @@
           "accent": "210 80% 45%"
         },
         "primary": "210 80% 45%",
-        "secondary": "210 30% 60%"
+        "secondary": "210 30% 60%",
+        "primaryHover": "210 80% 45%",
+        "primaryDisabled": "210 30% 60%",
+        "secondaryHover": "210 30% 60%",
+        "secondaryDisabled": "210 30% 60%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 0], "saturation": [0, 0], "lightness": [98, 100] },
-        "textColors": {
-          "base": { "hue": [200, 220], "saturation": [5, 15], "lightness": [15, 25] },
-          "muted": { "hue": [200, 220], "saturation": [5, 15], "lightness": [35, 45] },
-          "faint": { "hue": [200, 220], "saturation": [5, 15], "lightness": [55, 65] },
-          "accent": { "hue": [200, 220], "saturation": [70, 90], "lightness": [40, 50] }
+        "background": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            98,
+            100
+          ]
         },
-        "primary": { "hue": [200, 220], "saturation": [70, 90], "lightness": [40, 50] },
-        "secondary": { "hue": [200, 220], "saturation": [20, 40], "lightness": [55, 65] }
+        "textColors": {
+          "base": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              15,
+              25
+            ]
+          },
+          "muted": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "faint": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "accent": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "secondary": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "hover": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "visited": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        }
       },
       "rationale": "Чистый белый фон, синеватая гамма текста. Primary — насыщенный синий для CTA. Три уровня текста создают иерархию.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "phosphor"
+      "iconLibrary": "phosphor",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 30% 60%))",
+        "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 80% 45%))"
+      },
+      "link": {
+        "color": "210 80% 45%",
+        "hover": "210 80% 45%",
+        "visited": "210 80% 45%"
+      }
     },
     {
       "pairType": "Технологичный минимализм",
       "fontHeading": "Poppins",
       "fontBody": "Roboto",
-      "sectors": ["IT-стартапы", "Мобильные приложения", "Технологичные продукты"],
-      "tone": ["современный", "дружеский", "инновационный"],
-      "audienceType": ["B2C", "массмаркет"],
+      "sectors": [
+        "IT-стартапы",
+        "Мобильные приложения",
+        "Технологичные продукты"
+      ],
+      "tone": [
+        "современный",
+        "дружеский",
+        "инновационный"
+      ],
+      "audienceType": [
+        "B2C",
+        "массмаркет"
+      ],
       "colorPalette": {
         "background": "220 20% 95%",
         "textColors": {
@@ -153,33 +646,249 @@
           "accent": "250 70% 55%"
         },
         "primary": "250 70% 55%",
-        "secondary": "250 40% 75%"
+        "secondary": "250 40% 75%",
+        "primaryHover": "250 70% 55%",
+        "primaryDisabled": "250 40% 75%",
+        "secondaryHover": "250 40% 75%",
+        "secondaryDisabled": "250 40% 75%"
       },
       "colorVariations": {
-        "background": { "hue": [210, 230], "saturation": [15, 25], "lightness": [92, 97] },
-        "textColors": {
-          "base": { "hue": [210, 230], "saturation": [5, 15], "lightness": [15, 25] },
-          "muted": { "hue": [210, 230], "saturation": [5, 15], "lightness": [35, 45] },
-          "faint": { "hue": [210, 230], "saturation": [5, 15], "lightness": [55, 65] },
-          "accent": { "hue": [240, 260], "saturation": [60, 80], "lightness": [50, 60] }
+        "background": {
+          "hue": [
+            210,
+            230
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            92,
+            97
+          ]
         },
-        "primary": { "hue": [240, 260], "saturation": [60, 80], "lightness": [50, 60] },
-        "secondary": { "hue": [240, 260], "saturation": [30, 50], "lightness": [70, 80] }
+        "textColors": {
+          "base": {
+            "hue": [
+              210,
+              230
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              15,
+              25
+            ]
+          },
+          "muted": {
+            "hue": [
+              210,
+              230
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "faint": {
+            "hue": [
+              210,
+              230
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "accent": {
+            "hue": [
+              240,
+              260
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            240,
+            260
+          ],
+          "saturation": [
+            60,
+            80
+          ],
+          "lightness": [
+            50,
+            60
+          ]
+        },
+        "secondary": {
+          "hue": [
+            240,
+            260
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            70,
+            80
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            240,
+            260
+          ],
+          "saturation": [
+            60,
+            80
+          ],
+          "lightness": [
+            50,
+            60
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            240,
+            260
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            70,
+            80
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            240,
+            260
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            70,
+            80
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            240,
+            260
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            70,
+            80
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              240,
+              260
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "hover": {
+            "hue": [
+              240,
+              260
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "visited": {
+            "hue": [
+              240,
+              260
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          }
+        }
       },
       "rationale": "Светло-голубоватый фон создаёт ощущение технологичности. Текстовая иерархия через три уровня серого с голубоватым оттенком. Яркий фиолетовый primary для CTA.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "phosphor"
+      "iconLibrary": "phosphor",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(250 70% 55%), hsl(250 40% 75%))",
+        "secondary": "linear-gradient(135deg, hsl(250 40% 75%), hsl(250 70% 55%))"
+      },
+      "link": {
+        "color": "250 70% 55%",
+        "hover": "250 70% 55%",
+        "visited": "250 70% 55%"
+      }
     },
     {
       "pairType": "Утончённый минимализм",
       "fontHeading": "Raleway",
       "fontBody": "Open Sans",
-      "sectors": ["Портфолио", "Персональные сайты", "Творческие проекты", "Премиум-услуги"],
-      "tone": ["спокойный", "изящный", "минималистичный"],
-      "audienceType": ["B2C", "массмаркет"],
+      "sectors": [
+        "Портфолио",
+        "Персональные сайты",
+        "Творческие проекты",
+        "Премиум-услуги"
+      ],
+      "tone": [
+        "спокойный",
+        "изящный",
+        "минималистичный"
+      ],
+      "audienceType": [
+        "B2C",
+        "массмаркет"
+      ],
       "colorPalette": {
         "background": "0 0% 100%",
         "textColors": {
@@ -189,33 +898,248 @@
           "accent": "340 60% 60%"
         },
         "primary": "340 60% 60%",
-        "secondary": "340 30% 85%"
+        "secondary": "340 30% 85%",
+        "primaryHover": "340 60% 60%",
+        "primaryDisabled": "340 30% 85%",
+        "secondaryHover": "340 30% 85%",
+        "secondaryDisabled": "340 30% 85%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 0], "saturation": [0, 0], "lightness": [98, 100] },
-        "textColors": {
-          "base": { "hue": [0, 0], "saturation": [0, 0], "lightness": [8, 15] },
-          "muted": { "hue": [0, 0], "saturation": [0, 0], "lightness": [25, 35] },
-          "faint": { "hue": [0, 0], "saturation": [0, 0], "lightness": [45, 55] },
-          "accent": { "hue": [330, 350], "saturation": [50, 70], "lightness": [55, 65] }
+        "background": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            98,
+            100
+          ]
         },
-        "primary": { "hue": [330, 350], "saturation": [50, 70], "lightness": [55, 65] },
-        "secondary": { "hue": [330, 350], "saturation": [20, 40], "lightness": [80, 90] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              8,
+              15
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              25,
+              35
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "accent": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            50,
+            70
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "secondary": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            50,
+            70
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "hover": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "visited": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          }
+        }
       },
       "rationale": "Белый фон и почти чёрный основной текст. Нежно-розовый primary добавляет акцент, оставаясь ненавязчивым.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(340 60% 60%), hsl(340 30% 85%))",
+        "secondary": "linear-gradient(135deg, hsl(340 30% 85%), hsl(340 60% 60%))"
+      },
+      "link": {
+        "color": "340 60% 60%",
+        "hover": "340 60% 60%",
+        "visited": "340 60% 60%"
+      }
     },
     {
       "pairType": "Выразительная индивидуальность",
       "fontHeading": "DM Serif Display",
       "fontBody": "Inter",
-      "sectors": ["Креативные агентства", "Fashion-бренды", "Lifestyle-проекты"],
-      "tone": ["креативный", "смелый", "индивидуальный"],
-      "audienceType": ["B2C", "массмаркет"],
+      "sectors": [
+        "Креативные агентства",
+        "Fashion-бренды",
+        "Lifestyle-проекты"
+      ],
+      "tone": [
+        "креативный",
+        "смелый",
+        "индивидуальный"
+      ],
+      "audienceType": [
+        "B2C",
+        "массмаркет"
+      ],
       "colorPalette": {
         "background": "30 20% 95%",
         "textColors": {
@@ -225,33 +1149,248 @@
           "accent": "15 90% 50%"
         },
         "primary": "15 90% 50%",
-        "secondary": "30 50% 70%"
+        "secondary": "30 50% 70%",
+        "primaryHover": "15 90% 50%",
+        "primaryDisabled": "30 50% 70%",
+        "secondaryHover": "30 50% 70%",
+        "secondaryDisabled": "30 50% 70%"
       },
       "colorVariations": {
-        "background": { "hue": [20, 40], "saturation": [15, 25], "lightness": [92, 97] },
-        "textColors": {
-          "base": { "hue": [20, 40], "saturation": [5, 15], "lightness": [10, 20] },
-          "muted": { "hue": [20, 40], "saturation": [5, 15], "lightness": [30, 40] },
-          "faint": { "hue": [20, 40], "saturation": [5, 15], "lightness": [50, 60] },
-          "accent": { "hue": [5, 25], "saturation": [80, 95], "lightness": [45, 55] }
+        "background": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            92,
+            97
+          ]
         },
-        "primary": { "hue": [5, 25], "saturation": [80, 95], "lightness": [45, 55] },
-        "secondary": { "hue": [20, 40], "saturation": [40, 60], "lightness": [65, 75] }
+        "textColors": {
+          "base": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              10,
+              20
+            ]
+          },
+          "muted": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              30,
+              40
+            ]
+          },
+          "faint": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "accent": {
+            "hue": [
+              5,
+              25
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            5,
+            25
+          ],
+          "saturation": [
+            80,
+            95
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "secondary": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            5,
+            25
+          ],
+          "saturation": [
+            80,
+            95
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              5,
+              25
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "hover": {
+            "hue": [
+              5,
+              25
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "visited": {
+            "hue": [
+              5,
+              25
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        }
       },
       "rationale": "Тёплый кремовый фон, яркий оранжевый primary. Текст тёплых оттенков с иерархией.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "phosphor"
+      "iconLibrary": "phosphor",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(15 90% 50%), hsl(30 50% 70%))",
+        "secondary": "linear-gradient(135deg, hsl(30 50% 70%), hsl(15 90% 50%))"
+      },
+      "link": {
+        "color": "15 90% 50%",
+        "hover": "15 90% 50%",
+        "visited": "15 90% 50%"
+      }
     },
     {
       "pairType": "Ретро-шик (Grand)",
       "fontHeading": "Grand Sans",
       "fontBody": "Grand Serif",
-      "sectors": ["Бренды с сильной идентичностью", "Модные дома", "Премиальные сервисы"],
-      "tone": ["элегантный", "винтажный", "премиальный"],
-      "audienceType": ["B2C", "массмаркет"],
+      "sectors": [
+        "Бренды с сильной идентичностью",
+        "Модные дома",
+        "Премиальные сервисы"
+      ],
+      "tone": [
+        "элегантный",
+        "винтажный",
+        "премиальный"
+      ],
+      "audienceType": [
+        "B2C",
+        "массмаркет"
+      ],
       "colorPalette": {
         "background": "40 20% 90%",
         "textColors": {
@@ -261,33 +1400,248 @@
           "accent": "20 70% 45%"
         },
         "primary": "20 70% 45%",
-        "secondary": "40 30% 60%"
+        "secondary": "40 30% 60%",
+        "primaryHover": "20 70% 45%",
+        "primaryDisabled": "40 30% 60%",
+        "secondaryHover": "40 30% 60%",
+        "secondaryDisabled": "40 30% 60%"
       },
       "colorVariations": {
-        "background": { "hue": [30, 50], "saturation": [15, 25], "lightness": [85, 93] },
-        "textColors": {
-          "base": { "hue": [30, 50], "saturation": [5, 15], "lightness": [10, 20] },
-          "muted": { "hue": [30, 50], "saturation": [5, 15], "lightness": [30, 40] },
-          "faint": { "hue": [30, 50], "saturation": [5, 15], "lightness": [50, 60] },
-          "accent": { "hue": [10, 30], "saturation": [60, 80], "lightness": [40, 50] }
+        "background": {
+          "hue": [
+            30,
+            50
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            85,
+            93
+          ]
         },
-        "primary": { "hue": [10, 30], "saturation": [60, 80], "lightness": [40, 50] },
-        "secondary": { "hue": [30, 50], "saturation": [20, 40], "lightness": [55, 65] }
+        "textColors": {
+          "base": {
+            "hue": [
+              30,
+              50
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              10,
+              20
+            ]
+          },
+          "muted": {
+            "hue": [
+              30,
+              50
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              30,
+              40
+            ]
+          },
+          "faint": {
+            "hue": [
+              30,
+              50
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "accent": {
+            "hue": [
+              10,
+              30
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            10,
+            30
+          ],
+          "saturation": [
+            60,
+            80
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "secondary": {
+          "hue": [
+            30,
+            50
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            10,
+            30
+          ],
+          "saturation": [
+            60,
+            80
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            30,
+            50
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            30,
+            50
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            30,
+            50
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              10,
+              30
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "hover": {
+            "hue": [
+              10,
+              30
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "visited": {
+            "hue": [
+              10,
+              30
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        }
       },
       "rationale": "Кремовый винтажный фон, терракотовый primary. Текстовая иерархия в тёплой гамме.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(20 70% 45%), hsl(40 30% 60%))",
+        "secondary": "linear-gradient(135deg, hsl(40 30% 60%), hsl(20 70% 45%))"
+      },
+      "link": {
+        "color": "20 70% 45%",
+        "hover": "20 70% 45%",
+        "visited": "20 70% 45%"
+      }
     },
     {
       "pairType": "Романтичный акцент",
       "fontHeading": "Neo Calligraphy",
       "fontBody": "Inter",
-      "sectors": ["Свадебные агентства", "Бутики", "Beauty-бренды", "Флористика"],
-      "tone": ["романтичный", "нежный", "заботливый"],
-      "audienceType": ["B2C"],
+      "sectors": [
+        "Свадебные агентства",
+        "Бутики",
+        "Beauty-бренды",
+        "Флористика"
+      ],
+      "tone": [
+        "романтичный",
+        "нежный",
+        "заботливый"
+      ],
+      "audienceType": [
+        "B2C"
+      ],
       "colorPalette": {
         "background": "350 30% 97%",
         "textColors": {
@@ -297,33 +1651,248 @@
           "accent": "340 70% 60%"
         },
         "primary": "340 70% 60%",
-        "secondary": "340 30% 80%"
+        "secondary": "340 30% 80%",
+        "primaryHover": "340 70% 60%",
+        "primaryDisabled": "340 30% 80%",
+        "secondaryHover": "340 30% 80%",
+        "secondaryDisabled": "340 30% 80%"
       },
       "colorVariations": {
-        "background": { "hue": [340, 360], "saturation": [25, 35], "lightness": [95, 98] },
-        "textColors": {
-          "base": { "hue": [340, 360], "saturation": [5, 15], "lightness": [15, 25] },
-          "muted": { "hue": [340, 360], "saturation": [5, 15], "lightness": [35, 45] },
-          "faint": { "hue": [340, 360], "saturation": [5, 15], "lightness": [55, 65] },
-          "accent": { "hue": [330, 350], "saturation": [60, 80], "lightness": [55, 65] }
+        "background": {
+          "hue": [
+            340,
+            360
+          ],
+          "saturation": [
+            25,
+            35
+          ],
+          "lightness": [
+            95,
+            98
+          ]
         },
-        "primary": { "hue": [330, 350], "saturation": [60, 80], "lightness": [55, 65] },
-        "secondary": { "hue": [330, 350], "saturation": [20, 40], "lightness": [75, 85] }
+        "textColors": {
+          "base": {
+            "hue": [
+              340,
+              360
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              15,
+              25
+            ]
+          },
+          "muted": {
+            "hue": [
+              340,
+              360
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "faint": {
+            "hue": [
+              340,
+              360
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "accent": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            60,
+            80
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "secondary": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            60,
+            80
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            330,
+            350
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "hover": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "visited": {
+            "hue": [
+              330,
+              350
+            ],
+            "saturation": [
+              60,
+              80
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          }
+        }
       },
       "rationale": "Бледно-розовый фон, насыщенный розовый primary. Текст в той же розовой гамме с иерархией.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(340 70% 60%), hsl(340 30% 80%))",
+        "secondary": "linear-gradient(135deg, hsl(340 30% 80%), hsl(340 70% 60%))"
+      },
+      "link": {
+        "color": "340 70% 60%",
+        "hover": "340 70% 60%",
+        "visited": "340 70% 60%"
+      }
     },
     {
       "pairType": "Авторитетная классика",
       "fontHeading": "Modern Serif Revival",
       "fontBody": "Helvetica Now",
-      "sectors": ["Издания", "Культурные институции", "Премиальные бренды с историей"],
-      "tone": ["авторитетный", "классический", "доверительный"],
-      "audienceType": ["B2B", "B2C"],
+      "sectors": [
+        "Издания",
+        "Культурные институции",
+        "Премиальные бренды с историей"
+      ],
+      "tone": [
+        "авторитетный",
+        "классический",
+        "доверительный"
+      ],
+      "audienceType": [
+        "B2B",
+        "B2C"
+      ],
       "colorPalette": {
         "background": "0 0% 100%",
         "textColors": {
@@ -333,33 +1902,248 @@
           "accent": "0 0% 30%"
         },
         "primary": "0 0% 30%",
-        "secondary": "0 0% 90%"
+        "secondary": "0 0% 90%",
+        "primaryHover": "0 0% 30%",
+        "primaryDisabled": "0 0% 90%",
+        "secondaryHover": "0 0% 90%",
+        "secondaryDisabled": "0 0% 90%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 0], "saturation": [0, 0], "lightness": [98, 100] },
-        "textColors": {
-          "base": { "hue": [0, 0], "saturation": [0, 0], "lightness": [10, 20] },
-          "muted": { "hue": [0, 0], "saturation": [0, 0], "lightness": [35, 45] },
-          "faint": { "hue": [0, 0], "saturation": [0, 0], "lightness": [60, 70] },
-          "accent": { "hue": [0, 0], "saturation": [0, 0], "lightness": [25, 35] }
+        "background": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            98,
+            100
+          ]
         },
-        "primary": { "hue": [0, 0], "saturation": [0, 0], "lightness": [25, 35] },
-        "secondary": { "hue": [0, 0], "saturation": [0, 0], "lightness": [85, 95] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              10,
+              20
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              60,
+              70
+            ]
+          },
+          "accent": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              25,
+              35
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "secondary": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              25,
+              35
+            ]
+          },
+          "hover": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              25,
+              35
+            ]
+          },
+          "visited": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              25,
+              35
+            ]
+          }
+        }
       },
       "rationale": "Монохромная гамма: белый фон, текст трёх уровней серого, средне-серый primary. Строгость и надёжность.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 0% 90%))",
+        "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 0% 30%))"
+      },
+      "link": {
+        "color": "0 0% 30%",
+        "hover": "0 0% 30%",
+        "visited": "0 0% 30%"
+      }
     },
     {
       "pairType": "Футуристичный технологичный",
       "fontHeading": "Futuristic Geometric",
       "fontBody": "FF Meta",
-      "sectors": ["AI-стартапы", "Инновационные технологии", "Робототехника"],
-      "tone": ["футуристичный", "смелый", "инновационный"],
-      "audienceType": ["B2B", "B2C"],
+      "sectors": [
+        "AI-стартапы",
+        "Инновационные технологии",
+        "Робототехника"
+      ],
+      "tone": [
+        "футуристичный",
+        "смелый",
+        "инновационный"
+      ],
+      "audienceType": [
+        "B2B",
+        "B2C"
+      ],
       "colorPalette": {
         "background": "240 20% 10%",
         "textColors": {
@@ -369,33 +2153,248 @@
           "accent": "180 100% 45%"
         },
         "primary": "180 100% 45%",
-        "secondary": "240 30% 30%"
+        "secondary": "240 30% 30%",
+        "primaryHover": "180 100% 45%",
+        "primaryDisabled": "240 30% 30%",
+        "secondaryHover": "240 30% 30%",
+        "secondaryDisabled": "240 30% 30%"
       },
       "colorVariations": {
-        "background": { "hue": [230, 250], "saturation": [15, 25], "lightness": [5, 15] },
-        "textColors": {
-          "base": { "hue": [0, 0], "saturation": [0, 0], "lightness": [85, 95] },
-          "muted": { "hue": [0, 0], "saturation": [0, 0], "lightness": [65, 75] },
-          "faint": { "hue": [0, 0], "saturation": [0, 0], "lightness": [45, 55] },
-          "accent": { "hue": [170, 190], "saturation": [90, 100], "lightness": [40, 50] }
+        "background": {
+          "hue": [
+            230,
+            250
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            5,
+            15
+          ]
         },
-        "primary": { "hue": [170, 190], "saturation": [90, 100], "lightness": [40, 50] },
-        "secondary": { "hue": [230, 250], "saturation": [20, 40], "lightness": [25, 35] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              85,
+              95
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              65,
+              75
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "accent": {
+            "hue": [
+              170,
+              190
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            170,
+            190
+          ],
+          "saturation": [
+            90,
+            100
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "secondary": {
+          "hue": [
+            230,
+            250
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            170,
+            190
+          ],
+          "saturation": [
+            90,
+            100
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            230,
+            250
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            230,
+            250
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            230,
+            250
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              170,
+              190
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "hover": {
+            "hue": [
+              170,
+              190
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "visited": {
+            "hue": [
+              170,
+              190
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        }
       },
       "rationale": "Тёмный фон, светлый текст трёх уровней, яркий бирюзовый primary. Ощущение глубины и технологичности.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "phosphor"
+      "iconLibrary": "phosphor",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(240 30% 30%))",
+        "secondary": "linear-gradient(135deg, hsl(240 30% 30%), hsl(180 100% 45%))"
+      },
+      "link": {
+        "color": "180 100% 45%",
+        "hover": "180 100% 45%",
+        "visited": "180 100% 45%"
+      }
     },
     {
       "pairType": "Тёплый и уютный",
       "fontHeading": "Warm Script",
       "fontBody": "Poppins",
-      "sectors": ["Лайфстайл-блоги", "Кафе", "Детские проекты", "Экопродукты"],
-      "tone": ["дружеский", "уютный", "заботливый"],
-      "audienceType": ["B2C"],
+      "sectors": [
+        "Лайфстайл-блоги",
+        "Кафе",
+        "Детские проекты",
+        "Экопродукты"
+      ],
+      "tone": [
+        "дружеский",
+        "уютный",
+        "заботливый"
+      ],
+      "audienceType": [
+        "B2C"
+      ],
       "colorPalette": {
         "background": "40 30% 95%",
         "textColors": {
@@ -405,33 +2404,249 @@
           "accent": "25 80% 60%"
         },
         "primary": "25 80% 60%",
-        "secondary": "30 40% 80%"
+        "secondary": "30 40% 80%",
+        "primaryHover": "25 80% 60%",
+        "primaryDisabled": "30 40% 80%",
+        "secondaryHover": "30 40% 80%",
+        "secondaryDisabled": "30 40% 80%"
       },
       "colorVariations": {
-        "background": { "hue": [30, 50], "saturation": [25, 35], "lightness": [92, 97] },
-        "textColors": {
-          "base": { "hue": [20, 40], "saturation": [5, 15], "lightness": [10, 20] },
-          "muted": { "hue": [20, 40], "saturation": [5, 15], "lightness": [30, 40] },
-          "faint": { "hue": [20, 40], "saturation": [5, 15], "lightness": [50, 60] },
-          "accent": { "hue": [15, 35], "saturation": [70, 90], "lightness": [55, 65] }
+        "background": {
+          "hue": [
+            30,
+            50
+          ],
+          "saturation": [
+            25,
+            35
+          ],
+          "lightness": [
+            92,
+            97
+          ]
         },
-        "primary": { "hue": [15, 35], "saturation": [70, 90], "lightness": [55, 65] },
-        "secondary": { "hue": [20, 40], "saturation": [30, 50], "lightness": [75, 85] }
+        "textColors": {
+          "base": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              10,
+              20
+            ]
+          },
+          "muted": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              30,
+              40
+            ]
+          },
+          "faint": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "accent": {
+            "hue": [
+              15,
+              35
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            15,
+            35
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "secondary": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            15,
+            35
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            55,
+            65
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            30,
+            50
+          ],
+          "lightness": [
+            75,
+            85
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              15,
+              35
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "hover": {
+            "hue": [
+              15,
+              35
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "visited": {
+            "hue": [
+              15,
+              35
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          }
+        }
       },
       "rationale": "Тёплый бежевый фон, коричневатый текст, оранжевый primary. Уют и забота.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(30 40% 80%))",
+        "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(25 80% 60%))"
+      },
+      "link": {
+        "color": "25 80% 60%",
+        "hover": "25 80% 60%",
+        "visited": "25 80% 60%"
+      }
     },
     {
       "pairType": "Лабораторная точность (Pharma Serif)",
       "fontHeading": "Condensed Sans",
       "fontBody": "IBM Plex Mono",
-      "sectors": ["Медицинские сервисы", "Фармацевтика", "Wellness-продукты", "Спортивное питание"],
-      "tone": ["экспертный", "доверительный", "научный"],
-      "audienceType": ["B2B", "B2C"],
+      "sectors": [
+        "Медицинские сервисы",
+        "Фармацевтика",
+        "Wellness-продукты",
+        "Спортивное питание"
+      ],
+      "tone": [
+        "экспертный",
+        "доверительный",
+        "научный"
+      ],
+      "audienceType": [
+        "B2B",
+        "B2C"
+      ],
       "colorPalette": {
         "background": "0 0% 100%",
         "textColors": {
@@ -441,33 +2656,248 @@
           "accent": "140 60% 40%"
         },
         "primary": "140 60% 40%",
-        "secondary": "0 0% 90%"
+        "secondary": "0 0% 90%",
+        "primaryHover": "140 60% 40%",
+        "primaryDisabled": "0 0% 90%",
+        "secondaryHover": "0 0% 90%",
+        "secondaryDisabled": "0 0% 90%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 0], "saturation": [0, 0], "lightness": [98, 100] },
-        "textColors": {
-          "base": { "hue": [0, 0], "saturation": [0, 0], "lightness": [5, 15] },
-          "muted": { "hue": [0, 0], "saturation": [0, 0], "lightness": [30, 40] },
-          "faint": { "hue": [0, 0], "saturation": [0, 0], "lightness": [55, 65] },
-          "accent": { "hue": [130, 150], "saturation": [50, 70], "lightness": [35, 45] }
+        "background": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            98,
+            100
+          ]
         },
-        "primary": { "hue": [130, 150], "saturation": [50, 70], "lightness": [35, 45] },
-        "secondary": { "hue": [0, 0], "saturation": [0, 0], "lightness": [85, 95] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              5,
+              15
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              30,
+              40
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "accent": {
+            "hue": [
+              130,
+              150
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            130,
+            150
+          ],
+          "saturation": [
+            50,
+            70
+          ],
+          "lightness": [
+            35,
+            45
+          ]
+        },
+        "secondary": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            130,
+            150
+          ],
+          "saturation": [
+            50,
+            70
+          ],
+          "lightness": [
+            35,
+            45
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            85,
+            95
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              130,
+              150
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "hover": {
+            "hue": [
+              130,
+              150
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "visited": {
+            "hue": [
+              130,
+              150
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          }
+        }
       },
       "rationale": "Белый фон, чёрный текст, зелёный primary. Чистота, точность, здоровье.",
       "sizeRecommendations": {
         "heading": "48-64px",
         "subheading": "16-20px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(140 60% 40%), hsl(0 0% 90%))",
+        "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(140 60% 40%))"
+      },
+      "link": {
+        "color": "140 60% 40%",
+        "hover": "140 60% 40%",
+        "visited": "140 60% 40%"
+      }
     },
     {
       "pairType": "Обложка журнала (Cover Story)",
       "fontHeading": "Playfair Display",
       "fontBody": "Poppins",
-      "sectors": ["Fashion-лендинги", "Бьюти-бренды", "Lifestyle-проекты", "Премиум-товары"],
-      "tone": ["гламурный", "премиальный", "стильный"],
-      "audienceType": ["B2C"],
+      "sectors": [
+        "Fashion-лендинги",
+        "Бьюти-бренды",
+        "Lifestyle-проекты",
+        "Премиум-товары"
+      ],
+      "tone": [
+        "гламурный",
+        "премиальный",
+        "стильный"
+      ],
+      "audienceType": [
+        "B2C"
+      ],
       "colorPalette": {
         "background": "0 0% 100%",
         "textColors": {
@@ -477,33 +2907,248 @@
           "accent": "0 80% 50%"
         },
         "primary": "0 80% 50%",
-        "secondary": "0 30% 70%"
+        "secondary": "0 30% 70%",
+        "primaryHover": "0 80% 50%",
+        "primaryDisabled": "0 30% 70%",
+        "secondaryHover": "0 30% 70%",
+        "secondaryDisabled": "0 30% 70%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 0], "saturation": [0, 0], "lightness": [98, 100] },
-        "textColors": {
-          "base": { "hue": [0, 0], "saturation": [0, 0], "lightness": [10, 20] },
-          "muted": { "hue": [0, 0], "saturation": [0, 0], "lightness": [35, 45] },
-          "faint": { "hue": [0, 0], "saturation": [0, 0], "lightness": [60, 70] },
-          "accent": { "hue": [350, 10], "saturation": [70, 90], "lightness": [45, 55] }
+        "background": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            98,
+            100
+          ]
         },
-        "primary": { "hue": [350, 10], "saturation": [70, 90], "lightness": [45, 55] },
-        "secondary": { "hue": [350, 10], "saturation": [20, 40], "lightness": [65, 75] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              10,
+              20
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              60,
+              70
+            ]
+          },
+          "accent": {
+            "hue": [
+              350,
+              10
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            350,
+            10
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "secondary": {
+          "hue": [
+            350,
+            10
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            350,
+            10
+          ],
+          "saturation": [
+            70,
+            90
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            350,
+            10
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            350,
+            10
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            350,
+            10
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              350,
+              10
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "hover": {
+            "hue": [
+              350,
+              10
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "visited": {
+            "hue": [
+              350,
+              10
+            ],
+            "saturation": [
+              70,
+              90
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        }
       },
       "rationale": "Белый фон, ярко-красный primary. Классика журнальной эстетики.",
       "sizeRecommendations": {
         "heading": "56-72px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "phosphor"
+      "iconLibrary": "phosphor",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(0 80% 50%), hsl(0 30% 70%))",
+        "secondary": "linear-gradient(135deg, hsl(0 30% 70%), hsl(0 80% 50%))"
+      },
+      "link": {
+        "color": "0 80% 50%",
+        "hover": "0 80% 50%",
+        "visited": "0 80% 50%"
+      }
     },
     {
       "pairType": "Дерзкий максимализм",
       "fontHeading": "Bold Display",
       "fontBody": "Clean Sans",
-      "sectors": ["Спортивные бренды", "Мероприятия", "Фестивали", "Молодёжные проекты"],
-      "tone": ["дерзкий", "энергичный", "смелый"],
-      "audienceType": ["B2C"],
+      "sectors": [
+        "Спортивные бренды",
+        "Мероприятия",
+        "Фестивали",
+        "Молодёжные проекты"
+      ],
+      "tone": [
+        "дерзкий",
+        "энергичный",
+        "смелый"
+      ],
+      "audienceType": [
+        "B2C"
+      ],
       "colorPalette": {
         "background": "0 0% 0%",
         "textColors": {
@@ -513,33 +3158,248 @@
           "accent": "30 100% 50%"
         },
         "primary": "30 100% 50%",
-        "secondary": "0 0% 30%"
+        "secondary": "0 0% 30%",
+        "primaryHover": "30 100% 50%",
+        "primaryDisabled": "0 0% 30%",
+        "secondaryHover": "0 0% 30%",
+        "secondaryDisabled": "0 0% 30%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 0], "saturation": [0, 0], "lightness": [0, 5] },
-        "textColors": {
-          "base": { "hue": [0, 0], "saturation": [0, 0], "lightness": [95, 100] },
-          "muted": { "hue": [0, 0], "saturation": [0, 0], "lightness": [65, 75] },
-          "faint": { "hue": [0, 0], "saturation": [0, 0], "lightness": [35, 45] },
-          "accent": { "hue": [20, 40], "saturation": [90, 100], "lightness": [45, 55] }
+        "background": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            0,
+            5
+          ]
         },
-        "primary": { "hue": [20, 40], "saturation": [90, 100], "lightness": [45, 55] },
-        "secondary": { "hue": [0, 0], "saturation": [0, 0], "lightness": [25, 35] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              95,
+              100
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              65,
+              75
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              0
+            ],
+            "saturation": [
+              0,
+              0
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "accent": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            90,
+            100
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "secondary": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            20,
+            40
+          ],
+          "saturation": [
+            90,
+            100
+          ],
+          "lightness": [
+            45,
+            55
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            0,
+            0
+          ],
+          "saturation": [
+            0,
+            0
+          ],
+          "lightness": [
+            25,
+            35
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "hover": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          },
+          "visited": {
+            "hue": [
+              20,
+              40
+            ],
+            "saturation": [
+              90,
+              100
+            ],
+            "lightness": [
+              45,
+              55
+            ]
+          }
+        }
       },
       "rationale": "Чёрный фон, белый текст, ярко-оранжевый primary. Максимальный контраст и энергия.",
       "sizeRecommendations": {
         "heading": "64-80px",
         "subheading": "16-18px"
       },
-      "iconLibrary": "phosphor"
+      "iconLibrary": "phosphor",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(0 0% 30%))",
+        "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(30 100% 50%))"
+      },
+      "link": {
+        "color": "30 100% 50%",
+        "hover": "30 100% 50%",
+        "visited": "30 100% 50%"
+      }
     },
     {
       "pairType": "Экспериментальный",
       "fontHeading": "Experimental / Distorted",
       "fontBody": "Neutral Sans",
-      "sectors": ["Арт-проекты", "Фестивали", "Креативные студии", "Спецпроекты"],
-      "tone": ["креативный", "нестандартный", "артистичный"],
-      "audienceType": ["B2C"],
+      "sectors": [
+        "Арт-проекты",
+        "Фестивали",
+        "Креативные студии",
+        "Спецпроекты"
+      ],
+      "tone": [
+        "креативный",
+        "нестандартный",
+        "артистичный"
+      ],
+      "audienceType": [
+        "B2C"
+      ],
       "colorPalette": {
         "background": "200 50% 95%",
         "textColors": {
@@ -549,33 +3409,250 @@
           "accent": "330 90% 55%"
         },
         "primary": "330 90% 55%",
-        "secondary": "200 30% 70%"
+        "secondary": "200 30% 70%",
+        "primaryHover": "330 90% 55%",
+        "primaryDisabled": "200 30% 70%",
+        "secondaryHover": "200 30% 70%",
+        "secondaryDisabled": "200 30% 70%"
       },
       "colorVariations": {
-        "background": { "hue": [190, 210], "saturation": [40, 60], "lightness": [90, 98] },
-        "textColors": {
-          "base": { "hue": [190, 210], "saturation": [5, 15], "lightness": [10, 20] },
-          "muted": { "hue": [190, 210], "saturation": [5, 15], "lightness": [30, 40] },
-          "faint": { "hue": [190, 210], "saturation": [5, 15], "lightness": [50, 60] },
-          "accent": { "hue": [320, 340], "saturation": [80, 95], "lightness": [50, 60] }
+        "background": {
+          "hue": [
+            190,
+            210
+          ],
+          "saturation": [
+            40,
+            60
+          ],
+          "lightness": [
+            90,
+            98
+          ]
         },
-        "primary": { "hue": [320, 340], "saturation": [80, 95], "lightness": [50, 60] },
-        "secondary": { "hue": [190, 210], "saturation": [20, 40], "lightness": [65, 75] }
+        "textColors": {
+          "base": {
+            "hue": [
+              190,
+              210
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              10,
+              20
+            ]
+          },
+          "muted": {
+            "hue": [
+              190,
+              210
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              30,
+              40
+            ]
+          },
+          "faint": {
+            "hue": [
+              190,
+              210
+            ],
+            "saturation": [
+              5,
+              15
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "accent": {
+            "hue": [
+              320,
+              340
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            320,
+            340
+          ],
+          "saturation": [
+            80,
+            95
+          ],
+          "lightness": [
+            50,
+            60
+          ]
+        },
+        "secondary": {
+          "hue": [
+            190,
+            210
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            320,
+            340
+          ],
+          "saturation": [
+            80,
+            95
+          ],
+          "lightness": [
+            50,
+            60
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            190,
+            210
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            190,
+            210
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            190,
+            210
+          ],
+          "saturation": [
+            20,
+            40
+          ],
+          "lightness": [
+            65,
+            75
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              320,
+              340
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "hover": {
+            "hue": [
+              320,
+              340
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          },
+          "visited": {
+            "hue": [
+              320,
+              340
+            ],
+            "saturation": [
+              80,
+              95
+            ],
+            "lightness": [
+              50,
+              60
+            ]
+          }
+        }
       },
       "rationale": "Необычный голубой фон, ярко-розовый primary. Экспериментальность и креатив.",
       "sizeRecommendations": {
         "heading": "48-72px",
         "subheading": "18-22px"
       },
-      "iconLibrary": "phosphor"
+      "iconLibrary": "phosphor",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(330 90% 55%), hsl(200 30% 70%))",
+        "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(330 90% 55%))"
+      },
+      "link": {
+        "color": "330 90% 55%",
+        "hover": "330 90% 55%",
+        "visited": "330 90% 55%"
+      }
     },
     {
       "pairType": "Современная элегантность",
       "fontHeading": "Instrument Serif",
       "fontBody": "Instrument Sans",
-      "sectors": ["Люксовые бренды", "Финансовые институты", "Технологические стартапы", "UI/UX дизайн"],
-      "tone": ["элегантный", "современный", "премиальный", "утонченный"],
-      "audienceType": ["B2C", "B2B"],
+      "sectors": [
+        "Люксовые бренды",
+        "Финансовые институты",
+        "Технологические стартапы",
+        "UI/UX дизайн"
+      ],
+      "tone": [
+        "элегантный",
+        "современный",
+        "премиальный",
+        "утонченный"
+      ],
+      "audienceType": [
+        "B2C",
+        "B2B"
+      ],
       "colorPalette": {
         "background": "0 0% 100%",
         "textColors": {
@@ -585,25 +3662,229 @@
           "accent": "210 60% 45%"
         },
         "primary": "210 60% 45%",
-        "secondary": "210 20% 85%"
+        "secondary": "210 20% 85%",
+        "primaryHover": "210 60% 45%",
+        "primaryDisabled": "210 20% 85%",
+        "secondaryHover": "210 20% 85%",
+        "secondaryDisabled": "210 20% 85%"
       },
       "colorVariations": {
-        "background": { "hue": [0, 360], "saturation": [0, 5], "lightness": [95, 100] },
-        "textColors": {
-          "base": { "hue": [0, 360], "saturation": [0, 10], "lightness": [10, 20] },
-          "muted": { "hue": [0, 360], "saturation": [0, 10], "lightness": [35, 45] },
-          "faint": { "hue": [0, 360], "saturation": [0, 10], "lightness": [55, 65] },
-          "accent": { "hue": [200, 220], "saturation": [50, 70], "lightness": [40, 50] }
+        "background": {
+          "hue": [
+            0,
+            360
+          ],
+          "saturation": [
+            0,
+            5
+          ],
+          "lightness": [
+            95,
+            100
+          ]
         },
-        "primary": { "hue": [200, 220], "saturation": [50, 70], "lightness": [40, 50] },
-        "secondary": { "hue": [200, 220], "saturation": [15, 25], "lightness": [80, 90] }
+        "textColors": {
+          "base": {
+            "hue": [
+              0,
+              360
+            ],
+            "saturation": [
+              0,
+              10
+            ],
+            "lightness": [
+              10,
+              20
+            ]
+          },
+          "muted": {
+            "hue": [
+              0,
+              360
+            ],
+            "saturation": [
+              0,
+              10
+            ],
+            "lightness": [
+              35,
+              45
+            ]
+          },
+          "faint": {
+            "hue": [
+              0,
+              360
+            ],
+            "saturation": [
+              0,
+              10
+            ],
+            "lightness": [
+              55,
+              65
+            ]
+          },
+          "accent": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        },
+        "primary": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            50,
+            70
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "secondary": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "primaryHover": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            50,
+            70
+          ],
+          "lightness": [
+            40,
+            50
+          ]
+        },
+        "primaryDisabled": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "secondaryHover": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "secondaryDisabled": {
+          "hue": [
+            200,
+            220
+          ],
+          "saturation": [
+            15,
+            25
+          ],
+          "lightness": [
+            80,
+            90
+          ]
+        },
+        "link": {
+          "color": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "hover": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          },
+          "visited": {
+            "hue": [
+              200,
+              220
+            ],
+            "saturation": [
+              50,
+              70
+            ],
+            "lightness": [
+              40,
+              50
+            ]
+          }
+        }
       },
       "rationale": "Instrument Serf — современный шрифт с засечками для заголовков, создающий элегантность и профессионализм. Чистая светлая палитра, сдержанный синий акцент.",
       "sizeRecommendations": {
         "heading": "48-72px",
         "subheading": "18-24px"
       },
-      "iconLibrary": "lucide"
+      "iconLibrary": "lucide",
+      "gradients": {
+        "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 20% 85%))",
+        "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 60% 45%))"
+      },
+      "link": {
+        "color": "210 60% 45%",
+        "hover": "210 60% 45%",
+        "visited": "210 60% 45%"
+      }
     }
   ]
 }

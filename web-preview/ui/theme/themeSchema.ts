@@ -17,7 +17,20 @@ export interface ThemaTheme {
       accent: string;
     };
     primary: string;
+    primaryHover: string;
+    primaryDisabled: string;
     secondary: string;
+    secondaryHover: string;
+    secondaryDisabled: string;
+  };
+  gradients: {
+    primary: string;
+    secondary: string;
+  };
+  link: {
+    color: string;
+    hover: string;
+    visited: string;
   };
   typography: {
     fontFamily: string;
@@ -45,7 +58,16 @@ const REQUIRED_STRING_PATHS = [
   "colorPalette.textColors.faint",
   "colorPalette.textColors.accent",
   "colorPalette.primary",
+  "colorPalette.primaryHover",
+  "colorPalette.primaryDisabled",
   "colorPalette.secondary",
+  "colorPalette.secondaryHover",
+  "colorPalette.secondaryDisabled",
+  "gradients.primary",
+  "gradients.secondary",
+  "link.color",
+  "link.hover",
+  "link.visited",
   "typography.fontFamily",
   "typography.heading.h1.fontSize",
   "typography.heading.h1.fontWeight",
@@ -89,6 +111,12 @@ export function validateThemaTheme(rawTheme: unknown): string[] {
       errors.push(`${path} must be a non-empty string`);
     }
   });
+
+  const primary = getByPath(rawTheme, "colorPalette.primary");
+  const linkColor = getByPath(rawTheme, "link.color");
+  if (typeof primary === "string" && typeof linkColor === "string" && primary !== linkColor) {
+    errors.push("link.color must match colorPalette.primary");
+  }
 
   return errors;
 }

@@ -10,7 +10,20 @@ export const defaultThemaTheme: ThemaTheme = {
       accent: "221.2 83.2% 53.3%",
     },
     primary: "221.2 83.2% 53.3%",
+    primaryHover: "221.2 83.2% 45%",
+    primaryDisabled: "221.2 40% 72%",
     secondary: "210 40% 96.1%",
+    secondaryHover: "210 35% 88%",
+    secondaryDisabled: "210 20% 94%",
+  },
+  gradients: {
+    primary: "linear-gradient(135deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%))",
+    secondary: "linear-gradient(135deg, hsl(210 40% 96.1%), hsl(210 28% 90%))",
+  },
+  link: {
+    color: "221.2 83.2% 53.3%",
+    hover: "221.2 83.2% 45%",
+    visited: "256 50% 48%",
   },
   typography: {
     fontFamily: "Inter, system-ui, sans-serif",

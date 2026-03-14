@@ -6,7 +6,7 @@ interface FontSpecimenCardProps {
 
 export function FontSpecimenCard({ specimen }: FontSpecimenCardProps) {
   return (
-    <article className="rounded-xl border border-secondary bg-secondary/20 p-5 shadow-sm">
+    <article className="rounded-xl border border-secondary bg-secondary p-5">
       <header className="mb-4 border-b border-secondary pb-3">
         <h3 className="text-lg font-semibold text-foreground">{specimen.title}</h3>
         <p className="mt-1 text-xs text-faint-foreground">{specimen.fontFamily}</p>
@@ -15,7 +15,7 @@ export function FontSpecimenCard({ specimen }: FontSpecimenCardProps) {
 
       <div className="space-y-3" style={{ fontFamily: specimen.fontFamily }}>
         {specimen.samples.map((sample) => (
-          <div key={sample.id} className="rounded-lg bg-background/80 p-3">
+          <div key={sample.id} className="rounded-lg bg-background p-3">
             <p className="mb-1 text-xs uppercase tracking-wider text-faint-foreground">{sample.label}</p>
             <p
               className="text-foreground"

@@ -12,7 +12,22 @@ interface ThemeColorPalette {
   background: string;
   textColors: ThemeTextColors;
   primary: string;
+  primaryHover: string;
+  primaryDisabled: string;
   secondary: string;
+  secondaryHover: string;
+  secondaryDisabled: string;
+}
+
+interface ThemeGradients {
+  primary: string;
+  secondary: string;
+}
+
+interface ThemeLinks {
+  color: string;
+  hover: string;
+  visited: string;
 }
 
 export interface ThemeSettingsItem {
@@ -20,6 +35,8 @@ export interface ThemeSettingsItem {
   fontHeading: string;
   fontBody: string;
   colorPalette: ThemeColorPalette;
+  gradients: ThemeGradients;
+  link: ThemeLinks;
 }
 
 interface ThemeSettingsPayload {

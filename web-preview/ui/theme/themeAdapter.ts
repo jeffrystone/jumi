@@ -37,7 +37,24 @@ function buildAliases(path: string[]): string[] {
     const [, key] = path;
     if (key === "background") return ["background"];
     if (key === "primary") return ["primary"];
+    if (key === "primaryHover") return ["primary-hover"];
+    if (key === "primaryDisabled") return ["primary-disabled"];
     if (key === "secondary") return ["secondary"];
+    if (key === "secondaryHover") return ["secondary-hover"];
+    if (key === "secondaryDisabled") return ["secondary-disabled"];
+  }
+
+  if (path.length === 2 && path[0] === "gradients") {
+    const [, key] = path;
+    if (key === "primary") return ["gradient-primary"];
+    if (key === "secondary") return ["gradient-secondary"];
+  }
+
+  if (path.length === 2 && path[0] === "link") {
+    const [, key] = path;
+    if (key === "color") return ["link-color"];
+    if (key === "hover") return ["link-hover"];
+    if (key === "visited") return ["link-visited"];
   }
 
   if (path.length === 3 && path[0] === "colorPalette" && path[1] === "textColors") {
@@ -97,6 +114,50 @@ export function buildThemeVarEntries(theme: Theme): Array<{ key: string; value: 
   return result;
 }
 
+function fallbackGradient(primary: string, secondary: string): string {
+  return `linear-gradient(135deg, hsl(${primary}), hsl(${secondary}))`;
+}
+
+function normalizeExtendedTheme(rawTheme: unknown): unknown {
+  if (!isRecord(rawTheme) || !isRecord(rawTheme.colorPalette)) {
+    return rawTheme;
+  }
+
+  const colorPalette = rawTheme.colorPalette;
+  const primary = String(colorPalette.primary ?? "");
+  const secondary = String(colorPalette.secondary ?? "");
+  const primaryHover = String(colorPalette.primaryHover ?? primary);
+  const primaryDisabled = String(colorPalette.primaryDisabled ?? secondary);
+  const secondaryHover = String(colorPalette.secondaryHover ?? secondary);
+  const secondaryDisabled = String(colorPalette.secondaryDisabled ?? secondary);
+  const textAccent = isRecord(colorPalette.textColors) ? String(colorPalette.textColors.accent ?? "") : "";
+
+  const gradients = isRecord(rawTheme.gradients) ? rawTheme.gradients : {};
+  const link = isRecord(rawTheme.link) ? rawTheme.link : {};
+
+  return {
+    ...rawTheme,
+    colorPalette: {
+      ...colorPalette,
+      primary,
+      primaryHover,
+      primaryDisabled,
+      secondary,
+      secondaryHover,
+      secondaryDisabled,
+    },
+    gradients: {
+      primary: String(gradients.primary ?? fallbackGradient(primary, secondary)),
+      secondary: String(gradients.secondary ?? fallbackGradient(secondary, primary)),
+    },
+    link: {
+      color: primary,
+      hover: String(link.hover ?? primaryHover),
+      visited: String(link.visited ?? (textAccent || primaryDisabled)),
+    },
+  };
+}
+
 export function adaptThemaTheme(rawTheme: unknown): Theme {
   if (isRecord(rawTheme) && !("colorPalette" in rawTheme) && isRecord(rawTheme.colors)) {
     const legacyColors = rawTheme.colors;
@@ -111,13 +172,32 @@ export function adaptThemaTheme(rawTheme: unknown): Theme {
           accent: String(legacyColors.accent ?? legacyColors.primary ?? ""),
         },
         primary: String(legacyColors.primary ?? ""),
+        primaryHover: String(legacyColors.primary ?? ""),
+        primaryDisabled: String(legacyColors.secondary ?? legacyColors.primary ?? ""),
         secondary: String(legacyColors.secondary ?? ""),
+        secondaryHover: String(legacyColors.secondary ?? ""),
+        secondaryDisabled: String(legacyColors.secondary ?? ""),
+      },
+      gradients: {
+        primary: fallbackGradient(
+          String(legacyColors.primary ?? ""),
+          String(legacyColors.secondary ?? legacyColors.primary ?? "")
+        ),
+        secondary: fallbackGradient(
+          String(legacyColors.secondary ?? legacyColors.primary ?? ""),
+          String(legacyColors.primary ?? "")
+        ),
+      },
+      link: {
+        color: String(legacyColors.primary ?? ""),
+        hover: String(legacyColors.primary ?? ""),
+        visited: String(legacyColors.accent ?? legacyColors.primary ?? ""),
       },
     };
     return ensureThemaTheme(normalized) as unknown as Theme;
   }
 
-  return ensureThemaTheme(rawTheme) as unknown as Theme;
+  return ensureThemaTheme(normalizeExtendedTheme(rawTheme)) as unknown as Theme;
 }
 
 export interface ThemeParseResult {

@@ -3,18 +3,26 @@
   "$id": "https://jumi.local/schemas/theme_settings.schema.json",
   "title": "Theme Settings Knowledge Base",
   "type": "object",
-  "required": ["schemaVersion", "description", "data"],
+  "required": [
+    "schemaVersion",
+    "description",
+    "data"
+  ],
   "additionalProperties": false,
   "properties": {
     "schemaVersion": {
       "type": "string",
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
-    "description": { "$ref": "#/$defs/themeDescription" },
+    "description": {
+      "$ref": "#/$defs/themeDescription"
+    },
     "data": {
       "type": "array",
       "minItems": 1,
-      "items": { "$ref": "#/$defs/themeItem" }
+      "items": {
+        "$ref": "#/$defs/themeItem"
+      }
     }
   },
   "$defs": {
@@ -24,71 +32,185 @@
     },
     "rangeTuple": {
       "type": "array",
-      "items": [{ "type": "number" }, { "type": "number" }],
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
       "minItems": 2,
       "maxItems": 2
     },
     "variationRange": {
       "type": "object",
-      "required": ["hue", "saturation", "lightness"],
+      "required": [
+        "hue",
+        "saturation",
+        "lightness"
+      ],
       "additionalProperties": false,
       "properties": {
-        "hue": { "$ref": "#/$defs/rangeTuple" },
-        "saturation": { "$ref": "#/$defs/rangeTuple" },
-        "lightness": { "$ref": "#/$defs/rangeTuple" }
+        "hue": {
+          "$ref": "#/$defs/rangeTuple"
+        },
+        "saturation": {
+          "$ref": "#/$defs/rangeTuple"
+        },
+        "lightness": {
+          "$ref": "#/$defs/rangeTuple"
+        }
       }
     },
     "textColors": {
       "type": "object",
-      "required": ["base", "muted", "faint", "accent"],
+      "required": [
+        "base",
+        "muted",
+        "faint",
+        "accent"
+      ],
       "additionalProperties": false,
       "properties": {
-        "base": { "$ref": "#/$defs/hslString" },
-        "muted": { "$ref": "#/$defs/hslString" },
-        "faint": { "$ref": "#/$defs/hslString" },
-        "accent": { "$ref": "#/$defs/hslString" }
+        "base": {
+          "$ref": "#/$defs/hslString"
+        },
+        "muted": {
+          "$ref": "#/$defs/hslString"
+        },
+        "faint": {
+          "$ref": "#/$defs/hslString"
+        },
+        "accent": {
+          "$ref": "#/$defs/hslString"
+        }
       }
     },
     "textColorVariations": {
       "type": "object",
-      "required": ["base", "muted", "faint", "accent"],
+      "required": [
+        "base",
+        "muted",
+        "faint",
+        "accent"
+      ],
       "additionalProperties": false,
       "properties": {
-        "base": { "$ref": "#/$defs/variationRange" },
-        "muted": { "$ref": "#/$defs/variationRange" },
-        "faint": { "$ref": "#/$defs/variationRange" },
-        "accent": { "$ref": "#/$defs/variationRange" }
+        "base": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "muted": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "faint": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "accent": {
+          "$ref": "#/$defs/variationRange"
+        }
       }
     },
     "colorPalette": {
       "type": "object",
-      "required": ["background", "textColors", "primary", "secondary"],
+      "required": [
+        "background",
+        "textColors",
+        "primary",
+        "primaryHover",
+        "primaryDisabled",
+        "secondary",
+        "secondaryHover",
+        "secondaryDisabled"
+      ],
       "additionalProperties": false,
       "properties": {
-        "background": { "$ref": "#/$defs/hslString" },
-        "textColors": { "$ref": "#/$defs/textColors" },
-        "primary": { "$ref": "#/$defs/hslString" },
-        "secondary": { "$ref": "#/$defs/hslString" }
+        "background": {
+          "$ref": "#/$defs/hslString"
+        },
+        "textColors": {
+          "$ref": "#/$defs/textColors"
+        },
+        "primary": {
+          "$ref": "#/$defs/hslString"
+        },
+        "secondary": {
+          "$ref": "#/$defs/hslString"
+        },
+        "primaryHover": {
+          "$ref": "#/$defs/hslString"
+        },
+        "primaryDisabled": {
+          "$ref": "#/$defs/hslString"
+        },
+        "secondaryHover": {
+          "$ref": "#/$defs/hslString"
+        },
+        "secondaryDisabled": {
+          "$ref": "#/$defs/hslString"
+        }
       }
     },
     "colorVariations": {
       "type": "object",
-      "required": ["background", "textColors", "primary", "secondary"],
+      "required": [
+        "background",
+        "textColors",
+        "primary",
+        "primaryHover",
+        "primaryDisabled",
+        "secondary",
+        "secondaryHover",
+        "secondaryDisabled",
+        "link"
+      ],
       "additionalProperties": false,
       "properties": {
-        "background": { "$ref": "#/$defs/variationRange" },
-        "textColors": { "$ref": "#/$defs/textColorVariations" },
-        "primary": { "$ref": "#/$defs/variationRange" },
-        "secondary": { "$ref": "#/$defs/variationRange" }
+        "background": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "textColors": {
+          "$ref": "#/$defs/textColorVariations"
+        },
+        "primary": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "secondary": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "primaryHover": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "primaryDisabled": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "secondaryHover": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "secondaryDisabled": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "link": {
+          "$ref": "#/$defs/linkColorVariations"
+        }
       }
     },
     "sizeRecommendations": {
       "type": "object",
-      "required": ["heading", "subheading"],
+      "required": [
+        "heading",
+        "subheading"
+      ],
       "additionalProperties": false,
       "properties": {
-        "heading": { "type": "string", "minLength": 1 },
-        "subheading": { "type": "string", "minLength": 1 }
+        "heading": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subheading": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
     "themeItem": {
@@ -101,6 +223,8 @@
         "tone",
         "audienceType",
         "colorPalette",
+        "gradients",
+        "link",
         "colorVariations",
         "rationale",
         "sizeRecommendations",
@@ -108,31 +232,67 @@
       ],
       "additionalProperties": false,
       "properties": {
-        "pairType": { "type": "string", "minLength": 1 },
-        "fontHeading": { "type": "string", "minLength": 1 },
-        "fontBody": { "type": "string", "minLength": 1 },
+        "pairType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fontHeading": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fontBody": {
+          "type": "string",
+          "minLength": 1
+        },
         "sectors": {
           "type": "array",
           "minItems": 1,
-          "items": { "type": "string", "minLength": 1 }
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         },
         "tone": {
           "type": "array",
           "minItems": 1,
-          "items": { "type": "string", "minLength": 1 }
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         },
         "audienceType": {
           "type": "array",
           "minItems": 1,
-          "items": { "type": "string", "minLength": 1 }
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         },
-        "colorPalette": { "$ref": "#/$defs/colorPalette" },
-        "colorVariations": { "$ref": "#/$defs/colorVariations" },
-        "rationale": { "type": "string", "minLength": 1 },
-        "sizeRecommendations": { "$ref": "#/$defs/sizeRecommendations" },
+        "colorPalette": {
+          "$ref": "#/$defs/colorPalette"
+        },
+        "colorVariations": {
+          "$ref": "#/$defs/colorVariations"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sizeRecommendations": {
+          "$ref": "#/$defs/sizeRecommendations"
+        },
         "iconLibrary": {
           "type": "string",
-          "enum": ["lucide", "phosphor"]
+          "enum": [
+            "lucide",
+            "phosphor"
+          ]
+        },
+        "gradients": {
+          "$ref": "#/$defs/gradients"
+        },
+        "link": {
+          "$ref": "#/$defs/linkColors"
         }
       }
     },
@@ -146,6 +306,8 @@
         "tone",
         "audienceType",
         "colorPalette",
+        "gradients",
+        "link",
         "colorVariations",
         "rationale",
         "sizeRecommendations",
@@ -153,128 +315,521 @@
       ],
       "additionalProperties": false,
       "properties": {
-        "pairType": { "type": "string" },
-        "fontHeading": { "type": "string" },
-        "fontBody": { "type": "string" },
-        "sectors": { "type": "string" },
-        "tone": { "type": "string" },
-        "audienceType": { "type": "string" },
+        "pairType": {
+          "type": "string"
+        },
+        "fontHeading": {
+          "type": "string"
+        },
+        "fontBody": {
+          "type": "string"
+        },
+        "sectors": {
+          "type": "string"
+        },
+        "tone": {
+          "type": "string"
+        },
+        "audienceType": {
+          "type": "string"
+        },
         "colorPalette": {
           "type": "object",
-          "required": ["background", "textColors", "primary", "secondary"],
+          "required": [
+            "background",
+            "textColors",
+            "primary",
+            "primaryHover",
+            "primaryDisabled",
+            "secondary",
+            "secondaryHover",
+            "secondaryDisabled"
+          ],
           "additionalProperties": false,
           "properties": {
-            "background": { "type": "string" },
+            "background": {
+              "type": "string"
+            },
             "textColors": {
               "type": "object",
-              "required": ["base", "muted", "faint", "accent"],
+              "required": [
+                "base",
+                "muted",
+                "faint",
+                "accent"
+              ],
               "additionalProperties": false,
               "properties": {
-                "base": { "type": "string" },
-                "muted": { "type": "string" },
-                "faint": { "type": "string" },
-                "accent": { "type": "string" }
+                "base": {
+                  "type": "string"
+                },
+                "muted": {
+                  "type": "string"
+                },
+                "faint": {
+                  "type": "string"
+                },
+                "accent": {
+                  "type": "string"
+                }
               }
             },
-            "primary": { "type": "string" },
-            "secondary": { "type": "string" }
+            "primary": {
+              "type": "string"
+            },
+            "secondary": {
+              "type": "string"
+            },
+            "primaryHover": {
+              "type": "string"
+            },
+            "primaryDisabled": {
+              "type": "string"
+            },
+            "secondaryHover": {
+              "type": "string"
+            },
+            "secondaryDisabled": {
+              "type": "string"
+            }
           }
         },
         "colorVariations": {
           "type": "object",
-          "required": ["background", "textColors", "primary", "secondary"],
+          "required": [
+            "background",
+            "textColors",
+            "primary",
+            "primaryHover",
+            "primaryDisabled",
+            "secondary",
+            "secondaryHover",
+            "secondaryDisabled",
+            "link"
+          ],
           "additionalProperties": false,
           "properties": {
             "background": {
               "type": "object",
-              "required": ["hue", "saturation", "lightness"],
+              "required": [
+                "hue",
+                "saturation",
+                "lightness"
+              ],
               "additionalProperties": false,
               "properties": {
-                "hue": { "type": "string" },
-                "saturation": { "type": "string" },
-                "lightness": { "type": "string" }
+                "hue": {
+                  "type": "string"
+                },
+                "saturation": {
+                  "type": "string"
+                },
+                "lightness": {
+                  "type": "string"
+                }
               }
             },
             "textColors": {
               "type": "object",
-              "required": ["base", "muted", "faint", "accent"],
+              "required": [
+                "base",
+                "muted",
+                "faint",
+                "accent"
+              ],
               "additionalProperties": false,
               "properties": {
                 "base": {
                   "type": "object",
-                  "required": ["hue", "saturation", "lightness"],
+                  "required": [
+                    "hue",
+                    "saturation",
+                    "lightness"
+                  ],
                   "additionalProperties": false,
                   "properties": {
-                    "hue": { "type": "string" },
-                    "saturation": { "type": "string" },
-                    "lightness": { "type": "string" }
+                    "hue": {
+                      "type": "string"
+                    },
+                    "saturation": {
+                      "type": "string"
+                    },
+                    "lightness": {
+                      "type": "string"
+                    }
                   }
                 },
                 "muted": {
                   "type": "object",
-                  "required": ["hue", "saturation", "lightness"],
+                  "required": [
+                    "hue",
+                    "saturation",
+                    "lightness"
+                  ],
                   "additionalProperties": false,
                   "properties": {
-                    "hue": { "type": "string" },
-                    "saturation": { "type": "string" },
-                    "lightness": { "type": "string" }
+                    "hue": {
+                      "type": "string"
+                    },
+                    "saturation": {
+                      "type": "string"
+                    },
+                    "lightness": {
+                      "type": "string"
+                    }
                   }
                 },
                 "faint": {
                   "type": "object",
-                  "required": ["hue", "saturation", "lightness"],
+                  "required": [
+                    "hue",
+                    "saturation",
+                    "lightness"
+                  ],
                   "additionalProperties": false,
                   "properties": {
-                    "hue": { "type": "string" },
-                    "saturation": { "type": "string" },
-                    "lightness": { "type": "string" }
+                    "hue": {
+                      "type": "string"
+                    },
+                    "saturation": {
+                      "type": "string"
+                    },
+                    "lightness": {
+                      "type": "string"
+                    }
                   }
                 },
                 "accent": {
                   "type": "object",
-                  "required": ["hue", "saturation", "lightness"],
+                  "required": [
+                    "hue",
+                    "saturation",
+                    "lightness"
+                  ],
                   "additionalProperties": false,
                   "properties": {
-                    "hue": { "type": "string" },
-                    "saturation": { "type": "string" },
-                    "lightness": { "type": "string" }
+                    "hue": {
+                      "type": "string"
+                    },
+                    "saturation": {
+                      "type": "string"
+                    },
+                    "lightness": {
+                      "type": "string"
+                    }
                   }
                 }
               }
             },
             "primary": {
               "type": "object",
-              "required": ["hue", "saturation", "lightness"],
+              "required": [
+                "hue",
+                "saturation",
+                "lightness"
+              ],
               "additionalProperties": false,
               "properties": {
-                "hue": { "type": "string" },
-                "saturation": { "type": "string" },
-                "lightness": { "type": "string" }
+                "hue": {
+                  "type": "string"
+                },
+                "saturation": {
+                  "type": "string"
+                },
+                "lightness": {
+                  "type": "string"
+                }
               }
             },
             "secondary": {
               "type": "object",
-              "required": ["hue", "saturation", "lightness"],
+              "required": [
+                "hue",
+                "saturation",
+                "lightness"
+              ],
               "additionalProperties": false,
               "properties": {
-                "hue": { "type": "string" },
-                "saturation": { "type": "string" },
-                "lightness": { "type": "string" }
+                "hue": {
+                  "type": "string"
+                },
+                "saturation": {
+                  "type": "string"
+                },
+                "lightness": {
+                  "type": "string"
+                }
+              }
+            },
+            "primaryHover": {
+              "type": "object",
+              "required": [
+                "hue",
+                "saturation",
+                "lightness"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "hue": {
+                  "type": "string"
+                },
+                "saturation": {
+                  "type": "string"
+                },
+                "lightness": {
+                  "type": "string"
+                }
+              }
+            },
+            "primaryDisabled": {
+              "type": "object",
+              "required": [
+                "hue",
+                "saturation",
+                "lightness"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "hue": {
+                  "type": "string"
+                },
+                "saturation": {
+                  "type": "string"
+                },
+                "lightness": {
+                  "type": "string"
+                }
+              }
+            },
+            "secondaryHover": {
+              "type": "object",
+              "required": [
+                "hue",
+                "saturation",
+                "lightness"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "hue": {
+                  "type": "string"
+                },
+                "saturation": {
+                  "type": "string"
+                },
+                "lightness": {
+                  "type": "string"
+                }
+              }
+            },
+            "secondaryDisabled": {
+              "type": "object",
+              "required": [
+                "hue",
+                "saturation",
+                "lightness"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "hue": {
+                  "type": "string"
+                },
+                "saturation": {
+                  "type": "string"
+                },
+                "lightness": {
+                  "type": "string"
+                }
+              }
+            },
+            "link": {
+              "type": "object",
+              "required": [
+                "color",
+                "hover",
+                "visited"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "color": {
+                  "type": "object",
+                  "required": [
+                    "hue",
+                    "saturation",
+                    "lightness"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "hue": {
+                      "type": "string"
+                    },
+                    "saturation": {
+                      "type": "string"
+                    },
+                    "lightness": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "hover": {
+                  "type": "object",
+                  "required": [
+                    "hue",
+                    "saturation",
+                    "lightness"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "hue": {
+                      "type": "string"
+                    },
+                    "saturation": {
+                      "type": "string"
+                    },
+                    "lightness": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "visited": {
+                  "type": "object",
+                  "required": [
+                    "hue",
+                    "saturation",
+                    "lightness"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "hue": {
+                      "type": "string"
+                    },
+                    "saturation": {
+                      "type": "string"
+                    },
+                    "lightness": {
+                      "type": "string"
+                    }
+                  }
+                }
               }
             }
           }
         },
-        "rationale": { "type": "string" },
+        "rationale": {
+          "type": "string"
+        },
         "sizeRecommendations": {
           "type": "object",
-          "required": ["heading", "subheading"],
+          "required": [
+            "heading",
+            "subheading"
+          ],
           "additionalProperties": false,
           "properties": {
-            "heading": { "type": "string" },
-            "subheading": { "type": "string" }
+            "heading": {
+              "type": "string"
+            },
+            "subheading": {
+              "type": "string"
+            }
           }
         },
-        "iconLibrary": { "type": "string" }
+        "iconLibrary": {
+          "type": "string"
+        },
+        "gradients": {
+          "type": "object",
+          "required": [
+            "primary",
+            "secondary"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "primary": {
+              "type": "string"
+            },
+            "secondary": {
+              "type": "string"
+            }
+          }
+        },
+        "link": {
+          "type": "object",
+          "required": [
+            "color",
+            "hover",
+            "visited"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "color": {
+              "type": "string"
+            },
+            "hover": {
+              "type": "string"
+            },
+            "visited": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "linkColors": {
+      "type": "object",
+      "required": [
+        "color",
+        "hover",
+        "visited"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "$ref": "#/$defs/hslString"
+        },
+        "hover": {
+          "$ref": "#/$defs/hslString"
+        },
+        "visited": {
+          "$ref": "#/$defs/hslString"
+        }
+      }
+    },
+    "linkColorVariations": {
+      "type": "object",
+      "required": [
+        "color",
+        "hover",
+        "visited"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "hover": {
+          "$ref": "#/$defs/variationRange"
+        },
+        "visited": {
+          "$ref": "#/$defs/variationRange"
+        }
+      }
+    },
+    "gradients": {
+      "type": "object",
+      "required": [
+        "primary",
+        "secondary"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "primary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secondary": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     }
   }
