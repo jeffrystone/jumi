@@ -1,14 +1,44 @@
-import type { ThemeSettingsItem } from "@/utils/themeSettings";
 import type { CSSProperties } from "react";
+
+interface ThemeTextColors {
+  base: string;
+  muted: string;
+  faint: string;
+  accent: string;
+}
+
+interface ThemeColorPalette {
+  background: string;
+  textColors: ThemeTextColors;
+  primary: string;
+  primaryHover: string;
+  primaryDisabled: string;
+  secondary: string;
+  secondaryHover: string;
+  secondaryDisabled: string;
+}
+
+interface ThemeGradients {
+  background: string;
+  primary: string;
+  secondary: string;
+  text: string;
+}
+
+interface ThemeLinks {
+  color: string;
+  hover: string;
+  visited: string;
+}
 
 export interface ThemePreviewModel {
   pairType: string;
   headingFamily: string;
   bodyFamily: string;
   accentWeight: string;
-  palette: ThemeSettingsItem["colorPalette"];
-  gradients: ThemeSettingsItem["gradients"];
-  link: ThemeSettingsItem["link"];
+  palette: ThemeColorPalette;
+  gradients: ThemeGradients;
+  link: ThemeLinks;
 }
 
 export function hslColor(value: string): string {
@@ -28,6 +58,7 @@ export function buildScopedThemeVars(model: ThemePreviewModel): CSSProperties {
     "--secondary": model.palette.secondary,
     "--secondary-hover": model.palette.secondaryHover,
     "--secondary-disabled": model.palette.secondaryDisabled,
+    "--gradient-background": model.gradients.background,
     "--gradient-primary": model.gradients.primary,
     "--gradient-secondary": model.gradients.secondary,
     "--gradient-text": model.gradients.text,

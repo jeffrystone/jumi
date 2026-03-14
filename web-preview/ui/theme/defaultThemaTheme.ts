@@ -17,6 +17,7 @@ export const defaultThemaTheme: ThemaTheme = {
     secondaryDisabled: "210 20% 94%",
   },
   gradients: {
+    background: "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96.1%))",
     primary: "linear-gradient(135deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%))",
     secondary: "linear-gradient(135deg, hsl(210 40% 96.1%), hsl(210 28% 90%))",
     text: "linear-gradient(90deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%))",

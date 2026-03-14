@@ -30,6 +30,7 @@
     --muted-foreground: 215.4 16.3% 46.9%;
     --faint-foreground: 215 20.2% 65.1%;
     --accent: 221.2 83.2% 53.3%;
+    --gradient-background: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96.1%));
     --gradient-primary: linear-gradient(135deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%));
     --gradient-secondary: linear-gradient(135deg, hsl(210 40% 96.1%), hsl(210 28% 90%));
     --gradient-text: linear-gradient(90deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%));
@@ -67,6 +68,7 @@
     --muted-foreground: 215 20.2% 65.1%;
     --faint-foreground: 215 16% 56%;
     --accent: 180 70% 60%;
+    --gradient-background: linear-gradient(180deg, hsl(222.2 84% 4.9%), hsl(217.2 32.6% 17.5%));
     --gradient-primary: linear-gradient(135deg, hsl(210 40% 98%), hsl(180 70% 60%));
     --gradient-secondary: linear-gradient(135deg, hsl(217.2 32.6% 17.5%), hsl(217.2 22% 25%));
     --gradient-text: linear-gradient(90deg, hsl(210 40% 98%), hsl(180 70% 60%));

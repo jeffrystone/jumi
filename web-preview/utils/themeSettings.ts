@@ -20,6 +20,7 @@ interface ThemeColorPalette {
 }
 
 interface ThemeGradients {
+  background: string;
   primary: string;
   secondary: string;
   text: string;

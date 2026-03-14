@@ -252,6 +252,7 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
           className="rounded-lg p-4"
           style={{
             ...buildScopedThemeVars(model),
+            backgroundImage: "var(--gradient-background)",
             backgroundColor: "hsl(var(--secondary))",
             fontFamily: model.bodyFamily,
           }}

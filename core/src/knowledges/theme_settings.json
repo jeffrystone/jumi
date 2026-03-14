@@ -107,7 +107,8 @@
     "gradients": {
       "primary": "Основной градиент темы в формате CSS (linear-gradient(...))",
       "secondary": "Вторичный градиент темы в формате CSS (linear-gradient(...))",
-      "text": "Градиент для акцентного текста в формате CSS (linear-gradient(...))"
+      "text": "Градиент для акцентного текста в формате CSS (linear-gradient(...))",
+      "background": "Градиент фона для больших блоков/секций в формате CSS (linear-gradient(...))"
     },
     "link": {
       "color": "Базовый цвет ссылок (должен совпадать с colorPalette.primary)",
@@ -362,7 +363,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 82% 42%))",
         "secondary": "linear-gradient(135deg, hsl(45 50% 70%), hsl(45 52% 62%))",
-        "text": "linear-gradient(90deg, hsl(45 80% 50%), hsl(45 82% 42%))"
+        "text": "linear-gradient(90deg, hsl(45 80% 50%), hsl(45 82% 42%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 98%), hsl(45 50% 70%))"
       },
       "link": {
         "color": "45 80% 50%",
@@ -616,7 +618,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
         "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
-        "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))"
+        "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
       },
       "link": {
         "color": "210 80% 45%",
@@ -869,7 +872,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(250 70% 55%), hsl(250 72% 47%))",
         "secondary": "linear-gradient(135deg, hsl(250 40% 75%), hsl(250 42% 67%))",
-        "text": "linear-gradient(90deg, hsl(250 70% 55%), hsl(250 72% 47%))"
+        "text": "linear-gradient(90deg, hsl(250 70% 55%), hsl(250 72% 47%))",
+        "background": "linear-gradient(180deg, hsl(220 20% 95%), hsl(250 40% 75%))"
       },
       "link": {
         "color": "250 70% 55%",
@@ -1123,7 +1127,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(340 60% 60%), hsl(340 62% 52%))",
         "secondary": "linear-gradient(135deg, hsl(340 30% 85%), hsl(340 32% 77%))",
-        "text": "linear-gradient(90deg, hsl(340 60% 60%), hsl(340 62% 52%))"
+        "text": "linear-gradient(90deg, hsl(340 60% 60%), hsl(340 62% 52%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(340 30% 85%))"
       },
       "link": {
         "color": "340 60% 60%",
@@ -1376,7 +1381,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(15 90% 50%), hsl(15 92% 42%))",
         "secondary": "linear-gradient(135deg, hsl(30 50% 70%), hsl(30 52% 62%))",
-        "text": "linear-gradient(90deg, hsl(15 90% 50%), hsl(15 92% 42%))"
+        "text": "linear-gradient(90deg, hsl(15 90% 50%), hsl(15 92% 42%))",
+        "background": "linear-gradient(180deg, hsl(30 20% 95%), hsl(30 50% 70%))"
       },
       "link": {
         "color": "15 90% 50%",
@@ -1629,7 +1635,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(20 70% 45%), hsl(20 72% 37%))",
         "secondary": "linear-gradient(135deg, hsl(40 30% 60%), hsl(40 32% 52%))",
-        "text": "linear-gradient(90deg, hsl(20 70% 45%), hsl(20 72% 37%))"
+        "text": "linear-gradient(90deg, hsl(20 70% 45%), hsl(20 72% 37%))",
+        "background": "linear-gradient(180deg, hsl(40 20% 90%), hsl(40 30% 60%))"
       },
       "link": {
         "color": "20 70% 45%",
@@ -1882,7 +1889,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(340 70% 60%), hsl(340 72% 52%))",
         "secondary": "linear-gradient(135deg, hsl(340 30% 80%), hsl(340 32% 72%))",
-        "text": "linear-gradient(90deg, hsl(340 70% 60%), hsl(340 72% 52%))"
+        "text": "linear-gradient(90deg, hsl(340 70% 60%), hsl(340 72% 52%))",
+        "background": "linear-gradient(180deg, hsl(350 30% 97%), hsl(340 30% 80%))"
       },
       "link": {
         "color": "340 70% 60%",
@@ -2135,7 +2143,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 2% 22%))",
         "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
-        "text": "linear-gradient(90deg, hsl(0 0% 30%), hsl(0 2% 22%))"
+        "text": "linear-gradient(90deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
       },
       "link": {
         "color": "0 0% 30%",
@@ -2388,7 +2397,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(180 100% 52%))",
         "secondary": "linear-gradient(135deg, hsl(240 30% 30%), hsl(240 34% 37%))",
-        "text": "linear-gradient(90deg, hsl(180 100% 45%), hsl(180 100% 52%))"
+        "text": "linear-gradient(90deg, hsl(180 100% 45%), hsl(180 100% 52%))",
+        "background": "linear-gradient(180deg, hsl(240 20% 10%), hsl(240 30% 30%))"
       },
       "link": {
         "color": "180 100% 45%",
@@ -2641,7 +2651,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(25 82% 52%))",
         "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(30 42% 72%))",
-        "text": "linear-gradient(90deg, hsl(25 80% 60%), hsl(25 82% 52%))"
+        "text": "linear-gradient(90deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+        "background": "linear-gradient(180deg, hsl(40 30% 95%), hsl(30 40% 80%))"
       },
       "link": {
         "color": "25 80% 60%",
@@ -2895,7 +2906,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(140 60% 40%), hsl(140 62% 32%))",
         "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
-        "text": "linear-gradient(90deg, hsl(140 60% 40%), hsl(140 62% 32%))"
+        "text": "linear-gradient(90deg, hsl(140 60% 40%), hsl(140 62% 32%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
       },
       "link": {
         "color": "140 60% 40%",
@@ -3148,7 +3160,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(0 80% 50%), hsl(0 82% 42%))",
         "secondary": "linear-gradient(135deg, hsl(0 30% 70%), hsl(0 32% 62%))",
-        "text": "linear-gradient(90deg, hsl(0 80% 50%), hsl(0 82% 42%))"
+        "text": "linear-gradient(90deg, hsl(0 80% 50%), hsl(0 82% 42%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 30% 70%))"
       },
       "link": {
         "color": "0 80% 50%",
@@ -3401,7 +3414,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 57%))",
         "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
-        "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 57%))"
+        "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 57%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 30%))"
       },
       "link": {
         "color": "30 100% 50%",
@@ -3654,7 +3668,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(330 90% 55%), hsl(330 92% 47%))",
         "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(200 32% 62%))",
-        "text": "linear-gradient(90deg, hsl(330 90% 55%), hsl(330 92% 47%))"
+        "text": "linear-gradient(90deg, hsl(330 90% 55%), hsl(330 92% 47%))",
+        "background": "linear-gradient(180deg, hsl(200 50% 95%), hsl(200 30% 70%))"
       },
       "link": {
         "color": "330 90% 55%",
@@ -3909,7 +3924,8 @@
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
         "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
-        "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))"
+        "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+        "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
       },
       "link": {
         "color": "210 60% 45%",

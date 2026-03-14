@@ -65,6 +65,8 @@ gradients.primary — основной градиент темы (строка C
 
 gradients.secondary — вторичный градиент темы (строка CSS)
 
+gradients.background — градиент фона для крупных блоков/секций
+
 gradients.text — градиент для акцентного текста (строка CSS)
 
 link.color — базовый цвет ссылок, ДОЛЖЕН совпадать с colorPalette.primary
@@ -118,6 +120,7 @@ json
     "secondaryDisabled": "hue saturation% lightness%"
   },
   "gradients": {
+    "background": "строка CSS gradient для фона (например 'linear-gradient(180deg, hsl(...), hsl(...))')",
     "primary": "строка CSS gradient (например 'linear-gradient(135deg, hsl(...), hsl(...))')",
     "secondary": "строка CSS gradient",
     "text": "строка CSS gradient для текста (например 'linear-gradient(90deg, hsl(...), hsl(...))')"
@@ -179,6 +182,7 @@ json
     "secondaryDisabled": "210 20% 94%"
   },
   "gradients": {
+    "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96.1%))",
     "primary": "linear-gradient(135deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%))",
     "secondary": "linear-gradient(135deg, hsl(210 40% 96.1%), hsl(210 28% 90%))",
     "text": "linear-gradient(90deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%))"

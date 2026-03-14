@@ -748,12 +748,16 @@
         "gradients": {
           "type": "object",
           "required": [
+            "background",
             "primary",
             "secondary",
             "text"
           ],
           "additionalProperties": false,
           "properties": {
+            "background": {
+              "type": "string"
+            },
             "primary": {
               "type": "string"
             },
@@ -830,12 +834,17 @@
     "gradients": {
       "type": "object",
       "required": [
+        "background",
         "primary",
         "secondary",
         "text"
       ],
       "additionalProperties": false,
       "properties": {
+        "background": {
+          "type": "string",
+          "minLength": 1
+        },
         "primary": {
           "type": "string",
           "minLength": 1

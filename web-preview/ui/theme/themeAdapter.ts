@@ -46,6 +46,7 @@ function buildAliases(path: string[]): string[] {
 
   if (path.length === 2 && path[0] === "gradients") {
     const [, key] = path;
+    if (key === "background") return ["gradient-background"];
     if (key === "primary") return ["gradient-primary"];
     if (key === "secondary") return ["gradient-secondary"];
     if (key === "text") return ["gradient-text"];
@@ -151,6 +152,7 @@ function normalizeExtendedTheme(rawTheme: unknown): unknown {
       secondaryDisabled,
     },
     gradients: {
+      background: String(gradients.background ?? fallbackGradient(String(colorPalette.background ?? ""), secondary)),
       primary: String(gradients.primary ?? fallbackGradient(primary, secondary)),
       secondary: String(gradients.secondary ?? fallbackGradient(secondary, primary)),
       text: String(gradients.text ?? fallbackGradient(primary, primaryHover)),
@@ -200,6 +202,10 @@ export function adaptThemaTheme(rawTheme: unknown): Theme {
         },
       },
       gradients: {
+        background: fallbackGradient(
+          String(legacyColors.background ?? ""),
+          String(legacyColors.secondary ?? legacyColors.background ?? "")
+        ),
         primary: fallbackGradient(
           String(legacyColors.primary ?? ""),
           String(legacyColors.secondary ?? legacyColors.primary ?? "")

@@ -18,6 +18,7 @@ export const THEME_VARS = {
   primaryDisabled: "--primary-disabled",
   secondaryHover: "--secondary-hover",
   secondaryDisabled: "--secondary-disabled",
+  gradientBackground: "--gradient-background",
   gradientPrimary: "--gradient-primary",
   gradientSecondary: "--gradient-secondary",
   gradientText: "--gradient-text",
