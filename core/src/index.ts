@@ -21,3 +21,12 @@ export {
   type SectionNode,
   type AtomNode,
 } from "./knowledges/templates/templateParser.js";
+export {
+  rankThemes,
+  readThemeCandidates,
+  selectBestTheme,
+  type HrThemeProfile,
+  type RankedTheme,
+  type ThemeCandidate,
+  type ThemeSelectionResult,
+} from "./theme/themeSelector.js";

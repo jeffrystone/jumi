@@ -47,6 +47,7 @@ export function hslColor(value: string): string {
 
 export function buildScopedThemeVars(model: ThemePreviewModel): CSSProperties {
   return {
+    "--font-family": model.bodyFamily,
     "--background": model.palette.background,
     "--foreground": model.palette.textColors.base,
     "--muted-foreground": model.palette.textColors.muted,

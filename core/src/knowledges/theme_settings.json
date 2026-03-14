@@ -22,87 +22,7 @@
       "secondaryHover": "Состояние hover для secondary",
       "secondaryDisabled": "Состояние disabled для secondary"
     },
-    "colorVariations": {
-      "background": {
-        "hue": "Диапазон изменения оттенка (в градусах)",
-        "saturation": "Диапазон изменения насыщенности (в процентных пунктах)",
-        "lightness": "Диапазон изменения светлоты (в процентных пунктах)"
-      },
-      "textColors": {
-        "base": {
-          "hue": "Диапазон для основного текста",
-          "saturation": "Диапазон для основного текста",
-          "lightness": "Диапазон для основного текста (обычно низкий)"
-        },
-        "muted": {
-          "hue": "Диапазон для muted (обычно совпадает с base)",
-          "saturation": "Диапазон (может быть ниже base)",
-          "lightness": "Диапазон (средний)"
-        },
-        "faint": {
-          "hue": "Диапазон для faint",
-          "saturation": "Диапазон (может быть ещё ниже)",
-          "lightness": "Диапазон (высокий)"
-        },
-        "accent": {
-          "hue": "Диапазон для accent-текста (обычно близок к primary)",
-          "saturation": "Диапазон для accent-текста",
-          "lightness": "Диапазон для accent-текста"
-        }
-      },
-      "primary": {
-        "hue": "Диапазон для акцента",
-        "saturation": "Диапазон для акцента",
-        "lightness": "Диапазон для акцента"
-      },
-      "secondary": {
-        "hue": "Диапазон для второстепенного цвета",
-        "saturation": "Диапазон",
-        "lightness": "Диапазон"
-      },
-      "primaryHover": {
-        "hue": "Диапазон для primary hover",
-        "saturation": "Диапазон для primary hover",
-        "lightness": "Диапазон для primary hover"
-      },
-      "primaryDisabled": {
-        "hue": "Диапазон для primary disabled",
-        "saturation": "Диапазон для primary disabled",
-        "lightness": "Диапазон для primary disabled"
-      },
-      "secondaryHover": {
-        "hue": "Диапазон для secondary hover",
-        "saturation": "Диапазон для secondary hover",
-        "lightness": "Диапазон для secondary hover"
-      },
-      "secondaryDisabled": {
-        "hue": "Диапазон для secondary disabled",
-        "saturation": "Диапазон для secondary disabled",
-        "lightness": "Диапазон для secondary disabled"
-      },
-      "link": {
-        "color": {
-          "hue": "Диапазон изменения оттенка (в градусах)",
-          "saturation": "Диапазон изменения насыщенности (в процентных пунктах)",
-          "lightness": "Диапазон изменения светлоты (в процентных пунктах)"
-        },
-        "hover": {
-          "hue": "Диапазон изменения оттенка (в градусах)",
-          "saturation": "Диапазон изменения насыщенности (в процентных пунктах)",
-          "lightness": "Диапазон изменения светлоты (в процентных пунктах)"
-        },
-        "visited": {
-          "hue": "Диапазон изменения оттенка (в градусах)",
-          "saturation": "Диапазон изменения насыщенности (в процентных пунктах)",
-          "lightness": "Диапазон изменения светлоты (в процентных пунктах)"
-        }
-      }
-    },
     "rationale": "Пояснение, почему эта цветовая схема работает для данной пары шрифтов и сферы",
-    "sizeRecommendations": {
-      "heading": "Рекомендуемый размер заголовка (в px)",
-      "subheading": "Рекомендуемый размер подзаголовка (в px)"
-    },
     "iconLibrary": "Рекомендуемая библиотека иконок (lucide или phosphor) для всей темы",
     "gradients": {
       "primary": "Основной градиент темы в формате CSS (linear-gradient(...))",
@@ -115,9 +35,1796 @@
       "hover": "Цвет ссылок в состоянии hover",
       "visited": "Цвет посещённых ссылок"
     },
-    "accentWeight": "Толщина (font-weight) для accent-текста, строкой (например '600')"
+    "accentWeight": "Толщина (font-weight) для accent-текста, строкой (например '600')",
+    "sizeTier": "Градация типографики: display (крупные обложки), hero, section, standard"
   },
   "data": [
+      {
+        "pairType": "Expressive Editorial",
+        "fontHeading": "Fraunces",
+        "fontBody": "Work Sans",
+        "sectors": ["Креативные агентства", "Медиа", "Бренды с характером"],
+        "tone": ["экспрессивный", "элегантный", "современный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "350 75% 50%"
+          },
+          "primary": "350 75% 50%",
+          "secondary": "350 30% 85%",
+          "primaryHover": "350 77% 42%",
+          "primaryDisabled": "350 20% 70%",
+          "secondaryHover": "350 32% 77%",
+          "secondaryDisabled": "350 15% 95%"
+        },
+        "rationale": "Fraunces — это переменный шрифт с уникальным характером, способный передавать драматизм и элегантность в заголовках. Work Sans выступает идеальным нейтральным фоном, обеспечивая превосходную читаемость. Сочетание создаёт запоминающийся, современный и смелый образ [citation:7][citation:9].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(350 75% 50%), hsl(350 77% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(350 30% 85%), hsl(350 32% 77%))",
+          "text": "linear-gradient(90deg, hsl(350 75% 50%), hsl(350 77% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(350 30% 85%))"
+        },
+        "link": {
+          "color": "350 75% 50%",
+          "hover": "350 77% 42%",
+          "visited": "350 55% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Urban Bold",
+        "fontHeading": "Oswald",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Спорт", "Мероприятия", "Молодёжные бренды", "Городские проекты"],
+        "tone": ["дерзкий", "энергичный", "уверенный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 100% 40%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Oswald — это конденсированный, мощный шрифт, идеально подходящий для коротких, сильных заголовков. В паре с универсальным и чистым Source Sans Pro он создаёт динамичный и современный образ, отлично работающий в городской эстетике [citation:3][citation:7][citation:8].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 40%",
+          "visited": "30 70% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Classic Power",
+        "fontHeading": "Arvo",
+        "fontBody": "Roboto",
+        "sectors": ["Корпоративные сайты", "Технологические блоги", "Юридические фирмы"],
+        "tone": ["авторитетный", "надёжный", "основательный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 65%",
+            "accent": "0 0% 30%"
+          },
+          "primary": "0 0% 30%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "0 2% 22%",
+          "primaryDisabled": "0 0% 60%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Arvo с его геометрическими slab-засечками придаёт заголовкам внушительную структуру и стабильность, в то время как Roboto обеспечивает безупречную функциональность и читаемость основного текста. Это идеальная пара для проектов, где нужна уверенность и профессионализм [citation:1][citation:7].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "0 0% 30%",
+          "hover": "0 2% 22%",
+          "visited": "30 15% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Retro Dynamic",
+        "fontHeading": "Bebas Neue",
+        "fontBody": "Inter",
+        "sectors": ["Брендинг", "Промо-сайты", "Киноиндустрия", "Музыкальные лейблы"],
+        "tone": ["винтажный", "современный", "динамичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "45 100% 50%"
+          },
+          "primary": "45 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "45 100% 40%",
+          "primaryDisabled": "45 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 50%"
+        },
+        "rationale": "Bebas Neue — это жирный, заглавный шрифт с чистыми линиями, который мгновенно привлекает внимание и обладает ретро-футуристическим шармом. В паре с нейтральным и сверхчитаемым Inter, идеально подходящим для UI, создаётся эффектный контраст, идеальный для промо-лендингов [citation:1][citation:6][citation:7].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 100% 50%), hsl(45 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(45 100% 50%), hsl(45 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 10%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "45 100% 50%",
+          "hover": "45 100% 40%",
+          "visited": "45 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Organic Minimal",
+        "fontHeading": "Sora",
+        "fontBody": "Literata",
+        "sectors": ["Эко-бренды", "Здоровье", "Лайфстайл-блоги"],
+        "tone": ["органичный", "спокойный", "доверительный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "120 20% 95%",
+          "textColors": {
+            "base": "120 10% 15%",
+            "muted": "120 10% 35%",
+            "faint": "120 10% 55%",
+            "accent": "150 50% 35%"
+          },
+          "primary": "150 50% 35%",
+          "secondary": "120 20% 85%",
+          "primaryHover": "150 52% 27%",
+          "primaryDisabled": "150 20% 65%",
+          "secondaryHover": "120 22% 77%",
+          "secondaryDisabled": "120 10% 95%"
+        },
+        "rationale": "Sora — это современный геометрический гротеск с дружелюбным, открытым характером. Literata, созданная для комфортного чтения на экране, добавляет тексту академическую глубину и органичность. Вместе они создают ощущение естественной гармонии и надёжности [citation:9].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(150 50% 35%), hsl(150 52% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(120 20% 85%), hsl(120 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(150 50% 35%), hsl(150 52% 27%))",
+          "background": "linear-gradient(180deg, hsl(120 20% 95%), hsl(120 20% 85%))"
+        },
+        "link": {
+          "color": "150 50% 35%",
+          "hover": "150 52% 27%",
+          "visited": "150 35% 25%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Monospace Modern",
+        "fontHeading": "Space Grotesk",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Технологические стартапы", "IT-блоги", "Портфолио разработчиков"],
+        "tone": ["футуристичный", "инновационный", "чистый"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "210 20% 98%",
+          "textColors": {
+            "base": "210 10% 20%",
+            "muted": "210 10% 40%",
+            "faint": "210 10% 60%",
+            "accent": "180 100% 30%"
+          },
+          "primary": "180 100% 30%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "180 100% 25%",
+          "primaryDisabled": "180 30% 60%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 10% 95%"
+        },
+        "rationale": "Space Grotesk — это современный гротеск с моноширинным оттенком, придающий дизайну техничный и уникальный характер. Source Sans Pro добавляет необходимую долю нейтральности и удобочитаемости, создавая идеальный баланс для инновационных IT-проектов [citation:4][citation:9].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(180 100% 30%), hsl(180 100% 25%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(180 100% 30%), hsl(180 100% 25%))",
+          "background": "linear-gradient(180deg, hsl(210 20% 98%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "180 100% 30%",
+          "hover": "180 100% 25%",
+          "visited": "180 70% 25%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Soft Elegance",
+        "fontHeading": "Quicksand",
+        "fontBody": "Cormorant Garamond",
+        "sectors": ["Свадебные агентства", "Бутики", "Премиум-услуги", "Косметические бренды"],
+        "tone": ["нежный", "элегантный", "утончённый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 35%",
+            "faint": "0 0% 55%",
+            "accent": "340 40% 45%"
+          },
+          "primary": "340 40% 45%",
+          "secondary": "340 20% 85%",
+          "primaryHover": "340 42% 37%",
+          "primaryDisabled": "340 15% 70%",
+          "secondaryHover": "340 22% 77%",
+          "secondaryDisabled": "340 10% 95%"
+        },
+        "rationale": "Мягкие, округлые формы Quicksand в заголовках создают ощущение уюта и доступности, в то время как изысканная классика Cormorant Garamond в основном тексте добавляет нотку благородства и премиальности. Контраст стилей создаёт глубокую и запоминающуюся эстетику [citation:3][citation:7].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(340 40% 45%), hsl(340 42% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(340 20% 85%), hsl(340 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(340 40% 45%), hsl(340 42% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(340 20% 85%))"
+        },
+        "link": {
+          "color": "340 40% 45%",
+          "hover": "340 42% 37%",
+          "visited": "340 30% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Neo-Grotesque Tech",
+        "fontHeading": "Urbanist",
+        "fontBody": "Inter",
+        "sectors": ["SaaS", "AI-стартапы", "Корпоративные сайты"],
+        "tone": ["современный", "функциональный", "минималистичный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Urbanist — это чистый, нейтральный и современный гротеск, набирающий популярность в 2026 году. В паре с королём UI-типографики Inter он создаёт идеальную, ненавязчивую, но стильную систему для цифровых продуктов, где функциональность стоит на первом месте [citation:4][citation:5].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "230 60% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Elegant Dramatic",
+        "fontHeading": "Bodoni Moda",
+        "fontBody": "Lato",
+        "sectors": ["Fashion", "Глянцевые журналы", "Премиум-бренды", "Искусство"],
+        "tone": ["гламурный", "драматичный", "премиальный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "0 80% 45%"
+          },
+          "primary": "0 80% 45%",
+          "secondary": "0 30% 70%",
+          "primaryHover": "0 82% 37%",
+          "primaryDisabled": "0 25% 70%",
+          "secondaryHover": "0 32% 62%",
+          "secondaryDisabled": "0 16.5% 86%"
+        },
+        "rationale": "Bodoni Moda — это современная интерпретация классической антиквы с сильным контрастом, придающая заголовкам драматизм и изысканность. Нейтральный Lato позволяет этому великолепию раскрыться, не перегружая восприятие, создавая образ высокой моды [citation:3].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 80% 45%), hsl(0 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 30% 70%), hsl(0 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(0 80% 45%), hsl(0 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 30% 70%))"
+        },
+        "link": {
+          "color": "0 80% 45%",
+          "hover": "0 82% 37%",
+          "visited": "0 60% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Geometric Warmth",
+        "fontHeading": "Manrope",
+        "fontBody": "Crimson Pro",
+        "sectors": ["Дизайн-студии", "Креативные портфолио", "Маркетинговые агентства"],
+        "tone": ["современный", "профессиональный", "креативный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "30 20% 95%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 35%",
+            "faint": "30 10% 55%",
+            "accent": "15 70% 45%"
+          },
+          "primary": "15 70% 45%",
+          "secondary": "30 40% 75%",
+          "primaryHover": "15 72% 37%",
+          "primaryDisabled": "15 25% 70%",
+          "secondaryHover": "30 42% 67%",
+          "secondaryDisabled": "30 20% 90%"
+        },
+        "rationale": "Manrope — это современный геометрический гротеск с техничностью и теплотой одновременно, идеально подходящий для заголовков. В паре с мягкой, каллиграфической антиквой Crimson Pro, создаётся изысканный и запоминающийся контраст, который подчеркнёт креативность бренда [citation:5][citation:7].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(15 70% 45%), hsl(15 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(30 40% 75%), hsl(30 42% 67%))",
+          "text": "linear-gradient(90deg, hsl(15 70% 45%), hsl(15 72% 37%))",
+          "background": "linear-gradient(180deg, hsl(30 20% 95%), hsl(30 40% 75%))"
+        },
+        "link": {
+          "color": "15 70% 45%",
+          "hover": "15 72% 37%",
+          "visited": "15 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Modern Stencil",
+        "fontHeading": "Big Shoulders Display",
+        "fontBody": "Open Sans",
+        "sectors": ["Промо-акции", "Фестивали", "Графический дизайн", "Музеи"],
+        "tone": ["смелый", "графичный", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "0 0% 20%"
+          },
+          "primary": "0 0% 20%",
+          "secondary": "0 0% 85%",
+          "primaryHover": "0 0% 10%",
+          "primaryDisabled": "0 0% 60%",
+          "secondaryHover": "0 2% 77%",
+          "secondaryDisabled": "0 0% 95%"
+        },
+        "rationale": "Big Shoulders Display — это конденсированный, рубленый гротеск, напоминающий трафаретные шрифты на городских зданиях. Он обладает мощной графичностью и идеально подходит для коротких, ударных заголовков. Open Sans добавляет необходимую функциональность и читаемость для остального текста [citation:3].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 10%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 85%), hsl(0 2% 77%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 20%), hsl(0 0% 10%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 85%))"
+        },
+        "link": {
+          "color": "0 0% 20%",
+          "hover": "0 0% 10%",
+          "visited": "0 0% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Tech Serif",
+        "fontHeading": "Spectral",
+        "fontBody": "Inter",
+        "sectors": ["Медиа", "Технологические журналы", "Блоги о науке"],
+        "tone": ["интеллектуальный", "экспертный", "современный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Spectral — это шрифт с сильным характером и выразительными италиками, который привносит в дизайн интеллектуальную глубину и художественность. В паре с чистым и функциональным Inter он создаёт идеальный баланс для изданий, пишущих о сложных, современных темах [citation:7][citation:8].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Playful Retro",
+        "fontHeading": "Monoton",
+        "fontBody": "Rubik",
+        "sectors": ["Музыкальные проекты", "Ночные клубы", "Молодёжные фестивали"],
+        "tone": ["экспрессивный", "ретро", "игривый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "300 100% 50%"
+          },
+          "primary": "300 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "300 100% 40%",
+          "primaryDisabled": "300 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 50%"
+        },
+        "rationale": "Monoton — это декоративный, почти кинетический шрифт, который мгновенно притягивает взгляд и создаёт атмосферу ретро-футуризма. Rubik с его мягкими, округлыми формами уравновешивает эту экспрессию, делая основной текст комфортным для чтения. Идеально для проектов, требующих визуального шока [citation:1].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(300 100% 50%), hsl(300 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(300 100% 50%), hsl(300 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "300 100% 50%",
+          "hover": "300 100% 40%",
+          "visited": "300 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Corporate Elegance",
+        "fontHeading": "Libre Baskerville",
+        "fontBody": "Montserrat",
+        "sectors": ["Финансы", "Юридические услуги", "Консалтинг", "Премиум-бренды"],
+        "tone": ["классический", "элегантный", "доверительный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 35%",
+            "faint": "0 0% 55%",
+            "accent": "40 50% 40%"
+          },
+          "primary": "40 50% 40%",
+          "secondary": "0 0% 85%",
+          "primaryHover": "40 52% 32%",
+          "primaryDisabled": "40 20% 65%",
+          "secondaryHover": "0 2% 77%",
+          "secondaryDisabled": "0 0% 95%"
+        },
+        "rationale": "Libre Baskerville, классическая антиква с богатой историей, придаёт тексту благородство и непререкаемый авторитет. В паре с современным и чистым Montserrat она создаёт образ успешной, стабильной, но при этом современной корпорации, которая уважает традиции [citation:3][citation:6].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(40 50% 40%), hsl(40 52% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 85%), hsl(0 2% 77%))",
+          "text": "linear-gradient(90deg, hsl(40 50% 40%), hsl(40 52% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 85%))"
+        },
+        "link": {
+          "color": "40 50% 40%",
+          "hover": "40 52% 32%",
+          "visited": "40 35% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Vintage Charm",
+        "fontHeading": "Dancing Script",
+        "fontBody": "Josefin Sans",
+        "sectors": ["Кофейни", "Handmade-бренды", "Фотография", "Винтажные магазины"],
+        "tone": ["романтичный", "винтажный", "душевный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 15% 90%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 35%",
+            "faint": "30 10% 55%",
+            "accent": "15 60% 40%"
+          },
+          "primary": "15 60% 40%",
+          "secondary": "30 20% 75%",
+          "primaryHover": "15 62% 32%",
+          "primaryDisabled": "15 25% 65%",
+          "secondaryHover": "30 22% 67%",
+          "secondaryDisabled": "30 10% 90%"
+        },
+        "rationale": "Dancing Script — это живой, динамичный курсив с характером, который добавляет дизайну нотку романтики и индивидуальности. Его отлично уравновешивает современный, геометрический Josefin Sans, создавая гармоничный и запоминающийся контраст [citation:10].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(15 60% 40%), hsl(15 62% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(30 20% 75%), hsl(30 22% 67%))",
+          "text": "linear-gradient(90deg, hsl(15 60% 40%), hsl(15 62% 32%))",
+          "background": "linear-gradient(180deg, hsl(30 15% 90%), hsl(30 20% 75%))"
+        },
+        "link": {
+          "color": "15 60% 40%",
+          "hover": "15 62% 32%",
+          "visited": "15 40% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Academic Authority",
+        "fontHeading": "Crimson Text",
+        "fontBody": "Lato",
+        "sectors": ["Университеты", "Научные журналы", "Образовательные платформы"],
+        "tone": ["академичный", "авторитетный", "доверительный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Crimson Text — это классическая, удобочитаемая антиква, идеально подходящая для длинных текстов. В паре с нейтральным и функциональным Lato она создаёт строгую, академичную, но не отталкивающую атмосферу, идеально подходящую для образовательных ресурсов [citation:6][citation:7].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Fresh Corporate",
+        "fontHeading": "Figtree",
+        "fontBody": "Source Serif Pro",
+        "sectors": ["Корпоративные блоги", "Стартапы", "Бизнес-сайты"],
+        "tone": ["современный", "дружелюбный", "профессиональный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 70% 45%"
+          },
+          "primary": "210 70% 45%",
+          "secondary": "210 25% 80%",
+          "primaryHover": "210 72% 37%",
+          "primaryDisabled": "210 20% 70%",
+          "secondaryHover": "210 27% 72%",
+          "secondaryDisabled": "210 12.5% 95%"
+        },
+        "rationale": "Figtree — это свежий, дружелюбный гротеск со сбалансированными пропорциями, идеально подходящий для цифровых интерфейсов. Source Serif Pro добавляет тексту классическую глубину и авторитетность, создавая современный, но при этом надёжный корпоративный образ [citation:9][citation:10].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 70% 45%), hsl(210 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 25% 80%), hsl(210 27% 72%))",
+          "text": "linear-gradient(90deg, hsl(210 70% 45%), hsl(210 72% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 25% 80%))"
+        },
+        "link": {
+          "color": "210 70% 45%",
+          "hover": "210 72% 37%",
+          "visited": "210 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Minimalist Display",
+        "fontHeading": "Outfit",
+        "fontBody": "DM Sans",
+        "sectors": ["Дизайн-портфолио", "Агентства", "Креативные студии"],
+        "tone": ["минималистичный", "геометричный", "современный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 10%",
+            "muted": "0 0% 30%",
+            "faint": "0 0% 50%",
+            "accent": "160 50% 40%"
+          },
+          "primary": "160 50% 40%",
+          "secondary": "0 0% 85%",
+          "primaryHover": "160 52% 32%",
+          "primaryDisabled": "160 20% 70%",
+          "secondaryHover": "0 2% 77%",
+          "secondaryDisabled": "0 0% 95%"
+        },
+        "rationale": "Outfit — это геометрический гротеск с идеально круглыми формами, создающий чистый и современный облик заголовков. DM Sans, его более универсальный и читаемый родственник, идеально подходит для основного текста, поддерживая минималистичную эстетику [citation:9].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(160 50% 40%), hsl(160 52% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 85%), hsl(0 2% 77%))",
+          "text": "linear-gradient(90deg, hsl(160 50% 40%), hsl(160 52% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 85%))"
+        },
+        "link": {
+          "color": "160 50% 40%",
+          "hover": "160 52% 32%",
+          "visited": "160 35% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Slab & Grotesk",
+        "fontHeading": "Roboto Slab",
+        "fontBody": "Inter",
+        "sectors": ["Инженерные компании", "Строительство", "Промышленность"],
+        "tone": ["надёжный", "прочный", "функциональный"],
+        "audienceType": ["B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Roboto Slab — это шрифт с геометрическими засечками, который придаёт тексту прочность и структурность. В паре с универсальным и нейтральным Inter он создаёт образ надёжной, технологичной и функциональной компании, не отвлекая от сути [citation:4][citation:7].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Sansita & Open",
+        "fontHeading": "Sansita",
+        "fontBody": "Open Sans",
+        "sectors": ["Туризм", "Развлечения", "Детские проекты", "Музыка"],
+        "tone": ["игривый", "дружелюбный", "энергичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "200 80% 50%"
+          },
+          "primary": "200 80% 50%",
+          "secondary": "200 30% 70%",
+          "primaryHover": "200 82% 42%",
+          "primaryDisabled": "200 25% 70%",
+          "secondaryHover": "200 32% 62%",
+          "secondaryDisabled": "200 15% 85%"
+        },
+        "rationale": "Sansita — это шрифт с уникальным, волнистым рисунком, напоминающим океанские волны. Он привносит в дизайн лёгкость и игривость. В паре с максимально нейтральным и читаемым Open Sans он создаёт сбалансированный и выразительный образ, подходящий для брендов, которые хотят выделиться [citation:10].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 80% 50%), hsl(200 82% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(200 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(200 80% 50%), hsl(200 82% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(200 30% 70%))"
+        },
+        "link": {
+          "color": "200 80% 50%",
+          "hover": "200 82% 42%",
+          "visited": "200 60% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Corben & Nobile",
+        "fontHeading": "Corben",
+        "fontBody": "Nobile",
+        "sectors": ["Комиксы", "Креативные студии", "Бренды с историей"],
+        "tone": ["смелый", "ретро", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "10 80% 45%"
+          },
+          "primary": "10 80% 45%",
+          "secondary": "10 30% 70%",
+          "primaryHover": "10 82% 37%",
+          "primaryDisabled": "10 25% 70%",
+          "secondaryHover": "10 32% 62%",
+          "secondaryDisabled": "10 15% 85%"
+        },
+        "rationale": "Corben — это жирный, выразительный шрифт с завораживающими изгибами, который мгновенно привлекает внимание. Простой, но аккуратный Nobile идеально его уравновешивает, создавая смелый и современный дизайн с ретро-оттенком [citation:10].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(10 80% 45%), hsl(10 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(10 30% 70%), hsl(10 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(10 80% 45%), hsl(10 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(10 30% 70%))"
+        },
+        "link": {
+          "color": "10 80% 45%",
+          "hover": "10 82% 37%",
+          "visited": "10 60% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Elsie & Roboto",
+        "fontHeading": "Elsie",
+        "fontBody": "Roboto",
+        "sectors": ["Женские бренды", "Косметика", "Мода", "Парфюмерия"],
+        "tone": ["элегантный", "изящный", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "340 60% 50%"
+          },
+          "primary": "340 60% 50%",
+          "secondary": "340 30% 80%",
+          "primaryHover": "340 62% 42%",
+          "primaryDisabled": "340 20% 75%",
+          "secondaryHover": "340 32% 72%",
+          "secondaryDisabled": "340 15% 95%"
+        },
+        "rationale": "Elsie — это изящный, каллиграфический шрифт с тонкими линиями и элегантными формами, который прекрасно подходит для заголовков в женской аудитории. Его изысканность идеально дополняет простота и функциональность Roboto, создавая гармоничный и современный образ [citation:10].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(340 60% 50%), hsl(340 62% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(340 30% 80%), hsl(340 32% 72%))",
+          "text": "linear-gradient(90deg, hsl(340 60% 50%), hsl(340 62% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(340 30% 80%))"
+        },
+        "link": {
+          "color": "340 60% 50%",
+          "hover": "340 62% 42%",
+          "visited": "340 40% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Nunito Family",
+        "fontHeading": "Nunito",
+        "fontBody": "Nunito Sans",
+        "sectors": ["Академические проекты", "Исследования", "Образование"],
+        "tone": ["познавательный", "чёткий", "академичный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Использование двух шрифтов из одного семейства — это всегда беспроигрышный вариант для создания чистой и строгой иерархии. Nunito с его округлыми формами добавляет современности, а Nunito Sans, его более строгая версия, идеально подходит для длинных текстов, требующих максимальной читаемости [citation:10].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Literary Warmth",
+        "fontHeading": "Lora",
+        "fontBody": "Open Sans",
+        "sectors": ["Блоги", "Журналы", "Издательства", "Книжные клубы"],
+        "tone": ["тёплый", "литературный", "доверительный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 70% 45%"
+          },
+          "primary": "30 70% 45%",
+          "secondary": "30 30% 80%",
+          "primaryHover": "30 72% 37%",
+          "primaryDisabled": "30 20% 70%",
+          "secondaryHover": "30 32% 72%",
+          "secondaryDisabled": "30 15% 95%"
+        },
+        "rationale": "Lora — это шрифт с каллиграфическим оттенком, который идеально подходит для длинных, литературных текстов. Он создаёт ощущение тепла и уюта. Open Sans, с его нейтральностью и чистотой, позволяет Lora раскрыться, не отвлекая от содержания [citation:3][citation:7].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 70% 45%), hsl(30 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(30 30% 80%), hsl(30 32% 72%))",
+          "text": "linear-gradient(90deg, hsl(30 70% 45%), hsl(30 72% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(30 30% 80%))"
+        },
+        "link": {
+          "color": "30 70% 45%",
+          "hover": "30 72% 37%",
+          "visited": "30 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Crisp Editorial",
+        "fontHeading": "Source Serif Pro",
+        "fontBody": "Work Sans",
+        "sectors": ["Корпоративные издания", "Бизнес-блоги", "Аналитика"],
+        "tone": ["авторитетный", "профессиональный", "аналитический"],
+        "audienceType": ["B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 70% 40%"
+          },
+          "primary": "210 70% 40%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 72% 32%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Source Serif Pro — это элегантный и читаемый шрифт с засечками, который придаёт тексту вес и профессиональную серьёзность. Work Sans, с его современными пропорциями, делает дизайн более свежим и актуальным, не теряя функциональности [citation:9][citation:10].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 70% 40%",
+          "hover": "210 72% 32%",
+          "visited": "230 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Editorial Minimal",
+        "fontHeading": "Playfair Display",
+        "fontBody": "Inter",
+        "sectors": ["Блоги", "Издания", "Премиум-бренды"],
+        "tone": ["элегантный", "современный", "доверительный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 45%"
+          },
+          "primary": "210 60% 45%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 37%",
+          "primaryDisabled": "210 20% 70%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Playfair Display привносит классическую элегантность в заголовки, а Inter обеспечивает идеальную читаемость и современный вид в основном тексте. Отличный выбор для контентных проектов.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 45%",
+          "hover": "210 62% 37%",
+          "visited": "230 46.5% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Urban Geometric",
+        "fontHeading": "Montserrat",
+        "fontBody": "Merriweather",
+        "sectors": ["Городские бренды", "Стартапы", "Образование"],
+        "tone": ["современный", "уверенный", "энергичный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "210 10% 20%",
+            "muted": "210 10% 40%",
+            "faint": "210 10% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Montserrat с его геометрическими формами создаёт сильные заголовки, а Merriweather добавляет теплоты и профессиональной надёжности в основном тексте.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Tech Simplicity",
+        "fontHeading": "Poppins",
+        "fontBody": "Open Sans",
+        "sectors": ["IT-продукты", "Мобильные приложения", "Сайты-визитки"],
+        "tone": ["дружеский", "минималистичный", "инновационный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "220 20% 95%",
+          "textColors": {
+            "base": "220 10% 20%",
+            "muted": "220 10% 40%",
+            "faint": "220 10% 60%",
+            "accent": "250 70% 55%"
+          },
+          "primary": "250 70% 55%",
+          "secondary": "250 40% 75%",
+          "primaryHover": "250 72% 47%",
+          "primaryDisabled": "250 25% 75%",
+          "secondaryHover": "250 42% 67%",
+          "secondaryDisabled": "250 22% 91%"
+        },
+        "rationale": "Poppins привлекает внимание округлыми геометрическими формами, а Open Sans остаётся одним из самых читаемых шрифтов для длинных текстов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(250 70% 55%), hsl(250 72% 47%))",
+          "secondary": "linear-gradient(135deg, hsl(250 40% 75%), hsl(250 42% 67%))",
+          "text": "linear-gradient(90deg, hsl(250 70% 55%), hsl(250 72% 47%))",
+          "background": "linear-gradient(180deg, hsl(220 20% 95%), hsl(250 40% 75%))"
+        },
+        "link": {
+          "color": "250 70% 55%",
+          "hover": "250 72% 47%",
+          "visited": "274 54.2% 51%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Airy Minimal",
+        "fontHeading": "Raleway",
+        "fontBody": "Open Sans",
+        "sectors": ["Портфолио", "Персональные сайты", "Творческие проекты"],
+        "tone": ["утонченный", "минималистичный", "спокойный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 10%",
+            "muted": "0 0% 30%",
+            "faint": "0 0% 50%",
+            "accent": "340 60% 60%"
+          },
+          "primary": "340 60% 60%",
+          "secondary": "340 30% 85%",
+          "primaryHover": "340 62% 52%",
+          "primaryDisabled": "340 20% 80%",
+          "secondaryHover": "340 32% 77%",
+          "secondaryDisabled": "340 16.5% 98%"
+        },
+        "rationale": "Тонкие линии Raleway создают элегантные заголовки, а Open Sans обеспечивает превосходную читаемость основного текста без визуального шума.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(340 60% 60%), hsl(340 62% 52%))",
+          "secondary": "linear-gradient(135deg, hsl(340 30% 85%), hsl(340 32% 77%))",
+          "text": "linear-gradient(90deg, hsl(340 60% 60%), hsl(340 62% 52%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(340 30% 85%))"
+        },
+        "link": {
+          "color": "340 60% 60%",
+          "hover": "340 62% 52%",
+          "visited": "4 46.5% 56%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Slab Stability",
+        "fontHeading": "Arvo",
+        "fontBody": "Roboto",
+        "sectors": ["Корпоративные сайты", "Технологические блоги", "Образование"],
+        "tone": ["авторитетный", "надёжный", "современный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 65%",
+            "accent": "0 0% 30%"
+          },
+          "primary": "0 0% 30%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "0 2% 22%",
+          "primaryDisabled": "0 0% 60%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Arvo с его slab-серifaми придаёт заголовкам основательность, а Roboto добавляет современную функциональность и читаемость.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "0 0% 30%",
+          "hover": "0 2% 22%",
+          "visited": "24 22% 26%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Script Elegance",
+        "fontHeading": "Lobster",
+        "fontBody": "Open Sans",
+        "sectors": ["Кафе", "Бутики", "Творческие студии"],
+        "tone": ["игривый", "дружеский", "привлекательный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 30% 95%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 35%",
+            "faint": "30 10% 55%",
+            "accent": "25 80% 60%"
+          },
+          "primary": "25 80% 60%",
+          "secondary": "30 40% 80%",
+          "primaryHover": "25 82% 52%",
+          "primaryDisabled": "25 25% 80%",
+          "secondaryHover": "30 42% 72%",
+          "secondaryDisabled": "30 22% 96%"
+        },
+        "rationale": "Lobster создаёт запоминающиеся, живые заголовки, а Open Sans остаётся нейтральным и профессиональным для остального контента.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+          "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(30 42% 72%))",
+          "text": "linear-gradient(90deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+          "background": "linear-gradient(180deg, hsl(40 30% 95%), hsl(30 40% 80%))"
+        },
+        "link": {
+          "color": "25 80% 60%",
+          "hover": "25 82% 52%",
+          "visited": "49 62% 56%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Condensed Impact",
+        "fontHeading": "Oswald",
+        "fontBody": "Lato",
+        "sectors": ["Спортивные сайты", "Мероприятия", "Молодёжные бренды"],
+        "tone": ["энергичный", "дерзкий", "динамичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 100% 40%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Oswald с его конденсированными формами идеально подходит для коротких, сильных заголовков, а Lato добавляет мягкости и читаемости.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 40%",
+          "visited": "54 77.5% 74%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Vintage Print",
+        "fontHeading": "Abril Fatface",
+        "fontBody": "Work Sans",
+        "sectors": ["Модные бренды", "Дизайн-студии", "Журналы"],
+        "tone": ["гламурный", "элегантный", "выразительный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 65%",
+            "accent": "0 80% 50%"
+          },
+          "primary": "0 80% 50%",
+          "secondary": "0 30% 70%",
+          "primaryHover": "0 82% 42%",
+          "primaryDisabled": "0 25% 70%",
+          "secondaryHover": "0 32% 62%",
+          "secondaryDisabled": "0 16.5% 86%"
+        },
+        "rationale": "Abril Fatface привносит драматизм и винтажный шарм в заголовки, а Work Sans сохраняет современную минималистичность в тексте.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 80% 50%), hsl(0 82% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(0 30% 70%), hsl(0 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(0 80% 50%), hsl(0 82% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 30% 70%))"
+        },
+        "link": {
+          "color": "0 80% 50%",
+          "hover": "0 82% 42%",
+          "visited": "24 62% 46%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Academic Classic",
+        "fontHeading": "Merriweather",
+        "fontBody": "Lora",
+        "sectors": ["Научные журналы", "Университеты", "Издательства"],
+        "tone": ["авторитетный", "академичный", "доверительный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 65%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Оба шрифта созданы для комфортного чтения длинных текстов, при этом Merriweather отлично выделяет заголовки своей плотностью.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "UI Modern",
+        "fontHeading": "Inter",
+        "fontBody": "Roboto",
+        "sectors": ["SaaS", "Веб-приложения", "Технологические компании"],
+        "tone": ["современный", "функциональный", "чистый"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Идеальная пара для интерфейсов — оба шрифта оптимизированы для экранов и создают безупречную иерархию.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Condensed Bold",
+        "fontHeading": "Bebas Neue",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Рекламные лендинги", "Промо-сайты", "Брендинг"],
+        "tone": ["дерзкий", "уверенный", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 100% 40%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Bebas Neue (только заглавные) создаёт максимальный визуальный удар, а Source Sans Pro остаётся нейтральным фоном.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 40%",
+          "visited": "54 77.5% 74%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Elegant Contrast",
+        "fontHeading": "Cormorant Garamond",
+        "fontBody": "Proza Libre",
+        "sectors": ["Премиум-бренды", "Рестораны", "Бутики"],
+        "tone": ["элегантный", "изысканный", "премиальный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "0 0% 98%",
+          "textColors": {
+            "base": "0 0% 20%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "45 80% 50%"
+          },
+          "primary": "45 80% 50%",
+          "secondary": "45 50% 70%",
+          "primaryHover": "45 82% 42%",
+          "primaryDisabled": "45 25% 70%",
+          "secondaryHover": "45 52% 62%",
+          "secondaryDisabled": "45 27.5% 86%"
+        },
+        "rationale": "Классическая антиква в заголовках и современный гуманистический гротеск в тексте создают изысканный контраст.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 82% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(45 50% 70%), hsl(45 52% 62%))",
+          "text": "linear-gradient(90deg, hsl(45 80% 50%), hsl(45 82% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 98%), hsl(45 50% 70%))"
+        },
+        "link": {
+          "color": "45 80% 50%",
+          "hover": "45 82% 42%",
+          "visited": "45 60% 46%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Warm Professional",
+        "fontHeading": "Lato",
+        "fontBody": "EB Garamond",
+        "sectors": ["Юридические фирмы", "Консалтинг", "Бизнес-сайты"],
+        "tone": ["профессиональный", "доверительный", "уверенный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Lato привносит современную теплоту в заголовки, а EB Garamond добавляет классической надёжности основному тексту.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Geometric Simplicity",
+        "fontHeading": "Montserrat",
+        "fontBody": "Crimson Text",
+        "sectors": ["Креативные агентства", "Дизайн-студии"],
+        "tone": ["современный", "креативный", "чистый"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Геометрическая чистота Montserrat прекрасно контрастирует с мягкими, классическими формами Crimson Text.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Technical Precision",
+        "fontHeading": "Roboto",
+        "fontBody": "Nunito",
+        "sectors": ["Инженерные компании", "Архитектурные бюро"],
+        "tone": ["точный", "современный", "надёжный"],
+        "audienceType": ["B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Чёткие линии Roboto в заголовках и мягкие округлые формы Nunito в тексте создают баланс строгости и доступности.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Clean Functional",
+        "fontHeading": "Work Sans",
+        "fontBody": "Merriweather",
+        "sectors": ["Корпоративные блоги", "Техническая документация"],
+        "tone": ["профессиональный", "чистый", "функциональный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 45%"
+          },
+          "primary": "210 60% 45%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 37%",
+          "primaryDisabled": "210 20% 70%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Work Sans создаёт современные заголовки, а Merriweather обеспечивает комфортное чтение длинных технических текстов.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 45%",
+          "hover": "210 62% 37%",
+          "visited": "230 46.5% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Friendly Soft",
+        "fontHeading": "Quicksand",
+        "fontBody": "Roboto Slab",
+        "sectors": ["Детские проекты", "Образовательные платформы", "Блоги"],
+        "tone": ["дружеский", "мягкий", "заботливый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 30% 95%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 35%",
+            "faint": "30 10% 55%",
+            "accent": "25 80% 60%"
+          },
+          "primary": "25 80% 60%",
+          "secondary": "30 40% 80%",
+          "primaryHover": "25 82% 52%",
+          "primaryDisabled": "25 25% 80%",
+          "secondaryHover": "30 42% 72%",
+          "secondaryDisabled": "30 22% 96%"
+        },
+        "rationale": "Округлые формы Quicksand идеальны для заголовков, а Roboto Slab добавляет структуры и надёжности тексту.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+          "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(30 42% 72%))",
+          "text": "linear-gradient(90deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+          "background": "linear-gradient(180deg, hsl(40 30% 95%), hsl(30 40% 80%))"
+        },
+        "link": {
+          "color": "25 80% 60%",
+          "hover": "25 82% 52%",
+          "visited": "49 62% 56%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Display Impact",
+        "fontHeading": "Open Sans",
+        "fontBody": "Fraunces",
+        "sectors": ["Маркетинговые лендинги", "Промо-страницы"],
+        "tone": ["энергичный", "привлекающий внимание"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "0 80% 50%"
+          },
+          "primary": "0 80% 50%",
+          "secondary": "0 30% 70%",
+          "primaryHover": "0 82% 42%",
+          "primaryDisabled": "0 25% 70%",
+          "secondaryHover": "0 32% 62%",
+          "secondaryDisabled": "0 16.5% 86%"
+        },
+        "rationale": "Fraunces с его переменными настройками создаёт уникальные заголовки, а Open Sans остаётся универсальным и читаемым.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 80% 50%), hsl(0 82% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(0 30% 70%), hsl(0 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(0 80% 50%), hsl(0 82% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 30% 70%))"
+        },
+        "link": {
+          "color": "0 80% 50%",
+          "hover": "0 82% 42%",
+          "visited": "24 62% 46%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Editorial Classic",
+        "fontHeading": "Source Sans Pro",
+        "fontBody": "Domine",
+        "sectors": ["Журналы", "Блоги", "Контентные проекты"],
+        "tone": ["доверительный", "классический", "профессиональный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 45%"
+          },
+          "primary": "210 60% 45%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 37%",
+          "primaryDisabled": "210 20% 70%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Source Sans Pro идеально подходит для заголовков в digital-изданиях, а Domine создан специально для длительного чтения с экрана.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 45%",
+          "hover": "210 62% 37%",
+          "visited": "230 46.5% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Retro Modern",
+        "fontHeading": "Arvo",
+        "fontBody": "Lato",
+        "sectors": ["Ретро-бренды", "Креативные студии", "Музыкальные проекты"],
+        "tone": ["винтажный", "современный", "креативный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 20% 90%",
+          "textColors": {
+            "base": "40 10% 15%",
+            "muted": "40 10% 35%",
+            "faint": "40 10% 55%",
+            "accent": "20 70% 45%"
+          },
+          "primary": "20 70% 45%",
+          "secondary": "40 30% 60%",
+          "primaryHover": "20 72% 37%",
+          "primaryDisabled": "20 25% 70%",
+          "secondaryHover": "40 32% 52%",
+          "secondaryDisabled": "40 16.5% 76%"
+        },
+        "rationale": "Arvo с его slab-серifaми привносит нотку ретро, а Lato остаётся современным и чистым для основного текста.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(20 70% 45%), hsl(20 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(40 30% 60%), hsl(40 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(20 70% 45%), hsl(20 72% 37%))",
+          "background": "linear-gradient(180deg, hsl(40 20% 90%), hsl(40 30% 60%))"
+        },
+        "link": {
+          "color": "20 70% 45%",
+          "hover": "20 72% 37%",
+          "visited": "44 54.2% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Experimental Fresh",
+        "fontHeading": "Bricolage Grotesque",
+        "fontBody": "Crimson Text",
+        "sectors": ["Креативные студии", "Арт-проекты", "Фестивали"],
+        "tone": ["нестандартный", "креативный", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "200 50% 95%",
+          "textColors": {
+            "base": "200 10% 15%",
+            "muted": "200 10% 35%",
+            "faint": "200 10% 55%",
+            "accent": "330 90% 55%"
+          },
+          "primary": "330 90% 55%",
+          "secondary": "200 30% 70%",
+          "primaryHover": "330 92% 47%",
+          "primaryDisabled": "330 25% 75%",
+          "secondaryHover": "200 32% 62%",
+          "secondaryDisabled": "200 16.5% 86%"
+        },
+        "rationale": "Bricolage Grotesque — современный шрифт с характером, который прекрасно сочетается с классическими формами Crimson Text.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(330 90% 55%), hsl(330 92% 47%))",
+          "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(200 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(330 90% 55%), hsl(330 92% 47%))",
+          "background": "linear-gradient(180deg, hsl(200 50% 95%), hsl(200 30% 70%))"
+        },
+        "link": {
+          "color": "330 90% 55%",
+          "hover": "330 92% 47%",
+          "visited": "354 69.8% 51%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Elegant Modern",
+        "fontHeading": "MuseoModerno",
+        "fontBody": "Ledger",
+        "sectors": ["Дизайн-студии", "Премиум-бренды"],
+        "tone": ["элегантный", "современный", "изысканный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 45%"
+          },
+          "primary": "210 60% 45%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 37%",
+          "primaryDisabled": "210 20% 70%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "MuseoModerno с его изогнутыми формами создаёт запоминающиеся заголовки, а Ledger обеспечивает отличную читаемость.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 45%",
+          "hover": "210 62% 37%",
+          "visited": "230 46.5% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
     {
       "pairType": "Классическая элегантность",
       "fontHeading": "Playfair Display",
@@ -148,217 +1855,11 @@
         "primary": "45 80% 50%",
         "secondary": "45 50% 70%",
         "primaryHover": "45 82% 42%",
-        "primaryDisabled": "45 44% 66%",
+        "primaryDisabled": "45 25% 70%",
         "secondaryHover": "45 52% 62%",
         "secondaryDisabled": "45 27.5% 86%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            20
-          ],
-          "saturation": [
-            40,
-            60
-          ],
-          "lightness": [
-            95,
-            98
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              20
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              15,
-              25
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              20
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              20
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          },
-          "accent": {
-            "hue": [
-              35,
-              55
-            ],
-            "saturation": [
-              70,
-              90
-            ],
-            "lightness": [
-              45,
-              55
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            35,
-            55
-          ],
-          "saturation": [
-            70,
-            90
-          ],
-          "lightness": [
-            45,
-            55
-          ]
-        },
-        "secondary": {
-          "hue": [
-            35,
-            55
-          ],
-          "saturation": [
-            40,
-            60
-          ],
-          "lightness": [
-            65,
-            75
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            39.0,
-            51.0
-          ],
-          "saturation": [
-            72.0,
-            92.0
-          ],
-          "lightness": [
-            34.0,
-            50.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            39.0,
-            51.0
-          ],
-          "saturation": [
-            34.0,
-            54.0
-          ],
-          "lightness": [
-            58.0,
-            74.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            39.0,
-            51.0
-          ],
-          "saturation": [
-            42.0,
-            62.0
-          ],
-          "lightness": [
-            54.0,
-            70.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            39.0,
-            51.0
-          ],
-          "saturation": [
-            17.5,
-            37.5
-          ],
-          "lightness": [
-            78.0,
-            94.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              39.0,
-              51.0
-            ],
-            "saturation": [
-              70.0,
-              90.0
-            ],
-            "lightness": [
-              42.0,
-              58.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              39.0,
-              51.0
-            ],
-            "saturation": [
-              72.0,
-              92.0
-            ],
-            "lightness": [
-              34.0,
-              50.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              63.0,
-              75.0
-            ],
-            "saturation": [
-              52.0,
-              72.0
-            ],
-            "lightness": [
-              38.0,
-              54.0
-            ]
-          }
-        }
-      },
       "rationale": "Светлый фон создаёт ощущение чистоты и простора. Текст имеет три уровня иерархии: основной (тёмный), muted (средний) и faint (светлый). Золотой primary привлекает внимание к CTA и ассоциируется с премиальностью.",
-      "sizeRecommendations": {
-        "heading": "56-72px",
-        "subheading": "20-24px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 82% 42%))",
@@ -369,9 +1870,10 @@
       "link": {
         "color": "45 80% 50%",
         "hover": "45 82% 42%",
-        "visited": "69 62% 46%"
+        "visited": "45 60% 46%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "display"
     },
     {
       "pairType": "Современный корпоративный",
@@ -403,217 +1905,11 @@
         "primary": "210 80% 45%",
         "secondary": "210 30% 60%",
         "primaryHover": "210 82% 37%",
-        "primaryDisabled": "210 44% 61%",
+        "primaryDisabled": "210 25% 70%",
         "secondaryHover": "210 32% 52%",
         "secondaryDisabled": "210 16.5% 76%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            98,
-            100
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              200,
-              220
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              15,
-              25
-            ]
-          },
-          "muted": {
-            "hue": [
-              200,
-              220
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "faint": {
-            "hue": [
-              200,
-              220
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          },
-          "accent": {
-            "hue": [
-              200,
-              220
-            ],
-            "saturation": [
-              70,
-              90
-            ],
-            "lightness": [
-              40,
-              50
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            200,
-            220
-          ],
-          "saturation": [
-            70,
-            90
-          ],
-          "lightness": [
-            40,
-            50
-          ]
-        },
-        "secondary": {
-          "hue": [
-            200,
-            220
-          ],
-          "saturation": [
-            20,
-            40
-          ],
-          "lightness": [
-            55,
-            65
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            72.0,
-            92.0
-          ],
-          "lightness": [
-            29.0,
-            45.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            34.0,
-            54.0
-          ],
-          "lightness": [
-            53.0,
-            69.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            22.0,
-            42.0
-          ],
-          "lightness": [
-            44.0,
-            60.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            6.5,
-            26.5
-          ],
-          "lightness": [
-            68.0,
-            84.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              204.0,
-              216.0
-            ],
-            "saturation": [
-              70.0,
-              90.0
-            ],
-            "lightness": [
-              37.0,
-              53.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              204.0,
-              216.0
-            ],
-            "saturation": [
-              72.0,
-              92.0
-            ],
-            "lightness": [
-              29.0,
-              45.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              228.0,
-              240.0
-            ],
-            "saturation": [
-              52.0,
-              72.0
-            ],
-            "lightness": [
-              33.0,
-              49.0
-            ]
-          }
-        }
-      },
       "rationale": "Чистый белый фон, синеватая гамма текста. Primary — насыщенный синий для CTA. Три уровня текста создают иерархию.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "phosphor",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
@@ -626,7 +1922,8 @@
         "hover": "210 82% 37%",
         "visited": "234 62% 41%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Технологичный минимализм",
@@ -657,217 +1954,11 @@
         "primary": "250 70% 55%",
         "secondary": "250 40% 75%",
         "primaryHover": "250 72% 47%",
-        "primaryDisabled": "250 38.5% 71%",
+        "primaryDisabled": "250 25% 75%",
         "secondaryHover": "250 42% 67%",
         "secondaryDisabled": "250 22% 91%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            210,
-            230
-          ],
-          "saturation": [
-            15,
-            25
-          ],
-          "lightness": [
-            92,
-            97
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              210,
-              230
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              15,
-              25
-            ]
-          },
-          "muted": {
-            "hue": [
-              210,
-              230
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "faint": {
-            "hue": [
-              210,
-              230
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          },
-          "accent": {
-            "hue": [
-              240,
-              260
-            ],
-            "saturation": [
-              60,
-              80
-            ],
-            "lightness": [
-              50,
-              60
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            240,
-            260
-          ],
-          "saturation": [
-            60,
-            80
-          ],
-          "lightness": [
-            50,
-            60
-          ]
-        },
-        "secondary": {
-          "hue": [
-            240,
-            260
-          ],
-          "saturation": [
-            30,
-            50
-          ],
-          "lightness": [
-            70,
-            80
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            244.0,
-            256.0
-          ],
-          "saturation": [
-            62.0,
-            82.0
-          ],
-          "lightness": [
-            39.0,
-            55.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            244.0,
-            256.0
-          ],
-          "saturation": [
-            28.5,
-            48.5
-          ],
-          "lightness": [
-            63.0,
-            79.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            244.0,
-            256.0
-          ],
-          "saturation": [
-            32.0,
-            52.0
-          ],
-          "lightness": [
-            59.0,
-            75.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            244.0,
-            256.0
-          ],
-          "saturation": [
-            12.0,
-            32.0
-          ],
-          "lightness": [
-            83.0,
-            99.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              244.0,
-              256.0
-            ],
-            "saturation": [
-              60.0,
-              80.0
-            ],
-            "lightness": [
-              47.0,
-              63.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              244.0,
-              256.0
-            ],
-            "saturation": [
-              62.0,
-              82.0
-            ],
-            "lightness": [
-              39.0,
-              55.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              268.0,
-              280.0
-            ],
-            "saturation": [
-              44.2,
-              64.2
-            ],
-            "lightness": [
-              43.0,
-              59.0
-            ]
-          }
-        }
-      },
       "rationale": "Светло-голубоватый фон создаёт ощущение технологичности. Текстовая иерархия через три уровня серого с голубоватым оттенком. Яркий фиолетовый primary для CTA.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "phosphor",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(250 70% 55%), hsl(250 72% 47%))",
@@ -880,7 +1971,8 @@
         "hover": "250 72% 47%",
         "visited": "274 54.2% 51%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Утончённый минимализм",
@@ -912,217 +2004,11 @@
         "primary": "340 60% 60%",
         "secondary": "340 30% 85%",
         "primaryHover": "340 62% 52%",
-        "primaryDisabled": "340 33% 76%",
+        "primaryDisabled": "340 20% 80%",
         "secondaryHover": "340 32% 77%",
         "secondaryDisabled": "340 16.5% 98%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            98,
-            100
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              8,
-              15
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              25,
-              35
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              45,
-              55
-            ]
-          },
-          "accent": {
-            "hue": [
-              330,
-              350
-            ],
-            "saturation": [
-              50,
-              70
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            330,
-            350
-          ],
-          "saturation": [
-            50,
-            70
-          ],
-          "lightness": [
-            55,
-            65
-          ]
-        },
-        "secondary": {
-          "hue": [
-            330,
-            350
-          ],
-          "saturation": [
-            20,
-            40
-          ],
-          "lightness": [
-            80,
-            90
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            52.0,
-            72.0
-          ],
-          "lightness": [
-            44.0,
-            60.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            23.0,
-            43.0
-          ],
-          "lightness": [
-            68.0,
-            84.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            22.0,
-            42.0
-          ],
-          "lightness": [
-            69.0,
-            85.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            6.5,
-            26.5
-          ],
-          "lightness": [
-            90,
-            100
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              334.0,
-              346.0
-            ],
-            "saturation": [
-              50.0,
-              70.0
-            ],
-            "lightness": [
-              52.0,
-              68.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              334.0,
-              346.0
-            ],
-            "saturation": [
-              52.0,
-              72.0
-            ],
-            "lightness": [
-              44.0,
-              60.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              0,
-              10.0
-            ],
-            "saturation": [
-              36.5,
-              56.5
-            ],
-            "lightness": [
-              48.0,
-              64.0
-            ]
-          }
-        }
-      },
       "rationale": "Белый фон и почти чёрный основной текст. Нежно-розовый primary добавляет акцент, оставаясь ненавязчивым.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(340 60% 60%), hsl(340 62% 52%))",
@@ -1135,7 +2021,8 @@
         "hover": "340 62% 52%",
         "visited": "4 46.5% 56%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Выразительная индивидуальность",
@@ -1166,217 +2053,11 @@
         "primary": "15 90% 50%",
         "secondary": "30 50% 70%",
         "primaryHover": "15 92% 42%",
-        "primaryDisabled": "15 49.5% 66%",
+        "primaryDisabled": "15 25% 70%",
         "secondaryHover": "30 52% 62%",
         "secondaryDisabled": "30 27.5% 86%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            20,
-            40
-          ],
-          "saturation": [
-            15,
-            25
-          ],
-          "lightness": [
-            92,
-            97
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              20,
-              40
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              10,
-              20
-            ]
-          },
-          "muted": {
-            "hue": [
-              20,
-              40
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              30,
-              40
-            ]
-          },
-          "faint": {
-            "hue": [
-              20,
-              40
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              50,
-              60
-            ]
-          },
-          "accent": {
-            "hue": [
-              5,
-              25
-            ],
-            "saturation": [
-              80,
-              95
-            ],
-            "lightness": [
-              45,
-              55
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            5,
-            25
-          ],
-          "saturation": [
-            80,
-            95
-          ],
-          "lightness": [
-            45,
-            55
-          ]
-        },
-        "secondary": {
-          "hue": [
-            20,
-            40
-          ],
-          "saturation": [
-            40,
-            60
-          ],
-          "lightness": [
-            65,
-            75
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            9.0,
-            21.0
-          ],
-          "saturation": [
-            82.0,
-            100
-          ],
-          "lightness": [
-            34.0,
-            50.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            9.0,
-            21.0
-          ],
-          "saturation": [
-            39.5,
-            59.5
-          ],
-          "lightness": [
-            58.0,
-            74.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            24.0,
-            36.0
-          ],
-          "saturation": [
-            42.0,
-            62.0
-          ],
-          "lightness": [
-            54.0,
-            70.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            24.0,
-            36.0
-          ],
-          "saturation": [
-            17.5,
-            37.5
-          ],
-          "lightness": [
-            78.0,
-            94.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              9.0,
-              21.0
-            ],
-            "saturation": [
-              80.0,
-              100
-            ],
-            "lightness": [
-              42.0,
-              58.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              9.0,
-              21.0
-            ],
-            "saturation": [
-              82.0,
-              100
-            ],
-            "lightness": [
-              34.0,
-              50.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              33.0,
-              45.0
-            ],
-            "saturation": [
-              59.8,
-              79.8
-            ],
-            "lightness": [
-              38.0,
-              54.0
-            ]
-          }
-        }
-      },
       "rationale": "Тёплый кремовый фон, яркий оранжевый primary. Текст тёплых оттенков с иерархией.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "phosphor",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(15 90% 50%), hsl(15 92% 42%))",
@@ -1389,7 +2070,8 @@
         "hover": "15 92% 42%",
         "visited": "39 69.8% 46%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Ретро-шик (Grand)",
@@ -1420,217 +2102,11 @@
         "primary": "20 70% 45%",
         "secondary": "40 30% 60%",
         "primaryHover": "20 72% 37%",
-        "primaryDisabled": "20 38.5% 61%",
+        "primaryDisabled": "20 25% 70%",
         "secondaryHover": "40 32% 52%",
         "secondaryDisabled": "40 16.5% 76%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            30,
-            50
-          ],
-          "saturation": [
-            15,
-            25
-          ],
-          "lightness": [
-            85,
-            93
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              30,
-              50
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              10,
-              20
-            ]
-          },
-          "muted": {
-            "hue": [
-              30,
-              50
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              30,
-              40
-            ]
-          },
-          "faint": {
-            "hue": [
-              30,
-              50
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              50,
-              60
-            ]
-          },
-          "accent": {
-            "hue": [
-              10,
-              30
-            ],
-            "saturation": [
-              60,
-              80
-            ],
-            "lightness": [
-              40,
-              50
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            10,
-            30
-          ],
-          "saturation": [
-            60,
-            80
-          ],
-          "lightness": [
-            40,
-            50
-          ]
-        },
-        "secondary": {
-          "hue": [
-            30,
-            50
-          ],
-          "saturation": [
-            20,
-            40
-          ],
-          "lightness": [
-            55,
-            65
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            14.0,
-            26.0
-          ],
-          "saturation": [
-            62.0,
-            82.0
-          ],
-          "lightness": [
-            29.0,
-            45.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            14.0,
-            26.0
-          ],
-          "saturation": [
-            28.5,
-            48.5
-          ],
-          "lightness": [
-            53.0,
-            69.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            34.0,
-            46.0
-          ],
-          "saturation": [
-            22.0,
-            42.0
-          ],
-          "lightness": [
-            44.0,
-            60.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            34.0,
-            46.0
-          ],
-          "saturation": [
-            6.5,
-            26.5
-          ],
-          "lightness": [
-            68.0,
-            84.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              14.0,
-              26.0
-            ],
-            "saturation": [
-              60.0,
-              80.0
-            ],
-            "lightness": [
-              37.0,
-              53.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              14.0,
-              26.0
-            ],
-            "saturation": [
-              62.0,
-              82.0
-            ],
-            "lightness": [
-              29.0,
-              45.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              38.0,
-              50.0
-            ],
-            "saturation": [
-              44.2,
-              64.2
-            ],
-            "lightness": [
-              33.0,
-              49.0
-            ]
-          }
-        }
-      },
       "rationale": "Кремовый винтажный фон, терракотовый primary. Текстовая иерархия в тёплой гамме.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(20 70% 45%), hsl(20 72% 37%))",
@@ -1643,7 +2119,8 @@
         "hover": "20 72% 37%",
         "visited": "44 54.2% 41%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Романтичный акцент",
@@ -1674,217 +2151,11 @@
         "primary": "340 70% 60%",
         "secondary": "340 30% 80%",
         "primaryHover": "340 72% 52%",
-        "primaryDisabled": "340 38.5% 76%",
+        "primaryDisabled": "340 25% 80%",
         "secondaryHover": "340 32% 72%",
         "secondaryDisabled": "340 16.5% 96%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            340,
-            360
-          ],
-          "saturation": [
-            25,
-            35
-          ],
-          "lightness": [
-            95,
-            98
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              340,
-              360
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              15,
-              25
-            ]
-          },
-          "muted": {
-            "hue": [
-              340,
-              360
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "faint": {
-            "hue": [
-              340,
-              360
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          },
-          "accent": {
-            "hue": [
-              330,
-              350
-            ],
-            "saturation": [
-              60,
-              80
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            330,
-            350
-          ],
-          "saturation": [
-            60,
-            80
-          ],
-          "lightness": [
-            55,
-            65
-          ]
-        },
-        "secondary": {
-          "hue": [
-            330,
-            350
-          ],
-          "saturation": [
-            20,
-            40
-          ],
-          "lightness": [
-            75,
-            85
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            62.0,
-            82.0
-          ],
-          "lightness": [
-            44.0,
-            60.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            28.5,
-            48.5
-          ],
-          "lightness": [
-            68.0,
-            84.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            22.0,
-            42.0
-          ],
-          "lightness": [
-            64.0,
-            80.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            334.0,
-            346.0
-          ],
-          "saturation": [
-            6.5,
-            26.5
-          ],
-          "lightness": [
-            88.0,
-            100
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              334.0,
-              346.0
-            ],
-            "saturation": [
-              60.0,
-              80.0
-            ],
-            "lightness": [
-              52.0,
-              68.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              334.0,
-              346.0
-            ],
-            "saturation": [
-              62.0,
-              82.0
-            ],
-            "lightness": [
-              44.0,
-              60.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              0,
-              10.0
-            ],
-            "saturation": [
-              44.2,
-              64.2
-            ],
-            "lightness": [
-              48.0,
-              64.0
-            ]
-          }
-        }
-      },
       "rationale": "Бледно-розовый фон, насыщенный розовый primary. Текст в той же розовой гамме с иерархией.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(340 70% 60%), hsl(340 72% 52%))",
@@ -1897,7 +2168,8 @@
         "hover": "340 72% 52%",
         "visited": "4 54.2% 56%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Авторитетная классика",
@@ -1928,217 +2200,11 @@
         "primary": "0 0% 30%",
         "secondary": "0 0% 90%",
         "primaryHover": "0 2% 22%",
-        "primaryDisabled": "0 0% 46%",
+        "primaryDisabled": "0 0% 60%",
         "secondaryHover": "0 2% 82%",
         "secondaryDisabled": "0 0% 98%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            98,
-            100
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              10,
-              20
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              60,
-              70
-            ]
-          },
-          "accent": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              25,
-              35
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            25,
-            35
-          ]
-        },
-        "secondary": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            85,
-            95
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            12.0
-          ],
-          "lightness": [
-            14.0,
-            30.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            10
-          ],
-          "lightness": [
-            38.0,
-            54.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            12.0
-          ],
-          "lightness": [
-            74.0,
-            90.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            10
-          ],
-          "lightness": [
-            90,
-            100
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              0,
-              6.0
-            ],
-            "saturation": [
-              0,
-              10.0
-            ],
-            "lightness": [
-              22.0,
-              38.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              0,
-              6.0
-            ],
-            "saturation": [
-              0,
-              12.0
-            ],
-            "lightness": [
-              14.0,
-              30.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              18.0,
-              30.0
-            ],
-            "saturation": [
-              12,
-              32
-            ],
-            "lightness": [
-              18.0,
-              34.0
-            ]
-          }
-        }
-      },
       "rationale": "Монохромная гамма: белый фон, текст трёх уровней серого, средне-серый primary. Строгость и надёжность.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 2% 22%))",
@@ -2151,7 +2217,8 @@
         "hover": "0 2% 22%",
         "visited": "24 22% 26%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Футуристичный технологичный",
@@ -2182,217 +2249,11 @@
         "primary": "180 100% 45%",
         "secondary": "240 30% 30%",
         "primaryHover": "180 100% 52%",
-        "primaryDisabled": "180 55% 63%",
+        "primaryDisabled": "180 30% 40%",
         "secondaryHover": "240 34% 37%",
         "secondaryDisabled": "240 16.5% 48%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            230,
-            250
-          ],
-          "saturation": [
-            15,
-            25
-          ],
-          "lightness": [
-            5,
-            15
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              85,
-              95
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              65,
-              75
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              45,
-              55
-            ]
-          },
-          "accent": {
-            "hue": [
-              170,
-              190
-            ],
-            "saturation": [
-              90,
-              100
-            ],
-            "lightness": [
-              40,
-              50
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            170,
-            190
-          ],
-          "saturation": [
-            90,
-            100
-          ],
-          "lightness": [
-            40,
-            50
-          ]
-        },
-        "secondary": {
-          "hue": [
-            230,
-            250
-          ],
-          "saturation": [
-            20,
-            40
-          ],
-          "lightness": [
-            25,
-            35
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            174.0,
-            186.0
-          ],
-          "saturation": [
-            90,
-            100
-          ],
-          "lightness": [
-            44.0,
-            60.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            174.0,
-            186.0
-          ],
-          "saturation": [
-            45.0,
-            65.0
-          ],
-          "lightness": [
-            55.0,
-            71.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            234.0,
-            246.0
-          ],
-          "saturation": [
-            24.0,
-            44.0
-          ],
-          "lightness": [
-            29.0,
-            45.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            234.0,
-            246.0
-          ],
-          "saturation": [
-            6.5,
-            26.5
-          ],
-          "lightness": [
-            40.0,
-            56.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              174.0,
-              186.0
-            ],
-            "saturation": [
-              90.0,
-              100
-            ],
-            "lightness": [
-              37.0,
-              53.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              174.0,
-              186.0
-            ],
-            "saturation": [
-              90,
-              100
-            ],
-            "lightness": [
-              44.0,
-              60.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              198.0,
-              210.0
-            ],
-            "saturation": [
-              67.5,
-              87.5
-            ],
-            "lightness": [
-              61.0,
-              77.0
-            ]
-          }
-        }
-      },
       "rationale": "Тёмный фон, светлый текст трёх уровней, яркий бирюзовый primary. Ощущение глубины и технологичности.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "phosphor",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(180 100% 52%))",
@@ -2405,7 +2266,8 @@
         "hover": "180 100% 52%",
         "visited": "204 77.5% 69%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Тёплый и уютный",
@@ -2436,217 +2298,11 @@
         "primary": "25 80% 60%",
         "secondary": "30 40% 80%",
         "primaryHover": "25 82% 52%",
-        "primaryDisabled": "25 44% 76%",
+        "primaryDisabled": "25 25% 80%",
         "secondaryHover": "30 42% 72%",
         "secondaryDisabled": "30 22% 96%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            30,
-            50
-          ],
-          "saturation": [
-            25,
-            35
-          ],
-          "lightness": [
-            92,
-            97
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              20,
-              40
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              10,
-              20
-            ]
-          },
-          "muted": {
-            "hue": [
-              20,
-              40
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              30,
-              40
-            ]
-          },
-          "faint": {
-            "hue": [
-              20,
-              40
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              50,
-              60
-            ]
-          },
-          "accent": {
-            "hue": [
-              15,
-              35
-            ],
-            "saturation": [
-              70,
-              90
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            15,
-            35
-          ],
-          "saturation": [
-            70,
-            90
-          ],
-          "lightness": [
-            55,
-            65
-          ]
-        },
-        "secondary": {
-          "hue": [
-            20,
-            40
-          ],
-          "saturation": [
-            30,
-            50
-          ],
-          "lightness": [
-            75,
-            85
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            19.0,
-            31.0
-          ],
-          "saturation": [
-            72.0,
-            92.0
-          ],
-          "lightness": [
-            44.0,
-            60.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            19.0,
-            31.0
-          ],
-          "saturation": [
-            34.0,
-            54.0
-          ],
-          "lightness": [
-            68.0,
-            84.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            24.0,
-            36.0
-          ],
-          "saturation": [
-            32.0,
-            52.0
-          ],
-          "lightness": [
-            64.0,
-            80.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            24.0,
-            36.0
-          ],
-          "saturation": [
-            12.0,
-            32.0
-          ],
-          "lightness": [
-            88.0,
-            100
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              19.0,
-              31.0
-            ],
-            "saturation": [
-              70.0,
-              90.0
-            ],
-            "lightness": [
-              52.0,
-              68.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              19.0,
-              31.0
-            ],
-            "saturation": [
-              72.0,
-              92.0
-            ],
-            "lightness": [
-              44.0,
-              60.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              43.0,
-              55.0
-            ],
-            "saturation": [
-              52.0,
-              72.0
-            ],
-            "lightness": [
-              48.0,
-              64.0
-            ]
-          }
-        }
-      },
       "rationale": "Тёплый бежевый фон, коричневатый текст, оранжевый primary. Уют и забота.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(25 82% 52%))",
@@ -2659,7 +2315,8 @@
         "hover": "25 82% 52%",
         "visited": "49 62% 56%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Лабораторная точность (Pharma Serif)",
@@ -2691,217 +2348,11 @@
         "primary": "140 60% 40%",
         "secondary": "0 0% 90%",
         "primaryHover": "140 62% 32%",
-        "primaryDisabled": "140 33% 56%",
+        "primaryDisabled": "140 20% 65%",
         "secondaryHover": "0 2% 82%",
         "secondaryDisabled": "0 0% 98%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            98,
-            100
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              5,
-              15
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              30,
-              40
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          },
-          "accent": {
-            "hue": [
-              130,
-              150
-            ],
-            "saturation": [
-              50,
-              70
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            130,
-            150
-          ],
-          "saturation": [
-            50,
-            70
-          ],
-          "lightness": [
-            35,
-            45
-          ]
-        },
-        "secondary": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            85,
-            95
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            134.0,
-            146.0
-          ],
-          "saturation": [
-            52.0,
-            72.0
-          ],
-          "lightness": [
-            24.0,
-            40.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            134.0,
-            146.0
-          ],
-          "saturation": [
-            23.0,
-            43.0
-          ],
-          "lightness": [
-            48.0,
-            64.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            12.0
-          ],
-          "lightness": [
-            74.0,
-            90.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            10
-          ],
-          "lightness": [
-            90,
-            100
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              134.0,
-              146.0
-            ],
-            "saturation": [
-              50.0,
-              70.0
-            ],
-            "lightness": [
-              32.0,
-              48.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              134.0,
-              146.0
-            ],
-            "saturation": [
-              52.0,
-              72.0
-            ],
-            "lightness": [
-              24.0,
-              40.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              158.0,
-              170.0
-            ],
-            "saturation": [
-              36.5,
-              56.5
-            ],
-            "lightness": [
-              28.0,
-              44.0
-            ]
-          }
-        }
-      },
       "rationale": "Белый фон, чёрный текст, зелёный primary. Чистота, точность, здоровье.",
-      "sizeRecommendations": {
-        "heading": "48-64px",
-        "subheading": "16-20px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(140 60% 40%), hsl(140 62% 32%))",
@@ -2914,7 +2365,8 @@
         "hover": "140 62% 32%",
         "visited": "164 46.5% 36%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Обложка журнала (Cover Story)",
@@ -2945,217 +2397,11 @@
         "primary": "0 80% 50%",
         "secondary": "0 30% 70%",
         "primaryHover": "0 82% 42%",
-        "primaryDisabled": "0 44% 66%",
+        "primaryDisabled": "0 25% 70%",
         "secondaryHover": "0 32% 62%",
         "secondaryDisabled": "0 16.5% 86%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            98,
-            100
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              10,
-              20
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              60,
-              70
-            ]
-          },
-          "accent": {
-            "hue": [
-              350,
-              10
-            ],
-            "saturation": [
-              70,
-              90
-            ],
-            "lightness": [
-              45,
-              55
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            350,
-            10
-          ],
-          "saturation": [
-            70,
-            90
-          ],
-          "lightness": [
-            45,
-            55
-          ]
-        },
-        "secondary": {
-          "hue": [
-            350,
-            10
-          ],
-          "saturation": [
-            20,
-            40
-          ],
-          "lightness": [
-            65,
-            75
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            72.0,
-            92.0
-          ],
-          "lightness": [
-            34.0,
-            50.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            34.0,
-            54.0
-          ],
-          "lightness": [
-            58.0,
-            74.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            22.0,
-            42.0
-          ],
-          "lightness": [
-            54.0,
-            70.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            6.5,
-            26.5
-          ],
-          "lightness": [
-            78.0,
-            94.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              0,
-              6.0
-            ],
-            "saturation": [
-              70.0,
-              90.0
-            ],
-            "lightness": [
-              42.0,
-              58.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              0,
-              6.0
-            ],
-            "saturation": [
-              72.0,
-              92.0
-            ],
-            "lightness": [
-              34.0,
-              50.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              18.0,
-              30.0
-            ],
-            "saturation": [
-              52.0,
-              72.0
-            ],
-            "lightness": [
-              38.0,
-              54.0
-            ]
-          }
-        }
-      },
       "rationale": "Белый фон, ярко-красный primary. Классика журнальной эстетики.",
-      "sizeRecommendations": {
-        "heading": "56-72px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "phosphor",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(0 80% 50%), hsl(0 82% 42%))",
@@ -3168,7 +2414,8 @@
         "hover": "0 82% 42%",
         "visited": "24 62% 46%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "display"
     },
     {
       "pairType": "Дерзкий максимализм",
@@ -3199,217 +2446,11 @@
         "primary": "30 100% 50%",
         "secondary": "0 0% 30%",
         "primaryHover": "30 100% 57%",
-        "primaryDisabled": "30 55% 68%",
+        "primaryDisabled": "30 30% 30%",
         "secondaryHover": "0 4% 37%",
-        "secondaryDisabled": "0 0% 48%"
-      },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            0,
-            5
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              95,
-              100
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              65,
-              75
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              0
-            ],
-            "saturation": [
-              0,
-              0
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "accent": {
-            "hue": [
-              20,
-              40
-            ],
-            "saturation": [
-              90,
-              100
-            ],
-            "lightness": [
-              45,
-              55
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            20,
-            40
-          ],
-          "saturation": [
-            90,
-            100
-          ],
-          "lightness": [
-            45,
-            55
-          ]
-        },
-        "secondary": {
-          "hue": [
-            0,
-            0
-          ],
-          "saturation": [
-            0,
-            0
-          ],
-          "lightness": [
-            25,
-            35
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            24.0,
-            36.0
-          ],
-          "saturation": [
-            90,
-            100
-          ],
-          "lightness": [
-            49.0,
-            65.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            24.0,
-            36.0
-          ],
-          "saturation": [
-            45.0,
-            65.0
-          ],
-          "lightness": [
-            60.0,
-            76.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            14.0
-          ],
-          "lightness": [
-            29.0,
-            45.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            0,
-            6.0
-          ],
-          "saturation": [
-            0,
-            10
-          ],
-          "lightness": [
-            40.0,
-            56.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              24.0,
-              36.0
-            ],
-            "saturation": [
-              90.0,
-              100
-            ],
-            "lightness": [
-              42.0,
-              58.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              24.0,
-              36.0
-            ],
-            "saturation": [
-              90,
-              100
-            ],
-            "lightness": [
-              49.0,
-              65.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              48.0,
-              60.0
-            ],
-            "saturation": [
-              67.5,
-              87.5
-            ],
-            "lightness": [
-              66.0,
-              82.0
-            ]
-          }
-        }
+        "secondaryDisabled": "0 0% 40%"
       },
       "rationale": "Чёрный фон, белый текст, ярко-оранжевый primary. Максимальный контраст и энергия.",
-      "sizeRecommendations": {
-        "heading": "64-80px",
-        "subheading": "16-18px"
-      },
       "iconLibrary": "phosphor",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 57%))",
@@ -3422,7 +2463,8 @@
         "hover": "30 100% 57%",
         "visited": "54 77.5% 74%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "hero"
     },
     {
       "pairType": "Экспериментальный",
@@ -3453,217 +2495,11 @@
         "primary": "330 90% 55%",
         "secondary": "200 30% 70%",
         "primaryHover": "330 92% 47%",
-        "primaryDisabled": "330 49.5% 71%",
+        "primaryDisabled": "330 25% 75%",
         "secondaryHover": "200 32% 62%",
         "secondaryDisabled": "200 16.5% 86%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            190,
-            210
-          ],
-          "saturation": [
-            40,
-            60
-          ],
-          "lightness": [
-            90,
-            98
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              190,
-              210
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              10,
-              20
-            ]
-          },
-          "muted": {
-            "hue": [
-              190,
-              210
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              30,
-              40
-            ]
-          },
-          "faint": {
-            "hue": [
-              190,
-              210
-            ],
-            "saturation": [
-              5,
-              15
-            ],
-            "lightness": [
-              50,
-              60
-            ]
-          },
-          "accent": {
-            "hue": [
-              320,
-              340
-            ],
-            "saturation": [
-              80,
-              95
-            ],
-            "lightness": [
-              50,
-              60
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            320,
-            340
-          ],
-          "saturation": [
-            80,
-            95
-          ],
-          "lightness": [
-            50,
-            60
-          ]
-        },
-        "secondary": {
-          "hue": [
-            190,
-            210
-          ],
-          "saturation": [
-            20,
-            40
-          ],
-          "lightness": [
-            65,
-            75
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            324.0,
-            336.0
-          ],
-          "saturation": [
-            82.0,
-            100
-          ],
-          "lightness": [
-            39.0,
-            55.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            324.0,
-            336.0
-          ],
-          "saturation": [
-            39.5,
-            59.5
-          ],
-          "lightness": [
-            63.0,
-            79.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            194.0,
-            206.0
-          ],
-          "saturation": [
-            22.0,
-            42.0
-          ],
-          "lightness": [
-            54.0,
-            70.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            194.0,
-            206.0
-          ],
-          "saturation": [
-            6.5,
-            26.5
-          ],
-          "lightness": [
-            78.0,
-            94.0
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              324.0,
-              336.0
-            ],
-            "saturation": [
-              80.0,
-              100
-            ],
-            "lightness": [
-              47.0,
-              63.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              324.0,
-              336.0
-            ],
-            "saturation": [
-              82.0,
-              100
-            ],
-            "lightness": [
-              39.0,
-              55.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              348.0,
-              360
-            ],
-            "saturation": [
-              59.8,
-              79.8
-            ],
-            "lightness": [
-              43.0,
-              59.0
-            ]
-          }
-        }
-      },
       "rationale": "Необычный голубой фон, ярко-розовый primary. Экспериментальность и креатив.",
-      "sizeRecommendations": {
-        "heading": "48-72px",
-        "subheading": "18-22px"
-      },
       "iconLibrary": "phosphor",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(330 90% 55%), hsl(330 92% 47%))",
@@ -3676,7 +2512,8 @@
         "hover": "330 92% 47%",
         "visited": "354 69.8% 51%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "display"
     },
     {
       "pairType": "Современная элегантность",
@@ -3709,217 +2546,11 @@
         "primary": "210 60% 45%",
         "secondary": "210 20% 85%",
         "primaryHover": "210 62% 37%",
-        "primaryDisabled": "210 33% 61%",
+        "primaryDisabled": "210 20% 70%",
         "secondaryHover": "210 22% 77%",
         "secondaryDisabled": "210 11% 98%"
       },
-      "colorVariations": {
-        "background": {
-          "hue": [
-            0,
-            360
-          ],
-          "saturation": [
-            0,
-            5
-          ],
-          "lightness": [
-            95,
-            100
-          ]
-        },
-        "textColors": {
-          "base": {
-            "hue": [
-              0,
-              360
-            ],
-            "saturation": [
-              0,
-              10
-            ],
-            "lightness": [
-              10,
-              20
-            ]
-          },
-          "muted": {
-            "hue": [
-              0,
-              360
-            ],
-            "saturation": [
-              0,
-              10
-            ],
-            "lightness": [
-              35,
-              45
-            ]
-          },
-          "faint": {
-            "hue": [
-              0,
-              360
-            ],
-            "saturation": [
-              0,
-              10
-            ],
-            "lightness": [
-              55,
-              65
-            ]
-          },
-          "accent": {
-            "hue": [
-              200,
-              220
-            ],
-            "saturation": [
-              50,
-              70
-            ],
-            "lightness": [
-              40,
-              50
-            ]
-          }
-        },
-        "primary": {
-          "hue": [
-            200,
-            220
-          ],
-          "saturation": [
-            50,
-            70
-          ],
-          "lightness": [
-            40,
-            50
-          ]
-        },
-        "secondary": {
-          "hue": [
-            200,
-            220
-          ],
-          "saturation": [
-            15,
-            25
-          ],
-          "lightness": [
-            80,
-            90
-          ]
-        },
-        "primaryHover": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            52.0,
-            72.0
-          ],
-          "lightness": [
-            29.0,
-            45.0
-          ]
-        },
-        "primaryDisabled": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            23.0,
-            43.0
-          ],
-          "lightness": [
-            53.0,
-            69.0
-          ]
-        },
-        "secondaryHover": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            12.0,
-            32.0
-          ],
-          "lightness": [
-            69.0,
-            85.0
-          ]
-        },
-        "secondaryDisabled": {
-          "hue": [
-            204.0,
-            216.0
-          ],
-          "saturation": [
-            1.0,
-            21.0
-          ],
-          "lightness": [
-            90,
-            100
-          ]
-        },
-        "link": {
-          "color": {
-            "hue": [
-              204.0,
-              216.0
-            ],
-            "saturation": [
-              50.0,
-              70.0
-            ],
-            "lightness": [
-              37.0,
-              53.0
-            ]
-          },
-          "hover": {
-            "hue": [
-              204.0,
-              216.0
-            ],
-            "saturation": [
-              52.0,
-              72.0
-            ],
-            "lightness": [
-              29.0,
-              45.0
-            ]
-          },
-          "visited": {
-            "hue": [
-              228.0,
-              240.0
-            ],
-            "saturation": [
-              36.5,
-              56.5
-            ],
-            "lightness": [
-              33.0,
-              49.0
-            ]
-          }
-        }
-      },
       "rationale": "Instrument Serf — современный шрифт с засечками для заголовков, создающий элегантность и профессионализм. Чистая светлая палитра, сдержанный синий акцент.",
-      "sizeRecommendations": {
-        "heading": "48-72px",
-        "subheading": "18-24px"
-      },
       "iconLibrary": "lucide",
       "gradients": {
         "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
@@ -3932,7 +2563,8 @@
         "hover": "210 62% 37%",
         "visited": "234 46.5% 41%"
       },
-      "accentWeight": "600"
+      "accentWeight": "600",
+      "sizeTier": "display"
     }
   ]
 }

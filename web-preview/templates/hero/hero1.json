@@ -1,0 +1,14 @@
+{
+  "layout": "grid-1x1",
+  "atoms": [
+    {
+      "ref": "hero_label",
+      "type": "atom.heading",
+      "value": "hero1",
+      "col": 1,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    }
+  ]
+}

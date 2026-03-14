@@ -1,0 +1,23 @@
+{
+  "layout": "grid-1x2",
+  "atoms": [
+    {
+      "ref": "navbar_caption",
+      "type": "atom.subheading",
+      "value": "Текст navbar — тема из theme_settings",
+      "col": 1,
+      "row": 1,
+      "colSpan": 1,
+      "rowSpan": 1
+    },
+    {
+      "ref": "navbar_cta",
+      "type": "atom.button",
+      "value": "Кнопка (primary)",
+      "col": 1,
+      "row": 2,
+      "colSpan": 1,
+      "rowSpan": 1
+    }
+  ]
+}
