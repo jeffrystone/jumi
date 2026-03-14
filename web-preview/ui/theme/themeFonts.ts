@@ -29,8 +29,17 @@ const FONT_ALIASES = new Map<string, string>([
   ["neutral sans", "Noto Sans"],
 ]);
 
+export const AVAILABLE_LOCAL_FONT_FAMILIES = Array.from(new Set(FONT_ALIASES.values())).sort(
+  (a, b) => a.localeCompare(b)
+);
+
 function normalizeFamilyName(value: string): string {
   return value.trim().replace(/^['"]|['"]$/g, "").toLowerCase();
+}
+
+export function resolveFontAlias(fontFamily: string): string {
+  const normalized = normalizeFamilyName(fontFamily);
+  return FONT_ALIASES.get(normalized) ?? "Inter";
 }
 
 function readPrimaryFamily(fontFamily: string): string | null {
@@ -50,7 +59,7 @@ export function resolveThemeFontFamily(rawTheme: unknown): string | null {
       return null;
     }
 
-    const mappedFamily = FONT_ALIASES.get(primaryFamily) ?? "Inter";
+    const mappedFamily = resolveFontAlias(primaryFamily);
     return `${mappedFamily}, system-ui, sans-serif`;
   } catch {
     return null;

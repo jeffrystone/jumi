@@ -5,6 +5,10 @@ interface FlatThemeEntry {
   value: ThemePrimitive;
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+
 function toKebabCase(value: string): string {
   return value
     .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
@@ -94,6 +98,25 @@ export function buildThemeVarEntries(theme: Theme): Array<{ key: string; value: 
 }
 
 export function adaptThemaTheme(rawTheme: unknown): Theme {
+  if (isRecord(rawTheme) && !("colorPalette" in rawTheme) && isRecord(rawTheme.colors)) {
+    const legacyColors = rawTheme.colors;
+    const normalized = {
+      ...rawTheme,
+      colorPalette: {
+        background: String(legacyColors.background ?? ""),
+        textColors: {
+          base: String(legacyColors.foreground ?? ""),
+          muted: String(legacyColors["secondary-foreground"] ?? legacyColors.foreground ?? ""),
+          faint: String(legacyColors.muted ?? legacyColors.secondary ?? ""),
+          accent: String(legacyColors.accent ?? legacyColors.primary ?? ""),
+        },
+        primary: String(legacyColors.primary ?? ""),
+        secondary: String(legacyColors.secondary ?? ""),
+      },
+    };
+    return ensureThemaTheme(normalized) as unknown as Theme;
+  }
+
   return ensureThemaTheme(rawTheme) as unknown as Theme;
 }
 
