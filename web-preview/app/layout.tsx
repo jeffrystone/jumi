@@ -1,32 +1,45 @@
 import {
   ThemeProvider,
   defaultThemaTheme,
-  getGoogleFontHref,
+  resolveThemeFontFamily,
   safeAdaptThemaTheme,
 } from "@/ui/theme";
 import { readGeneratedJson } from "@/utils/generatedPreview";
+import "./fontsource.css";
 import "./globals.css";
+
+function withResolvedFontFamily(rawTheme: unknown): unknown {
+  const resolvedFontFamily = resolveThemeFontFamily(rawTheme);
+  if (!resolvedFontFamily || rawTheme === null || typeof rawTheme !== "object") {
+    return rawTheme;
+  }
+
+  const themeObject = rawTheme as Record<string, unknown>;
+  const typography =
+    themeObject.typography && typeof themeObject.typography === "object"
+      ? (themeObject.typography as Record<string, unknown>)
+      : {};
+
+  return {
+    ...themeObject,
+    typography: {
+      ...typography,
+      fontFamily: resolvedFontFamily,
+    },
+  };
+}
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const rawTheme: unknown = readGeneratedJson<unknown>("thema-answer.json") ?? defaultThemaTheme;
+  const rawTheme: unknown =
+    withResolvedFontFamily(readGeneratedJson<unknown>("thema-answer.json") ?? defaultThemaTheme);
   const { theme, error } = safeAdaptThemaTheme(rawTheme);
-  const googleFontHref = getGoogleFontHref(rawTheme);
 
   return (
     <html lang="ru">
-      <head>
-        {googleFontHref ? (
-          <>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-            <link rel="stylesheet" href={googleFontHref} />
-          </>
-        ) : null}
-      </head>
       <body>
         {error ? (
           <main

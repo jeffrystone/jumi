@@ -1,16 +1,32 @@
 import { ensureThemaTheme } from "./themeSchema";
 
-const GOOGLE_FONT_FAMILIES = new Map<string, string>([
+const FONT_ALIASES = new Map<string, string>([
   ["inter", "Inter"],
   ["roboto", "Roboto"],
   ["open sans", "Open Sans"],
   ["montserrat", "Montserrat"],
   ["lato", "Lato"],
   ["poppins", "Poppins"],
-  ["manrope", "Manrope"],
-  ["nunito", "Nunito"],
-  ["pt sans", "PT Sans"],
-  ["source sans 3", "Source Sans 3"],
+  ["merriweather", "Merriweather"],
+  ["raleway", "Raleway"],
+  ["dm serif display", "DM Serif Display"],
+  ["playfair display", "Playfair Display"],
+  ["ibm plex mono", "IBM Plex Mono"],
+  ["instrument serif", "Cormorant Garamond"],
+  ["instrument sans", "Noto Sans"],
+  ["grand sans", "Space Grotesk"],
+  ["grand serif", "Cormorant Garamond"],
+  ["neo calligraphy", "Great Vibes"],
+  ["modern serif revival", "Cormorant Garamond"],
+  ["futuristic geometric", "Space Grotesk"],
+  ["warm script", "Great Vibes"],
+  ["helvetica now", "Inter"],
+  ["ff meta", "Source Sans 3"],
+  ["condensed sans", "Barlow Condensed"],
+  ["bold display", "Anton"],
+  ["clean sans", "Noto Sans"],
+  ["experimental / distorted", "Bebas Neue"],
+  ["neutral sans", "Noto Sans"],
 ]);
 
 function normalizeFamilyName(value: string): string {
@@ -26,7 +42,7 @@ function readPrimaryFamily(fontFamily: string): string | null {
   return normalized.length > 0 ? normalized : null;
 }
 
-export function getGoogleFontHref(rawTheme: unknown): string | null {
+export function resolveThemeFontFamily(rawTheme: unknown): string | null {
   try {
     const theme = ensureThemaTheme(rawTheme);
     const primaryFamily = readPrimaryFamily(theme.typography.fontFamily);
@@ -34,13 +50,8 @@ export function getGoogleFontHref(rawTheme: unknown): string | null {
       return null;
     }
 
-    const googleFamily = GOOGLE_FONT_FAMILIES.get(primaryFamily);
-    if (!googleFamily) {
-      return null;
-    }
-
-    const familyParam = encodeURIComponent(`${googleFamily}:wght@400;500;600;700`);
-    return `https://fonts.googleapis.com/css2?family=${familyParam}&display=swap&subset=latin,cyrillic`;
+    const mappedFamily = FONT_ALIASES.get(primaryFamily) ?? "Inter";
+    return `${mappedFamily}, system-ui, sans-serif`;
   } catch {
     return null;
   }
