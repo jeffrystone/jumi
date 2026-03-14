@@ -1,11 +1,12 @@
-import { Button, Heading, Icon, Link, Text } from "@/ui/atoms";
-import { LogIn, Menu } from "lucide-react";
+import { Button, Heading, Link, Text } from "@/ui/atoms";
+import { IconText } from "@/ui/molecules";
+import { LogIn, LogOut, Menu, Phone, ShieldQuestion } from "lucide-react";
 import type { CSSProperties } from "react";
 import {
   buildScopedThemeVars,
   hslColor,
-  type ThemePreviewModel,
-} from "@/render-kit/controllers/themekitController";
+} from "@/render-kit/models/themePreviewModel";
+import type { ThemePreviewModel } from "@/render-kit/models/themePreviewModel";
 
 interface ThemeOptionPreviewCardProps {
   model: ThemePreviewModel;
@@ -106,6 +107,20 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
           >
             Accent text: highlighted phrase for emphasis.
           </p>
+          <p
+            style={{
+              fontFamily: model.bodyFamily,
+              backgroundImage: model.gradients.text,
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+              fontSize: "1rem",
+              lineHeight: 1.45,
+              fontWeight: model.accentWeight,
+            }}
+          >
+            Gradient text: highlighted phrase for emphasis.
+          </p>
 
           <div className="mt-3 grid grid-cols-1 gap-2">
             <div
@@ -204,6 +219,11 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
                 <span style={{ color: hslColor(model.palette.textColors.base) }}>Menu</span>
               </span>
             </div>
+            <div className="flex items-center gap-4">
+              <LogOut size={20} color={hslColor(model.palette.textColors.base)} />
+              <ShieldQuestion size={20} color={hslColor(model.palette.textColors.base)} />
+              <Phone size={20} color={hslColor(model.palette.textColors.base)} />
+            </div>
             <p
               className="text-sm"
               style={{ color: hslColor(model.palette.textColors.muted) }}
@@ -219,6 +239,11 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
                 <Menu size={20} color={hslColor(model.link.color)} />
                 <span style={{ color: hslColor(model.link.color) }}>Menu</span>
               </span>
+            </div>
+            <div className="flex items-center gap-4">
+              <LogOut size={20} color={hslColor(model.link.color)} />
+              <ShieldQuestion size={20} color={hslColor(model.link.color)} />
+              <Phone size={20} color={hslColor(model.link.color)} />
             </div>
           </div>
         </div>
@@ -248,6 +273,7 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
               Faint text: meta labels, notes and subtle details.
             </Text>
             <Text color="accent">Accent text: highlighted phrase for emphasis.</Text>
+            <Text color="gradient">Gradient text: highlighted phrase for emphasis.</Text>
           </div>
 
           <div className="mt-3 grid grid-cols-1 gap-2">
@@ -304,27 +330,37 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
               Icons (base color)
             </Text>
             <div className="flex items-center gap-4">
-              <span className="inline-flex items-center gap-2 text-foreground">
-                <Icon name={LogIn} size="md" />
-                <span className="text-sm">Login</span>
-              </span>
-              <span className="inline-flex items-center gap-2 text-foreground">
-                <Icon name={Menu} size="md" />
-                <span className="text-sm">Menu</span>
-              </span>
+              <IconText icon={LogIn} text="Login" className="text-foreground" variant="interactive" />
+              <IconText
+                icon={Menu}
+                text="Menu"
+                className="text-foreground"
+                iconPosition="right"
+                variant="interactive"
+              />
+            </div>
+            <div className="flex items-center gap-4 text-foreground">
+              <IconText icon={LogOut} text="Logout" variant="interactive" />
+              <IconText icon={ShieldQuestion} text="Support" variant="interactive" />
+              <IconText icon={Phone} text="Phone" variant="interactive" />
             </div>
             <Text as="p" size="sm" color="muted">
               Icons (interactive color)
             </Text>
             <div className="flex items-center gap-4">
-              <span className="inline-flex items-center gap-2 text-link">
-                <Icon name={LogIn} size="md" />
-                <span className="text-sm">Login</span>
-              </span>
-              <span className="inline-flex items-center gap-2 text-link">
-                <Icon name={Menu} size="md" />
-                <span className="text-sm">Menu</span>
-              </span>
+              <IconText icon={LogIn} text="Login" className="text-link" variant="interactive" />
+              <IconText
+                icon={Menu}
+                text="Menu"
+                className="text-link"
+                iconPosition="right"
+                variant="interactive-bordered"
+              />
+            </div>
+            <div className="flex items-center gap-4 text-link">
+              <IconText icon={LogOut} text="Logout" variant="interactive" />
+              <IconText icon={ShieldQuestion} text="Support" variant="interactive-bordered" />
+              <IconText icon={Phone} text="Phone" variant="interactive" />
             </div>
           </div>
         </div>

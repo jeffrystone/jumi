@@ -22,6 +22,7 @@ interface ThemeColorPalette {
 interface ThemeGradients {
   primary: string;
   secondary: string;
+  text: string;
 }
 
 interface ThemeLinks {

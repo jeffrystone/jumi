@@ -13,7 +13,7 @@ export default function RenderKitThemeKitPage() {
         title="Theme Options"
         description="Внутри каждой карточки: все текстовые цвета, размеры текста, фон, secondary-подложка и кнопки Buy."
       >
-        <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5">
           {models.map((model) => (
             <ThemeOptionPreviewCard key={model.pairType} model={model} />
           ))}

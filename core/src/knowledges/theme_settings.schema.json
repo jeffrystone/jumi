@@ -749,7 +749,8 @@
           "type": "object",
           "required": [
             "primary",
-            "secondary"
+            "secondary",
+            "text"
           ],
           "additionalProperties": false,
           "properties": {
@@ -757,6 +758,9 @@
               "type": "string"
             },
             "secondary": {
+              "type": "string"
+            },
+            "text": {
               "type": "string"
             }
           }
@@ -827,7 +831,8 @@
       "type": "object",
       "required": [
         "primary",
-        "secondary"
+        "secondary",
+        "text"
       ],
       "additionalProperties": false,
       "properties": {
@@ -836,6 +841,10 @@
           "minLength": 1
         },
         "secondary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
           "type": "string",
           "minLength": 1
         }

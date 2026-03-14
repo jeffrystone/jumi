@@ -65,6 +65,8 @@ gradients.primary — основной градиент темы (строка C
 
 gradients.secondary — вторичный градиент темы (строка CSS)
 
+gradients.text — градиент для акцентного текста (строка CSS)
+
 link.color — базовый цвет ссылок, ДОЛЖЕН совпадать с colorPalette.primary
 
 link.hover — цвет ссылок в hover
@@ -117,7 +119,8 @@ json
   },
   "gradients": {
     "primary": "строка CSS gradient (например 'linear-gradient(135deg, hsl(...), hsl(...))')",
-    "secondary": "строка CSS gradient"
+    "secondary": "строка CSS gradient",
+    "text": "строка CSS gradient для текста (например 'linear-gradient(90deg, hsl(...), hsl(...))')"
   },
   "link": {
     "color": "hue saturation% lightness% (обязательно = colorPalette.primary)",
@@ -177,7 +180,8 @@ json
   },
   "gradients": {
     "primary": "linear-gradient(135deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%))",
-    "secondary": "linear-gradient(135deg, hsl(210 40% 96.1%), hsl(210 28% 90%))"
+    "secondary": "linear-gradient(135deg, hsl(210 40% 96.1%), hsl(210 28% 90%))",
+    "text": "linear-gradient(90deg, hsl(221.2 83.2% 53.3%), hsl(210 80% 58%))"
   },
   "link": {
     "color": "221.2 83.2% 53.3%",

@@ -24,7 +24,7 @@ const Icon = React.forwardRef<SVGSVGElement, IconProps>(
       <IconComponent
         ref={ref}
         size={pixelSize}
-        className={cn(color ? "" : "text-current", className)}
+        className={cn("cursor-pointer", color ? "" : "text-current", className)}
         style={color ? { color } : undefined}
         {...props}
       />

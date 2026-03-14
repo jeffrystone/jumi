@@ -19,6 +19,7 @@ describe("themeAdapter", () => {
     expect(vars.get("secondary-disabled")).toBe(defaultThemaTheme.colorPalette.secondaryDisabled);
     expect(vars.get("gradient-primary")).toBe(defaultThemaTheme.gradients.primary);
     expect(vars.get("gradient-secondary")).toBe(defaultThemaTheme.gradients.secondary);
+    expect(vars.get("gradient-text")).toBe(defaultThemaTheme.gradients.text);
     expect(vars.get("link-color")).toBe(defaultThemaTheme.link.color);
     expect(vars.get("link-hover")).toBe(defaultThemaTheme.link.hover);
     expect(vars.get("link-visited")).toBe(defaultThemaTheme.link.visited);

@@ -20,6 +20,7 @@ export const THEME_VARS = {
   secondaryDisabled: "--secondary-disabled",
   gradientPrimary: "--gradient-primary",
   gradientSecondary: "--gradient-secondary",
+  gradientText: "--gradient-text",
   linkColor: "--link-color",
   linkHover: "--link-hover",
   linkVisited: "--link-visited",

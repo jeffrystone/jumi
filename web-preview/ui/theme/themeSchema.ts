@@ -26,6 +26,7 @@ export interface ThemaTheme {
   gradients: {
     primary: string;
     secondary: string;
+    text: string;
   };
   link: {
     color: string;
@@ -65,6 +66,7 @@ const REQUIRED_STRING_PATHS = [
   "colorPalette.secondaryDisabled",
   "gradients.primary",
   "gradients.secondary",
+  "gradients.text",
   "link.color",
   "link.hover",
   "link.visited",

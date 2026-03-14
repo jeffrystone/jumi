@@ -13,6 +13,7 @@ const colorStyles = {
   muted: "text-muted-foreground",
   faint: "text-faint-foreground",
   accent: "text-accent",
+  gradient: "text-transparent bg-clip-text",
 } as const;
 
 export interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
@@ -35,7 +36,11 @@ const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
     ref
   ) => {
     const accentWeightStyle =
-      color === "accent" ? { fontWeight: cssVar(THEME_VARS.accentTextFontWeight) } : undefined;
+      color === "accent" || color === "gradient"
+        ? { fontWeight: cssVar(THEME_VARS.accentTextFontWeight) }
+        : undefined;
+    const gradientStyle =
+      color === "gradient" ? { backgroundImage: cssVar(THEME_VARS.gradientText) } : undefined;
     return (
       <Tag
         ref={ref as React.Ref<HTMLParagraphElement>}
@@ -44,6 +49,7 @@ const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
           fontSize: cssVar(THEME_VARS.bodyFontSize),
           fontWeight: cssVar(THEME_VARS.bodyFontWeight),
           ...accentWeightStyle,
+          ...gradientStyle,
           ...style,
         }}
         {...props}
