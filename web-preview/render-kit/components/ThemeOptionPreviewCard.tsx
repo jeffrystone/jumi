@@ -143,6 +143,16 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
             </button>
             <button
               type="button"
+              className="rounded-md px-4 py-2 text-sm font-semibold transition-opacity hover:opacity-95 text-[hsl(var(--inline-on-primary))]"
+              style={{
+                fontFamily: model.bodyFamily,
+                backgroundImage: model.gradients.primary,
+              }}
+            >
+              Buy (gradient)
+            </button>
+            <button
+              type="button"
               className="rounded-md px-4 py-2 text-sm font-semibold transition-colors bg-[hsl(var(--inline-secondary))] hover:bg-[hsl(var(--inline-secondary-hover))] text-[hsl(var(--inline-on-secondary))]"
               style={{ fontFamily: model.bodyFamily }}
             >
@@ -264,6 +274,13 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
             <Button variant="default">Buy</Button>
             <Button variant="default" disabled>
               Buy (disabled)
+            </Button>
+            <Button
+              variant="default"
+              className="hover:opacity-95"
+              style={{ backgroundImage: "var(--gradient-primary)" }}
+            >
+              Buy (gradient)
             </Button>
             <Button variant="blank">Buy</Button>
             <Button variant="blank" disabled className="bg-secondary-disabled">
