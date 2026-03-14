@@ -40,6 +40,2020 @@
   },
   "data": [
       {
+        "pairType": "Soviet Modernism",
+        "fontHeading": "Soyuz Grotesk",
+        "fontBody": "PT Serif",
+        "sectors": ["Архитектурные бюро", "Культурные центры", "Издания об искусстве", "Музейные экспозиции"],
+        "tone": ["модернистский", "строгий", "конструктивистский", "интеллектуальный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 40%"
+          },
+          "primary": "210 60% 40%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 32%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 10% 95%"
+        },
+        "rationale": "Soyuz Grotesk — оцифрованная версия легендарного советского гротеска, созданного в 1963 году студентами Полиграфа Юрием Курбатовым и Максимом Жуковым под влиянием швейцарского модернизма [citation:9]. PT Serif добавляет академическую строгость и читаемость основному тексту. Это идеальное сочетание для проектов, отсылающих к эстетике оттепели и модернистской архитектуры.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 40%), hsl(210 62% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 40%), hsl(210 62% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 40%",
+          "hover": "210 62% 32%",
+          "visited": "230 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Artefakt Retro",
+        "fontHeading": "ST Artefakt",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Издательства", "Книжные магазины", "Творческие студии", "Винтажные бренды"],
+        "tone": ["винтажный", "артистичный", "несовершенный", "аутентичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 15% 90%",
+          "textColors": {
+            "base": "40 10% 20%",
+            "muted": "40 10% 40%",
+            "faint": "40 10% 60%",
+            "accent": "15 60% 40%"
+          },
+          "primary": "15 60% 40%",
+          "secondary": "40 20% 75%",
+          "primaryHover": "15 62% 32%",
+          "primaryDisabled": "15 20% 65%",
+          "secondaryHover": "40 22% 67%",
+          "secondaryDisabled": "40 10% 90%"
+        },
+        "rationale": "ST Artefakt — дисплейный шрифт, восстановленный из старой обложки книги 60-х годов, с намеренными искажениями, как будто с плохого старого оттиска. Это поздний вариант русского ар-деко, превратившегося в советскую архитектурную эстетику [citation:3]. Source Sans Pro создаёт чистый, нейтральный фон, позволяя уникальному характеру заголовков раскрыться в полной мере.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(15 60% 40%), hsl(15 62% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(40 20% 75%), hsl(40 22% 67%))",
+          "text": "linear-gradient(90deg, hsl(15 60% 40%), hsl(15 62% 32%))",
+          "background": "linear-gradient(180deg, hsl(40 15% 90%), hsl(40 20% 75%))"
+        },
+        "link": {
+          "color": "15 60% 40%",
+          "hover": "15 62% 32%",
+          "visited": "15 40% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Space Age",
+        "fontHeading": "Orbitron",
+        "fontBody": "Antique Olive",
+        "sectors": ["Научно-фантастические проекты", "Космическая тематика", "Фестивали", "Техно-мероприятия"],
+        "tone": ["футуристичный", "ретро-футуризм", "смелый", "энергичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 5%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 100% 40%",
+          "primaryDisabled": "30 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Orbitron — динамичный геометрический шрифт с эстетикой космической эры, идеально передающий дух 60-х годов. Antique Olive, разработанный французским типографом Роже Экскоффоном в начале 1960-х, отличается уникальными формами, где буква O напоминает оливку [citation:2]. Сочетание этих шрифтов создаёт атмосферу оптимизма, движения и веры в будущее, характерную для космической эпохи.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 5%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 40%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Soviet Academic",
+        "fontHeading": "Kudryashev",
+        "fontBody": "PT Serif",
+        "sectors": ["Академические издания", "Университеты", "Научные журналы", "Библиотеки"],
+        "tone": ["академичный", "классический", "доверительный", "основательный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 50% 35%"
+          },
+          "primary": "210 50% 35%",
+          "secondary": "210 15% 85%",
+          "primaryHover": "210 52% 27%",
+          "primaryDisabled": "210 15% 65%",
+          "secondaryHover": "210 17% 77%",
+          "secondaryDisabled": "210 8% 95%"
+        },
+        "rationale": "Кудряшевская энциклопедическая (Kudryashev) — один из лучших советских шрифтов, разработанный в Отделе наборных шрифтов НИИ Полиграфического машиностроения в 1960-е годы. Он до сих пор прекрасно работает в тексте [citation:1]. PT Serif — современная классическая антиква, идеально дополняющая этот образ академической основательности и традиции.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 50% 35%), hsl(210 52% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 15% 85%), hsl(210 17% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 50% 35%), hsl(210 52% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 15% 85%))"
+        },
+        "link": {
+          "color": "210 50% 35%",
+          "hover": "210 52% 27%",
+          "visited": "230 40% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "French Nouvelle Vague",
+        "fontHeading": "Antique Olive",
+        "fontBody": "Lato",
+        "sectors": ["Кинофестивали", "Французские кафе", "Модные бутики", "Культурные центры"],
+        "tone": ["элегантный", "утончённый", "французский шик", "экспрессивный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 98%",
+          "textColors": {
+            "base": "0 0% 20%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "340 50% 45%"
+          },
+          "primary": "340 50% 45%",
+          "secondary": "0 0% 85%",
+          "primaryHover": "340 52% 37%",
+          "primaryDisabled": "340 20% 70%",
+          "secondaryHover": "0 2% 77%",
+          "secondaryDisabled": "0 0% 95%"
+        },
+        "rationale": "Antique Olive Роже Экскоффона — уникальный гуманистический гротеск, который пытался предложить более выразительную альтернативу строгой Helvetica и Univers. Его ключевые формы, особенно буква O, напоминают оливку [citation:2]. Lato добавляет современную теплоту и читаемость, создавая образ изысканный, но не холодный.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(340 50% 45%), hsl(340 52% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 85%), hsl(0 2% 77%))",
+          "text": "linear-gradient(90deg, hsl(340 50% 45%), hsl(340 52% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 85%))"
+        },
+        "link": {
+          "color": "340 50% 45%",
+          "hover": "340 52% 37%",
+          "visited": "340 35% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Handmade Lettering",
+        "fontHeading": "Bad Russian",
+        "fontBody": "Open Sans",
+        "sectors": ["Брендинг", "Плакаты", "Винтажные магазины", "Креативные студии"],
+        "tone": ["экспрессивный", "советский ампир", "монументальный", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 15% 90%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 35%",
+            "faint": "30 10% 55%",
+            "accent": "10 70% 40%"
+          },
+          "primary": "10 70% 40%",
+          "secondary": "30 20% 75%",
+          "primaryHover": "10 72% 32%",
+          "primaryDisabled": "10 20% 65%",
+          "secondaryHover": "30 22% 67%",
+          "secondaryDisabled": "30 10% 90%"
+        },
+        "rationale": "Bad Russian из Лаборатории ParaType — современная интерпретация советского ампира 1930–50-х годов, в которой собраны самые значимые черты монументального стиля [citation:1]. Это шрифт с сильным характером, требующий нейтрального партнёра — Open Sans идеально справляется с этой ролью, создавая эффектный контраст между декоративностью и функциональностью.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(10 70% 40%), hsl(10 72% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(30 20% 75%), hsl(30 22% 67%))",
+          "text": "linear-gradient(90deg, hsl(10 70% 40%), hsl(10 72% 32%))",
+          "background": "linear-gradient(180deg, hsl(30 15% 90%), hsl(30 20% 75%))"
+        },
+        "link": {
+          "color": "10 70% 40%",
+          "hover": "10 72% 32%",
+          "visited": "10 50% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Silver Age Comics",
+        "fontHeading": "Collector Comic",
+        "fontBody": "Roboto",
+        "sectors": ["Комиксы", "Графические романы", "Молодёжные бренды", "Фестивали поп-культуры"],
+        "tone": ["энергичный", "ретро-комикс", "игривый", "американский"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "350 90% 45%"
+          },
+          "primary": "350 90% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "350 92% 35%",
+          "primaryDisabled": "350 30% 65%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Collector Comic — тщательно исследованное семейство шрифтов для комиксов, основанное на стилях Silver Age (1956–1970) и Bronze Age (1971–1986). На него повлияла работа легендарных леттереров комиксов Сэма Розена и Арти Симека [citation:4][citation:6]. Важно, что он поддерживает кириллицу, что делает его идеальным для российского рынка. Roboto создаёт нейтральный, читаемый фон для длинных текстов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(350 90% 45%), hsl(350 92% 35%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(350 90% 45%), hsl(350 92% 35%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "350 90% 45%",
+          "hover": "350 92% 35%",
+          "visited": "350 70% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Constructivist Poster",
+        "fontHeading": "Rodchenko",
+        "fontBody": "Inter",
+        "sectors": ["Плакаты", "Выставки", "Политические проекты", "Дизайн-студии"],
+        "tone": ["конструктивистский", "революционный", "геометричный", "смелый"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "0 100% 50%"
+          },
+          "primary": "0 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "0 100% 40%",
+          "primaryDisabled": "0 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Rodchenko (или его современные аналоги, например, из студии Степановой) — геометрический рубленый шрифт, отсылающий к эстетике конструктивизма 1920-х, которая пережила второе рождение в 1960-е годы [citation:5]. Inter выступает функциональным контрастом. Красный на чёрном — классика революционного плаката, создающая максимальный визуальный удар.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 100% 50%), hsl(0 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(0 100% 50%), hsl(0 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "0 100% 50%",
+          "hover": "0 100% 40%",
+          "visited": "0 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Cosmic Depth",
+        "fontHeading": "Kosmos",
+        "fontBody": "Inter",
+        "sectors": ["Космические стартапы", "Аэрокосмическая индустрия", "Научные проекты", "Планетарии"],
+        "tone": ["футуристичный", "технологичный", "загадочный", "динамичный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "240 20% 5%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "200 100% 50%"
+          },
+          "primary": "200 100% 50%",
+          "secondary": "240 30% 20%",
+          "primaryHover": "200 100% 60%",
+          "primaryDisabled": "200 30% 30%",
+          "secondaryHover": "240 34% 27%",
+          "secondaryDisabled": "240 16.5% 35%"
+        },
+        "rationale": "Kosmos — выразительный кириллический шрифт с sci-fi эстетикой, построенный на геометрии и ломаных линиях, создающих ощущение движения и технологичности [citation:8]. Inter выступает идеальным нейтральным фоном для основного текста. Контраст тёмного фона и яркого голубого акцента передаёт глубину космоса.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 100% 50%), hsl(200 100% 60%))",
+          "secondary": "linear-gradient(135deg, hsl(240 30% 20%), hsl(240 34% 27%))",
+          "text": "linear-gradient(90deg, hsl(200 100% 50%), hsl(200 100% 60%))",
+          "background": "linear-gradient(180deg, hsl(240 20% 5%), hsl(240 30% 15%))"
+        },
+        "link": {
+          "color": "200 100% 50%",
+          "hover": "200 100% 60%",
+          "visited": "200 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Orbital Precision",
+        "fontHeading": "Orbitron",
+        "fontBody": "Roboto",
+        "sectors": ["Спутниковые технологии", "Аэрокосмическое машиностроение", "Навигационные сервисы"],
+        "tone": ["точный", "геометричный", "современный", "технологичный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Orbitron — динамичный геометрический шрифт с эстетикой космической эры и чистыми линиями, идеально подходящий для заголовков [citation:2]. В паре с функциональным Roboto создаёт образ точности и надёжности. Чистая светлая палитра подчёркивает технологичность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Stellar Velocity",
+        "fontHeading": "EP Stellari",
+        "fontBody": "Inter",
+        "sectors": ["Космический туризм", "Стриминг научной фантастики", "Кинотеатры", "Фестивали"],
+        "tone": ["футуристичный", "энергичный", "премиальный", "звёздный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "280 100% 60%"
+          },
+          "primary": "280 100% 60%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "280 100% 70%",
+          "primaryDisabled": "280 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "EP Stellari (от лат. 'звёздный') — уникальный шрифт с высоким контрастом и трапециевидными засечками, создающий сильный визуальный образ [citation:10]. Inter добавляет функциональность и читаемость. Фиолетовый акцент передаёт космическую энергию и загадочность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(280 100% 60%), hsl(280 100% 70%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(280 100% 60%), hsl(280 100% 70%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(280 30% 15%))"
+        },
+        "link": {
+          "color": "280 100% 60%",
+          "hover": "280 100% 70%",
+          "visited": "280 70% 50%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Deep Space",
+        "fontHeading": "Exo",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Астрономия", "Научно-популярные медиа", "Космические агентства"],
+        "tone": ["глубокий", "современный", "научный", "профессиональный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "220 25% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "200 100% 45%"
+          },
+          "primary": "200 100% 45%",
+          "secondary": "220 30% 25%",
+          "primaryHover": "200 100% 55%",
+          "primaryDisabled": "200 30% 30%",
+          "secondaryHover": "220 34% 32%",
+          "secondaryDisabled": "220 16.5% 40%"
+        },
+        "rationale": "Exo — геометрический шрифт с футуристической эстетикой, чистые линии обеспечивают отличную читаемость [citation:2]. Source Sans Pro добавляет универсальности. Тёмный фон и яркий бирюзовый акцент создают атмосферу глубокого космоса.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 100% 45%), hsl(200 100% 55%))",
+          "secondary": "linear-gradient(135deg, hsl(220 30% 25%), hsl(220 34% 32%))",
+          "text": "linear-gradient(90deg, hsl(200 100% 45%), hsl(200 100% 55%))",
+          "background": "linear-gradient(180deg, hsl(220 25% 10%), hsl(220 30% 20%))"
+        },
+        "link": {
+          "color": "200 100% 45%",
+          "hover": "200 100% 55%",
+          "visited": "200 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Cosmic Minimal",
+        "fontHeading": "Space",
+        "fontBody": "Work Sans",
+        "sectors": ["Лендинги космических стартапов", "Технологичные презентации", "Брендинг"],
+        "tone": ["минималистичный", "ретро-футуристичный", "чистый"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "200 100% 35%"
+          },
+          "primary": "200 100% 35%",
+          "secondary": "200 30% 70%",
+          "primaryHover": "200 100% 25%",
+          "primaryDisabled": "200 25% 65%",
+          "secondaryHover": "200 32% 62%",
+          "secondaryDisabled": "200 15% 85%"
+        },
+        "rationale": "Space — футуристический шрифт с ретро-оттенком, дизайн вдохновлён формами космических кораблей [citation:2]. Work Sans создаёт чистый, современный фон. Минималистичная светлая палитра с глубоким синим акцентом передаёт точность и элегантность.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 100% 35%), hsl(200 100% 25%))",
+          "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(200 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(200 100% 35%), hsl(200 100% 25%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(200 30% 70%))"
+        },
+        "link": {
+          "color": "200 100% 35%",
+          "hover": "200 100% 25%",
+          "visited": "200 70% 25%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Stream Velocity",
+        "fontHeading": "Bebas Neue",
+        "fontBody": "Inter",
+        "sectors": ["Стриминг-сервисы", "Видеоплатформы", "Медиа-лендинги"],
+        "tone": ["быстрый", "энергичный", "современный", "дерзкий"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 100% 60%",
+          "primaryDisabled": "30 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Bebas Neue создаёт мощные, запоминающиеся заголовки, идеально подходящие для стриминг-сервисов, где нужно мгновенно привлекать внимание. Inter обеспечивает безупречную читаемость описаний. Яркий оранжевый акцент передаёт энергию и скорость [citation:7].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 60%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 60%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 60%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Galactic Stream",
+        "fontHeading": "Stifly",
+        "fontBody": "Open Sans",
+        "sectors": ["Стриминг музыки", "Космическая эстетика", "Медиа-проекты"],
+        "tone": ["футуристичный", "технологичный", "энергичный", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "260 30% 8%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "280 100% 60%"
+          },
+          "primary": "280 100% 60%",
+          "secondary": "260 30% 25%",
+          "primaryHover": "280 100% 70%",
+          "primaryDisabled": "280 30% 30%",
+          "secondaryHover": "260 34% 32%",
+          "secondaryDisabled": "260 16.5% 40%"
+        },
+        "rationale": "Stifly — футуристичный дисплейный шрифт, сочетающий пиксельные линии с блочной структурой для сильных заголовков [citation:2]. Open Sans остаётся универсальным и читаемым. Глубокий фиолетовый фон создаёт космическое настроение.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(280 100% 60%), hsl(280 100% 70%))",
+          "secondary": "linear-gradient(135deg, hsl(260 30% 25%), hsl(260 34% 32%))",
+          "text": "linear-gradient(90deg, hsl(280 100% 60%), hsl(280 100% 70%))",
+          "background": "linear-gradient(180deg, hsl(260 30% 8%), hsl(260 30% 20%))"
+        },
+        "link": {
+          "color": "280 100% 60%",
+          "hover": "280 100% 70%",
+          "visited": "280 70% 50%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Lightspeed",
+        "fontHeading": "Maswen",
+        "fontBody": "DM Sans",
+        "sectors": ["Технологические стартапы", "Быстрые сервисы", "Скоростные технологии"],
+        "tone": ["динамичный", "смелый", "современный", "энергичный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 100% 40%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Maswen, вдохновлённый космическими путешествиями, имеет округлые и жирные формы, идеально подходящие для передачи скорости и энергии [citation:2]. DM Sans создаёт чистый, минималистичный фон. Яркий оранжевый акцент усиливает ощущение быстроты [citation:7].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 100% 50%), hsl(30 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 40%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Newro Space",
+        "fontHeading": "Newro Space",
+        "fontBody": "Inter",
+        "sectors": ["Космический брендинг", "Тех-стартапы", "Инновационные проекты"],
+        "tone": ["инновационный", "геометричный", "футуристичный", "чистый"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 70% 45%"
+          },
+          "primary": "210 70% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 72% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Newro Space — современный футуристический дисплейный шрифт с острыми геометрическими формами и курсивным начертанием для передачи движения [citation:6]. Inter обеспечивает функциональность и читаемость основного текста. Чистая светлая палитра подчёркивает инновационность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 70% 45%), hsl(210 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 70% 45%), hsl(210 72% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 70% 45%",
+          "hover": "210 72% 37%",
+          "visited": "230 50% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Sogtric Future",
+        "fontHeading": "Sogtric",
+        "fontBody": "Roboto",
+        "sectors": ["Киберпанк-проекты", "Футуристичные бренды", "Гейминг", "VR/AR"],
+        "tone": ["роботизированный", "технологичный", "смелый", "киберпанк"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "180 100% 45%"
+          },
+          "primary": "180 100% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "180 100% 55%",
+          "primaryDisabled": "180 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Sogtric — чистый, современный футуристический шрифт, вдохновлённый космосом и технологиями, идеально подходящий для заголовков и брендинга [citation:1]. Roboto добавляет функциональности и читаемости. Тёмный фон и яркий бирюзовый акцент создают киберпанк-эстетику.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(180 100% 55%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(180 100% 45%), hsl(180 100% 55%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(180 30% 15%))"
+        },
+        "link": {
+          "color": "180 100% 45%",
+          "hover": "180 100% 55%",
+          "visited": "180 70% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Coder Cosmos",
+        "fontHeading": "Coder",
+        "fontBody": "Source Code Pro",
+        "sectors": ["Космическое программирование", "Техническая документация", "Научные интерфейсы"],
+        "tone": ["технический", "точный", "минималистичный", "цифровой"],
+        "audienceType": ["B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "160 100% 30%"
+          },
+          "primary": "160 100% 30%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "160 100% 20%",
+          "primaryDisabled": "160 30% 60%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Coder — минималистичный футуристический шрифт с цифровой эстетикой, напоминающей о точности программирования [citation:2]. Source Code Pro добавляет техничности и моноширинной эстетики. Чистая светлая палитра подчёркивает точность и ясность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(160 100% 30%), hsl(160 100% 20%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(160 100% 30%), hsl(160 100% 20%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "160 100% 30%",
+          "hover": "160 100% 20%",
+          "visited": "160 70% 25%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Planeto Exploration",
+        "fontHeading": "Planeto",
+        "fontBody": "Lato",
+        "sectors": ["Космические исследования", "Образовательные проекты", "Музейные экспозиции"],
+        "tone": ["геометричный", "современный", "научный", "доступный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 70% 40%"
+          },
+          "primary": "210 70% 40%",
+          "secondary": "210 30% 70%",
+          "primaryHover": "210 72% 32%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 32% 62%",
+          "secondaryDisabled": "210 15% 85%"
+        },
+        "rationale": "Planeto — жирный, геометрический шрифт с острыми углами, придающий заголовкам технологичный вид [citation:2]. Lato добавляет теплоты и читаемости основному тексту, делая научный контент более доступным. Светлая палитра с синим акцентом ассоциируется с исследованиями и открытиями.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 70%), hsl(210 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 70%))"
+        },
+        "link": {
+          "color": "210 70% 40%",
+          "hover": "210 72% 32%",
+          "visited": "230 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Playful & Bold",
+        "fontHeading": "Roena",
+        "fontBody": "Mulish",
+        "sectors": ["Детские проекты", "Упаковка продуктов", "Креативные студии", "Соцсети"],
+        "tone": ["игривый", "забавный", "выразительный", "дружелюбный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 20% 98%",
+          "textColors": {
+            "base": "30 10% 20%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "10 90% 55%"
+          },
+          "primary": "10 90% 55%",
+          "secondary": "30 40% 80%",
+          "primaryHover": "10 92% 45%",
+          "primaryDisabled": "10 30% 70%",
+          "secondaryHover": "30 42% 72%",
+          "secondaryDisabled": "30 20% 90%"
+        },
+        "rationale": "Roena — пухлый, забавный, выразительный шрифт с оригинальными скруглёнными формами, идеальный для привлечения внимания в заголовках [citation:1]. Mulish — нейтральный и удобочитаемый гротеск для длинных текстов, создающий сбалансированный контраст [citation:2]. Игривость + функциональность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(10 90% 55%), hsl(10 92% 45%))",
+          "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(30 42% 72%))",
+          "text": "linear-gradient(90deg, hsl(10 90% 55%), hsl(10 92% 45%))",
+          "background": "linear-gradient(180deg, hsl(30 20% 98%), hsl(30 40% 80%))"
+        },
+        "link": {
+          "color": "10 90% 55%",
+          "hover": "10 92% 45%",
+          "visited": "10 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Experimental Geometry",
+        "fontHeading": "Rebak",
+        "fontBody": "Inter",
+        "sectors": ["Постеры", "Логотипы", "Архитектурные проекты", "Креативный брендинг"],
+        "tone": ["экспериментальный", "геометричный", "современный", "архитектурный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 70% 45%"
+          },
+          "primary": "210 70% 45%",
+          "secondary": "210 30% 70%",
+          "primaryHover": "210 72% 37%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 32% 62%",
+          "secondaryDisabled": "210 15% 85%"
+        },
+        "rationale": "Rebak — массивный экспериментальный шрифт с уверенной геометрией, придающий дизайну современный архитектурный вид [citation:1]. Inter — идеальный нейтральный фон для цифровых интерфейсов. Мощь + функциональность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 70% 45%), hsl(210 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 70%), hsl(210 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(210 70% 45%), hsl(210 72% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 70%))"
+        },
+        "link": {
+          "color": "210 70% 45%",
+          "hover": "210 72% 37%",
+          "visited": "230 50% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Handmade Charm",
+        "fontHeading": "CS Brooklyn",
+        "fontBody": "Josefin Sans",
+        "sectors": ["Плакаты", "Упаковка", "Приглашения", "Творческие проекты"],
+        "tone": ["рукописный", "тёплый", "индивидуальный", "спонтанный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "20 15% 95%",
+          "textColors": {
+            "base": "20 10% 20%",
+            "muted": "20 10% 40%",
+            "faint": "20 10% 60%",
+            "accent": "350 60% 50%"
+          },
+          "primary": "350 60% 50%",
+          "secondary": "20 30% 80%",
+          "primaryHover": "350 62% 42%",
+          "primaryDisabled": "350 20% 70%",
+          "secondaryHover": "20 32% 72%",
+          "secondaryDisabled": "20 15% 90%"
+        },
+        "rationale": "CS Brooklyn — живой рукописный шрифт, сочетающий непринуждённый ритм и игривую энергию, создаёт ощущение спонтанности и теплоты [citation:1]. Josefin Sans — современный геометрический гротеск с элегантными формами, уравновешивающий рукописность [citation:2]. Индивидуальность + структура.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(350 60% 50%), hsl(350 62% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(20 30% 80%), hsl(20 32% 72%))",
+          "text": "linear-gradient(90deg, hsl(350 60% 50%), hsl(350 62% 42%))",
+          "background": "linear-gradient(180deg, hsl(20 15% 95%), hsl(20 30% 80%))"
+        },
+        "link": {
+          "color": "350 60% 50%",
+          "hover": "350 62% 42%",
+          "visited": "350 40% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Pixel Retro",
+        "fontHeading": "Calive Pixel",
+        "fontBody": "Space Grotesk",
+        "sectors": ["Игровые интерфейсы", "Ретро-брендинг", "Пиксель-арт проекты", "Креативные студии"],
+        "tone": ["ретро", "цифровой", "ностальгический", "игривый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "120 100% 40%"
+          },
+          "primary": "120 100% 40%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "120 100% 30%",
+          "primaryDisabled": "120 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Calive Pixel — акцидентный шрифт, вдохновлённый пиксельной графикой, сочетающий ретро-эстетику с чистым цифровым стилем [citation:1]. Space Grotesk — современный гротеск с моноширинным оттенком, создающий идеальный технологичный фон. Ностальгия + современность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(120 100% 40%), hsl(120 100% 30%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(120 100% 40%), hsl(120 100% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(120 30% 15%))"
+        },
+        "link": {
+          "color": "120 100% 40%",
+          "hover": "120 100% 30%",
+          "visited": "120 70% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Mediterranean Elegance",
+        "fontHeading": "Canicule Display",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Журналы", "Брендинг", "Туризм", "Рестораны"],
+        "tone": ["элегантный", "жизнерадостный", "средиземноморский", "изысканный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 30% 95%",
+          "textColors": {
+            "base": "40 10% 15%",
+            "muted": "40 10% 35%",
+            "faint": "40 10% 55%",
+            "accent": "180 60% 35%"
+          },
+          "primary": "180 60% 35%",
+          "secondary": "40 30% 75%",
+          "primaryHover": "180 62% 27%",
+          "primaryDisabled": "180 20% 60%",
+          "secondaryHover": "40 32% 67%",
+          "secondaryDisabled": "40 15% 90%"
+        },
+        "rationale": "Canicule Display — живая антиква с ярким средиземноморским характером, органическими линиями и изысканным контрастом, представленная в 18 стилях [citation:1]. Source Sans Pro — чистый и нейтральный шрифт, идеально подходящий для основного текста. Элегантность + ясность.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(180 60% 35%), hsl(180 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(40 30% 75%), hsl(40 32% 67%))",
+          "text": "linear-gradient(90deg, hsl(180 60% 35%), hsl(180 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(40 30% 95%), hsl(40 30% 75%))"
+        },
+        "link": {
+          "color": "180 60% 35%",
+          "hover": "180 62% 27%",
+          "visited": "180 40% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Luxury Serif",
+        "fontHeading": "Brettaline",
+        "fontBody": "Montserrat",
+        "sectors": ["Люксовый брендинг", "Упаковка", "Полиграфия", "Модные дома"],
+        "tone": ["элегантный", "роскошный", "изысканный", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 98%",
+          "textColors": {
+            "base": "0 0% 20%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "340 50% 45%"
+          },
+          "primary": "340 50% 45%",
+          "secondary": "0 0% 85%",
+          "primaryHover": "340 52% 37%",
+          "primaryDisabled": "340 20% 65%",
+          "secondaryHover": "0 2% 77%",
+          "secondaryDisabled": "0 0% 95%"
+        },
+        "rationale": "Brettaline — элегантное семейство шрифтов с засечками, сочетающее неподвластную времени красоту и современную утончённость, с изящными изгибами и острыми засечками [citation:1]. Montserrat — геометрический гротеск, добавляющий современную функциональность. Роскошь + современность.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(340 50% 45%), hsl(340 52% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 85%), hsl(0 2% 77%))",
+          "text": "linear-gradient(90deg, hsl(340 50% 45%), hsl(340 52% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 85%))"
+        },
+        "link": {
+          "color": "340 50% 45%",
+          "hover": "340 52% 37%",
+          "visited": "340 35% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Professional Clarity",
+        "fontHeading": "Sense Font",
+        "fontBody": "Lato",
+        "sectors": ["Заголовки", "Акцентная типографика", "Брендинг", "Корпоративные сайты"],
+        "tone": ["ясный", "сбалансированный", "спокойный", "уверенный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 70% 40%"
+          },
+          "primary": "210 70% 40%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 72% 32%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 10% 95%"
+        },
+        "rationale": "Sense Font — изысканный шрифт без засечек, отражающий ясность, баланс и продуманную геометрию, разработанный для заголовков и акцентной типографики [citation:1]. Lato — чистый, тонкий шрифт с отличной читаемостью, добавляющий теплоты основному тексту [citation:2]. Спокойная уверенность.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 70% 40%",
+          "hover": "210 72% 32%",
+          "visited": "230 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Digital Sans",
+        "fontHeading": "Nevanta",
+        "fontBody": "Inter",
+        "sectors": ["Веб-сайты", "Корпоративная айдентика", "Плакаты", "Интернет-издания"],
+        "tone": ["профессиональный", "чистый", "универсальный", "современный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Nevanta — современный шрифт без засечек с 18 стилями, разработанный для профессиональной, чистой и универсальной типографики благодаря точным геометрическим пропорциям [citation:1]. Inter — идеальный UI-шрифт для цифровых продуктов. Функциональность + универсальность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Classic & Modern",
+        "fontHeading": "Oswald",
+        "fontBody": "Source Serif Pro",
+        "sectors": ["Профессиональные веб-страницы", "UI-дизайн", "Корпоративные сайты"],
+        "tone": ["профессиональный", "классический", "современный", "уверенный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 70% 40%"
+          },
+          "primary": "210 70% 40%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 72% 32%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 10% 95%"
+        },
+        "rationale": "Oswald — простая переработка классического стиля, «альтернативный готический» шрифт без засечек, часто используемый в веб-браузерах [citation:2]. Source Serif Pro — переходный шрифт с засечками, соответствующий современному стилю. Идеальная профессиональная пара.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 70% 40%), hsl(210 72% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 70% 40%",
+          "hover": "210 72% 32%",
+          "visited": "230 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Elegant Feminine",
+        "fontHeading": "Elsie",
+        "fontBody": "Roboto",
+        "sectors": ["Женские бренды", "Косметика", "Мода", "Свадебные проекты"],
+        "tone": ["элегантный", "женственный", "утончённый", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "340 60% 50%"
+          },
+          "primary": "340 60% 50%",
+          "secondary": "340 30% 80%",
+          "primaryHover": "340 62% 42%",
+          "primaryDisabled": "340 20% 70%",
+          "secondaryHover": "340 32% 72%",
+          "secondaryDisabled": "340 15% 95%"
+        },
+        "rationale": "Elsie — красивый шрифт с засечками, безупречный плавный дизайн, особенно привлекательный для женской аудитории [citation:2]. Roboto — функциональный и чистый шрифт, создающий элегантный контраст. Утончённость + функциональность.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(340 60% 50%), hsl(340 62% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(340 30% 80%), hsl(340 32% 72%))",
+          "text": "linear-gradient(90deg, hsl(340 60% 50%), hsl(340 62% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(340 30% 80%))"
+        },
+        "link": {
+          "color": "340 60% 50%",
+          "hover": "340 62% 42%",
+          "visited": "340 40% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Bold & Playful",
+        "fontHeading": "Corben",
+        "fontBody": "Nobile",
+        "sectors": ["Модернистский дизайн", "Креативные проекты", "Брендинг", "Плакаты"],
+        "tone": ["смелый", "современный", "игривый", "выразительный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "10 80% 50%"
+          },
+          "primary": "10 80% 50%",
+          "secondary": "10 30% 70%",
+          "primaryHover": "10 82% 42%",
+          "primaryDisabled": "10 25% 70%",
+          "secondaryHover": "10 32% 62%",
+          "secondaryDisabled": "10 15% 85%"
+        },
+        "rationale": "Corben — шрифт с завораживающими изгибами, идеально подходящий для модернистского дизайна, создаёт яркие, запоминающиеся заголовки [citation:2]. Nobile — простой, но аккуратный шрифт, уравновешивающий выразительность. Смелость + аккуратность.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(10 80% 50%), hsl(10 82% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(10 30% 70%), hsl(10 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(10 80% 50%), hsl(10 82% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(10 30% 70%))"
+        },
+        "link": {
+          "color": "10 80% 50%",
+          "hover": "10 82% 42%",
+          "visited": "10 60% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Ocean Flow",
+        "fontHeading": "Sansita",
+        "fontBody": "Open Sans",
+        "sectors": ["Туризм", "Развлечения", "Спа-салоны", "Здоровье"],
+        "tone": ["спокойный", "плавный", "сбалансированный", "выразительный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "180 20% 95%",
+          "textColors": {
+            "base": "180 10% 15%",
+            "muted": "180 10% 35%",
+            "faint": "180 10% 55%",
+            "accent": "200 80% 45%"
+          },
+          "primary": "200 80% 45%",
+          "secondary": "180 30% 70%",
+          "primaryHover": "200 82% 37%",
+          "primaryDisabled": "200 25% 70%",
+          "secondaryHover": "180 32% 62%",
+          "secondaryDisabled": "180 15% 85%"
+        },
+        "rationale": "Sansita — шрифт с волнистым узором, напоминающим океан, придаёт тексту спокойный и плавный вид [citation:2]. Open Sans — нейтральный и максимально читаемый шрифт, создающий сбалансированный и выразительный дизайн. Плавность + читаемость.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 80% 45%), hsl(200 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(180 30% 70%), hsl(180 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(200 80% 45%), hsl(200 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(180 20% 95%), hsl(180 30% 70%))"
+        },
+        "link": {
+          "color": "200 80% 45%",
+          "hover": "200 82% 37%",
+          "visited": "200 60% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Classic & Modern Sans",
+        "fontHeading": "EB Garamond",
+        "fontBody": "Poiret One",
+        "sectors": ["Литературные проекты", "Блоги", "Дизайн презентаций", "Искусство"],
+        "tone": ["классический", "модернистский", "декоративный", "изысканный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 70% 40%"
+          },
+          "primary": "30 70% 40%",
+          "secondary": "30 30% 80%",
+          "primaryHover": "30 72% 32%",
+          "primaryDisabled": "30 20% 65%",
+          "secondaryHover": "30 32% 72%",
+          "secondaryDisabled": "30 15% 90%"
+        },
+        "rationale": "EB Garamond — один из наиболее часто используемых шрифтов с засечками, простой и классический [citation:2]. Poiret One — декоративный модернистский шрифт с тонкими линиями, создающий изысканный контраст для длинных текстов. Классика + модернизм.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 70% 40%), hsl(30 72% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(30 30% 80%), hsl(30 32% 72%))",
+          "text": "linear-gradient(90deg, hsl(30 70% 40%), hsl(30 72% 32%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(30 30% 80%))"
+        },
+        "link": {
+          "color": "30 70% 40%",
+          "hover": "30 72% 32%",
+          "visited": "30 50% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Tech Monospace",
+        "fontHeading": "Source Code Pro",
+        "fontBody": "Space Grotesk",
+        "sectors": ["Технические блоги", "Научные проекты", "Документация", "IT-стартапы"],
+        "tone": ["технологичный", "точный", "минималистичный", "профессиональный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "160 100% 30%"
+          },
+          "primary": "160 100% 30%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "160 100% 20%",
+          "primaryDisabled": "160 30% 60%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Source Code Pro — моноширинный шрифт, идеально подходящий для кода и технических текстов. Space Grotesk — современный гротеск с моноширинным оттенком, создающий единый технологичный образ. Идеально для научных и технических проектов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(160 100% 30%), hsl(160 100% 20%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(160 100% 30%), hsl(160 100% 20%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "160 100% 30%",
+          "hover": "160 100% 20%",
+          "visited": "160 70% 25%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Slab Impact",
+        "fontHeading": "Alfa Slab",
+        "fontBody": "Source Code Pro",
+        "sectors": ["Технические блоги", "Креативные проекты", "Скрипты", "Цитаты"],
+        "tone": ["смелый", "контрастный", "графичный", "выразительный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 100% 45%"
+          },
+          "primary": "30 100% 45%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "30 100% 35%",
+          "primaryDisabled": "30 30% 65%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 95%"
+        },
+        "rationale": "Alfa Slab — жирный, массивный шрифт с засечками, создающий сильный визуальный удар [citation:8]. Source Code Pro — лёгкий и просторный моноширинный шрифт, идеально подходящий для длинных текстов и цитат. Резкий контраст, приятный глазу.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 45%), hsl(30 100% 35%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(30 100% 45%), hsl(30 100% 35%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "30 100% 45%",
+          "hover": "30 100% 35%",
+          "visited": "30 70% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Monoton & Rubik",
+        "fontHeading": "Monoton",
+        "fontBody": "Rubik",
+        "sectors": ["Музыкальные проекты", "Фестивали", "Креативные студии", "Ночные клубы"],
+        "tone": ["экспрессивный", "ретро", "игривый", "современный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "300 100% 50%"
+          },
+          "primary": "300 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "300 100% 40%",
+          "primaryDisabled": "300 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Monoton — ретро-футуристичный, почти кинетический шрифт с декоративными формами. Rubik с его мягкими скруглениями уравновешивает эту экспрессию, создавая запоминающийся контраст. Идеально для музыкальных проектов и фестивалей.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(300 100% 50%), hsl(300 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(300 100% 50%), hsl(300 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "300 100% 50%",
+          "hover": "300 100% 40%",
+          "visited": "300 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Arvo & Roboto",
+        "fontHeading": "Arvo",
+        "fontBody": "Roboto",
+        "sectors": ["Корпоративные сайты", "Технологические компании", "Инженерные бюро", "Промышленность"],
+        "tone": ["надёжный", "структурный", "современный", "функциональный"],
+        "audienceType": ["B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 35%"
+          },
+          "primary": "210 60% 35%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 27%",
+          "primaryDisabled": "210 20% 65%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Arvo — геометрический slab-шрифт, придающий заголовкам основательную структуру. Roboto добавляет функциональность и современность. Создаёт образ надёжной, технологичной компании.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 35%), hsl(210 62% 27%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 35%",
+          "hover": "210 62% 27%",
+          "visited": "230 46.5% 31%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Bebas Neue & Inter",
+        "fontHeading": "Bebas Neue",
+        "fontBody": "Inter",
+        "sectors": ["Рекламные лендинги", "Промо-сайты", "Брендинг", "Киноиндустрия"],
+        "tone": ["дерзкий", "современный", "динамичный", "винтажный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "45 100% 50%"
+          },
+          "primary": "45 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "45 100% 40%",
+          "primaryDisabled": "45 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Bebas Neue — жирный, заглавный шрифт с чистыми линиями и ретро-футуристическим шармом. Inter — король UI-типографики, нейтральный и сверхчитаемый. Идеальный баланс для промо-лендингов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 100% 50%), hsl(45 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(45 100% 50%), hsl(45 100% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 10%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "45 100% 50%",
+          "hover": "45 100% 40%",
+          "visited": "45 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Cormorant Garamond & Proza Libre",
+        "fontHeading": "Cormorant Garamond",
+        "fontBody": "Proza Libre",
+        "sectors": ["Премиум-бренды", "Рестораны", "Бутики", "Искусство"],
+        "tone": ["элегантный", "изысканный", "премиальный", "артистичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 98%",
+          "textColors": {
+            "base": "0 0% 20%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "45 80% 50%"
+          },
+          "primary": "45 80% 50%",
+          "secondary": "45 50% 70%",
+          "primaryHover": "45 82% 42%",
+          "primaryDisabled": "45 25% 70%",
+          "secondaryHover": "45 52% 62%",
+          "secondaryDisabled": "45 27.5% 86%"
+        },
+        "rationale": "Cormorant Garamond — классическая антиква с изысканными пропорциями. Proza Libre, современный гуманистический гротеск, создаёт прекрасный контраст и обеспечивает читаемость. Для премиальных проектов.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 82% 42%))",
+          "secondary": "linear-gradient(135deg, hsl(45 50% 70%), hsl(45 52% 62%))",
+          "text": "linear-gradient(90deg, hsl(45 80% 50%), hsl(45 82% 42%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 98%), hsl(45 50% 70%))"
+        },
+        "link": {
+          "color": "45 80% 50%",
+          "hover": "45 82% 42%",
+          "visited": "45 60% 46%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Merriweather Black & Merriweather Light",
+        "fontHeading": "Merriweather Black",
+        "fontBody": "Merriweather Light",
+        "sectors": ["Академические проекты", "Издательства", "Университеты", "Научные журналы"],
+        "tone": ["авторитетный", "классический", "доверительный", "строгий"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 65%",
+            "accent": "0 0% 30%"
+          },
+          "primary": "0 0% 30%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "0 2% 22%",
+          "primaryDisabled": "0 0% 60%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Merriweather — универсальная антиква с отличной читаемостью. Использование разных начертаний создаёт чистую, строгую иерархию без лишнего визуального шума. Идеально для контентных проектов.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "0 0% 30%",
+          "hover": "0 2% 22%",
+          "visited": "30 15% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "IBM Plex Sans Bold & IBM Plex Sans Condensed",
+        "fontHeading": "IBM Plex Sans Bold",
+        "fontBody": "IBM Plex Sans Condensed",
+        "sectors": ["IT-проекты", "Техническая документация", "Интерфейсы", "Корпоративные блоги"],
+        "tone": ["технологичный", "функциональный", "чистый", "профессиональный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "210 10% 20%",
+            "muted": "210 10% 40%",
+            "faint": "210 10% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Семейство Plex разработано для иллюстрации связи человека и машины. Это сочетание передаёт технологичность и адаптивность, идеально для IT-проектов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Inter Bold & Inter Light",
+        "fontHeading": "Inter Bold",
+        "fontBody": "Inter Light",
+        "sectors": ["UI/UX дизайн", "Веб-приложения", "SaaS", "Технологические стартапы"],
+        "tone": ["современный", "функциональный", "минималистичный", "чистый"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Inter 4.0 — обновлённая классика с оптическим размером и настоящим курсивом. Использование разных весов создаёт идеальную UI-систему без лишних шрифтов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Rantaro Grotesk & Literata",
+        "fontHeading": "Rantaro Grotesk",
+        "fontBody": "Literata",
+        "sectors": ["Креативные студии", "Лайфстайл-блоги", "Дизайн-платформы", "Медиа"],
+        "tone": ["современный", "тёплый", "интеллектуальный", "дружеский"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 20% 95%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 35%",
+            "faint": "30 10% 55%",
+            "accent": "15 70% 45%"
+          },
+          "primary": "15 70% 45%",
+          "secondary": "30 40% 75%",
+          "primaryHover": "15 72% 37%",
+          "primaryDisabled": "15 25% 70%",
+          "secondaryHover": "30 42% 67%",
+          "secondaryDisabled": "30 20% 90%"
+        },
+        "rationale": "Rantaro — современный шрифт с плавными, скруглёнными глифами, дружелюбный, но профессиональный. Literata создана для чтения цифровых книг. Современный и тёплый образ.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(15 70% 45%), hsl(15 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(30 40% 75%), hsl(30 42% 67%))",
+          "text": "linear-gradient(90deg, hsl(15 70% 45%), hsl(15 72% 37%))",
+          "background": "linear-gradient(180deg, hsl(30 20% 95%), hsl(30 40% 75%))"
+        },
+        "link": {
+          "color": "15 70% 45%",
+          "hover": "15 72% 37%",
+          "visited": "15 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Bricolage Grotesque & Spectral",
+        "fontHeading": "Bricolage Grotesque",
+        "fontBody": "Spectral",
+        "sectors": ["Арт-проекты", "Фестивали", "Креативные студии", "Спецпроекты"],
+        "tone": ["нестандартный", "креативный", "современный", "смелый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "200 50% 95%",
+          "textColors": {
+            "base": "200 10% 15%",
+            "muted": "200 10% 35%",
+            "faint": "200 10% 55%",
+            "accent": "330 90% 55%"
+          },
+          "primary": "330 90% 55%",
+          "secondary": "200 30% 70%",
+          "primaryHover": "330 92% 47%",
+          "primaryDisabled": "330 25% 75%",
+          "secondaryHover": "200 32% 62%",
+          "secondaryDisabled": "200 16.5% 86%"
+        },
+        "rationale": "Bricolage Grotesque — современный шрифт с характером. Spectral — с сильным характером и выразительными италиками. Идеально для экспериментальных проектов и диджитал-изданий.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(330 90% 55%), hsl(330 92% 47%))",
+          "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(200 32% 62%))",
+          "text": "linear-gradient(90deg, hsl(330 90% 55%), hsl(330 92% 47%))",
+          "background": "linear-gradient(180deg, hsl(200 50% 95%), hsl(200 30% 70%))"
+        },
+        "link": {
+          "color": "330 90% 55%",
+          "hover": "330 92% 47%",
+          "visited": "354 69.8% 51%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Roena & Quicksand",
+        "fontHeading": "Roena",
+        "fontBody": "Quicksand",
+        "sectors": ["Детские проекты", "Игрушки", "Семейные центры", "Кафе"],
+        "tone": ["игривый", "дружеский", "уютный", "заботливый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 30% 95%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 35%",
+            "faint": "30 10% 55%",
+            "accent": "25 80% 60%"
+          },
+          "primary": "25 80% 60%",
+          "secondary": "30 40% 80%",
+          "primaryHover": "25 82% 52%",
+          "primaryDisabled": "25 25% 80%",
+          "secondaryHover": "30 42% 72%",
+          "secondaryDisabled": "30 22% 96%"
+        },
+        "rationale": "Roena — пухлый, забавный, выразительный шрифт для игривых заголовков. Quicksand с мягкими округлыми формами создаёт атмосферу уюта и доступности.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+          "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(30 42% 72%))",
+          "text": "linear-gradient(90deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+          "background": "linear-gradient(180deg, hsl(40 30% 95%), hsl(30 40% 80%))"
+        },
+        "link": {
+          "color": "25 80% 60%",
+          "hover": "25 82% 52%",
+          "visited": "49 62% 56%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Ankish & Work Sans",
+        "fontHeading": "Ankish",
+        "fontBody": "Work Sans",
+        "sectors": ["Технологические стартапы", "Инновационные проекты", "Робототехника", "AI-продукты"],
+        "tone": ["футуристичный", "смелый", "инновационный", "дерзкий"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "240 20% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "180 100% 45%"
+          },
+          "primary": "180 100% 45%",
+          "secondary": "240 30% 30%",
+          "primaryHover": "180 100% 55%",
+          "primaryDisabled": "180 30% 40%",
+          "secondaryHover": "240 34% 37%",
+          "secondaryDisabled": "240 16.5% 48%"
+        },
+        "rationale": "Ankish — смелый футуристичный гротеск с угловатыми формами. Work Sans — нейтральный и чистый. Для технологичных и инновационных проектов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(180 100% 55%))",
+          "secondary": "linear-gradient(135deg, hsl(240 30% 30%), hsl(240 34% 37%))",
+          "text": "linear-gradient(90deg, hsl(180 100% 45%), hsl(180 100% 55%))",
+          "background": "linear-gradient(180deg, hsl(240 20% 10%), hsl(240 30% 30%))"
+        },
+        "link": {
+          "color": "180 100% 45%",
+          "hover": "180 100% 55%",
+          "visited": "200 70% 55%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Brettaline & Lato",
+        "fontHeading": "Brettaline",
+        "fontBody": "Lato",
+        "sectors": ["Люксовые бренды", "Бутики", "Премиум-услуги", "Fashion"],
+        "tone": ["элегантный", "премиальный", "изысканный", "утончённый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 98%",
+          "textColors": {
+            "base": "0 0% 20%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "340 40% 45%"
+          },
+          "primary": "340 40% 45%",
+          "secondary": "340 20% 85%",
+          "primaryHover": "340 42% 37%",
+          "primaryDisabled": "340 15% 70%",
+          "secondaryHover": "340 22% 77%",
+          "secondaryDisabled": "340 10% 95%"
+        },
+        "rationale": "Brettaline — элегантное семейство с засечками, изящные изгибы. Lato добавляет современную теплоту и читаемость. Люксовый брендинг, упаковка.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(340 40% 45%), hsl(340 42% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(340 20% 85%), hsl(340 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(340 40% 45%), hsl(340 42% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 98%), hsl(340 20% 85%))"
+        },
+        "link": {
+          "color": "340 40% 45%",
+          "hover": "340 42% 37%",
+          "visited": "340 30% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Onest & Nunito",
+        "fontHeading": "Onest",
+        "fontBody": "Nunito",
+        "sectors": ["Контентные проекты", "Блоги", "Образование", "Лайфстайл"],
+        "tone": ["современный", "дружеский", "спокойный", "интеллектуальный"],
+        "audienceType": ["B2C", "массмаркет"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 45%"
+          },
+          "primary": "210 60% 45%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 37%",
+          "primaryDisabled": "210 20% 70%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Onest — «умный» шрифт для чтения, разработанный в Молдове, экономит место без потери читаемости. Nunito — дружелюбный скруглённый гротеск. Для контентных проектов.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 45%",
+          "hover": "210 62% 37%",
+          "visited": "230 46.5% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Golos Text & Golos UI",
+        "fontHeading": "Golos Text",
+        "fontBody": "Golos UI",
+        "sectors": ["Государственные сайты", "Социальные сервисы", "Корпоративные порталы", "НКО"],
+        "tone": ["доверительный", "открытый", "современный", "доступный"],
+        "audienceType": ["B2C", "B2G"],
+        "colorPalette": {
+          "background": "210 10% 98%",
+          "textColors": {
+            "base": "210 10% 20%",
+            "muted": "210 10% 40%",
+            "faint": "210 10% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Golos Text для статей, Golos UI для кнопок и меню. Изначально сделан для госсайтов, стал стандартом для «доброго» веба. Максимальная читаемость и доверие.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(210 10% 98%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Unbounded & Inter",
+        "fontHeading": "Unbounded",
+        "fontBody": "Inter",
+        "sectors": ["Дерзкие лендинги", "Мероприятия", "Стартапы", "Фестивали"],
+        "tone": ["смелый", "энергичный", "современный", "запоминающийся"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 30% 40%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Unbounded — широкий и «громкий» вариативный шрифт для заголовков на пол-экрана. Inter нейтрализует и балансирует. Для дерзких, запоминающихся лендингов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 30%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Norelli & Source Sans Pro",
+        "fontHeading": "Norelli",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Премиальные бренды", "Дизайн-студии", "Архитектура", "Искусство"],
+        "tone": ["элегантный", "современный", "изысканный", "минималистичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 45%"
+          },
+          "primary": "210 60% 45%",
+          "secondary": "210 20% 85%",
+          "primaryHover": "210 62% 37%",
+          "primaryDisabled": "210 20% 70%",
+          "secondaryHover": "210 22% 77%",
+          "secondaryDisabled": "210 11% 98%"
+        },
+        "rationale": "Norelli — изысканный шрифт с засечками, сочетает традицию и современность. Source Sans Pro — чистый и функциональный. Для премиальных проектов.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 85%))"
+        },
+        "link": {
+          "color": "210 60% 45%",
+          "hover": "210 62% 37%",
+          "visited": "230 46.5% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Geist & Geist Mono",
+        "fontHeading": "Geist",
+        "fontBody": "Geist Mono",
+        "sectors": ["IT-блоги", "Техническая документация", "Интерфейсы", "Разработка"],
+        "tone": ["технологичный", "чистый", "минималистичный", "профессиональный"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 80% 45%"
+          },
+          "primary": "210 80% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 82% 37%",
+          "primaryDisabled": "210 25% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Новый фаворит для IT и техно от Vercel. Невероятно читабельный в мелком размере, строгая кириллица. Идеально для техно-блогов, документации, интерфейсов.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 60%))"
+        },
+        "link": {
+          "color": "210 80% 45%",
+          "hover": "210 82% 37%",
+          "visited": "234 62% 41%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Roboto Black & Roboto Mono Light",
+        "fontHeading": "Roboto Black",
+        "fontBody": "Roboto Mono Light",
+        "sectors": ["Печатная машинка эстетика", "Блоги", "Технические статьи", "Копирайтинг"],
+        "tone": ["функциональный", "ретро", "современный", "структурированный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "0 0% 30%"
+          },
+          "primary": "0 0% 30%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "0 2% 22%",
+          "primaryDisabled": "0 0% 60%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Классическая пара внутри семейства Roboto: жирный заголовок и лёгкий моноширинный текст. Создаёт эффект печатной машинки.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "0 0% 30%",
+          "hover": "0 2% 22%",
+          "visited": "30 15% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
         "pairType": "Expressive Editorial",
         "fontHeading": "Fraunces",
         "fontBody": "Work Sans",

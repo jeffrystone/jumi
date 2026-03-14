@@ -5,7 +5,7 @@ import {
   safeAdaptThemaTheme,
 } from "@/ui/theme";
 import { readGeneratedJson } from "@/utils/generatedPreview";
-import "./fontsource.css";
+import { GoogleFontsLinks } from "./GoogleFontsLinks";
 import "./globals.css";
 
 function withResolvedFontFamily(rawTheme: unknown): unknown {
@@ -40,6 +40,9 @@ export default function RootLayout({
 
   return (
     <html lang="ru">
+      <head>
+        <GoogleFontsLinks />
+      </head>
       <body>
         {error ? (
           <main
