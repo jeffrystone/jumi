@@ -39,7 +39,7 @@ export interface ThemaTheme {
       h2: { fontSize: string; fontWeight: string };
       h3: { fontSize: string; fontWeight: string };
     };
-    body: { fontSize: string; fontWeight: string };
+    body: { fontSize: string; fontWeight: string; accentWeight: string };
     button: { fontSize: string; fontWeight: string };
   };
   spacing: {
@@ -77,6 +77,7 @@ const REQUIRED_STRING_PATHS = [
   "typography.heading.h3.fontWeight",
   "typography.body.fontSize",
   "typography.body.fontWeight",
+  "typography.body.accentWeight",
   "typography.button.fontSize",
   "typography.button.fontWeight",
   "spacing.gap",

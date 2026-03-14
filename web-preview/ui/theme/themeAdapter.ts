@@ -87,6 +87,7 @@ function buildAliases(path: string[]): string[] {
     const [, section, prop] = path;
     if (section === "body" && prop === "fontSize") return ["body-font-size"];
     if (section === "body" && prop === "fontWeight") return ["body-font-weight"];
+    if (section === "body" && prop === "accentWeight") return ["accent-text-font-weight"];
     if (section === "button" && prop === "fontSize") return ["button-font-size"];
     if (section === "button" && prop === "fontWeight") return ["button-font-weight"];
   }
@@ -134,6 +135,8 @@ function normalizeExtendedTheme(rawTheme: unknown): unknown {
 
   const gradients = isRecord(rawTheme.gradients) ? rawTheme.gradients : {};
   const link = isRecord(rawTheme.link) ? rawTheme.link : {};
+  const typography = isRecord(rawTheme.typography) ? rawTheme.typography : {};
+  const body = isRecord(typography.body) ? typography.body : {};
 
   return {
     ...rawTheme,
@@ -155,12 +158,21 @@ function normalizeExtendedTheme(rawTheme: unknown): unknown {
       hover: String(link.hover ?? primaryHover),
       visited: String(link.visited ?? (textAccent || primaryDisabled)),
     },
+    typography: {
+      ...typography,
+      body: {
+        ...body,
+        accentWeight: String(body.accentWeight ?? "600"),
+      },
+    },
   };
 }
 
 export function adaptThemaTheme(rawTheme: unknown): Theme {
   if (isRecord(rawTheme) && !("colorPalette" in rawTheme) && isRecord(rawTheme.colors)) {
     const legacyColors = rawTheme.colors;
+    const legacyTypography = isRecord(rawTheme.typography) ? rawTheme.typography : {};
+    const legacyBody = isRecord(legacyTypography.body) ? legacyTypography.body : {};
     const normalized = {
       ...rawTheme,
       colorPalette: {
@@ -177,6 +189,13 @@ export function adaptThemaTheme(rawTheme: unknown): Theme {
         secondary: String(legacyColors.secondary ?? ""),
         secondaryHover: String(legacyColors.secondary ?? ""),
         secondaryDisabled: String(legacyColors.secondary ?? ""),
+      },
+      typography: {
+        ...legacyTypography,
+        body: {
+          ...legacyBody,
+          accentWeight: String(legacyBody.fontWeight ?? "600"),
+        },
       },
       gradients: {
         primary: fallbackGradient(

@@ -79,6 +79,8 @@ link.visited — цвет посещённых ссылок
 
 Укажи жирность (fontWeight) для заголовков и обычного текста.
 
+Для акцентного текста задай typography.body.accentWeight (обычно 500-700), чтобы accent-текст был визуально сильнее базового.
+
 Отступы и размеры
 
 gap — базовый отступ между элементами (обычно 16–24px).
@@ -129,7 +131,7 @@ json
       "h2": { "fontSize": "строка", "fontWeight": "строка" },
       "h3": { "fontSize": "строка", "fontWeight": "строка" }
     },
-    "body": { "fontSize": "строка", "fontWeight": "строка" },
+    "body": { "fontSize": "строка", "fontWeight": "строка", "accentWeight": "строка" },
     "button": { "fontSize": "строка", "fontWeight": "строка" }
   },
   "spacing": {
@@ -189,7 +191,7 @@ json
       "h2": { "fontSize": "2.25rem", "fontWeight": "600" },
       "h3": { "fontSize": "1.5rem", "fontWeight": "600" }
     },
-    "body": { "fontSize": "1rem", "fontWeight": "400" },
+    "body": { "fontSize": "1rem", "fontWeight": "400", "accentWeight": "600" },
     "button": { "fontSize": "1rem", "fontWeight": "500" }
   },
   "spacing": {

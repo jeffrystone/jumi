@@ -6,6 +6,7 @@ export interface ThemePreviewModel {
   pairType: string;
   headingFamily: string;
   bodyFamily: string;
+  accentWeight: string;
   palette: ThemeSettingsItem["colorPalette"];
   gradients: ThemeSettingsItem["gradients"];
   link: ThemeSettingsItem["link"];
@@ -35,6 +36,7 @@ export function buildScopedThemeVars(model: ThemePreviewModel): CSSProperties {
     "--link-visited": model.link.visited,
     "--body-font-size": "1rem",
     "--body-font-weight": "400",
+    "--accent-text-font-weight": model.accentWeight,
     "--button-font-size": "0.95rem",
     "--button-font-weight": "600",
     "--h1-font-size": "2rem",
@@ -51,6 +53,7 @@ export function buildThemePreviewModels(): ThemePreviewModel[] {
     pairType: theme.pairType,
     headingFamily: `${resolveFontAlias(theme.fontHeading)}, system-ui, sans-serif`,
     bodyFamily: `${resolveFontAlias(theme.fontBody)}, system-ui, sans-serif`,
+    accentWeight: theme.accentWeight,
     palette: theme.colorPalette,
     gradients: theme.gradients,
     link: theme.link,

@@ -34,6 +34,7 @@ export interface ThemeSettingsItem {
   pairType: string;
   fontHeading: string;
   fontBody: string;
+  accentWeight: string;
   colorPalette: ThemeColorPalette;
   gradients: ThemeGradients;
   link: ThemeLinks;

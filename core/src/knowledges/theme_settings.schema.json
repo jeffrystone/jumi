@@ -219,6 +219,7 @@
         "pairType",
         "fontHeading",
         "fontBody",
+        "accentWeight",
         "sectors",
         "tone",
         "audienceType",
@@ -241,6 +242,10 @@
           "minLength": 1
         },
         "fontBody": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accentWeight": {
           "type": "string",
           "minLength": 1
         },
@@ -302,6 +307,7 @@
         "pairType",
         "fontHeading",
         "fontBody",
+        "accentWeight",
         "sectors",
         "tone",
         "audienceType",
@@ -322,6 +328,9 @@
           "type": "string"
         },
         "fontBody": {
+          "type": "string"
+        },
+        "accentWeight": {
           "type": "string"
         },
         "sectors": {

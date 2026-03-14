@@ -1,4 +1,6 @@
-import { Button, Heading, Link, Text } from "@/ui/atoms";
+import { Button, Heading, Icon, Link, Text } from "@/ui/atoms";
+import { LogIn, Menu } from "lucide-react";
+import type { CSSProperties } from "react";
 import {
   buildScopedThemeVars,
   hslColor,
@@ -10,6 +12,20 @@ interface ThemeOptionPreviewCardProps {
 }
 
 export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
+  const inlineScopedVars = {
+    "--inline-primary": model.palette.primary,
+    "--inline-primary-hover": model.palette.primaryHover,
+    "--inline-primary-disabled": model.palette.primaryDisabled,
+    "--inline-secondary": model.palette.secondary,
+    "--inline-secondary-hover": model.palette.secondaryHover,
+    "--inline-secondary-disabled": model.palette.secondaryDisabled,
+    "--inline-on-primary": model.palette.background,
+    "--inline-on-secondary": model.palette.textColors.base,
+    "--inline-link": model.link.color,
+    "--inline-link-hover": model.link.hover,
+    "--inline-link-visited": model.link.visited,
+  } as CSSProperties;
+
   return (
     <article
       className="rounded-xl border p-5"
@@ -19,7 +35,10 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
       }}
     >
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-        <div className="rounded-lg p-4" style={{ backgroundColor: hslColor(model.palette.secondary) }}>
+        <div
+          className="rounded-lg p-4"
+          style={{ ...inlineScopedVars, backgroundColor: hslColor(model.palette.secondary) }}
+        >
           <p className="mb-3 text-xs uppercase tracking-wider text-faint-foreground">Inline Preview</p>
           <h3
             className="mb-2"
@@ -82,7 +101,7 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
               color: hslColor(model.palette.textColors.accent),
               fontSize: "1rem",
               lineHeight: 1.45,
-              fontWeight: 600,
+              fontWeight: model.accentWeight,
             }}
           >
             Accent text: highlighted phrase for emphasis.
@@ -105,101 +124,92 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
             />
           </div>
 
-          <div className="mt-4 flex flex-wrap gap-3">
+          <p className="mt-4 text-xs text-muted-foreground">Hover на активных кнопках/ссылках интерактивный.</p>
+          <div className="mt-2 flex flex-wrap gap-3">
             <button
               type="button"
-              className="rounded-md px-4 py-2 text-sm font-semibold"
-              style={{
-                backgroundColor: hslColor(model.palette.primary),
-                color: hslColor(model.palette.background),
-                fontFamily: model.bodyFamily,
-              }}
+              className="rounded-md px-4 py-2 text-sm font-semibold transition-colors bg-[hsl(var(--inline-primary))] hover:bg-[hsl(var(--inline-primary-hover))] text-[hsl(var(--inline-on-primary))]"
+              style={{ fontFamily: model.bodyFamily }}
             >
               Buy
             </button>
             <button
               type="button"
-              className="rounded-md px-4 py-2 text-sm font-semibold"
-              style={{
-                backgroundColor: hslColor(model.palette.primaryHover),
-                color: hslColor(model.palette.background),
-                fontFamily: model.bodyFamily,
-              }}
-            >
-              Buy (hover)
-            </button>
-            <button
-              type="button"
               disabled
-              className="rounded-md px-4 py-2 text-sm font-semibold opacity-80"
-              style={{
-                backgroundColor: hslColor(model.palette.primaryDisabled),
-                color: hslColor(model.palette.background),
-                fontFamily: model.bodyFamily,
-              }}
+              className="rounded-md px-4 py-2 text-sm font-semibold opacity-80 disabled:cursor-not-allowed bg-[hsl(var(--inline-primary-disabled))] text-[hsl(var(--inline-on-primary))]"
+              style={{ fontFamily: model.bodyFamily }}
             >
               Buy (disabled)
             </button>
             <button
               type="button"
-              className="rounded-md px-4 py-2 text-sm font-semibold"
-              style={{
-                backgroundColor: hslColor(model.palette.secondary),
-                color: hslColor(model.palette.textColors.base),
-                fontFamily: model.bodyFamily,
-              }}
+              className="rounded-md px-4 py-2 text-sm font-semibold transition-colors bg-[hsl(var(--inline-secondary))] hover:bg-[hsl(var(--inline-secondary-hover))] text-[hsl(var(--inline-on-secondary))]"
+              style={{ fontFamily: model.bodyFamily }}
             >
               Buy
             </button>
             <button
               type="button"
-              className="rounded-md px-4 py-2 text-sm font-semibold"
-              style={{
-                backgroundColor: hslColor(model.palette.secondary),
-                color: hslColor(model.palette.textColors.base),
-                fontFamily: model.bodyFamily,
-                border: `1px solid ${hslColor(model.palette.primary)}`,
-              }}
+              className="rounded-md px-4 py-2 text-sm font-semibold transition-colors border bg-[hsl(var(--inline-secondary))] hover:bg-[hsl(var(--inline-secondary-hover))] text-[hsl(var(--inline-on-secondary))] border-[hsl(var(--inline-primary))]"
+              style={{ fontFamily: model.bodyFamily }}
             >
               Buy
-            </button>
-            <button
-              type="button"
-              className="rounded-md px-4 py-2 text-sm font-semibold"
-              style={{
-                backgroundColor: hslColor(model.palette.secondaryHover),
-                color: hslColor(model.palette.textColors.base),
-                fontFamily: model.bodyFamily,
-                border: `1px solid ${hslColor(model.palette.primary)}`,
-              }}
-            >
-              Buy (hover)
             </button>
             <button
               type="button"
               disabled
-              className="rounded-md px-4 py-2 text-sm font-semibold opacity-80"
-              style={{
-                backgroundColor: hslColor(model.palette.secondaryDisabled),
-                color: hslColor(model.palette.textColors.base),
-                fontFamily: model.bodyFamily,
-                border: `1px solid ${hslColor(model.palette.secondaryDisabled)}`,
-              }}
+              className="rounded-md px-4 py-2 text-sm font-semibold opacity-80 disabled:cursor-not-allowed border bg-[hsl(var(--inline-secondary-disabled))] text-[hsl(var(--inline-on-secondary))] border-[hsl(var(--inline-secondary-disabled))]"
+              style={{ fontFamily: model.bodyFamily }}
             >
               Buy (disabled)
             </button>
           </div>
 
           <div className="mt-3 flex flex-wrap items-center gap-3 text-sm" style={{ fontFamily: model.bodyFamily }}>
-            <a href="#inline-link" style={{ color: hslColor(model.link.color) }}>
+            <a
+              href="#inline-link"
+              className="transition-colors text-[hsl(var(--inline-link))] hover:text-[hsl(var(--inline-link-hover))]"
+            >
               Link
             </a>
-            <a href="#inline-link-hover" style={{ color: hslColor(model.link.hover) }}>
-              Link hover
-            </a>
-            <a href="#inline-link-visited" style={{ color: hslColor(model.link.visited) }}>
+            <a href="#inline-link-visited" className="text-[hsl(var(--inline-link-visited))]">
               Link visited
             </a>
+          </div>
+
+          <div className="mt-3 space-y-2" style={{ fontFamily: model.bodyFamily }}>
+            <p
+              className="text-sm"
+              style={{ color: hslColor(model.palette.textColors.muted) }}
+            >
+              Icons (base color)
+            </p>
+            <div className="flex items-center gap-4">
+              <span className="inline-flex items-center gap-2">
+                <LogIn size={20} color={hslColor(model.palette.textColors.base)} />
+                <span style={{ color: hslColor(model.palette.textColors.base) }}>Login</span>
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <Menu size={20} color={hslColor(model.palette.textColors.base)} />
+                <span style={{ color: hslColor(model.palette.textColors.base) }}>Menu</span>
+              </span>
+            </div>
+            <p
+              className="text-sm"
+              style={{ color: hslColor(model.palette.textColors.muted) }}
+            >
+              Icons (interactive color)
+            </p>
+            <div className="flex items-center gap-4">
+              <span className="inline-flex items-center gap-2">
+                <LogIn size={20} color={hslColor(model.link.color)} />
+                <span style={{ color: hslColor(model.link.color) }}>Login</span>
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <Menu size={20} color={hslColor(model.link.color)} />
+                <span style={{ color: hslColor(model.link.color) }}>Menu</span>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -230,25 +240,36 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
             <Text color="accent">Accent text: highlighted phrase for emphasis.</Text>
           </div>
 
-          <div className="mt-4 flex flex-wrap gap-3">
+          <div className="mt-3 grid grid-cols-1 gap-2">
+            <div
+              className="h-8 rounded border"
+              style={{
+                backgroundImage: "var(--gradient-primary)",
+                borderColor: "hsl(var(--primary-hover))",
+              }}
+            />
+            <div
+              className="h-8 rounded border"
+              style={{
+                backgroundImage: "var(--gradient-secondary)",
+                borderColor: "hsl(var(--secondary-hover))",
+              }}
+            />
+          </div>
+
+          <p className="mt-4 text-xs text-muted-foreground">
+            Hover в atoms идет через theme inject (`--primary-hover`, `--secondary-hover`).
+          </p>
+          <div className="mt-2 flex flex-wrap gap-3">
             <Button variant="default">Buy</Button>
-            <Button variant="default" className="bg-primary-hover">
-              Buy (hover)
-            </Button>
             <Button variant="default" disabled>
               Buy (disabled)
             </Button>
             <Button variant="blank">Buy</Button>
-            <Button variant="blank" className="bg-secondary-hover">
-              Buy (hover)
-            </Button>
             <Button variant="blank" disabled className="bg-secondary-disabled">
               Buy (disabled)
             </Button>
             <Button variant="secondary">Buy</Button>
-            <Button variant="secondary" className="bg-secondary-hover">
-              Buy (hover)
-            </Button>
             <Button variant="secondary" disabled>
               Buy (disabled)
             </Button>
@@ -256,12 +277,38 @@ export function ThemeOptionPreviewCard({ model }: ThemeOptionPreviewCardProps) {
 
           <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
             <Link href="#atom-link">Link</Link>
-            <Link href="#atom-link-hover" className="text-link-hover">
-              Link hover
-            </Link>
             <Link href="#atom-link-visited" className="text-link-visited">
               Link visited
             </Link>
+          </div>
+
+          <div className="mt-3 space-y-2">
+            <Text as="p" size="sm" color="muted">
+              Icons (base color)
+            </Text>
+            <div className="flex items-center gap-4">
+              <span className="inline-flex items-center gap-2 text-foreground">
+                <Icon name={LogIn} size="md" />
+                <span className="text-sm">Login</span>
+              </span>
+              <span className="inline-flex items-center gap-2 text-foreground">
+                <Icon name={Menu} size="md" />
+                <span className="text-sm">Menu</span>
+              </span>
+            </div>
+            <Text as="p" size="sm" color="muted">
+              Icons (interactive color)
+            </Text>
+            <div className="flex items-center gap-4">
+              <span className="inline-flex items-center gap-2 text-link">
+                <Icon name={LogIn} size="md" />
+                <span className="text-sm">Login</span>
+              </span>
+              <span className="inline-flex items-center gap-2 text-link">
+                <Icon name={Menu} size="md" />
+                <span className="text-sm">Menu</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>

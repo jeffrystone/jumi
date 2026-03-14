@@ -11,6 +11,7 @@ export const THEME_VARS = {
   h3FontWeight: "--h3-font-weight",
   bodyFontSize: "--body-font-size",
   bodyFontWeight: "--body-font-weight",
+  accentTextFontWeight: "--accent-text-font-weight",
   buttonFontSize: "--button-font-size",
   buttonFontWeight: "--button-font-weight",
   primaryHover: "--primary-hover",

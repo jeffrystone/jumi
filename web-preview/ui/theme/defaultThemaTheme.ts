@@ -32,7 +32,7 @@ export const defaultThemaTheme: ThemaTheme = {
       h2: { fontSize: "2.25rem", fontWeight: "600" },
       h3: { fontSize: "1.5rem", fontWeight: "600" },
     },
-    body: { fontSize: "1rem", fontWeight: "400" },
+    body: { fontSize: "1rem", fontWeight: "400", accentWeight: "600" },
     button: { fontSize: "1rem", fontWeight: "500" },
   },
   spacing: {

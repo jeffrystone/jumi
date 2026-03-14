@@ -112,7 +112,8 @@
       "color": "Базовый цвет ссылок (должен совпадать с colorPalette.primary)",
       "hover": "Цвет ссылок в состоянии hover",
       "visited": "Цвет посещённых ссылок"
-    }
+    },
+    "accentWeight": "Толщина (font-weight) для accent-текста, строкой (например '600')"
   },
   "data": [
     {
@@ -144,10 +145,10 @@
         },
         "primary": "45 80% 50%",
         "secondary": "45 50% 70%",
-        "primaryHover": "45 80% 50%",
-        "primaryDisabled": "45 50% 70%",
-        "secondaryHover": "45 50% 70%",
-        "secondaryDisabled": "45 50% 70%"
+        "primaryHover": "45 82% 42%",
+        "primaryDisabled": "45 44% 66%",
+        "secondaryHover": "45 52% 62%",
+        "secondaryDisabled": "45 27.5% 86%"
       },
       "colorVariations": {
         "background": {
@@ -252,101 +253,101 @@
         },
         "primaryHover": {
           "hue": [
-            35,
-            55
+            39.0,
+            51.0
           ],
           "saturation": [
-            70,
-            90
+            72.0,
+            92.0
           ],
           "lightness": [
-            45,
-            55
+            34.0,
+            50.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            35,
-            55
+            39.0,
+            51.0
           ],
           "saturation": [
-            40,
-            60
+            34.0,
+            54.0
           ],
           "lightness": [
-            65,
-            75
+            58.0,
+            74.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            35,
-            55
+            39.0,
+            51.0
           ],
           "saturation": [
-            40,
-            60
+            42.0,
+            62.0
           ],
           "lightness": [
-            65,
-            75
+            54.0,
+            70.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            35,
-            55
+            39.0,
+            51.0
           ],
           "saturation": [
-            40,
-            60
+            17.5,
+            37.5
           ],
           "lightness": [
-            65,
-            75
+            78.0,
+            94.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              35,
-              55
+              39.0,
+              51.0
             ],
             "saturation": [
-              70,
-              90
+              70.0,
+              90.0
             ],
             "lightness": [
-              45,
-              55
+              42.0,
+              58.0
             ]
           },
           "hover": {
             "hue": [
-              35,
-              55
+              39.0,
+              51.0
             ],
             "saturation": [
-              70,
-              90
+              72.0,
+              92.0
             ],
             "lightness": [
-              45,
-              55
+              34.0,
+              50.0
             ]
           },
           "visited": {
             "hue": [
-              35,
-              55
+              63.0,
+              75.0
             ],
             "saturation": [
-              70,
-              90
+              52.0,
+              72.0
             ],
             "lightness": [
-              45,
-              55
+              38.0,
+              54.0
             ]
           }
         }
@@ -358,14 +359,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 50% 70%))",
-        "secondary": "linear-gradient(135deg, hsl(45 50% 70%), hsl(45 80% 50%))"
+        "primary": "linear-gradient(135deg, hsl(45 80% 50%), hsl(45 82% 42%))",
+        "secondary": "linear-gradient(135deg, hsl(45 50% 70%), hsl(45 52% 62%))"
       },
       "link": {
         "color": "45 80% 50%",
-        "hover": "45 80% 50%",
-        "visited": "45 80% 50%"
-      }
+        "hover": "45 82% 42%",
+        "visited": "69 62% 46%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Современный корпоративный",
@@ -396,10 +398,10 @@
         },
         "primary": "210 80% 45%",
         "secondary": "210 30% 60%",
-        "primaryHover": "210 80% 45%",
-        "primaryDisabled": "210 30% 60%",
-        "secondaryHover": "210 30% 60%",
-        "secondaryDisabled": "210 30% 60%"
+        "primaryHover": "210 82% 37%",
+        "primaryDisabled": "210 44% 61%",
+        "secondaryHover": "210 32% 52%",
+        "secondaryDisabled": "210 16.5% 76%"
       },
       "colorVariations": {
         "background": {
@@ -504,101 +506,101 @@
         },
         "primaryHover": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            70,
-            90
+            72.0,
+            92.0
           ],
           "lightness": [
-            40,
-            50
+            29.0,
+            45.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            20,
-            40
+            34.0,
+            54.0
           ],
           "lightness": [
-            55,
-            65
+            53.0,
+            69.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            20,
-            40
+            22.0,
+            42.0
           ],
           "lightness": [
-            55,
-            65
+            44.0,
+            60.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            20,
-            40
+            6.5,
+            26.5
           ],
           "lightness": [
-            55,
-            65
+            68.0,
+            84.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              200,
-              220
+              204.0,
+              216.0
             ],
             "saturation": [
-              70,
-              90
+              70.0,
+              90.0
             ],
             "lightness": [
-              40,
-              50
+              37.0,
+              53.0
             ]
           },
           "hover": {
             "hue": [
-              200,
-              220
+              204.0,
+              216.0
             ],
             "saturation": [
-              70,
-              90
+              72.0,
+              92.0
             ],
             "lightness": [
-              40,
-              50
+              29.0,
+              45.0
             ]
           },
           "visited": {
             "hue": [
-              200,
-              220
+              228.0,
+              240.0
             ],
             "saturation": [
-              70,
-              90
+              52.0,
+              72.0
             ],
             "lightness": [
-              40,
-              50
+              33.0,
+              49.0
             ]
           }
         }
@@ -610,14 +612,15 @@
       },
       "iconLibrary": "phosphor",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 30% 60%))",
-        "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 80% 45%))"
+        "primary": "linear-gradient(135deg, hsl(210 80% 45%), hsl(210 82% 37%))",
+        "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))"
       },
       "link": {
         "color": "210 80% 45%",
-        "hover": "210 80% 45%",
-        "visited": "210 80% 45%"
-      }
+        "hover": "210 82% 37%",
+        "visited": "234 62% 41%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Технологичный минимализм",
@@ -647,10 +650,10 @@
         },
         "primary": "250 70% 55%",
         "secondary": "250 40% 75%",
-        "primaryHover": "250 70% 55%",
-        "primaryDisabled": "250 40% 75%",
-        "secondaryHover": "250 40% 75%",
-        "secondaryDisabled": "250 40% 75%"
+        "primaryHover": "250 72% 47%",
+        "primaryDisabled": "250 38.5% 71%",
+        "secondaryHover": "250 42% 67%",
+        "secondaryDisabled": "250 22% 91%"
       },
       "colorVariations": {
         "background": {
@@ -755,101 +758,101 @@
         },
         "primaryHover": {
           "hue": [
-            240,
-            260
+            244.0,
+            256.0
           ],
           "saturation": [
-            60,
-            80
+            62.0,
+            82.0
           ],
           "lightness": [
-            50,
-            60
+            39.0,
+            55.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            240,
-            260
+            244.0,
+            256.0
           ],
           "saturation": [
-            30,
-            50
+            28.5,
+            48.5
           ],
           "lightness": [
-            70,
-            80
+            63.0,
+            79.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            240,
-            260
+            244.0,
+            256.0
           ],
           "saturation": [
-            30,
-            50
+            32.0,
+            52.0
           ],
           "lightness": [
-            70,
-            80
+            59.0,
+            75.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            240,
-            260
+            244.0,
+            256.0
           ],
           "saturation": [
-            30,
-            50
+            12.0,
+            32.0
           ],
           "lightness": [
-            70,
-            80
+            83.0,
+            99.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              240,
-              260
+              244.0,
+              256.0
             ],
             "saturation": [
-              60,
-              80
+              60.0,
+              80.0
             ],
             "lightness": [
-              50,
-              60
+              47.0,
+              63.0
             ]
           },
           "hover": {
             "hue": [
-              240,
-              260
+              244.0,
+              256.0
             ],
             "saturation": [
-              60,
-              80
+              62.0,
+              82.0
             ],
             "lightness": [
-              50,
-              60
+              39.0,
+              55.0
             ]
           },
           "visited": {
             "hue": [
-              240,
-              260
+              268.0,
+              280.0
             ],
             "saturation": [
-              60,
-              80
+              44.2,
+              64.2
             ],
             "lightness": [
-              50,
-              60
+              43.0,
+              59.0
             ]
           }
         }
@@ -861,14 +864,15 @@
       },
       "iconLibrary": "phosphor",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(250 70% 55%), hsl(250 40% 75%))",
-        "secondary": "linear-gradient(135deg, hsl(250 40% 75%), hsl(250 70% 55%))"
+        "primary": "linear-gradient(135deg, hsl(250 70% 55%), hsl(250 72% 47%))",
+        "secondary": "linear-gradient(135deg, hsl(250 40% 75%), hsl(250 42% 67%))"
       },
       "link": {
         "color": "250 70% 55%",
-        "hover": "250 70% 55%",
-        "visited": "250 70% 55%"
-      }
+        "hover": "250 72% 47%",
+        "visited": "274 54.2% 51%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Утончённый минимализм",
@@ -899,10 +903,10 @@
         },
         "primary": "340 60% 60%",
         "secondary": "340 30% 85%",
-        "primaryHover": "340 60% 60%",
-        "primaryDisabled": "340 30% 85%",
-        "secondaryHover": "340 30% 85%",
-        "secondaryDisabled": "340 30% 85%"
+        "primaryHover": "340 62% 52%",
+        "primaryDisabled": "340 33% 76%",
+        "secondaryHover": "340 32% 77%",
+        "secondaryDisabled": "340 16.5% 98%"
       },
       "colorVariations": {
         "background": {
@@ -1007,101 +1011,101 @@
         },
         "primaryHover": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            50,
-            70
+            52.0,
+            72.0
           ],
           "lightness": [
-            55,
-            65
+            44.0,
+            60.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            20,
-            40
+            23.0,
+            43.0
           ],
           "lightness": [
-            80,
-            90
+            68.0,
+            84.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            20,
-            40
+            22.0,
+            42.0
           ],
           "lightness": [
-            80,
-            90
+            69.0,
+            85.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            20,
-            40
+            6.5,
+            26.5
           ],
           "lightness": [
-            80,
-            90
+            90,
+            100
           ]
         },
         "link": {
           "color": {
             "hue": [
-              330,
-              350
+              334.0,
+              346.0
             ],
             "saturation": [
-              50,
-              70
+              50.0,
+              70.0
             ],
             "lightness": [
-              55,
-              65
+              52.0,
+              68.0
             ]
           },
           "hover": {
             "hue": [
-              330,
-              350
+              334.0,
+              346.0
             ],
             "saturation": [
-              50,
-              70
+              52.0,
+              72.0
             ],
             "lightness": [
-              55,
-              65
+              44.0,
+              60.0
             ]
           },
           "visited": {
             "hue": [
-              330,
-              350
+              0,
+              10.0
             ],
             "saturation": [
-              50,
-              70
+              36.5,
+              56.5
             ],
             "lightness": [
-              55,
-              65
+              48.0,
+              64.0
             ]
           }
         }
@@ -1113,14 +1117,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(340 60% 60%), hsl(340 30% 85%))",
-        "secondary": "linear-gradient(135deg, hsl(340 30% 85%), hsl(340 60% 60%))"
+        "primary": "linear-gradient(135deg, hsl(340 60% 60%), hsl(340 62% 52%))",
+        "secondary": "linear-gradient(135deg, hsl(340 30% 85%), hsl(340 32% 77%))"
       },
       "link": {
         "color": "340 60% 60%",
-        "hover": "340 60% 60%",
-        "visited": "340 60% 60%"
-      }
+        "hover": "340 62% 52%",
+        "visited": "4 46.5% 56%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Выразительная индивидуальность",
@@ -1150,10 +1155,10 @@
         },
         "primary": "15 90% 50%",
         "secondary": "30 50% 70%",
-        "primaryHover": "15 90% 50%",
-        "primaryDisabled": "30 50% 70%",
-        "secondaryHover": "30 50% 70%",
-        "secondaryDisabled": "30 50% 70%"
+        "primaryHover": "15 92% 42%",
+        "primaryDisabled": "15 49.5% 66%",
+        "secondaryHover": "30 52% 62%",
+        "secondaryDisabled": "30 27.5% 86%"
       },
       "colorVariations": {
         "background": {
@@ -1258,101 +1263,101 @@
         },
         "primaryHover": {
           "hue": [
-            5,
-            25
+            9.0,
+            21.0
           ],
           "saturation": [
-            80,
-            95
+            82.0,
+            100
           ],
           "lightness": [
-            45,
-            55
+            34.0,
+            50.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            20,
-            40
+            9.0,
+            21.0
           ],
           "saturation": [
-            40,
-            60
+            39.5,
+            59.5
           ],
           "lightness": [
-            65,
-            75
+            58.0,
+            74.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            20,
-            40
+            24.0,
+            36.0
           ],
           "saturation": [
-            40,
-            60
+            42.0,
+            62.0
           ],
           "lightness": [
-            65,
-            75
+            54.0,
+            70.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            20,
-            40
+            24.0,
+            36.0
           ],
           "saturation": [
-            40,
-            60
+            17.5,
+            37.5
           ],
           "lightness": [
-            65,
-            75
+            78.0,
+            94.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              5,
-              25
+              9.0,
+              21.0
             ],
             "saturation": [
-              80,
-              95
+              80.0,
+              100
             ],
             "lightness": [
-              45,
-              55
+              42.0,
+              58.0
             ]
           },
           "hover": {
             "hue": [
-              5,
-              25
+              9.0,
+              21.0
             ],
             "saturation": [
-              80,
-              95
+              82.0,
+              100
             ],
             "lightness": [
-              45,
-              55
+              34.0,
+              50.0
             ]
           },
           "visited": {
             "hue": [
-              5,
-              25
+              33.0,
+              45.0
             ],
             "saturation": [
-              80,
-              95
+              59.8,
+              79.8
             ],
             "lightness": [
-              45,
-              55
+              38.0,
+              54.0
             ]
           }
         }
@@ -1364,14 +1369,15 @@
       },
       "iconLibrary": "phosphor",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(15 90% 50%), hsl(30 50% 70%))",
-        "secondary": "linear-gradient(135deg, hsl(30 50% 70%), hsl(15 90% 50%))"
+        "primary": "linear-gradient(135deg, hsl(15 90% 50%), hsl(15 92% 42%))",
+        "secondary": "linear-gradient(135deg, hsl(30 50% 70%), hsl(30 52% 62%))"
       },
       "link": {
         "color": "15 90% 50%",
-        "hover": "15 90% 50%",
-        "visited": "15 90% 50%"
-      }
+        "hover": "15 92% 42%",
+        "visited": "39 69.8% 46%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Ретро-шик (Grand)",
@@ -1401,10 +1407,10 @@
         },
         "primary": "20 70% 45%",
         "secondary": "40 30% 60%",
-        "primaryHover": "20 70% 45%",
-        "primaryDisabled": "40 30% 60%",
-        "secondaryHover": "40 30% 60%",
-        "secondaryDisabled": "40 30% 60%"
+        "primaryHover": "20 72% 37%",
+        "primaryDisabled": "20 38.5% 61%",
+        "secondaryHover": "40 32% 52%",
+        "secondaryDisabled": "40 16.5% 76%"
       },
       "colorVariations": {
         "background": {
@@ -1509,101 +1515,101 @@
         },
         "primaryHover": {
           "hue": [
-            10,
-            30
+            14.0,
+            26.0
           ],
           "saturation": [
-            60,
-            80
+            62.0,
+            82.0
           ],
           "lightness": [
-            40,
-            50
+            29.0,
+            45.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            30,
-            50
+            14.0,
+            26.0
           ],
           "saturation": [
-            20,
-            40
+            28.5,
+            48.5
           ],
           "lightness": [
-            55,
-            65
+            53.0,
+            69.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            30,
-            50
+            34.0,
+            46.0
           ],
           "saturation": [
-            20,
-            40
+            22.0,
+            42.0
           ],
           "lightness": [
-            55,
-            65
+            44.0,
+            60.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            30,
-            50
+            34.0,
+            46.0
           ],
           "saturation": [
-            20,
-            40
+            6.5,
+            26.5
           ],
           "lightness": [
-            55,
-            65
+            68.0,
+            84.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              10,
-              30
+              14.0,
+              26.0
             ],
             "saturation": [
-              60,
-              80
+              60.0,
+              80.0
             ],
             "lightness": [
-              40,
-              50
+              37.0,
+              53.0
             ]
           },
           "hover": {
             "hue": [
-              10,
-              30
+              14.0,
+              26.0
             ],
             "saturation": [
-              60,
-              80
+              62.0,
+              82.0
             ],
             "lightness": [
-              40,
-              50
+              29.0,
+              45.0
             ]
           },
           "visited": {
             "hue": [
-              10,
-              30
+              38.0,
+              50.0
             ],
             "saturation": [
-              60,
-              80
+              44.2,
+              64.2
             ],
             "lightness": [
-              40,
-              50
+              33.0,
+              49.0
             ]
           }
         }
@@ -1615,14 +1621,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(20 70% 45%), hsl(40 30% 60%))",
-        "secondary": "linear-gradient(135deg, hsl(40 30% 60%), hsl(20 70% 45%))"
+        "primary": "linear-gradient(135deg, hsl(20 70% 45%), hsl(20 72% 37%))",
+        "secondary": "linear-gradient(135deg, hsl(40 30% 60%), hsl(40 32% 52%))"
       },
       "link": {
         "color": "20 70% 45%",
-        "hover": "20 70% 45%",
-        "visited": "20 70% 45%"
-      }
+        "hover": "20 72% 37%",
+        "visited": "44 54.2% 41%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Романтичный акцент",
@@ -1652,10 +1659,10 @@
         },
         "primary": "340 70% 60%",
         "secondary": "340 30% 80%",
-        "primaryHover": "340 70% 60%",
-        "primaryDisabled": "340 30% 80%",
-        "secondaryHover": "340 30% 80%",
-        "secondaryDisabled": "340 30% 80%"
+        "primaryHover": "340 72% 52%",
+        "primaryDisabled": "340 38.5% 76%",
+        "secondaryHover": "340 32% 72%",
+        "secondaryDisabled": "340 16.5% 96%"
       },
       "colorVariations": {
         "background": {
@@ -1760,101 +1767,101 @@
         },
         "primaryHover": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            60,
-            80
+            62.0,
+            82.0
           ],
           "lightness": [
-            55,
-            65
+            44.0,
+            60.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            20,
-            40
+            28.5,
+            48.5
           ],
           "lightness": [
-            75,
-            85
+            68.0,
+            84.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            20,
-            40
+            22.0,
+            42.0
           ],
           "lightness": [
-            75,
-            85
+            64.0,
+            80.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            330,
-            350
+            334.0,
+            346.0
           ],
           "saturation": [
-            20,
-            40
+            6.5,
+            26.5
           ],
           "lightness": [
-            75,
-            85
+            88.0,
+            100
           ]
         },
         "link": {
           "color": {
             "hue": [
-              330,
-              350
+              334.0,
+              346.0
             ],
             "saturation": [
-              60,
-              80
+              60.0,
+              80.0
             ],
             "lightness": [
-              55,
-              65
+              52.0,
+              68.0
             ]
           },
           "hover": {
             "hue": [
-              330,
-              350
+              334.0,
+              346.0
             ],
             "saturation": [
-              60,
-              80
+              62.0,
+              82.0
             ],
             "lightness": [
-              55,
-              65
+              44.0,
+              60.0
             ]
           },
           "visited": {
             "hue": [
-              330,
-              350
+              0,
+              10.0
             ],
             "saturation": [
-              60,
-              80
+              44.2,
+              64.2
             ],
             "lightness": [
-              55,
-              65
+              48.0,
+              64.0
             ]
           }
         }
@@ -1866,14 +1873,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(340 70% 60%), hsl(340 30% 80%))",
-        "secondary": "linear-gradient(135deg, hsl(340 30% 80%), hsl(340 70% 60%))"
+        "primary": "linear-gradient(135deg, hsl(340 70% 60%), hsl(340 72% 52%))",
+        "secondary": "linear-gradient(135deg, hsl(340 30% 80%), hsl(340 32% 72%))"
       },
       "link": {
         "color": "340 70% 60%",
-        "hover": "340 70% 60%",
-        "visited": "340 70% 60%"
-      }
+        "hover": "340 72% 52%",
+        "visited": "4 54.2% 56%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Авторитетная классика",
@@ -1903,10 +1911,10 @@
         },
         "primary": "0 0% 30%",
         "secondary": "0 0% 90%",
-        "primaryHover": "0 0% 30%",
-        "primaryDisabled": "0 0% 90%",
-        "secondaryHover": "0 0% 90%",
-        "secondaryDisabled": "0 0% 90%"
+        "primaryHover": "0 2% 22%",
+        "primaryDisabled": "0 0% 46%",
+        "secondaryHover": "0 2% 82%",
+        "secondaryDisabled": "0 0% 98%"
       },
       "colorVariations": {
         "background": {
@@ -2012,100 +2020,100 @@
         "primaryHover": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            12.0
           ],
           "lightness": [
-            25,
-            35
+            14.0,
+            30.0
           ]
         },
         "primaryDisabled": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            10
           ],
           "lightness": [
-            85,
-            95
+            38.0,
+            54.0
           ]
         },
         "secondaryHover": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            12.0
           ],
           "lightness": [
-            85,
-            95
+            74.0,
+            90.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            10
           ],
           "lightness": [
-            85,
-            95
+            90,
+            100
           ]
         },
         "link": {
           "color": {
             "hue": [
               0,
-              0
+              6.0
             ],
             "saturation": [
               0,
-              0
+              10.0
             ],
             "lightness": [
-              25,
-              35
+              22.0,
+              38.0
             ]
           },
           "hover": {
             "hue": [
               0,
-              0
+              6.0
             ],
             "saturation": [
               0,
-              0
+              12.0
             ],
             "lightness": [
-              25,
-              35
+              14.0,
+              30.0
             ]
           },
           "visited": {
             "hue": [
-              0,
-              0
+              18.0,
+              30.0
             ],
             "saturation": [
-              0,
-              0
+              12,
+              32
             ],
             "lightness": [
-              25,
-              35
+              18.0,
+              34.0
             ]
           }
         }
@@ -2117,14 +2125,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 0% 90%))",
-        "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 0% 30%))"
+        "primary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 2% 22%))",
+        "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))"
       },
       "link": {
         "color": "0 0% 30%",
-        "hover": "0 0% 30%",
-        "visited": "0 0% 30%"
-      }
+        "hover": "0 2% 22%",
+        "visited": "24 22% 26%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Футуристичный технологичный",
@@ -2154,10 +2163,10 @@
         },
         "primary": "180 100% 45%",
         "secondary": "240 30% 30%",
-        "primaryHover": "180 100% 45%",
-        "primaryDisabled": "240 30% 30%",
-        "secondaryHover": "240 30% 30%",
-        "secondaryDisabled": "240 30% 30%"
+        "primaryHover": "180 100% 52%",
+        "primaryDisabled": "180 55% 63%",
+        "secondaryHover": "240 34% 37%",
+        "secondaryDisabled": "240 16.5% 48%"
       },
       "colorVariations": {
         "background": {
@@ -2262,101 +2271,101 @@
         },
         "primaryHover": {
           "hue": [
-            170,
-            190
+            174.0,
+            186.0
           ],
           "saturation": [
             90,
             100
           ],
           "lightness": [
-            40,
-            50
+            44.0,
+            60.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            230,
-            250
+            174.0,
+            186.0
           ],
           "saturation": [
-            20,
-            40
+            45.0,
+            65.0
           ],
           "lightness": [
-            25,
-            35
+            55.0,
+            71.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            230,
-            250
+            234.0,
+            246.0
           ],
           "saturation": [
-            20,
-            40
+            24.0,
+            44.0
           ],
           "lightness": [
-            25,
-            35
+            29.0,
+            45.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            230,
-            250
+            234.0,
+            246.0
           ],
           "saturation": [
-            20,
-            40
+            6.5,
+            26.5
           ],
           "lightness": [
-            25,
-            35
+            40.0,
+            56.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              170,
-              190
+              174.0,
+              186.0
             ],
             "saturation": [
-              90,
+              90.0,
               100
             ],
             "lightness": [
-              40,
-              50
+              37.0,
+              53.0
             ]
           },
           "hover": {
             "hue": [
-              170,
-              190
+              174.0,
+              186.0
             ],
             "saturation": [
               90,
               100
             ],
             "lightness": [
-              40,
-              50
+              44.0,
+              60.0
             ]
           },
           "visited": {
             "hue": [
-              170,
-              190
+              198.0,
+              210.0
             ],
             "saturation": [
-              90,
-              100
+              67.5,
+              87.5
             ],
             "lightness": [
-              40,
-              50
+              61.0,
+              77.0
             ]
           }
         }
@@ -2368,14 +2377,15 @@
       },
       "iconLibrary": "phosphor",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(240 30% 30%))",
-        "secondary": "linear-gradient(135deg, hsl(240 30% 30%), hsl(180 100% 45%))"
+        "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(180 100% 52%))",
+        "secondary": "linear-gradient(135deg, hsl(240 30% 30%), hsl(240 34% 37%))"
       },
       "link": {
         "color": "180 100% 45%",
-        "hover": "180 100% 45%",
-        "visited": "180 100% 45%"
-      }
+        "hover": "180 100% 52%",
+        "visited": "204 77.5% 69%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Тёплый и уютный",
@@ -2405,10 +2415,10 @@
         },
         "primary": "25 80% 60%",
         "secondary": "30 40% 80%",
-        "primaryHover": "25 80% 60%",
-        "primaryDisabled": "30 40% 80%",
-        "secondaryHover": "30 40% 80%",
-        "secondaryDisabled": "30 40% 80%"
+        "primaryHover": "25 82% 52%",
+        "primaryDisabled": "25 44% 76%",
+        "secondaryHover": "30 42% 72%",
+        "secondaryDisabled": "30 22% 96%"
       },
       "colorVariations": {
         "background": {
@@ -2513,101 +2523,101 @@
         },
         "primaryHover": {
           "hue": [
-            15,
-            35
+            19.0,
+            31.0
           ],
           "saturation": [
-            70,
-            90
+            72.0,
+            92.0
           ],
           "lightness": [
-            55,
-            65
+            44.0,
+            60.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            20,
-            40
+            19.0,
+            31.0
           ],
           "saturation": [
-            30,
-            50
+            34.0,
+            54.0
           ],
           "lightness": [
-            75,
-            85
+            68.0,
+            84.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            20,
-            40
+            24.0,
+            36.0
           ],
           "saturation": [
-            30,
-            50
+            32.0,
+            52.0
           ],
           "lightness": [
-            75,
-            85
+            64.0,
+            80.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            20,
-            40
+            24.0,
+            36.0
           ],
           "saturation": [
-            30,
-            50
+            12.0,
+            32.0
           ],
           "lightness": [
-            75,
-            85
+            88.0,
+            100
           ]
         },
         "link": {
           "color": {
             "hue": [
-              15,
-              35
+              19.0,
+              31.0
             ],
             "saturation": [
-              70,
-              90
+              70.0,
+              90.0
             ],
             "lightness": [
-              55,
-              65
+              52.0,
+              68.0
             ]
           },
           "hover": {
             "hue": [
-              15,
-              35
+              19.0,
+              31.0
             ],
             "saturation": [
-              70,
-              90
+              72.0,
+              92.0
             ],
             "lightness": [
-              55,
-              65
+              44.0,
+              60.0
             ]
           },
           "visited": {
             "hue": [
-              15,
-              35
+              43.0,
+              55.0
             ],
             "saturation": [
-              70,
-              90
+              52.0,
+              72.0
             ],
             "lightness": [
-              55,
-              65
+              48.0,
+              64.0
             ]
           }
         }
@@ -2619,14 +2629,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(30 40% 80%))",
-        "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(25 80% 60%))"
+        "primary": "linear-gradient(135deg, hsl(25 80% 60%), hsl(25 82% 52%))",
+        "secondary": "linear-gradient(135deg, hsl(30 40% 80%), hsl(30 42% 72%))"
       },
       "link": {
         "color": "25 80% 60%",
-        "hover": "25 80% 60%",
-        "visited": "25 80% 60%"
-      }
+        "hover": "25 82% 52%",
+        "visited": "49 62% 56%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Лабораторная точность (Pharma Serif)",
@@ -2657,10 +2668,10 @@
         },
         "primary": "140 60% 40%",
         "secondary": "0 0% 90%",
-        "primaryHover": "140 60% 40%",
-        "primaryDisabled": "0 0% 90%",
-        "secondaryHover": "0 0% 90%",
-        "secondaryDisabled": "0 0% 90%"
+        "primaryHover": "140 62% 32%",
+        "primaryDisabled": "140 33% 56%",
+        "secondaryHover": "0 2% 82%",
+        "secondaryDisabled": "0 0% 98%"
       },
       "colorVariations": {
         "background": {
@@ -2765,101 +2776,101 @@
         },
         "primaryHover": {
           "hue": [
-            130,
-            150
+            134.0,
+            146.0
           ],
           "saturation": [
-            50,
-            70
+            52.0,
+            72.0
           ],
           "lightness": [
-            35,
-            45
+            24.0,
+            40.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            0,
-            0
+            134.0,
+            146.0
           ],
           "saturation": [
-            0,
-            0
+            23.0,
+            43.0
           ],
           "lightness": [
-            85,
-            95
+            48.0,
+            64.0
           ]
         },
         "secondaryHover": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            12.0
           ],
           "lightness": [
-            85,
-            95
+            74.0,
+            90.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            10
           ],
           "lightness": [
-            85,
-            95
+            90,
+            100
           ]
         },
         "link": {
           "color": {
             "hue": [
-              130,
-              150
+              134.0,
+              146.0
             ],
             "saturation": [
-              50,
-              70
+              50.0,
+              70.0
             ],
             "lightness": [
-              35,
-              45
+              32.0,
+              48.0
             ]
           },
           "hover": {
             "hue": [
-              130,
-              150
+              134.0,
+              146.0
             ],
             "saturation": [
-              50,
-              70
+              52.0,
+              72.0
             ],
             "lightness": [
-              35,
-              45
+              24.0,
+              40.0
             ]
           },
           "visited": {
             "hue": [
-              130,
-              150
+              158.0,
+              170.0
             ],
             "saturation": [
-              50,
-              70
+              36.5,
+              56.5
             ],
             "lightness": [
-              35,
-              45
+              28.0,
+              44.0
             ]
           }
         }
@@ -2871,14 +2882,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(140 60% 40%), hsl(0 0% 90%))",
-        "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(140 60% 40%))"
+        "primary": "linear-gradient(135deg, hsl(140 60% 40%), hsl(140 62% 32%))",
+        "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))"
       },
       "link": {
         "color": "140 60% 40%",
-        "hover": "140 60% 40%",
-        "visited": "140 60% 40%"
-      }
+        "hover": "140 62% 32%",
+        "visited": "164 46.5% 36%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Обложка журнала (Cover Story)",
@@ -2908,10 +2920,10 @@
         },
         "primary": "0 80% 50%",
         "secondary": "0 30% 70%",
-        "primaryHover": "0 80% 50%",
-        "primaryDisabled": "0 30% 70%",
-        "secondaryHover": "0 30% 70%",
-        "secondaryDisabled": "0 30% 70%"
+        "primaryHover": "0 82% 42%",
+        "primaryDisabled": "0 44% 66%",
+        "secondaryHover": "0 32% 62%",
+        "secondaryDisabled": "0 16.5% 86%"
       },
       "colorVariations": {
         "background": {
@@ -3016,101 +3028,101 @@
         },
         "primaryHover": {
           "hue": [
-            350,
-            10
+            0,
+            6.0
           ],
           "saturation": [
-            70,
-            90
+            72.0,
+            92.0
           ],
           "lightness": [
-            45,
-            55
+            34.0,
+            50.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            350,
-            10
+            0,
+            6.0
           ],
           "saturation": [
-            20,
-            40
+            34.0,
+            54.0
           ],
           "lightness": [
-            65,
-            75
+            58.0,
+            74.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            350,
-            10
+            0,
+            6.0
           ],
           "saturation": [
-            20,
-            40
+            22.0,
+            42.0
           ],
           "lightness": [
-            65,
-            75
+            54.0,
+            70.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            350,
-            10
+            0,
+            6.0
           ],
           "saturation": [
-            20,
-            40
+            6.5,
+            26.5
           ],
           "lightness": [
-            65,
-            75
+            78.0,
+            94.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              350,
-              10
+              0,
+              6.0
             ],
             "saturation": [
-              70,
-              90
+              70.0,
+              90.0
             ],
             "lightness": [
-              45,
-              55
+              42.0,
+              58.0
             ]
           },
           "hover": {
             "hue": [
-              350,
-              10
+              0,
+              6.0
             ],
             "saturation": [
-              70,
-              90
+              72.0,
+              92.0
             ],
             "lightness": [
-              45,
-              55
+              34.0,
+              50.0
             ]
           },
           "visited": {
             "hue": [
-              350,
-              10
+              18.0,
+              30.0
             ],
             "saturation": [
-              70,
-              90
+              52.0,
+              72.0
             ],
             "lightness": [
-              45,
-              55
+              38.0,
+              54.0
             ]
           }
         }
@@ -3122,14 +3134,15 @@
       },
       "iconLibrary": "phosphor",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(0 80% 50%), hsl(0 30% 70%))",
-        "secondary": "linear-gradient(135deg, hsl(0 30% 70%), hsl(0 80% 50%))"
+        "primary": "linear-gradient(135deg, hsl(0 80% 50%), hsl(0 82% 42%))",
+        "secondary": "linear-gradient(135deg, hsl(0 30% 70%), hsl(0 32% 62%))"
       },
       "link": {
         "color": "0 80% 50%",
-        "hover": "0 80% 50%",
-        "visited": "0 80% 50%"
-      }
+        "hover": "0 82% 42%",
+        "visited": "24 62% 46%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Дерзкий максимализм",
@@ -3159,10 +3172,10 @@
         },
         "primary": "30 100% 50%",
         "secondary": "0 0% 30%",
-        "primaryHover": "30 100% 50%",
-        "primaryDisabled": "0 0% 30%",
-        "secondaryHover": "0 0% 30%",
-        "secondaryDisabled": "0 0% 30%"
+        "primaryHover": "30 100% 57%",
+        "primaryDisabled": "30 55% 68%",
+        "secondaryHover": "0 4% 37%",
+        "secondaryDisabled": "0 0% 48%"
       },
       "colorVariations": {
         "background": {
@@ -3267,101 +3280,101 @@
         },
         "primaryHover": {
           "hue": [
-            20,
-            40
+            24.0,
+            36.0
           ],
           "saturation": [
             90,
             100
           ],
           "lightness": [
-            45,
-            55
+            49.0,
+            65.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            0,
-            0
+            24.0,
+            36.0
           ],
           "saturation": [
-            0,
-            0
+            45.0,
+            65.0
           ],
           "lightness": [
-            25,
-            35
+            60.0,
+            76.0
           ]
         },
         "secondaryHover": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            14.0
           ],
           "lightness": [
-            25,
-            35
+            29.0,
+            45.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
             0,
-            0
+            6.0
           ],
           "saturation": [
             0,
-            0
+            10
           ],
           "lightness": [
-            25,
-            35
+            40.0,
+            56.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              20,
-              40
+              24.0,
+              36.0
             ],
             "saturation": [
-              90,
+              90.0,
               100
             ],
             "lightness": [
-              45,
-              55
+              42.0,
+              58.0
             ]
           },
           "hover": {
             "hue": [
-              20,
-              40
+              24.0,
+              36.0
             ],
             "saturation": [
               90,
               100
             ],
             "lightness": [
-              45,
-              55
+              49.0,
+              65.0
             ]
           },
           "visited": {
             "hue": [
-              20,
-              40
+              48.0,
+              60.0
             ],
             "saturation": [
-              90,
-              100
+              67.5,
+              87.5
             ],
             "lightness": [
-              45,
-              55
+              66.0,
+              82.0
             ]
           }
         }
@@ -3373,14 +3386,15 @@
       },
       "iconLibrary": "phosphor",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(0 0% 30%))",
-        "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(30 100% 50%))"
+        "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 57%))",
+        "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))"
       },
       "link": {
         "color": "30 100% 50%",
-        "hover": "30 100% 50%",
-        "visited": "30 100% 50%"
-      }
+        "hover": "30 100% 57%",
+        "visited": "54 77.5% 74%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Экспериментальный",
@@ -3410,10 +3424,10 @@
         },
         "primary": "330 90% 55%",
         "secondary": "200 30% 70%",
-        "primaryHover": "330 90% 55%",
-        "primaryDisabled": "200 30% 70%",
-        "secondaryHover": "200 30% 70%",
-        "secondaryDisabled": "200 30% 70%"
+        "primaryHover": "330 92% 47%",
+        "primaryDisabled": "330 49.5% 71%",
+        "secondaryHover": "200 32% 62%",
+        "secondaryDisabled": "200 16.5% 86%"
       },
       "colorVariations": {
         "background": {
@@ -3518,101 +3532,101 @@
         },
         "primaryHover": {
           "hue": [
-            320,
-            340
+            324.0,
+            336.0
           ],
           "saturation": [
-            80,
-            95
+            82.0,
+            100
           ],
           "lightness": [
-            50,
-            60
+            39.0,
+            55.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            190,
-            210
+            324.0,
+            336.0
           ],
           "saturation": [
-            20,
-            40
+            39.5,
+            59.5
           ],
           "lightness": [
-            65,
-            75
+            63.0,
+            79.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            190,
-            210
+            194.0,
+            206.0
           ],
           "saturation": [
-            20,
-            40
+            22.0,
+            42.0
           ],
           "lightness": [
-            65,
-            75
+            54.0,
+            70.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            190,
-            210
+            194.0,
+            206.0
           ],
           "saturation": [
-            20,
-            40
+            6.5,
+            26.5
           ],
           "lightness": [
-            65,
-            75
+            78.0,
+            94.0
           ]
         },
         "link": {
           "color": {
             "hue": [
-              320,
-              340
+              324.0,
+              336.0
             ],
             "saturation": [
-              80,
-              95
+              80.0,
+              100
             ],
             "lightness": [
-              50,
-              60
+              47.0,
+              63.0
             ]
           },
           "hover": {
             "hue": [
-              320,
-              340
+              324.0,
+              336.0
             ],
             "saturation": [
-              80,
-              95
+              82.0,
+              100
             ],
             "lightness": [
-              50,
-              60
+              39.0,
+              55.0
             ]
           },
           "visited": {
             "hue": [
-              320,
-              340
+              348.0,
+              360
             ],
             "saturation": [
-              80,
-              95
+              59.8,
+              79.8
             ],
             "lightness": [
-              50,
-              60
+              43.0,
+              59.0
             ]
           }
         }
@@ -3624,14 +3638,15 @@
       },
       "iconLibrary": "phosphor",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(330 90% 55%), hsl(200 30% 70%))",
-        "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(330 90% 55%))"
+        "primary": "linear-gradient(135deg, hsl(330 90% 55%), hsl(330 92% 47%))",
+        "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(200 32% 62%))"
       },
       "link": {
         "color": "330 90% 55%",
-        "hover": "330 90% 55%",
-        "visited": "330 90% 55%"
-      }
+        "hover": "330 92% 47%",
+        "visited": "354 69.8% 51%"
+      },
+      "accentWeight": "600"
     },
     {
       "pairType": "Современная элегантность",
@@ -3663,10 +3678,10 @@
         },
         "primary": "210 60% 45%",
         "secondary": "210 20% 85%",
-        "primaryHover": "210 60% 45%",
-        "primaryDisabled": "210 20% 85%",
-        "secondaryHover": "210 20% 85%",
-        "secondaryDisabled": "210 20% 85%"
+        "primaryHover": "210 62% 37%",
+        "primaryDisabled": "210 33% 61%",
+        "secondaryHover": "210 22% 77%",
+        "secondaryDisabled": "210 11% 98%"
       },
       "colorVariations": {
         "background": {
@@ -3771,101 +3786,101 @@
         },
         "primaryHover": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            50,
-            70
+            52.0,
+            72.0
           ],
           "lightness": [
-            40,
-            50
+            29.0,
+            45.0
           ]
         },
         "primaryDisabled": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            15,
-            25
+            23.0,
+            43.0
           ],
           "lightness": [
-            80,
-            90
+            53.0,
+            69.0
           ]
         },
         "secondaryHover": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            15,
-            25
+            12.0,
+            32.0
           ],
           "lightness": [
-            80,
-            90
+            69.0,
+            85.0
           ]
         },
         "secondaryDisabled": {
           "hue": [
-            200,
-            220
+            204.0,
+            216.0
           ],
           "saturation": [
-            15,
-            25
+            1.0,
+            21.0
           ],
           "lightness": [
-            80,
-            90
+            90,
+            100
           ]
         },
         "link": {
           "color": {
             "hue": [
-              200,
-              220
+              204.0,
+              216.0
             ],
             "saturation": [
-              50,
-              70
+              50.0,
+              70.0
             ],
             "lightness": [
-              40,
-              50
+              37.0,
+              53.0
             ]
           },
           "hover": {
             "hue": [
-              200,
-              220
+              204.0,
+              216.0
             ],
             "saturation": [
-              50,
-              70
+              52.0,
+              72.0
             ],
             "lightness": [
-              40,
-              50
+              29.0,
+              45.0
             ]
           },
           "visited": {
             "hue": [
-              200,
-              220
+              228.0,
+              240.0
             ],
             "saturation": [
-              50,
-              70
+              36.5,
+              56.5
             ],
             "lightness": [
-              40,
-              50
+              33.0,
+              49.0
             ]
           }
         }
@@ -3877,14 +3892,15 @@
       },
       "iconLibrary": "lucide",
       "gradients": {
-        "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 20% 85%))",
-        "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 60% 45%))"
+        "primary": "linear-gradient(135deg, hsl(210 60% 45%), hsl(210 62% 37%))",
+        "secondary": "linear-gradient(135deg, hsl(210 20% 85%), hsl(210 22% 77%))"
       },
       "link": {
         "color": "210 60% 45%",
-        "hover": "210 60% 45%",
-        "visited": "210 60% 45%"
-      }
+        "hover": "210 62% 37%",
+        "visited": "234 46.5% 41%"
+      },
+      "accentWeight": "600"
     }
   ]
 }

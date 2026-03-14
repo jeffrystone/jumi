@@ -34,6 +34,7 @@ describe("themeAdapter", () => {
       defaultThemaTheme.typography.heading.h1.fontSize
     );
     expect(vars.get("h1-font-size")).toBe(defaultThemaTheme.typography.heading.h1.fontSize);
+    expect(vars.get("accent-text-font-weight")).toBe(defaultThemaTheme.typography.body.accentWeight);
     expect(vars.get("foreground")).toBe(defaultThemaTheme.colorPalette.textColors.base);
     expect(vars.get("muted-foreground")).toBe(defaultThemaTheme.colorPalette.textColors.muted);
     expect(vars.get("faint-foreground")).toBe(defaultThemaTheme.colorPalette.textColors.faint);
@@ -102,11 +103,13 @@ describe("themeAdapter", () => {
       colorPalette: { primaryHover: string; secondaryDisabled: string };
       gradients: { primary: string };
       link: { color: string };
+      typography: { body: { accentWeight: string } };
     };
 
     expect(result.colorPalette.primaryHover).toBe("221.2 83.2% 53.3%");
     expect(result.colorPalette.secondaryDisabled).toBe("210 40% 96.1%");
     expect(result.gradients.primary).toContain("linear-gradient");
     expect(result.link.color).toBe("221.2 83.2% 53.3%");
+    expect(result.typography.body.accentWeight).toBe("600");
   });
 });

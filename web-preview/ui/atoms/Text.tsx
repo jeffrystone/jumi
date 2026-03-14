@@ -33,20 +33,25 @@ const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
       ...props
     },
     ref
-  ) => (
-    <Tag
-      ref={ref as React.Ref<HTMLParagraphElement>}
-      className={cn(sizeStyles[size], colorStyles[color], className)}
-      style={{
-        fontSize: cssVar(THEME_VARS.bodyFontSize),
-        fontWeight: cssVar(THEME_VARS.bodyFontWeight),
-        ...style,
-      }}
-      {...props}
-    >
-      {children}
-    </Tag>
-  )
+  ) => {
+    const accentWeightStyle =
+      color === "accent" ? { fontWeight: cssVar(THEME_VARS.accentTextFontWeight) } : undefined;
+    return (
+      <Tag
+        ref={ref as React.Ref<HTMLParagraphElement>}
+        className={cn(sizeStyles[size], colorStyles[color], className)}
+        style={{
+          fontSize: cssVar(THEME_VARS.bodyFontSize),
+          fontWeight: cssVar(THEME_VARS.bodyFontWeight),
+          ...accentWeightStyle,
+          ...style,
+        }}
+        {...props}
+      >
+        {children}
+      </Tag>
+    );
+  }
 );
 Text.displayName = "Text";
 
