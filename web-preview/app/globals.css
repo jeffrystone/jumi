@@ -83,3 +83,83 @@ body {
   color: hsl(var(--foreground));
   font-family: var(--font-family);
 }
+
+/* —— ui/motions (MotionButton, MotionBlock) —— */
+@keyframes motion-ripple {
+  to {
+    transform: scale(28);
+    opacity: 0;
+  }
+}
+.motion-ripple-expand {
+  animation: motion-ripple 0.55s ease-out forwards;
+}
+@keyframes motion-pulse-glow-kf {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0.35);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px hsl(var(--primary) / 0.25);
+  }
+}
+.motion-pulse-glow {
+  animation: motion-pulse-glow-kf 2.2s ease-in-out infinite;
+}
+@keyframes motion-border-beam-kf {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.motion-border-beam {
+  position: relative;
+  isolation: isolate;
+}
+.motion-border-beam::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    hsl(var(--primary) / 0.55) 10%,
+    transparent 26%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: motion-border-beam-kf 3.5s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+@keyframes motion-stagger-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes motion-logical-burst {
+  to {
+    opacity: 0;
+    transform: translate(var(--bx, 0px), var(--by, 0px)) rotate(var(--br, 0deg)) scale(0.4);
+  }
+}
+.motion-logical-burst-item {
+  animation: motion-logical-burst var(--bdur, 0.65s) cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+@keyframes motion-shimmer-slide {
+  100% {
+    transform: translateX(200%);
+  }
+}
