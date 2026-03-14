@@ -40,6 +40,1564 @@
   },
   "data": [
       {
+        "pairType": "Zen Infinity",
+        "fontHeading": "Zen Kaku Gothic New Light",
+        "fontBody": "Zen Kaku Gothic New Regular",
+        "sectors": ["Медитативные приложения", "СПА-салоны", "Йога-ретриты", "Платформы осознанности"],
+        "tone": ["дзенский", "спокойный", "минималистичный", "медитативный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 30% 95%",
+          "textColors": {
+            "base": "30 10% 20%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "30 5% 50%"
+          },
+          "primary": "30 5% 50%",
+          "secondary": "30 30% 95%",
+          "primaryHover": "30 5% 40%",
+          "primaryDisabled": "30 2% 70%",
+          "secondaryHover": "30 20% 90%",
+          "secondaryDisabled": "30 10% 98%"
+        },
+        "rationale": "Zen Kaku Gothic New — современный японский гротеск с идеальным балансом и читаемостью. Его светлое начертание в заголовках создаёт ощущение невесомости и пустоты, а обычное — плавного, непрерывного течения текста. Палитра вдохновлена японской эстетикой ваби-саби — поиском красоты в несовершенстве и простоте [citation:1]. Ахроматическая гамма с едва уловимым тёплым подтоном (Silhouette, Colour of the Year 2026) создаёт ощущение вневременной классики и абсолютного спокойствия [citation:3].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(30 30% 95%), hsl(30 5% 50%))",
+          "secondary": "linear-gradient(120deg, hsl(30 5% 50%), hsl(30 30% 95%))",
+          "text": "linear-gradient(90deg, hsl(30 10% 20%), hsl(30 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(30 30% 95%), hsl(30 30% 90%))"
+        },
+        "link": {
+          "color": "30 5% 50%",
+          "hover": "30 5% 40%",
+          "visited": "30 5% 30%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Liquid Flow",
+        "fontHeading": "Quicksand Light",
+        "fontBody": "Quicksand Regular",
+        "sectors": ["Веб-сервисы", "Бренды воды", "Эко-проекты", "Потоковые платформы"],
+        "tone": ["текучий", "органичный", "плавный", "современный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "179 52% 69%",
+          "textColors": {
+            "base": "179 10% 15%",
+            "muted": "179 10% 35%",
+            "faint": "179 10% 55%",
+            "accent": "179 80% 40%"
+          },
+          "primary": "179 80% 40%",
+          "secondary": "179 52% 69%",
+          "primaryHover": "179 82% 32%",
+          "primaryDisabled": "179 30% 60%",
+          "secondaryHover": "179 42% 64%",
+          "secondaryDisabled": "179 20% 80%"
+        },
+        "rationale": "Quicksand с его мягкими, округлыми формами идеально передаёт текучесть и органичность [citation:8]. Использование светлого и обычного начертания внутри одного семейства создаёт эффект плавного перетекания, без резких границ. Цвет вдохновлён трендом Island Oasis (#88d9d8) — прохладным циановым оттенком, символизирующим чистоту воды и бесконечность океана [citation:8]. Мягкие градиенты и асимметричные формы вписываются в тренд на органический дизайн 2026 года [citation:2].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(179 52% 69%), hsl(179 80% 40%))",
+          "secondary": "linear-gradient(120deg, hsl(179 80% 40%), hsl(179 52% 69%))",
+          "text": "linear-gradient(90deg, hsl(179 10% 15%), hsl(179 10% 35%))",
+          "background": "linear-gradient(180deg, hsl(179 52% 69%), hsl(179 52% 64%))"
+        },
+        "link": {
+          "color": "179 80% 40%",
+          "hover": "179 82% 32%",
+          "visited": "179 60% 30%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Eternal Horizon",
+        "fontHeading": "Josefin Sans Light",
+        "fontBody": "Josefin Sans Regular",
+        "sectors": ["Космический туризм", "Астрономия", "Планетарии", "Философские проекты"],
+        "tone": ["бесконечный", "возвышенный", "чистый", "созерцательный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "240 30% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "200 30% 70%"
+          },
+          "primary": "200 30% 70%",
+          "secondary": "240 30% 20%",
+          "primaryHover": "200 32% 62%",
+          "primaryDisabled": "200 15% 50%",
+          "secondaryHover": "240 32% 27%",
+          "secondaryDisabled": "240 15% 30%"
+        },
+        "rationale": "Josefin Sans с его винтажным геометрическим оттенком и идеальными пропорциями создаёт ощущение вневременной элегантности. Переход от светлого к обычному начертанию символизирует бесконечную глубину космоса. Цветовая гамма вдохновлена трендом Transformative Teal — глубоким сине-зелёным, символизирующим перемены и инновации, но в приглушённом, спокойном варианте, создающем ощущение бесконечности [citation:3][citation:8]. Мягкий аквамариновый акцент (Blue Aura) добавляет свечения далёких звёзд [citation:3].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(240 30% 10%), hsl(200 30% 70%))",
+          "secondary": "linear-gradient(120deg, hsl(200 30% 70%), hsl(240 30% 10%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 90%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(240 30% 10%), hsl(240 30% 5%))"
+        },
+        "link": {
+          "color": "200 30% 70%",
+          "hover": "200 32% 62%",
+          "visited": "200 25% 50%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Tactile Serenity",
+        "fontHeading": "Cormorant Light",
+        "fontBody": "Cormorant Regular",
+        "sectors": ["Премиальный текстиль", "Интерьерные бренды", "Мебель", "Арт-галереи"],
+        "tone": ["тактильный", "уютный", "вневременной", "материальный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 15% 85%",
+          "textColors": {
+            "base": "30 10% 20%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "30 30% 50%"
+          },
+          "primary": "30 30% 50%",
+          "secondary": "30 15% 85%",
+          "primaryHover": "30 32% 42%",
+          "primaryDisabled": "30 15% 70%",
+          "secondaryHover": "30 20% 77%",
+          "secondaryDisabled": "30 8% 95%"
+        },
+        "rationale": "Cormorant — элегантная антиква с тонкими линиями и изысканными пропорциями. Использование светлого и обычного начертания создаёт иерархию без резких переходов. Палитра вдохновлена трендом на «тактильность» и «визуальный покой» в интерьерах 2026 года [citation:6][citation:9]. Тёплые песочные тона (Serene Sands) в сочетании с мягкими текстурными отсылками создают ощущение вечности и материальной уютности, как у любимой вещи, которая будет с вами всегда [citation:3].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(30 15% 85%), hsl(30 30% 50%))",
+          "secondary": "linear-gradient(120deg, hsl(30 30% 50%), hsl(30 15% 85%))",
+          "text": "linear-gradient(90deg, hsl(30 10% 20%), hsl(30 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(30 15% 85%), hsl(30 15% 75%))"
+        },
+        "link": {
+          "color": "30 30% 50%",
+          "hover": "30 32% 42%",
+          "visited": "30 25% 35%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Digital Aura",
+        "fontHeading": "Space Grotesk Light",
+        "fontBody": "Space Grotesk Regular",
+        "sectors": ["AI-интерфейсы", "Футуристические сервисы", "Кибер-арт", "Техно-медитации"],
+        "tone": ["светящийся", "эфирный", "бесконечный", "цифровой"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "200 30% 95%",
+          "textColors": {
+            "base": "200 10% 15%",
+            "muted": "200 10% 40%",
+            "faint": "200 10% 60%",
+            "accent": "200 30% 70%"
+          },
+          "primary": "200 30% 70%",
+          "secondary": "200 30% 95%",
+          "primaryHover": "200 32% 62%",
+          "primaryDisabled": "200 15% 80%",
+          "secondaryHover": "200 32% 87%",
+          "secondaryDisabled": "200 15% 98%"
+        },
+        "rationale": "Space Grotesk с его моноширинным оттенком и современной геометрией идеально подходит для цифровых интерфейсов. Лёгкое начертание создаёт ощущение эфирности, парения в цифровом пространстве. Цветовая гамма вдохновлена главным цветом 2026 года по версии Pantone — Cloud Dancer, облачным off-white, символизирующим свежесть и пространство [citation:3]. В сочетании с аквамариновым свечением (Blue Aura) [citation:3] создаётся образ бесконечного цифрового неба, где нет границ и преград.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(200 30% 95%), hsl(200 30% 70%))",
+          "secondary": "linear-gradient(120deg, hsl(200 30% 70%), hsl(200 30% 95%))",
+          "text": "linear-gradient(90deg, hsl(200 10% 15%), hsl(200 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(200 30% 95%), hsl(200 30% 90%))"
+        },
+        "link": {
+          "color": "200 30% 70%",
+          "hover": "200 32% 62%",
+          "visited": "200 25% 55%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "hero"
+      },
+            {
+        "pairType": "Magma Core",
+        "fontHeading": "Alfa Slab One",
+        "fontBody": "Bebas Neue",
+        "sectors": ["Экшн-игры", "Энергетические напитки", "Рок-фестивали", "Экстремальные виды спорта"],
+        "tone": ["мощный", "разрушительный", "раскалённый", "непреклонный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "12 89% 48%"
+          },
+          "primary": "12 89% 48%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "12 89% 38%",
+          "primaryDisabled": "12 30% 60%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Alfa Slab One — невероятно жирный и мощный шрифт с засечками, который идеально передаёт неумолимую силу и давление расплавленной горной породы [citation:1]. Bebas Neue своим конденсированным, высоким силуэтом добавляет ощущение выброса энергии вверх. Основной акцентный цвет — Vulcan Fire (#e6390d), насыщенный, агрессивный красный, символизирующий раскалённую лаву и решительный, страстный характер [citation:10]. Чёрный фон подчёркивает бездну и мощь взрыва.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(180deg, hsl(12 89% 48%), hsl(12 89% 38%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 100%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(12 30% 10%))"
+        },
+        "link": {
+          "color": "12 89% 48%",
+          "hover": "12 89% 38%",
+          "visited": "12 60% 35%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Ash & Embers",
+        "fontHeading": "Metal Mania",
+        "fontBody": "Staatliches",
+        "sectors": ["Метал-группы", "Постапокалиптические игры", "Хоррор-бренды", "Фестивали"],
+        "tone": ["агрессивный", "пепельный", "разрушенный", "мистический"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 5%",
+          "textColors": {
+            "base": "0 0% 80%",
+            "muted": "0 0% 60%",
+            "faint": "0 0% 40%",
+            "accent": "10 90% 45%"
+          },
+          "primary": "10 90% 45%",
+          "secondary": "0 0% 25%",
+          "primaryHover": "10 90% 35%",
+          "primaryDisabled": "10 30% 50%",
+          "secondaryHover": "0 4% 32%",
+          "secondaryDisabled": "0 0% 30%"
+        },
+        "rationale": "Metal Mania с его острыми, когтеобразными засечками передаёт острые осколки породы, фрагментированный хаос и сырую агрессию извержения [citation:1]. Staatliches добавляет блочной, индустриальной мощи, напоминая о резном камне и разрушенных конструкциях [citation:1]. Палитра вдохновлена макротрендом Ash and Embers, сочетая глубокий угольный фон, тлеющие красные акценты и оттенки дыма и пепла [citation:4].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(10 90% 45%), hsl(10 90% 35%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 25%), hsl(0 4% 32%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 80%), hsl(0 0% 60%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 5%), hsl(10 30% 10%))"
+        },
+        "link": {
+          "color": "10 90% 45%",
+          "hover": "10 90% 35%",
+          "visited": "10 60% 30%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Lava Flow",
+        "fontHeading": "Grenze Gotisch",
+        "fontBody": "Squada One",
+        "sectors": ["Фэнтези-игры", "Кино", "Комиксы", "Косплей-фестивали"],
+        "tone": ["текучий", "раскалённый", "эпический", "древний"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "20 50% 30%",
+          "textColors": {
+            "base": "20 10% 90%",
+            "muted": "20 10% 70%",
+            "faint": "20 10% 50%",
+            "accent": "30 100% 60%"
+          },
+          "primary": "30 100% 60%",
+          "secondary": "20 30% 40%",
+          "primaryHover": "30 100% 50%",
+          "primaryDisabled": "30 30% 60%",
+          "secondaryHover": "20 32% 35%",
+          "secondaryDisabled": "20 15% 50%"
+        },
+        "rationale": "Grenze Gotisch — мощный чёрный шрифт с готическим оттенком, добавляющий ощущение эпического масштаба и древней, разворачивающейся драмы, словно извержение, меняющее ландшафт [citation:1]. Его текучие формы напоминают потоки лавы. Squada One своей тяжёлой геометричностью символизирует незыблемую массу вулкана [citation:1]. Яркий жёлто-оранжевый акцент (огненно-жёлтый) передаёт максимальную температуру и свет извержения [citation:4].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 60%), hsl(30 100% 50%))",
+          "secondary": "linear-gradient(135deg, hsl(20 30% 40%), hsl(20 32% 35%))",
+          "text": "linear-gradient(90deg, hsl(20 10% 90%), hsl(20 10% 70%))",
+          "background": "linear-gradient(180deg, hsl(20 50% 30%), hsl(20 50% 20%))"
+        },
+        "link": {
+          "color": "30 100% 60%",
+          "hover": "30 100% 50%",
+          "visited": "30 70% 45%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Pyroclastic",
+        "fontHeading": "Black Ops One",
+        "fontBody": "Archivo Black",
+        "sectors": ["Военные шутеры", "Спецэффекты", "Пиротехника", "Экшн-фильмы"],
+        "tone": ["взрывной", "тактический", "пепельный", "жёсткий"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "0 80% 45%"
+          },
+          "primary": "0 80% 45%",
+          "secondary": "0 0% 25%",
+          "primaryHover": "0 80% 35%",
+          "primaryDisabled": "0 30% 50%",
+          "secondaryHover": "0 4% 32%",
+          "secondaryDisabled": "0 0% 35%"
+        },
+        "rationale": "Black Ops One — шрифт в стиле трафарета с абразивной зернистостью, вызывающий ассоциации с пеплом и тактической эстетикой [citation:1]. Archivo Black — чрезвычайно тяжёлый и широкий гротеск, олицетворяющий неудержимую, сокрушительную силу пирокластического потока [citation:1]. Маковый красный (Poppy Red) из тренда Ash and Embers [citation:4] в качестве акцента символизирует огонь и стойкость.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 80% 45%), hsl(0 80% 35%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 25%), hsl(0 4% 32%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 90%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 10%), hsl(0 30% 15%))"
+        },
+        "link": {
+          "color": "0 80% 45%",
+          "hover": "0 80% 35%",
+          "visited": "0 60% 35%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Eruption Velocity",
+        "fontHeading": "Faster One",
+        "fontBody": "Orbitron",
+        "sectors": ["Киберспорт", "Гоночные игры", "Трейлеры", "Промо-ролики"],
+        "tone": ["скоростной", "взрывной", "футуристичный", "энергичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "240 30% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "30 100% 55%"
+          },
+          "primary": "30 100% 55%",
+          "secondary": "240 30% 20%",
+          "primaryHover": "30 100% 45%",
+          "primaryDisabled": "30 30% 50%",
+          "secondaryHover": "240 32% 27%",
+          "secondaryDisabled": "240 15% 30%"
+        },
+        "rationale": "Faster One — энергичный дисплейный шрифт, использующий линии скорости для передачи взрывной силы и стремительного движения [citation:1]. Orbitron добавляет футуристичности, связывая первобытную энергию вулкана с высокими технологиями. Огненно-жёлтый акцент (fiery yellow) символизирует максимальную температуру и свет выброса [citation:4].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 55%), hsl(30 100% 45%))",
+          "secondary": "linear-gradient(135deg, hsl(240 30% 20%), hsl(240 32% 27%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 90%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(240 30% 10%), hsl(240 30% 5%))"
+        },
+        "link": {
+          "color": "30 100% 55%",
+          "hover": "30 100% 45%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Volcanic Glow",
+        "fontHeading": "Strike Vortex",
+        "fontBody": "Racing Sans One",
+        "sectors": ["Гонки", "Энергетики", "Мотоспорт", "Экшн-бренды"],
+        "tone": ["агрессивный", "неоновый", "скоростной", "раскалённый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "180 100% 45%"
+          },
+          "primary": "180 100% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "180 100% 35%",
+          "primaryDisabled": "180 30% 50%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Strike Vortex — футуристический дисплейный шрифт с угловатой конструкцией, созданный для передачи скорости, агрессивного стиля и огромной визуальной мощи, идеально подходит для киберспорта и автоспорта [citation:3]. Racing Sans One добавляет спортивной динамики. Неоново-бирюзовый акцент имитирует свечение расплавленной породы и вулканическую энергию в современной, технологичной интерпретации.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(180 100% 45%), hsl(180 100% 35%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 90%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(180 30% 10%))"
+        },
+        "link": {
+          "color": "180 100% 45%",
+          "hover": "180 100% 35%",
+          "visited": "180 70% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Victory Power",
+        "fontHeading": "Bebas Neue",
+        "fontBody": "Open Sans",
+        "sectors": ["Силовые виды спорта", "Бокс", "Тяжёлая атлетика", "Кроссфит"],
+        "tone": ["мощный", "победный", "непреклонный", "энергичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 100% 60%",
+          "primaryDisabled": "30 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Bebas Neue — идеальный выбор для спортивного дизайна: мощный, конденсированный гротеск с высоким визуальным ударом [citation:1]. Open Sans обеспечивает отличную читаемость основного текста. Яркий оранжевый акцент (цвет победы и энергии) на чёрном фоне создаёт максимальный контраст, символизируя путь из тьмы к свету победы.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(30 100% 60%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 100%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 15%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 60%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Speed & Motion",
+        "fontHeading": "Racing Sans One",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Автоспорт", "Велоспорт", "Бег", "Триатлон"],
+        "tone": ["динамичный", "скоростной", "современный", "нацеленный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "10 90% 50%"
+          },
+          "primary": "10 90% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "10 90% 40%",
+          "primaryDisabled": "10 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Racing Sans One — шрифт, вдохновлённый скоростью и движением, с характерным наклоном, идеально передаёт динамику спортивных соревнований [citation:1]. Source Sans Pro остаётся чистым и функциональным фоном. Красный акцент Lava Red — цвет победителей, тех, кто пришёл, увидел и победил [citation:3].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(10 90% 50%), hsl(10 90% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "10 90% 50%",
+          "hover": "10 90% 40%",
+          "visited": "10 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Elite Victory",
+        "fontHeading": "Playfair Display",
+        "fontBody": "Lato",
+        "sectors": ["Гольф", "Теннис", "Конный спорт", "Премиальные спортивные клубы"],
+        "tone": ["элегантный", "победный", "престижный", "утончённый"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "20 70% 45%"
+          },
+          "primary": "20 70% 45%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "20 72% 37%",
+          "primaryDisabled": "20 30% 70%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Playfair Display привносит в спортивный дизайн нотку высокой моды и престижа, идеально подходит для элитных турниров и премиальных клубов [citation:1]. Тёплый терракотовый акцент Burnt Sienna символизирует уверенность, мудрость и мощную, но сбалансированную энергию [citation:3].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(20 70% 45%), hsl(20 72% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "20 70% 45%",
+          "hover": "20 72% 37%",
+          "visited": "20 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Youth Energy",
+        "fontHeading": "League Spartan",
+        "fontBody": "Nunito",
+        "sectors": ["Молодёжные спортивные лиги", "Скейтбординг", "Уличные виды спорта", "Фитнес для подростков"],
+        "tone": ["современный", "энергичный", "молодёжный", "дерзкий"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "45 100% 50%"
+          },
+          "primary": "45 100% 50%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "45 100% 40%",
+          "primaryDisabled": "45 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "League Spartan — современный геометрический гротеск, который используется даже в лигах европейского футбола [citation:1]. Nunito с его округлыми формами добавляет дружелюбия. Жёлтый акцент (Acacia) — цвет радости, юности и движения без напряжения, идеальный для молодых спортсменов [citation:3].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(45 100% 50%), hsl(45 100% 40%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "45 100% 50%",
+          "hover": "45 100% 40%",
+          "visited": "45 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Deep Focus",
+        "fontHeading": "Orbitron",
+        "fontBody": "Inter",
+        "sectors": ["eSports", "Киберспорт", "VR/AR спорт", "Технологичные виды спорта"],
+        "tone": ["футуристичный", "сосредоточенный", "технологичный", "победный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "240 30% 15%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "190 50% 50%"
+          },
+          "primary": "190 50% 50%",
+          "secondary": "240 30% 25%",
+          "primaryHover": "190 52% 42%",
+          "primaryDisabled": "190 30% 60%",
+          "secondaryHover": "240 32% 32%",
+          "secondaryDisabled": "240 15% 40%"
+        },
+        "rationale": "Orbitron — футуристичный геометрический шрифт, идеально подходящий для киберспорта и технологичных соревнований [citation:1]. Inter обеспечивает максимальную читаемость в интерфейсах. Бирюзовый акцент Alexandrite — цвет осознанности и глубокой концентрации, помогающий ответить на вопрос «Зачем я этим занимаюсь?» [citation:3].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(240 30% 15%), hsl(190 50% 50%))",
+          "secondary": "linear-gradient(135deg, hsl(190 50% 50%), hsl(240 30% 15%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 90%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(240 30% 15%), hsl(240 30% 10%))"
+        },
+        "link": {
+          "color": "190 50% 50%",
+          "hover": "190 52% 42%",
+          "visited": "190 40% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Pure Performance",
+        "fontHeading": "Roboto Flex",
+        "fontBody": "Roboto Flex Light",
+        "sectors": ["Профессиональный спорт", "Олимпийские виды", "Спортивная аналитика", "Тренировочные платформы"],
+        "tone": ["чистый", "профессиональный", "точный", "достиженческий"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "200 30% 70%"
+          },
+          "primary": "200 30% 70%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "200 32% 62%",
+          "primaryDisabled": "200 15% 80%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Roboto Flex — настраиваемый вариативный шрифт, который позволяет тонко регулировать начертание под любые задачи [citation:5]. Это идеальный выбор для профессионального спорта, где важна точность. Аквамариновый акцент Marina — цвет делового настроя, успокоения и сосредоточенности, идеальный для mind-body программ и точных видов спорта [citation:3].",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 100%), hsl(200 30% 70%))",
+          "secondary": "linear-gradient(135deg, hsl(200 30% 70%), hsl(0 0% 100%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(200 30% 95%))"
+        },
+        "link": {
+          "color": "200 30% 70%",
+          "hover": "200 32% 62%",
+          "visited": "200 25% 55%"
+        },
+        "accentWeight": "500",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Cloud Nine",
+        "fontHeading": "Raleway Thin",
+        "fontBody": "Open Sans Light",
+        "sectors": ["Спа-салоны", "Йога-ретриты", "Приложения для медитации", "Отели на вершинах гор"],
+        "tone": ["невесомый", "спокойный", "воздушный", "медитативный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "200 30% 70%"
+          },
+          "primary": "200 30% 70%",
+          "secondary": "0 0% 100%",
+          "primaryHover": "200 32% 62%",
+          "primaryDisabled": "200 15% 80%",
+          "secondaryHover": "0 0% 95%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Вдохновлено главным цветом 2026 года по версии Pantone — Cloud Dancer, облачным off-white с легким серым подтоном, несущим ощущение паузы, свежести и пространства [citation:7]. Raleway Thin с его тонкими линиями создаёт эффект невесомых заголовков, а Open Sans Light добавляет воздушности основному тексту. Аквамариновый акцент (Blue Aura) — пастельный синий с переливом, создающий умиротворяющее настроение [citation:3].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(180deg, hsl(0 0% 100%), hsl(200 30% 70%))",
+          "secondary": "linear-gradient(180deg, hsl(200 30% 70%), hsl(0 0% 100%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(200 30% 95%))"
+        },
+        "link": {
+          "color": "200 30% 70%",
+          "hover": "200 32% 62%",
+          "visited": "200 25% 55%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Mountain Peak",
+        "fontHeading": "Oswald Light",
+        "fontBody": "Montserrat Light",
+        "sectors": ["Горнолыжные курорты", "Треккинг", "Приключенческий туризм", "Экстремальные виды спорта"],
+        "tone": ["возвышенный", "чистый", "свежий", "вдохновляющий"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "210 10% 20%",
+            "muted": "210 10% 40%",
+            "faint": "210 10% 60%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "30 100% 42%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Парящие конструкции, вдохновлённые архитектурными трендами 2026 года, где здания будто отрываются от земли на консольных опорах, создавая визуальную лёгкость даже у массивных строений [citation:1]. Oswald Light придаёт заголовкам вертикальную устремлённость, а Montserrat Light остаётся чистым фоном. Яркий оранжевый акцент символизирует свет на вершинах и спасательные жилеты.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 100%), hsl(210 10% 20%))",
+          "secondary": "linear-gradient(135deg, hsl(30 100% 50%), hsl(210 30% 60%))",
+          "text": "linear-gradient(90deg, hsl(210 10% 20%), hsl(210 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 10% 95%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 42%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Floating Serif",
+        "fontHeading": "Cormorant Light",
+        "fontBody": "Josefin Sans Light",
+        "sectors": ["Премиум-отели", "Рестораны с панорамным видом", "Свадебные церемонии", "Балетные школы"],
+        "tone": ["элегантный", "парящий", "утончённый", "романтичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 20% 95%",
+          "textColors": {
+            "base": "40 10% 20%",
+            "muted": "40 10% 40%",
+            "faint": "40 10% 60%",
+            "accent": "180 30% 50%"
+          },
+          "primary": "180 30% 50%",
+          "secondary": "40 20% 95%",
+          "primaryHover": "180 32% 42%",
+          "primaryDisabled": "180 15% 70%",
+          "secondaryHover": "40 22% 87%",
+          "secondaryDisabled": "40 10% 98%"
+        },
+        "rationale": "Cormorant Light — антиква с изящными тонкими линиями, создающая ощущение парения в воздухе, как перо. Josefin Sans Light добавляет геометрической лёгкости. Бирюзовый акцент вдохновлён цветом морской волны, отражающим свет на большой высоте. Подход к разряженности и открытым пространствам между буквами создаёт эффект «дышащего» текста [citation:6].",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(40 20% 95%), hsl(180 30% 50%))",
+          "secondary": "linear-gradient(135deg, hsl(180 30% 50%), hsl(40 20% 95%))",
+          "text": "linear-gradient(90deg, hsl(40 10% 20%), hsl(40 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(40 20% 95%), hsl(40 20% 85%))"
+        },
+        "link": {
+          "color": "180 30% 50%",
+          "hover": "180 32% 42%",
+          "visited": "180 25% 35%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Digital Lift",
+        "fontHeading": "Modernist",
+        "fontBody": "Inter Light",
+        "sectors": ["Технологические стартапы", "Сайты-презентации", "Дроны", "Авиация"],
+        "tone": ["футуристичный", "технологичный", "чистый", "устремлённый"],
+        "audienceType": ["B2B", "B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 100% 45%"
+          },
+          "primary": "210 100% 45%",
+          "secondary": "210 30% 60%",
+          "primaryHover": "210 100% 37%",
+          "primaryDisabled": "210 30% 70%",
+          "secondaryHover": "210 32% 52%",
+          "secondaryDisabled": "210 16.5% 76%"
+        },
+        "rationale": "Modernist — минималистичный, чистый шрифт, созданный специально для цифрового мира, где каждая буква оптически скорректирована на основе математических расчётов для идеального отображения на экранах [citation:2]. Inter Light добавляет функциональной лёгкости. Синий акцент символизирует небо и бесконечность цифрового пространства.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 100%), hsl(210 100% 45%))",
+          "secondary": "linear-gradient(135deg, hsl(210 30% 60%), hsl(210 32% 52%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 95%))"
+        },
+        "link": {
+          "color": "210 100% 45%",
+          "hover": "210 100% 37%",
+          "visited": "210 70% 35%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Sky Portal",
+        "fontHeading": "Open Sans Light Italic",
+        "fontBody": "Source Sans Pro Light",
+        "sectors": ["Аэропорты", "Авиакомпании", "Планетарии", "Научно-фантастические проекты"],
+        "tone": ["неземной", "светящийся", "фантазийный", "устремлённый"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "200 30% 95%",
+          "textColors": {
+            "base": "200 10% 15%",
+            "muted": "200 10% 40%",
+            "faint": "200 10% 60%",
+            "accent": "280 60% 60%"
+          },
+          "primary": "280 60% 60%",
+          "secondary": "200 30% 95%",
+          "primaryHover": "280 62% 52%",
+          "primaryDisabled": "280 30% 70%",
+          "secondaryHover": "200 32% 87%",
+          "secondaryDisabled": "200 15% 98%"
+        },
+        "rationale": "Вдохновлено сценами цифровых миров с сияющими линиями и ярким светом в конце пути, где зритель проходит через портал в волшебную реальность [citation:4]. Open Sans Light Italic своей наклонной формой создаёт ощущение движения вперёд и вверх. Фиолетовый акцент (African Violet) [citation:3] добавляет мистической глубины, как свет далёких звёзд.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(200 30% 95%), hsl(280 60% 60%))",
+          "secondary": "linear-gradient(135deg, hsl(280 60% 60%), hsl(200 30% 95%))",
+          "text": "linear-gradient(90deg, hsl(200 10% 15%), hsl(200 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(200 30% 95%), hsl(200 30% 85%))"
+        },
+        "link": {
+          "color": "280 60% 60%",
+          "hover": "280 62% 52%",
+          "visited": "280 50% 45%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Zenith",
+        "fontHeading": "Playfair Display Light",
+        "fontBody": "Lato Light",
+        "sectors": ["Обсерватории", "Астрономические центры", "Научные музеи", "Космический туризм"],
+        "tone": ["возвышенный", "научный", "вдохновляющий", "элегантный"],
+        "audienceType": ["B2C", "B2B"],
+        "colorPalette": {
+          "background": "240 30% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "45 100% 50%"
+          },
+          "primary": "45 100% 50%",
+          "secondary": "240 30% 20%",
+          "primaryHover": "45 100% 40%",
+          "primaryDisabled": "45 30% 30%",
+          "secondaryHover": "240 32% 27%",
+          "secondaryDisabled": "240 15% 40%"
+        },
+        "rationale": "Ночное небо и бесконечность космоса. Playfair Display Light своей классической элегантностью напоминает о величии звёзд, а Lato Light остаётся читаемым фоном. Золотой акцент символизирует свет далёких солнц и надежду на новые открытия. Контраст глубокого тёмного фона и сияющего текста создаёт ощущение бесконечной высоты.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(240 30% 10%), hsl(45 100% 50%))",
+          "secondary": "linear-gradient(135deg, hsl(45 100% 50%), hsl(240 30% 10%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 90%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(240 30% 10%), hsl(240 30% 5%))"
+        },
+        "link": {
+          "color": "45 100% 50%",
+          "hover": "45 100% 40%",
+          "visited": "45 70% 35%"
+        },
+        "accentWeight": "300",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Serpent & Palm",
+        "fontHeading": "Kragdent",
+        "fontBody": "Josefin Sans",
+        "sectors": ["Эко-курорты", "Спа-салоны", "Йога-ретриты", "Премиум-вода"],
+        "tone": ["контрастный", "природный", "освежающий", "мистический"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "40 30% 85%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "95 45% 54%"
+          },
+          "primary": "95 45% 54%",
+          "secondary": "40 30% 85%",
+          "primaryHover": "95 47% 46%",
+          "primaryDisabled": "95 20% 70%",
+          "secondaryHover": "40 32% 77%",
+          "secondaryDisabled": "40 15% 95%"
+        },
+        "rationale": "Вдохновлено цветом Oasis (#81BE54) — насыщенным зелёным, символизирующим жизнь посреди пустыни [citation:1]. Kragdent с его мощными блочными формами передаёт суровость песка и скал [citation:9], а Josefin Sans добавляет элегантности и свежести, как струя воды. Контраст текстурного шрифта и чистого гротеска создаёт напряжение между двумя мирами.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(40 30% 85%), hsl(95 45% 54%))",
+          "secondary": "linear-gradient(135deg, hsl(95 45% 54%), hsl(40 30% 85%))",
+          "text": "linear-gradient(90deg, hsl(30 10% 15%), hsl(30 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(40 30% 85%), hsl(40 30% 75%))"
+        },
+        "link": {
+          "color": "95 45% 54%",
+          "hover": "95 47% 46%",
+          "visited": "95 35% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Mirage Waters",
+        "fontHeading": "KNIGHT WARRIOR",
+        "fontBody": "Open Sans Light Italic",
+        "sectors": ["Туристические агентства", "Приключенческий туризм", "Фестивали в пустыне", "Кинопроекты"],
+        "tone": ["миражный", "энергичный", "контрастный", "загадочный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "179 52% 69%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "288 31% 63%"
+          },
+          "primary": "179 52% 69%",
+          "secondary": "288 31% 63%",
+          "primaryHover": "179 54% 61%",
+          "primaryDisabled": "179 20% 80%",
+          "secondaryHover": "288 33% 55%",
+          "secondaryDisabled": "288 15% 80%"
+        },
+        "rationale": "Вдохновлено цветом Island Oasis (#88d9d8) — прохладным циановым оттенком воды в оазисе [citation:3]. KNIGHT WARRIOR с его острыми геометрическими формами символизирует суровые скалы пустыни [citation:10], а Open Sans Light Italic добавляет текучести и лёгкости, как вода. Фиолетовый акцент African Violet (#B284BE) [citation:1] имитирует тени на песке на закате.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(179 52% 69%), hsl(288 31% 63%))",
+          "secondary": "linear-gradient(135deg, hsl(288 31% 63%), hsl(179 52% 69%))",
+          "text": "linear-gradient(90deg, hsl(30 10% 15%), hsl(30 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(179 52% 69%), hsl(288 31% 63%))"
+        },
+        "link": {
+          "color": "288 31% 63%",
+          "hover": "288 33% 55%",
+          "visited": "288 25% 45%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Serene Sands",
+        "fontHeading": "Playfair Display",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Люксовые отели", "Спа-курорты", "Премиум-недвижимость", "Рестораны"],
+        "tone": ["спокойный", "элегантный", "тёплый", "утончённый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 20% 90%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "95 45% 54%"
+          },
+          "primary": "95 45% 54%",
+          "secondary": "30 20% 90%",
+          "primaryHover": "95 47% 46%",
+          "primaryDisabled": "95 20% 70%",
+          "secondaryHover": "30 22% 82%",
+          "secondaryDisabled": "30 10% 95%"
+        },
+        "rationale": "Вдохновлено палитрой 'Serene Sands' — тёплые бежевые и песочные тона, создающие ощущение комфорта и релаксации [citation:5]. Playfair Display добавляет классическую элегантность заголовкам, напоминая о роскошных курортах, а Source Sans Pro остаётся чистым и читаемым фоном. Зелёный акцент Oasis символизирует редкую растительность, делающую отель особенным.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 20% 90%), hsl(95 45% 54%))",
+          "secondary": "linear-gradient(135deg, hsl(95 45% 54%), hsl(30 20% 90%))",
+          "text": "linear-gradient(90deg, hsl(30 10% 15%), hsl(30 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(30 20% 90%), hsl(30 20% 80%))"
+        },
+        "link": {
+          "color": "95 45% 54%",
+          "hover": "95 47% 46%",
+          "visited": "95 35% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Cool Waters",
+        "fontHeading": "Josefin Sans",
+        "fontBody": "Quicksand",
+        "sectors": ["Бутилированная вода", "Спа-салоны", "Эко-проекты", "Здоровье"],
+        "tone": ["освежающий", "чистый", "спокойный", "минималистичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "179 52% 69%"
+          },
+          "primary": "179 52% 69%",
+          "secondary": "0 0% 100%",
+          "primaryHover": "179 54% 61%",
+          "primaryDisabled": "179 20% 80%",
+          "secondaryHover": "0 0% 95%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Вдохновлено палитрой 'Cool Waters' — успокаивающее сочетание светло-голубых и глубоких бирюзовых оттенков, идеально подходящее для спа-брендов [citation:5]. Josefin Sans с его винтажным оттенком добавляет элегантности заголовкам, а Quicksand с мягкими округлыми формами создаёт ощущение воды и уюта. Чистая белая основа подчёркивает свежесть.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 0% 100%), hsl(179 52% 69%))",
+          "secondary": "linear-gradient(135deg, hsl(179 52% 69%), hsl(0 0% 100%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(179 52% 69%))"
+        },
+        "link": {
+          "color": "179 52% 69%",
+          "hover": "179 54% 61%",
+          "visited": "179 40% 50%"
+        },
+        "accentWeight": "500",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Desert Bloom",
+        "fontHeading": "Unbounded",
+        "fontBody": "Crimson Text",
+        "sectors": ["Фестивали в пустыне", "Арт-галереи", "Музыкальные события", "Креативные студии"],
+        "tone": ["цветущий", "контрастный", "экспрессивный", "энергичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 50% 50%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 80%",
+            "faint": "0 0% 60%",
+            "accent": "95 45% 54%"
+          },
+          "primary": "95 45% 54%",
+          "secondary": "30 50% 50%",
+          "primaryHover": "95 47% 46%",
+          "primaryDisabled": "95 20% 70%",
+          "secondaryHover": "30 52% 42%",
+          "secondaryDisabled": "30 25% 70%"
+        },
+        "rationale": "Вдохновлено палитрой 'Desert Bloom', сочетающей мягкие пастельные тона с яркими землистыми оттенками [citation:5]. Unbounded с его широкими формами создаёт мощные заголовки, привлекающие внимание, а классический Crimson Text добавляет литературной глубины основному тексту. Зелёный акцент символизирует цветение пустыни после дождя.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 50% 50%), hsl(95 45% 54%))",
+          "secondary": "linear-gradient(135deg, hsl(95 45% 54%), hsl(30 50% 50%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 100%), hsl(0 0% 80%))",
+          "background": "linear-gradient(180deg, hsl(30 50% 50%), hsl(30 50% 40%))"
+        },
+        "link": {
+          "color": "95 45% 54%",
+          "hover": "95 47% 46%",
+          "visited": "95 35% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Dawn Horizon",
+        "fontHeading": "Montserrat",
+        "fontBody": "Merriweather",
+        "sectors": ["Туристические порталы", "Отели на рассвете", "Медитативные приложения", "Эко-курорты"],
+        "tone": ["спокойный", "свежий", "оптимистичный", "чистый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "30 100% 95%",
+          "textColors": {
+            "base": "30 10% 15%",
+            "muted": "30 10% 40%",
+            "faint": "30 10% 60%",
+            "accent": "180 50% 45%"
+          },
+          "primary": "180 50% 45%",
+          "secondary": "30 100% 95%",
+          "primaryHover": "180 52% 37%",
+          "primaryDisabled": "180 30% 70%",
+          "secondaryHover": "30 30% 90%",
+          "secondaryDisabled": "30 30% 98%"
+        },
+        "rationale": "Вдохновлено ранним утром, когда небо окрашивается в персиковые тона [citation:3]. Montserrat с его чистыми линиями создаёт ощущение свежести и современности, а Merriweather добавляет теплоты и надёжности основному тексту [citation:5]. Бирюзовый акцент символизирует прозрачность утреннего воздуха и росу на листьях.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(30 100% 85%), hsl(30 100% 95%))",
+          "secondary": "linear-gradient(120deg, hsl(180 50% 45%), hsl(180 52% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 10% 15%), hsl(30 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(30 100% 95%), hsl(30 100% 85%))"
+        },
+        "link": {
+          "color": "180 50% 45%",
+          "hover": "180 52% 37%",
+          "visited": "180 40% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Golden Hour",
+        "fontHeading": "Playfair Display",
+        "fontBody": "Lato",
+        "sectors": ["Фотография", "Свадебные агентства", "Премиум-бренды", "Рестораны"],
+        "tone": ["тёплый", "элегантный", "романтичный", "золотой"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "45 80% 70%",
+          "textColors": {
+            "base": "45 10% 20%",
+            "muted": "45 10% 40%",
+            "faint": "45 10% 60%",
+            "accent": "340 60% 50%"
+          },
+          "primary": "340 60% 50%",
+          "secondary": "45 80% 70%",
+          "primaryHover": "340 62% 42%",
+          "primaryDisabled": "340 30% 70%",
+          "secondaryHover": "45 50% 65%",
+          "secondaryDisabled": "45 30% 85%"
+        },
+        "rationale": "Золотой час — время, когда солнце окрашивает всё в тёплые, медовые тона. Playfair Display с его классическими формами идеально подходит для заголовков, вызывая ассоциации с элегантностью [citation:5]. Lato добавляет современную мягкость. Розовый акцент имитирует нежные оттенки облаков на закате.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(45 80% 70%), hsl(45 80% 50%))",
+          "secondary": "linear-gradient(120deg, hsl(340 60% 50%), hsl(340 62% 42%))",
+          "text": "linear-gradient(90deg, hsl(45 10% 20%), hsl(45 10% 40%))",
+          "background": "linear-gradient(180deg, hsl(45 80% 70%), hsl(45 80% 50%))"
+        },
+        "link": {
+          "color": "340 60% 50%",
+          "hover": "340 62% 42%",
+          "visited": "340 50% 35%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Dramatic Sunset",
+        "fontHeading": "Abril Fatface",
+        "fontBody": "Raleway",
+        "sectors": ["Кинофестивали", "Театральные постановки", "Арт-галереи", "Музыкальные события"],
+        "tone": ["драматичный", "страстный", "глубокий", "экспрессивный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "10 90% 35%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 80%",
+            "faint": "0 0% 60%",
+            "accent": "280 60% 40%"
+          },
+          "primary": "280 60% 40%",
+          "secondary": "10 90% 35%",
+          "primaryHover": "280 62% 32%",
+          "primaryDisabled": "280 30% 60%",
+          "secondaryHover": "10 80% 30%",
+          "secondaryDisabled": "10 30% 70%"
+        },
+        "rationale": "Драматичный закат с насыщенными красными и фиолетовыми тонами. Abril Fatface — мощный, жирный шрифт, который привлекает внимание и передаёт страсть [citation:7]. Raleway с его тонкими линиями создаёт элегантный контраст. Глубокий фиолетовый акцент добавляет загадочности и роскоши.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(10 90% 35%), hsl(280 60% 40%))",
+          "secondary": "linear-gradient(120deg, hsl(280 60% 40%), hsl(10 90% 35%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 100%), hsl(0 0% 80%))",
+          "background": "linear-gradient(180deg, hsl(10 90% 35%), hsl(280 60% 40%))"
+        },
+        "link": {
+          "color": "280 60% 40%",
+          "hover": "280 62% 32%",
+          "visited": "280 50% 30%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Pastel Sunrise",
+        "fontHeading": "Cookie",
+        "fontBody": "Josefin Sans",
+        "sectors": ["Beauty-бренды", "Детские проекты", "Спа-салоны", "Кондитерские"],
+        "tone": ["нежный", "воздушный", "романтичный", "пастельный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "340 60% 70%"
+          },
+          "primary": "340 60% 70%",
+          "secondary": "0 0% 100%",
+          "primaryHover": "340 62% 62%",
+          "primaryDisabled": "340 30% 85%",
+          "secondaryHover": "0 0% 95%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "Пастельный рассвет с нежными розовыми и персиковыми оттенками. Cookie — игривый рукописный шрифт, идеально подходящий для женственных и лёгких проектов [citation:7]. Josefin Sans с его геометрическими формами создаёт чистый, современный контраст. Идеально для брендов, где важна нежность и элегантность.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(340 60% 70%), hsl(30 70% 80%))",
+          "secondary": "linear-gradient(120deg, hsl(30 70% 80%), hsl(340 60% 70%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 15%), hsl(0 0% 40%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(340 60% 70%))"
+        },
+        "link": {
+          "color": "340 60% 70%",
+          "hover": "340 62% 62%",
+          "visited": "340 50% 55%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Ocean Sunset",
+        "fontHeading": "Oswald",
+        "fontBody": "Open Sans",
+        "sectors": ["Морские курорты", "Сёрф-бренды", "Путешествия", "Приключения"],
+        "tone": ["свободный", "энергичный", "освежающий", "динамичный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "200 80% 40%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 80%",
+            "faint": "0 0% 60%",
+            "accent": "30 100% 60%"
+          },
+          "primary": "30 100% 60%",
+          "secondary": "200 80% 40%",
+          "primaryHover": "30 100% 50%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "200 70% 35%",
+          "secondaryDisabled": "200 30% 70%"
+        },
+        "rationale": "Закат над океаном — контраст глубокой синевы воды и тёплого света. Oswald с его конденсированными формами идеально подходит для сильных заголовков [citation:5], а Open Sans обеспечивает максимальную читаемость. Оранжевый акцент символизирует заходящее солнце, отражающееся в волнах.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(200 80% 40%), hsl(30 100% 60%))",
+          "secondary": "linear-gradient(120deg, hsl(30 100% 60%), hsl(200 80% 40%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 100%), hsl(0 0% 80%))",
+          "background": "linear-gradient(180deg, hsl(200 80% 40%), hsl(30 100% 60%))"
+        },
+        "link": {
+          "color": "30 100% 60%",
+          "hover": "30 100% 50%",
+          "visited": "30 70% 45%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Alpine Glow",
+        "fontHeading": "Oswald",
+        "fontBody": "Merriweather",
+        "sectors": ["Горнолыжные курорты", "Экспедиции", "Спортивные бренды", "Приключенческий туризм"],
+        "tone": ["суровый", "чистый", "вдохновляющий", "контрастный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "210 30% 30%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 80%",
+            "faint": "0 0% 60%",
+            "accent": "30 80% 50%"
+          },
+          "primary": "30 80% 50%",
+          "secondary": "210 30% 30%",
+          "primaryHover": "30 82% 42%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "210 32% 25%",
+          "secondaryDisabled": "210 15% 50%"
+        },
+        "rationale": "Альпийское зарево — контраст холодного синего неба и тёплого света, отражающегося от снежных вершин. Oswald создаёт мощные заголовки [citation:5], а Merriweather добавляет читаемости и классической основательности [citation:5]. Оранжевый акцент символизирует последние лучи солнца на скалах.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(210 30% 30%), hsl(30 80% 50%))",
+          "secondary": "linear-gradient(120deg, hsl(30 80% 50%), hsl(210 30% 30%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 100%), hsl(0 0% 80%))",
+          "background": "linear-gradient(180deg, hsl(210 30% 30%), hsl(210 30% 20%))"
+        },
+        "link": {
+          "color": "30 80% 50%",
+          "hover": "30 82% 42%",
+          "visited": "30 60% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
+        "pairType": "Desert Dusk",
+        "fontHeading": "Bebas Neue",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Фестивали в пустыне", "Этно-бренды", "Керамика", "Приключения"],
+        "tone": ["тёплый", "землистый", "загадочный", "атмосферный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "20 50% 50%",
+          "textColors": {
+            "base": "0 0% 100%",
+            "muted": "0 0% 80%",
+            "faint": "0 0% 60%",
+            "accent": "350 70% 40%"
+          },
+          "primary": "350 70% 40%",
+          "secondary": "20 50% 50%",
+          "primaryHover": "350 72% 32%",
+          "primaryDisabled": "350 30% 60%",
+          "secondaryHover": "20 52% 42%",
+          "secondaryDisabled": "20 25% 70%"
+        },
+        "rationale": "Закат в пустыне — насыщенные терракотовые и оранжевые тона, сменяющиеся глубоким пурпуром. Bebas Neue создаёт мощные заголовки [citation:5], а Source Sans Pro остаётся чистым и читаемым фоном. Тёмно-красный акцент символизирует последние лучи, окрашивающие горизонт.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(20 50% 50%), hsl(350 70% 40%))",
+          "secondary": "linear-gradient(120deg, hsl(350 70% 40%), hsl(20 50% 50%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 100%), hsl(0 0% 80%))",
+          "background": "linear-gradient(180deg, hsl(20 50% 50%), hsl(350 70% 40%))"
+        },
+        "link": {
+          "color": "350 70% 40%",
+          "hover": "350 72% 32%",
+          "visited": "350 50% 30%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "City Lights",
+        "fontHeading": "Unbounded",
+        "fontBody": "Inter",
+        "sectors": ["Ночные клубы", "Городские мероприятия", "Техно-фестивали", "Архитектурные бюро"],
+        "tone": ["урбанистический", "энергичный", "ночной", "неоновый"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "240 30% 15%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "30 100% 50%"
+          },
+          "primary": "30 100% 50%",
+          "secondary": "240 30% 15%",
+          "primaryHover": "30 100% 40%",
+          "primaryDisabled": "30 30% 30%",
+          "secondaryHover": "240 32% 20%",
+          "secondaryDisabled": "240 15% 40%"
+        },
+        "rationale": "Городской закат, когда небо окрашивается в фиолетовые тона, а в окнах зажигаются первые огни. Unbounded — широкий, громкий шрифт, идеально подходящий для урбанистической эстетики. Inter обеспечивает безупречную читаемость. Оранжевый акцент символизирует свет фонарей и неоновые вывески.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(120deg, hsl(240 30% 15%), hsl(30 100% 50%))",
+          "secondary": "linear-gradient(120deg, hsl(30 100% 50%), hsl(240 30% 15%))",
+          "text": "linear-gradient(90deg, hsl(0 0% 90%), hsl(0 0% 70%))",
+          "background": "linear-gradient(180deg, hsl(240 30% 15%), hsl(240 30% 10%))"
+        },
+        "link": {
+          "color": "30 100% 50%",
+          "hover": "30 100% 40%",
+          "visited": "30 70% 40%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Ancient Tactics",
+        "fontHeading": "Kragdent",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Военно-тактические игры", "Спортивный брендинг", "Киберспорт", "Снаряжение"],
+        "tone": ["брутальный", "тактический", "мощный", "прецизионный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 10%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "30 80% 45%"
+          },
+          "primary": "30 80% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 82% 37%",
+          "primaryDisabled": "30 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Kragdent — блочный тяжёлый дисплейный шрифт, созданный для мощного тактического воздействия. Его угловатые, бронированные литеры идеально подходят для заголовков в военной, киберспортивной и экстремальной тематике . Source Sans Pro выступает чистым, функциональным фоном, обеспечивая отличную читаемость основного текста. Тёмная гамма с ржаво-оранжевым акцентом вызывает ассоциации с индустриальной мощью и тактическим снаряжением.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 80% 45%), hsl(30 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 80% 45%), hsl(0 0% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 10%), hsl(30 30% 20%))"
+        },
+        "link": {
+          "color": "30 80% 45%",
+          "hover": "30 82% 37%",
+          "visited": "30 60% 35%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Runic Battle",
+        "fontHeading": "BattleMage",
+        "fontBody": "Crimson Text",
+        "sectors": ["Фэнтези-игры", "Комиксы", "Креативные студии", "Музыкальные группы"],
+        "tone": ["рунический", "древний", "энергичный", "мистический"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 0%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "0 80% 45%"
+          },
+          "primary": "0 80% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "0 82% 37%",
+          "primaryDisabled": "0 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "BattleMage — шрифт, вдохновлённый древними рунами и магией. Его острые, неравномерные штрихи и «племенной» или рунический оттенок передают ощущение первобытной силы и волшебства . Crimson Text добавляет классическую глубину и читаемость основному тексту. Красный на чёрном — классика воинственной эстетики, символизирующая кровь и борьбу.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(0 80% 45%), hsl(0 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(0 80% 45%), hsl(0 0% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 0%), hsl(0 80% 15%))"
+        },
+        "link": {
+          "color": "0 80% 45%",
+          "hover": "0 82% 37%",
+          "visited": "0 60% 35%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Imperial Might",
+        "fontHeading": "KNIGHT WARRIOR",
+        "fontBody": "Lato",
+        "sectors": ["Имперские бренды", "Рыцарские турниры", "Исторические реконструкции", "Премиум-алкоголь"],
+        "tone": ["мощный", "геометричный", "агрессивный", "имперский"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "210 60% 40%"
+          },
+          "primary": "210 60% 40%",
+          "secondary": "0 0% 90%",
+          "primaryHover": "210 62% 32%",
+          "primaryDisabled": "210 30% 70%",
+          "secondaryHover": "0 2% 82%",
+          "secondaryDisabled": "0 0% 98%"
+        },
+        "rationale": "KNIGHT WARRIOR — смелый, геометрический дисплейный шрифт с острыми, угловатыми краями и блочной структурой. Его мощные вертикальные и горизонтальные штрихи создают впечатление силы и доминирования, идеально подходя для плакатов и титулов игр . Lato добавляет современную мягкость и читаемость основному тексту. Светлая палитра с тёмно-синим акцентом напоминает о стальной броне и имперской строгости.",
+        "iconLibrary": "lucide",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(210 60% 40%), hsl(210 62% 32%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 90%), hsl(0 2% 82%))",
+          "text": "linear-gradient(90deg, hsl(210 60% 40%), hsl(0 0% 90%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "210 60% 40%",
+          "hover": "210 62% 32%",
+          "visited": "210 50% 30%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Belico Metal",
+        "fontHeading": "Belico",
+        "fontBody": "Roboto",
+        "sectors": ["Экшн-игры", "Хэви-метал бренды", "Смелый брендинг", "Фестивали"],
+        "tone": ["металлический", "острый", "интенсивный", "воинственный"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 100%",
+          "textColors": {
+            "base": "0 0% 15%",
+            "muted": "0 0% 40%",
+            "faint": "0 0% 60%",
+            "accent": "30 80% 45%"
+          },
+          "primary": "30 80% 45%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "30 82% 37%",
+          "primaryDisabled": "30 30% 70%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Belico — смелый и эффектный шрифт, созданный в духе поля битвы. Его острые металлические края и сверкающие детали передают блеск брони и суровость боя, делая его идеальным для экшн-тематик, игр или смелого брендинга . Roboto обеспечивает функциональность и читаемость основного текста. Контраст светлого фона и оранжево-металлического акцента создаёт ощущение раскалённого металла.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(30 80% 45%), hsl(30 82% 37%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(30 80% 45%), hsl(0 0% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 90%))"
+        },
+        "link": {
+          "color": "30 80% 45%",
+          "hover": "30 82% 37%",
+          "visited": "30 60% 35%"
+        },
+        "accentWeight": "700",
+        "sizeTier": "display"
+      },
+      {
+        "pairType": "Urban Warfare",
+        "fontHeading": "Battleworn",
+        "fontBody": "Source Sans Pro",
+        "sectors": ["Уличная одежда", "Граффити", "Экстремальный спорт", "Молодёжные бренды"],
+        "tone": ["урбанистический", "бунтарский", "военный", "дерзкий"],
+        "audienceType": ["B2C"],
+        "colorPalette": {
+          "background": "0 0% 5%",
+          "textColors": {
+            "base": "0 0% 90%",
+            "muted": "0 0% 70%",
+            "faint": "0 0% 50%",
+            "accent": "90 80% 30%"
+          },
+          "primary": "90 80% 30%",
+          "secondary": "0 0% 30%",
+          "primaryHover": "90 82% 22%",
+          "primaryDisabled": "90 30% 30%",
+          "secondaryHover": "0 4% 37%",
+          "secondaryDisabled": "0 0% 40%"
+        },
+        "rationale": "Battleworn — шрифт, сочетающий городской стиль и военную строгость. Его манера письма кистью передаёт необузданную энергию улиц, а элементы трафарета добавляют нотку военной зернистости . Source Sans Pro остаётся чистым и читаемым фоном. Глубокий чёрный фон и болотно-зелёный акцент (оливковый) создают атмосферу городских джунглей и армейской эстетики.",
+        "iconLibrary": "phosphor",
+        "gradients": {
+          "primary": "linear-gradient(135deg, hsl(90 80% 30%), hsl(90 82% 22%))",
+          "secondary": "linear-gradient(135deg, hsl(0 0% 30%), hsl(0 4% 37%))",
+          "text": "linear-gradient(90deg, hsl(90 80% 30%), hsl(0 0% 30%))",
+          "background": "linear-gradient(180deg, hsl(0 0% 5%), hsl(90 30% 15%))"
+        },
+        "link": {
+          "color": "90 80% 30%",
+          "hover": "90 82% 22%",
+          "visited": "90 60% 25%"
+        },
+        "accentWeight": "600",
+        "sizeTier": "hero"
+      },
+      {
         "pairType": "Dvor Community",
         "fontHeading": "Golos Text",
         "fontBody": "PT Sans",
