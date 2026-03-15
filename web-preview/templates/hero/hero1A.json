@@ -1,0 +1,18 @@
+{
+  "extends": "hero1",
+  "atoms": [
+    {
+      "ref": "hero_cta",
+      "type": "atom.button",
+      "value": "Book a session",
+      "col": 7,
+      "row": 6,
+      "colSpan": 2,
+      "rowSpan": 1,
+      "fontSize": 0.875,
+      "padding": "0.625 1.25",
+      "iconRight": "arrow-up",
+      "buttonType": "square"
+    }
+  ]
+}

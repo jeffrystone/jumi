@@ -8,15 +8,21 @@ import hero2 from "@/templates/hero/hero2.json";
 import hero3 from "@/templates/hero/hero3.json";
 import hero4 from "@/templates/hero/hero4.json";
 
+/** Все hero1*.json (hero1, hero1A, hero1B, …) — подхват при сборке. */
+const hero1VariantContext = require.context(
+  "@/templates/hero",
+  false,
+  /^\.\/hero1[A-Za-z0-9]*\.json$/
+);
+
 /**
  * Строгое соответствие: navbarN ↔ heroN (индекс пары).
- * Сейчас 4 пары шаблонов.
+ * heroId/navbarId — строки (hero1, hero1A, navbar1, …).
  */
 export interface TemplatePair {
-  /** Индекс пары (1 → navbar1 + hero1) */
   pairIndex: number;
-  navbarId: `navbar${number}`;
-  heroId: `hero${number}`;
+  navbarId: string;
+  heroId: string;
   navbar: TemplateData;
   hero: TemplateData;
 }
@@ -58,4 +64,26 @@ export function getTemplatePairs(): readonly TemplatePair[] {
 
 export function getPairByIndex(index: number): TemplatePair | undefined {
   return pairs.find((p) => p.pairIndex === index);
+}
+
+/** Варианты hero1: автоматически все hero1*.json из templates/hero (hero1, hero1A, hero1B, …). */
+export function getHero1VariantPairs(): readonly TemplatePair[] {
+  const keys = hero1VariantContext.keys().sort((a, b) => {
+    if (a === "./hero1.json") return -1;
+    if (b === "./hero1.json") return 1;
+    return a.localeCompare(b);
+  });
+  const navbar = navbar1 as TemplateData;
+  return keys.map((key, i) => {
+    const id = key.replace(/^\.\/(.*)\.json$/, "$1");
+    const mod = hero1VariantContext(key) as { default?: TemplateData };
+    const template = (mod?.default ?? mod) as TemplateData;
+    return {
+      pairIndex: i + 1,
+      navbarId: "navbar1",
+      heroId: id,
+      navbar,
+      hero: template,
+    };
+  });
 }

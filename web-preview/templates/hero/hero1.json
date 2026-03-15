@@ -1,14 +1,55 @@
 {
-  "layout": "grid-1x1",
+  "layout": "grid-8x8",
+  "padding": "10rem 0 3rem 0",
   "atoms": [
     {
-      "ref": "hero_label",
+      "ref": "hero_title",
       "type": "atom.heading",
-      "value": "hero1",
+      "value": "Welcome to Prana",
       "col": 1,
       "row": 1,
-      "colSpan": 1,
-      "rowSpan": 1
+      "colSpan": 8,
+      "rowSpan": 2,
+      "fontSize": 4,
+      "fontColor": "textColors.base"
+    },
+    {
+      "ref": "hero_subtitle",
+      "type": "atom.subheading",
+      "value": "Your 24/7 Health Assistant",
+      "col": 1,
+      "row": 3,
+      "colSpan": 8,
+      "rowSpan": 1,
+      "fontSize": 1.5,
+      "fontColor": "textColors.muted"
+    },
+    {
+      "ref": "hero_lead",
+      "type": "atom.text",
+      "value": "Get a free consultation from our AI health expert – and bring a real doctor into the chat whenever you need.",
+      "col": 1,
+      "row": 4,
+      "colSpan": 8,
+      "rowSpan": 2,
+      "fontSize": 1.125,
+      "maxWidth": "36rem",
+      "textAlign": "center",
+      "lineHeight": 1.75,
+      "fontColor": "textColors.faint"
+    },
+    {
+      "ref": "hero_cta",
+      "type": "atom.button",
+      "value": "Get a free AI consult",
+      "col": 7,
+      "row": 6,
+      "colSpan": 2,
+      "rowSpan": 1,
+      "fontSize": 0.875,
+      "padding": "0.625 1.25",
+      "iconRight": "arrow-up",
+      "buttonType": "round"
     }
   ]
 }

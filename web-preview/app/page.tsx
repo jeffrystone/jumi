@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main>
-      <NavbarRenderer template={navbarTemplate} />
+      {/* <NavbarRenderer template={navbarTemplate} /> */}
       <HeroRenderer template={heroWithWriter} />
       <FeaturesRenderer template={featuresTemplate} />
     </main>

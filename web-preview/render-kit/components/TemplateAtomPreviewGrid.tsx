@@ -7,8 +7,11 @@ import {
   buildScopedThemeVars,
   type ThemePreviewModel,
 } from "@/render-kit/models/themePreviewModel";
-import { SAMPLE_TEMPLATES } from "@/render-kit/models/sampleTemplates";
-import { getTemplatePairs, type TemplatePair } from "@/render-kit/models/templatePairMapper";
+import {
+  getTemplatePairs,
+  getHero1VariantPairs,
+  type TemplatePair,
+} from "@/render-kit/models/templatePairMapper";
 
 function PairCell({
   pair,
@@ -22,12 +25,15 @@ function PairCell({
   onOpenFullscreen?: () => void;
 }) {
   const title = `${pair.heroId} + ${pair.navbarId}`;
+  const isBaseTemplate = pair.heroId === "hero1";
   const scoped = useMemo(
     () => ({
       ...buildScopedThemeVars(model),
-      backgroundImage: "var(--gradient-background)",
+      ...(isBaseTemplate
+        ? { background: "hsl(var(--background))", backgroundImage: "none" }
+        : { backgroundImage: "var(--gradient-background)" }),
     }),
-    [model]
+    [model, isBaseTemplate]
   );
 
   const isGrid = variant === "grid";
@@ -60,7 +66,7 @@ function PairCell({
         ...scoped,
       }}
     >
-      <div
+      {isGrid && <div
         className={
           isGrid
             ? "border-b border-secondary px-2 py-1 text-[10px] leading-tight text-muted-foreground"
@@ -72,10 +78,10 @@ function PairCell({
         {isGrid ? (
           <span className="ml-1 text-faint-foreground">· клик — полный экран</span>
         ) : null}
-      </div>
+      </div>}
       <div
         className={isGrid ? "min-h-0 flex-1 overflow-hidden" : "flex min-h-0 flex-1 flex-col"}
-        style={{ fontFamily: model.bodyFamily }}
+        style={{ fontFamily: model.bodyFamily, ...buildScopedThemeVars(model) }}
       >
         {isGrid ? (
           <div
@@ -85,26 +91,27 @@ function PairCell({
               width: "147%",
               marginLeft: "-23.5%",
               minHeight: "220px",
+              ...buildScopedThemeVars(model),
             }}
           >
-            <NavbarRenderer
+            {/* <NavbarRenderer
               template={pair.navbar}
               className="!py-2 [&_[class*='grid']]:!min-h-[88px] [&_[class*='grid']]:place-items-center [&_[class*='grid']]:justify-items-center"
-            />
+            /> */}
             <HeroRenderer
               template={pair.hero}
-              className="!py-3 [&_[class*='grid']]:!min-h-[88px] [&_[class*='grid']]:place-items-center"
+              className="[&_[class*='grid']]:!min-h-[88px] [&_[class*='grid']]:place-items-center"
             />
           </div>
         ) : (
           <>
-            <NavbarRenderer
+            {/* <NavbarRenderer
               template={pair.navbar}
               className="!py-6 [&_[class*='grid']]:!min-h-[140px] [&_[class*='grid']]:place-items-center [&_[class*='grid']]:justify-items-center"
-            />
+            /> */}
             <HeroRenderer
               template={pair.hero}
-              className="!flex-1 !py-8 [&_[class*='grid']]:!min-h-[200px] [&_[class*='grid']]:place-items-center"
+              className="!flex-1 [&_[class*='grid']]:!min-h-[200px] [&_[class*='grid']]:place-items-center"
             />
           </>
         )}
@@ -113,8 +120,15 @@ function PairCell({
   );
 }
 
-export function TemplateAtomPreviewGrid({ models }: { models: ThemePreviewModel[] }) {
-  const pairs = getTemplatePairs();
+export function TemplateAtomPreviewGrid({
+  models,
+  pairs: pairsProp,
+}: {
+  models: ThemePreviewModel[];
+  /** Временно: только hero1 + hero1A. Не передавать — показ всех пар из getTemplatePairs(). */
+  pairs?: readonly TemplatePair[];
+}) {
+  const pairs = pairsProp ?? getTemplatePairs();
   const [index, setIndex] = useState(0);
   const [fullscreenPair, setFullscreenPair] = useState<TemplatePair | null>(null);
   const total = models.length;
@@ -188,57 +202,8 @@ export function TemplateAtomPreviewGrid({ models }: { models: ThemePreviewModel[
         </p>
       </div>
 
-      <div className="mx-auto w-full max-w-[min(100%,1680px)] px-1">
-        <p className="mb-2 text-center text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          Образцы готовых шаблонов
-        </p>
-        <div
-          className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3 xl:grid-cols-4"
-          key={`samples-${index}`}
-        >
-          {SAMPLE_TEMPLATES.map((sample) => {
-            const scoped = {
-              ...buildScopedThemeVars(current),
-              backgroundImage: "var(--gradient-background)",
-            };
-            return (
-              <div
-                key={sample.id}
-                className="overflow-hidden rounded-lg border border-secondary shadow-sm xl:col-span-2"
-                style={{
-                  ...scoped,
-                  minHeight: "200px",
-                  fontFamily: current.bodyFamily,
-                }}
-              >
-                <div
-                  className="border-b border-secondary px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wide text-muted-foreground"
-                  style={{ fontFamily: current.bodyFamily }}
-                >
-                  {sample.label}
-                </div>
-                <div
-                  className="origin-top overflow-hidden"
-                  style={{
-                    transform: "scale(0.62)",
-                    width: "161%",
-                    marginLeft: "-30.5%",
-                    minHeight: "260px",
-                  }}
-                >
-                  <HeroRenderer
-                    template={sample.template}
-                    className="!py-3 [&_[class*='grid']]:min-h-[180px] [&_[class*='grid']]:items-start"
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
       <p className="mx-auto mb-2 mt-6 w-full max-w-[min(100%,1680px)] text-center text-xs font-medium uppercase tracking-wider text-muted-foreground">
-        Пары navbar + hero
+        {pairsProp ? "Варианты hero1 (navbar1 + hero1 / hero1A)" : "Пары navbar + hero"}
       </p>
       <div
         className="mx-auto grid w-full max-w-[min(100%,1680px)] grid-cols-1 gap-2 px-1 sm:grid-cols-2 sm:gap-3 xl:grid-cols-4"
